@@ -1,0 +1,96 @@
+{
+  "id": "en.tenses.present-simple",
+  "language": "en",
+  "category": "tenses",
+  "title": "Present Simple",
+  "summary": "Routines, facts, schedules, and general truths.",
+  "cefrLevel": "A1",
+  "prerequisites": [],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Present Simple** is used for routines, general truths, and timetables.\n\nForm: **subject + base verb** (add **-s/-es** in the 3rd person singular)."
+    },
+    {
+      "kind": "table",
+      "title": "Conjugation: to work",
+      "headers": ["Person", "Affirmative", "Negative", "Question"],
+      "rows": [
+        ["I", "I work", "I don't work", "Do I work?"],
+        ["you", "you work", "you don't work", "Do you work?"],
+        ["he/she/it", "he works", "he doesn't work", "Does he work?"],
+        ["we", "we work", "we don't work", "Do we work?"],
+        ["they", "they work", "they don't work", "Do they work?"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "She works in a hospital.", "translation": "Ona pracuje w szpitalu." },
+        { "source": "Water boils at 100°C.", "translation": "Woda wrze w 100°C." },
+        { "source": "I don't drink coffee.", "translation": "Nie piję kawy." }
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "Common time markers: *always, usually, often, sometimes, rarely, never, every day, on Mondays.*"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "She ___ to school every day.",
+      "options": ["go", "goes", "going", "is go"],
+      "answer": 1,
+      "explanation": "3rd person singular adds -es to 'go'."
+    },
+    {
+      "type": "fill",
+      "prompt": "He ___ (not / like) coffee.",
+      "answers": ["doesn't like", "does not like"],
+      "hint": "negative, 3rd person singular"
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Ona pracuje w szpitalu.",
+      "answers": ["She works in a hospital.", "She works at a hospital."]
+    },
+    {
+      "type": "order",
+      "prompt": "Build a question.",
+      "tokens": ["Do", "you", "speak", "English", "?"],
+      "answer": ["Do", "you", "speak", "English", "?"]
+    },
+    {
+      "type": "conjugate",
+      "verb": "to study",
+      "tense": "Present Simple — affirmative",
+      "persons": [
+        { "person": "I", "answer": "study" },
+        { "person": "you", "answer": "study" },
+        { "person": "he", "answer": "studies" },
+        { "person": "we", "answer": "study" },
+        { "person": "they", "answer": "study" }
+      ]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "He don't work on Sundays.",
+      "answers": ["He doesn't work on Sundays.", "He does not work on Sundays."],
+      "explanation": "Use 'doesn't' with he/she/it."
+    },
+    {
+      "type": "transform",
+      "instruction": "Make the sentence negative.",
+      "source": "She likes tea.",
+      "answers": ["She doesn't like tea.", "She does not like tea."]
+    },
+    {
+      "type": "dictation",
+      "audioText": "I usually drink water in the morning.",
+      "answers": ["I usually drink water in the morning."]
+    }
+  ]
+}
