@@ -178,17 +178,30 @@ export function createMemoryRepos(): Repos {
 let cached: Repos | null = null;
 let pending: Promise<Repos> | null = null;
 
+/**
+ * Detects a browser environment without importing react-native (which would
+ * break the jest config). Web build → memory repos; expo-sqlite's web shim
+ * has been flaky during bundle init and we don't need persistence on web.
+ */
+function isBrowser(): boolean {
+  return typeof document !== "undefined" && typeof window !== "undefined";
+}
+
 export async function getRepos(): Promise<Repos> {
   if (cached) return cached;
   if (pending) return pending;
   pending = (async () => {
+    if (isBrowser()) {
+      cached = createMemoryRepos();
+      return cached;
+    }
     try {
       const mod = await import("./db.sqlite");
       cached = await mod.createSqliteRepos();
     } catch {
       cached = createMemoryRepos();
     }
-    return cached;
+    return cached!;
   })();
   return pending;
 }
