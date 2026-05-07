@@ -87,6 +87,51 @@ describe("pickSessionExercises", () => {
     expect(overlap.length).toBe(0);
   });
 
+  it("biases authored exercises toward weak types (adaptive)", async () => {
+    const topic = topicById("en.tenses.present-simple")!;
+    const templates = templatesForTopic(topic.id);
+    const lex = lexiconBundleFor("en");
+    const repos = createMemoryRepos();
+
+    // Simulate consistent errors on errorFix (≥5 attempts to clear the floor).
+    for (let i = 0; i < 12; i++) {
+      await repos.log.recordTypeStat({
+        userId: USER,
+        topicId: topic.id,
+        type: "errorFix",
+        correct: false,
+      });
+    }
+    // ...and consistent successes on mcq.
+    for (let i = 0; i < 12; i++) {
+      await repos.log.recordTypeStat({
+        userId: USER,
+        topicId: topic.id,
+        type: "mcq",
+        correct: true,
+      });
+    }
+
+    let errorFixSeen = 0;
+    let authoredSeen = 0;
+    for (let s = 0; s < 8; s++) {
+      const items = await pickSessionExercises(topic, templates, lex, repos, {
+        userId: USER,
+        mode: "practice",
+        count: 10,
+        seed: `bias-${s}`,
+      });
+      for (const it of items) {
+        if (it.origin !== "authored") continue;
+        authoredSeen++;
+        if (it.exercise.type === "errorFix") errorFixSeen++;
+      }
+    }
+    // Topic has 1 errorFix in 8 authored exercises = 12.5% baseline.
+    // Adaptive bias should push it noticeably higher.
+    expect(errorFixSeen / authoredSeen).toBeGreaterThan(0.18);
+  });
+
   it("is deterministic for the same seed", async () => {
     const topic = topicById("en.tenses.present-simple")!;
     const templates = templatesForTopic(topic.id);

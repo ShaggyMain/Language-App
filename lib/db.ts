@@ -64,6 +64,18 @@ export interface SessionLogRepo {
   markPassed(input: { userId: string; topicId: string; at: number }): Promise<void>;
   /** Topic ids the user has ever passed — used by path gating. */
   passedTopicIds(userId: string): Promise<Set<string>>;
+  /** Increment per-type accuracy stats. Used by the adaptive selector. */
+  recordTypeStat(input: {
+    userId: string;
+    topicId: string;
+    type: string;
+    correct: boolean;
+  }): Promise<void>;
+  /**
+   * Aggregate accuracy by exercise type for a topic. Returns
+   * { type → { correct, total, pct } }; types with no history are absent.
+   */
+  accuracyByType(userId: string, topicId: string): Promise<Record<string, { correct: number; total: number; pct: number }>>;
 }
 
 export type Repos = {
@@ -80,6 +92,7 @@ export function createMemoryRepos(): Repos {
   let nextSessionId = 1;
   const sessions = new Map<number, { userId: string; topicId: string; startedAt: number; finishedAt?: number; summary?: object }>();
   const passed = new Map<string, Set<string>>(); // userId → topicIds
+  const typeStats = new Map<string, { correct: number; total: number }>(); // userId|topicId|type
 
   const seen: SeenRepo = {
     async markSeen({ userId, topicId, sessionId, instance, correct }) {
@@ -164,6 +177,23 @@ export function createMemoryRepos(): Repos {
     },
     async passedTopicIds(userId) {
       return new Set(passed.get(userId) ?? []);
+    },
+    async recordTypeStat({ userId, topicId, type, correct }) {
+      const k = `${userId}|${topicId}|${type}`;
+      const cur = typeStats.get(k) ?? { correct: 0, total: 0 };
+      cur.total += 1;
+      if (correct) cur.correct += 1;
+      typeStats.set(k, cur);
+    },
+    async accuracyByType(userId, topicId) {
+      const out: Record<string, { correct: number; total: number; pct: number }> = {};
+      const prefix = `${userId}|${topicId}|`;
+      for (const [k, v] of typeStats) {
+        if (!k.startsWith(prefix)) continue;
+        const type = k.slice(prefix.length);
+        out[type] = { correct: v.correct, total: v.total, pct: v.total ? v.correct / v.total : 0 };
+      }
+      return out;
     },
   };
 

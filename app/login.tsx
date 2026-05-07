@@ -3,12 +3,14 @@ import { ActivityIndicator, Pressable, Text, TextInput, View } from "react-nativ
 import { router } from "expo-router";
 import { Screen } from "../components/ui/Screen";
 import { supabase, supabaseConfigured } from "../lib/supabase";
+import { useTheme } from "../lib/theme";
 
 export default function LoginScreen() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const { colors } = useTheme();
 
   async function handleSignIn() {
     if (!supabase) {
@@ -45,7 +47,7 @@ export default function LoginScreen() {
         autoCorrect={false}
         keyboardType="email-address"
         placeholder="you@example.com"
-        placeholderTextColor="#8aa0c2"
+        placeholderTextColor={colors.muted}
       />
 
       <Text className="text-muted text-xs uppercase tracking-wide mb-2">Password</Text>
@@ -56,7 +58,7 @@ export default function LoginScreen() {
         secureTextEntry
         autoCapitalize="none"
         placeholder="••••••••"
-        placeholderTextColor="#8aa0c2"
+        placeholderTextColor={colors.muted}
       />
 
       {error ? <Text className="text-error mb-3">{error}</Text> : null}
