@@ -1,0 +1,30 @@
+[
+  {
+    "id": "en.demonstratives.singular-mcq",
+    "topicId": "en.pronouns.demonstratives",
+    "language": "en",
+    "produces": "mcq",
+    "slots": [
+      { "name": "noun", "pos": "noun", "filter": { "countable": true, "cefrMax": "A2" } }
+    ],
+    "pattern": "___ {noun} here is mine.",
+    "answerPatterns": ["This"],
+    "distractorPatterns": ["These", "That", "Those"],
+    "explanation": "'This' = near, singular.",
+    "tags": ["near", "singular"]
+  },
+  {
+    "id": "en.demonstratives.plural-far-mcq",
+    "topicId": "en.pronouns.demonstratives",
+    "language": "en",
+    "produces": "mcq",
+    "slots": [
+      { "name": "noun", "pos": "noun", "filter": { "countable": true, "cefrMax": "A2" } }
+    ],
+    "pattern": "Look at ___ {noun:plural} over there.",
+    "answerPatterns": ["those"],
+    "distractorPatterns": ["these", "this", "that"],
+    "explanation": "'Those' = far, plural.",
+    "tags": ["far", "plural"]
+  }
+]

@@ -55,6 +55,21 @@ function agreementOf(subject: LexiconEntry): Agreement {
   return subject.forms?.agreement ?? "3sg";
 }
 
+function regularPast(lemma: string): string {
+  if (/e$/i.test(lemma)) return lemma + "d";
+  if (/[^aeiou]y$/i.test(lemma)) return lemma.slice(0, -1) + "ied";
+  return lemma + "ed";
+}
+
+function regularComparative(lemma: string): string {
+  if (lemma.length <= 6) {
+    if (/e$/i.test(lemma)) return lemma + "r";
+    if (/[^aeiou]y$/i.test(lemma)) return lemma.slice(0, -1) + "ier";
+    return lemma + "er";
+  }
+  return `more ${lemma}`;
+}
+
 export const inflectors: Record<string, Inflector> = {
   /** Verb base form (lemma). */
   base: (entry) => entry.lemma,
@@ -116,6 +131,36 @@ export const inflectors: Record<string, Inflector> = {
     const correct = entry.forms?.article ?? guessArticle(entry.lemma);
     return correct === "a" ? "an" : "a";
   },
+
+  /** "be" auxiliary agreeing with subject — am/is/are. */
+  "be.agree": (_entry, args, ctx) => {
+    const subj = lookupSubject(args[0] ?? "subject", ctx);
+    const ag = agreementOf(subj);
+    return ag === "1sg" ? "am" : ag === "3sg" ? "is" : "are";
+  },
+
+  /** Wrong "be" form distractor: shift the auxiliary by one slot. */
+  "be.agree.wrong": (_entry, args, ctx) => {
+    const subj = lookupSubject(args[0] ?? "subject", ctx);
+    const ag = agreementOf(subj);
+    return ag === "1sg" ? "is" : ag === "3sg" ? "are" : "am";
+  },
+
+  /** Verb past form. */
+  past: (entry) => entry.forms?.past ?? regularPast(entry.lemma),
+
+  /** Wrong past form: present 3sg as a distractor. */
+  "past.wrong": (entry) => present3sg(entry),
+
+  /** Possessive adjective of the subject (my / your / his / her / our / their). */
+  "pron.poss": (entry) => entry.forms?.possessiveAdj ?? `${entry.lemma}'s`,
+
+  /** Adjective comparative ("er" / "more"). */
+  comparative: (entry) => entry.forms?.comparative ?? regularComparative(entry.lemma),
+
+  /** Adjective superlative. */
+  superlative: (entry) =>
+    entry.forms?.superlative ?? (entry.lemma.length <= 6 ? `${entry.lemma}est` : `most ${entry.lemma}`),
 };
 
 export function applyInflector(name: string, entry: LexiconEntry, args: string[], ctx: InflectCtx): string {

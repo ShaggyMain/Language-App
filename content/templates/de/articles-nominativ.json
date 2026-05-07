@@ -1,0 +1,30 @@
+[
+  {
+    "id": "de.articles.nominativ-fill",
+    "topicId": "de.articles.nominativ",
+    "language": "de",
+    "produces": "fill",
+    "slots": [
+      { "name": "noun", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "___ {noun} ist hier.",
+    "answerPatterns": ["{noun:art.nom}"],
+    "hint": "der / die / das",
+    "explanation": "Rodzajnik w Nominativie zależy od rodzaju rzeczownika.",
+    "tags": ["nominativ"]
+  },
+  {
+    "id": "de.articles.nominativ-mcq",
+    "topicId": "de.articles.nominativ",
+    "language": "de",
+    "produces": "mcq",
+    "slots": [
+      { "name": "noun", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "___ {noun} ist groß.",
+    "answerPatterns": ["{noun:art.nom}"],
+    "distractorPatterns": ["{noun:art.nom.wrong}", "den", "ein"],
+    "explanation": "Nominativ: der (m), die (f), das (n).",
+    "tags": ["nominativ"]
+  }
+]

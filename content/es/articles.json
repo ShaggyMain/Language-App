@@ -1,0 +1,49 @@
+{
+  "id": "es.articles.definite",
+  "language": "es",
+  "category": "articles",
+  "title": "Rodzajniki: el / la / los / las",
+  "summary": "Rodzajniki określone — zależą od rodzaju i liczby.",
+  "cefrLevel": "A1",
+  "prerequisites": [],
+  "theory": [
+    {
+      "kind": "table",
+      "title": "Rodzajniki określone",
+      "headers": ["Rodzaj", "Singular", "Plural"],
+      "rows": [
+        ["męski", "el (el libro)", "los (los libros)"],
+        ["żeński", "la (la casa)", "las (las casas)"]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "Rzeczowniki kończące się na **-o** są zwykle rodzaju męskiego (*el libro, el coche*), na **-a** — żeńskiego (*la casa, la mesa*). Wyjątki: *el día, la mano, el problema, el agua* (rodzaj żeński, ale używamy *el* gdy zaczyna się od akcentowanego a-)."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "___ libro es nuevo.",
+      "options": ["El", "La", "Los", "Las"],
+      "answer": 0
+    },
+    {
+      "type": "mcq",
+      "prompt": "___ casa es grande.",
+      "options": ["El", "La", "Los", "Las"],
+      "answer": 1
+    },
+    {
+      "type": "fill",
+      "prompt": "___ coches son rápidos.",
+      "answers": ["Los"]
+    },
+    {
+      "type": "fill",
+      "prompt": "Yo bebo ___ agua.",
+      "answers": ["el"],
+      "explanation": "'agua' jest rodzaju żeńskiego, ale w liczbie pojedynczej zaczyna się od akcentowanego 'a-' → 'el'."
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "language": "es",
+  "entries": [
+    {
+      "id": "es.noun.libro",
+      "lemma": "libro",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 100,
+      "tags": ["object"],
+      "gloss": { "pl": "książka" },
+      "forms": { "gender": "m", "articleEs": "el", "plural": "libros" }
+    },
+    {
+      "id": "es.noun.casa",
+      "lemma": "casa",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 101,
+      "tags": ["place"],
+      "gloss": { "pl": "dom" },
+      "forms": { "gender": "f", "articleEs": "la", "plural": "casas" }
+    },
+    {
+      "id": "es.noun.coche",
+      "lemma": "coche",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 102,
+      "tags": ["object", "vehicle"],
+      "gloss": { "pl": "samochód" },
+      "forms": { "gender": "m", "articleEs": "el", "plural": "coches" }
+    },
+    {
+      "id": "es.noun.mesa",
+      "lemma": "mesa",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 103,
+      "tags": ["object"],
+      "gloss": { "pl": "stół" },
+      "forms": { "gender": "f", "articleEs": "la", "plural": "mesas" }
+    },
+    {
+      "id": "es.noun.perro",
+      "lemma": "perro",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 104,
+      "tags": ["animal"],
+      "gloss": { "pl": "pies" },
+      "forms": { "gender": "m", "articleEs": "el", "plural": "perros" }
+    },
+    {
+      "id": "es.noun.gata",
+      "lemma": "gata",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 105,
+      "tags": ["animal"],
+      "gloss": { "pl": "kotka" },
+      "forms": { "gender": "f", "articleEs": "la", "plural": "gatas" }
+    },
+    {
+      "id": "es.noun.agua",
+      "lemma": "agua",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 106,
+      "tags": ["food", "drink"],
+      "gloss": { "pl": "woda" },
+      "forms": { "gender": "f", "articleEs": "el", "plural": "aguas" }
+    },
+    {
+      "id": "es.noun.cafe",
+      "lemma": "café",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 107,
+      "tags": ["food", "drink"],
+      "gloss": { "pl": "kawa" },
+      "forms": { "gender": "m", "articleEs": "el", "plural": "cafés" }
+    },
+    {
+      "id": "es.noun.escuela",
+      "lemma": "escuela",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 108,
+      "tags": ["place"],
+      "gloss": { "pl": "szkoła" },
+      "forms": { "gender": "f", "articleEs": "la", "plural": "escuelas" }
+    },
+    {
+      "id": "es.noun.amigo",
+      "lemma": "amigo",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 109,
+      "tags": ["person"],
+      "gloss": { "pl": "przyjaciel" },
+      "forms": { "gender": "m", "articleEs": "el", "plural": "amigos" }
+    }
+  ]
+}

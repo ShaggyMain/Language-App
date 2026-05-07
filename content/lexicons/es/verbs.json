@@ -1,0 +1,151 @@
+{
+  "language": "es",
+  "entries": [
+    {
+      "id": "es.verb.hablar",
+      "lemma": "hablar",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 10,
+      "tags": ["regular", "ar"],
+      "gloss": { "pl": "mówić" },
+      "forms": { "irregular": false }
+    },
+    {
+      "id": "es.verb.estudiar",
+      "lemma": "estudiar",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 11,
+      "tags": ["regular", "ar"],
+      "gloss": { "pl": "uczyć się / studiować" },
+      "forms": { "irregular": false }
+    },
+    {
+      "id": "es.verb.trabajar",
+      "lemma": "trabajar",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 12,
+      "tags": ["regular", "ar"],
+      "gloss": { "pl": "pracować" },
+      "forms": { "irregular": false }
+    },
+    {
+      "id": "es.verb.cantar",
+      "lemma": "cantar",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 13,
+      "tags": ["regular", "ar"],
+      "gloss": { "pl": "śpiewać" },
+      "forms": { "irregular": false }
+    },
+    {
+      "id": "es.verb.cocinar",
+      "lemma": "cocinar",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 14,
+      "tags": ["regular", "ar"],
+      "gloss": { "pl": "gotować" },
+      "forms": { "irregular": false }
+    },
+    {
+      "id": "es.verb.comer",
+      "lemma": "comer",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 20,
+      "tags": ["regular", "er"],
+      "gloss": { "pl": "jeść" },
+      "forms": { "irregular": false }
+    },
+    {
+      "id": "es.verb.beber",
+      "lemma": "beber",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 21,
+      "tags": ["regular", "er"],
+      "gloss": { "pl": "pić" },
+      "forms": { "irregular": false }
+    },
+    {
+      "id": "es.verb.leer",
+      "lemma": "leer",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 22,
+      "tags": ["regular", "er"],
+      "gloss": { "pl": "czytać" },
+      "forms": { "irregular": false }
+    },
+    {
+      "id": "es.verb.aprender",
+      "lemma": "aprender",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 23,
+      "tags": ["regular", "er"],
+      "gloss": { "pl": "uczyć się" },
+      "forms": { "irregular": false }
+    },
+    {
+      "id": "es.verb.vivir",
+      "lemma": "vivir",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 30,
+      "tags": ["regular", "ir"],
+      "gloss": { "pl": "mieszkać / żyć" },
+      "forms": { "irregular": false }
+    },
+    {
+      "id": "es.verb.escribir",
+      "lemma": "escribir",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 31,
+      "tags": ["regular", "ir"],
+      "gloss": { "pl": "pisać" },
+      "forms": { "irregular": false }
+    },
+    {
+      "id": "es.verb.recibir",
+      "lemma": "recibir",
+      "pos": "verb",
+      "cefr": "A2",
+      "freqRank": 32,
+      "tags": ["regular", "ir"],
+      "gloss": { "pl": "otrzymywać" },
+      "forms": { "irregular": false }
+    },
+    {
+      "id": "es.verb.ser",
+      "lemma": "ser",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 1,
+      "tags": ["irregular", "auxiliary"],
+      "gloss": { "pl": "być (cecha)" },
+      "forms": {
+        "irregular": true,
+        "present": { "1sg": "soy", "2sg": "eres", "3sg": "es", "1pl": "somos", "2pl": "sois", "3pl": "son" }
+      }
+    },
+    {
+      "id": "es.verb.estar",
+      "lemma": "estar",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 2,
+      "tags": ["irregular", "auxiliary"],
+      "gloss": { "pl": "być (stan / miejsce)" },
+      "forms": {
+        "irregular": true,
+        "present": { "1sg": "estoy", "2sg": "estás", "3sg": "está", "1pl": "estamos", "2pl": "estáis", "3pl": "están" }
+      }
+    }
+  ]
+}

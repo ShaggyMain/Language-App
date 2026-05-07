@@ -1,0 +1,69 @@
+{
+  "id": "de.verbs.sein-haben",
+  "language": "de",
+  "category": "verbs",
+  "title": "Sein i haben w Präsens",
+  "summary": "Dwa najczęstsze nieregularne czasowniki niemieckie.",
+  "cefrLevel": "A1",
+  "prerequisites": [],
+  "theory": [
+    {
+      "kind": "table",
+      "title": "sein (być)",
+      "headers": ["Osoba", "Forma"],
+      "rows": [
+        ["ich", "bin"],
+        ["du", "bist"],
+        ["er/sie/es", "ist"],
+        ["wir", "sind"],
+        ["ihr", "seid"],
+        ["sie/Sie", "sind"]
+      ]
+    },
+    {
+      "kind": "table",
+      "title": "haben (mieć)",
+      "headers": ["Osoba", "Forma"],
+      "rows": [
+        ["ich", "habe"],
+        ["du", "hast"],
+        ["er/sie/es", "hat"],
+        ["wir", "haben"],
+        ["ihr", "habt"],
+        ["sie/Sie", "haben"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Ich bin müde.", "translation": "Jestem zmęczony." },
+        { "source": "Sie hat einen Hund.", "translation": "Ona ma psa." },
+        { "source": "Wir sind zu Hause.", "translation": "Jesteśmy w domu." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Ich ___ (sein) Lehrer.",
+      "answers": ["bin"]
+    },
+    {
+      "type": "fill",
+      "prompt": "Du ___ (haben) ein Auto.",
+      "answers": ["hast"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Er ___ in Berlin.",
+      "options": ["bin", "bist", "ist", "sind"],
+      "answer": 2
+    },
+    {
+      "type": "mcq",
+      "prompt": "Wir ___ Zeit.",
+      "options": ["habt", "haben", "hat", "habst"],
+      "answer": 1
+    }
+  ]
+}

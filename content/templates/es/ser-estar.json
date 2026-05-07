@@ -1,0 +1,16 @@
+[
+  {
+    "id": "es.ser-estar.fill",
+    "topicId": "es.verbs.ser-estar",
+    "language": "es",
+    "produces": "fill",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "tags": ["pronoun"] } },
+      { "name": "verb", "pos": "verb", "filter": { "tags": ["auxiliary"] } }
+    ],
+    "pattern": "{subject} ___ ({verb}) aquí.",
+    "answerPatterns": ["{verb:present.agree(subject)}"],
+    "hint": "Odmień ser lub estar",
+    "tags": ["auxiliary"]
+  }
+]

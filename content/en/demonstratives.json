@@ -1,0 +1,52 @@
+{
+  "id": "en.pronouns.demonstratives",
+  "language": "en",
+  "category": "pronouns",
+  "title": "this / that / these / those",
+  "summary": "Pointing to things — near vs far, singular vs plural.",
+  "cefrLevel": "A1",
+  "prerequisites": [],
+  "theory": [
+    {
+      "kind": "table",
+      "title": "Demonstratives",
+      "headers": ["", "Singular", "Plural"],
+      "rows": [
+        ["near", "this", "these"],
+        ["far", "that", "those"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "This book is mine.", "translation": "Ta książka jest moja." },
+        { "source": "Those cars are fast.", "translation": "Tamte samochody są szybkie." },
+        { "source": "Are these your keys?", "translation": "Czy to są twoje klucze?" }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "___ book here is mine.",
+      "options": ["This", "These", "That", "Those"],
+      "answer": 0
+    },
+    {
+      "type": "mcq",
+      "prompt": "Look at ___ cars over there.",
+      "options": ["this", "that", "these", "those"],
+      "answer": 3
+    },
+    {
+      "type": "fill",
+      "prompt": "Are ___ (near / plural) your keys?",
+      "answers": ["these"]
+    },
+    {
+      "type": "fill",
+      "prompt": "I don't like ___ (far / singular) hat.",
+      "answers": ["that"]
+    }
+  ]
+}

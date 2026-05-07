@@ -1,0 +1,31 @@
+[
+  {
+    "id": "de.sein.fill",
+    "topicId": "de.verbs.sein-haben",
+    "language": "de",
+    "produces": "fill",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "tags": ["pronoun"] } },
+      { "name": "verb", "pos": "verb", "filter": { "tags": ["auxiliary"] } }
+    ],
+    "pattern": "{subject} ___ ({verb}) hier.",
+    "answerPatterns": ["{verb:present.agree(subject)}"],
+    "hint": "Odmień sein lub haben",
+    "tags": ["auxiliary"]
+  },
+  {
+    "id": "de.sein.mcq",
+    "topicId": "de.verbs.sein-haben",
+    "language": "de",
+    "produces": "mcq",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "tags": ["pronoun"] } },
+      { "name": "verb", "pos": "verb", "filter": { "tags": ["auxiliary"] } }
+    ],
+    "pattern": "{subject} ___ Lehrer.",
+    "answerPatterns": ["{verb:present.agree(subject)}"],
+    "distractorPatterns": ["{verb:present.agree.wrong(subject)}", "{verb:base}"],
+    "explanation": "sein/haben — odmiana nieregularna; uważaj na osobę.",
+    "tags": ["auxiliary"]
+  }
+]

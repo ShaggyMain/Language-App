@@ -1,0 +1,62 @@
+{
+  "id": "en.pronouns.possessives",
+  "language": "en",
+  "category": "pronouns",
+  "title": "Possessive adjectives",
+  "summary": "my, your, his, her, its, our, their.",
+  "cefrLevel": "A1",
+  "prerequisites": [],
+  "theory": [
+    {
+      "kind": "table",
+      "title": "Possessive adjectives",
+      "headers": ["Subject", "Possessive"],
+      "rows": [
+        ["I", "my"],
+        ["you", "your"],
+        ["he", "his"],
+        ["she", "her"],
+        ["it", "its"],
+        ["we", "our"],
+        ["they", "their"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "This is my book.", "translation": "To jest moja książka." },
+        { "source": "Her sister is a doctor.", "translation": "Jej siostra jest lekarką." },
+        { "source": "Their house is big.", "translation": "Ich dom jest duży." }
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "Watch out: **its** (possessive) ≠ **it's** (= it is)."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "I have a sister. ___ name is Anna.",
+      "answers": ["Her"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "We love ___ teacher.",
+      "options": ["us", "our", "ours", "we"],
+      "answer": 1
+    },
+    {
+      "type": "fill",
+      "prompt": "Tom is here with ___ friends.",
+      "answers": ["his"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "The dog is wagging ___ tail.",
+      "options": ["it's", "its", "his", "her"],
+      "answer": 1,
+      "explanation": "'its' (no apostrophe) is the possessive."
+    }
+  ]
+}

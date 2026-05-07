@@ -9,7 +9,7 @@
       "freqRank": 1,
       "tags": ["pronoun", "subject"],
       "gloss": { "pl": "ja" },
-      "forms": { "agreement": "1sg", "pronounSubject": "I", "pronounObject": "me" }
+      "forms": { "agreement": "1sg", "pronounSubject": "I", "pronounObject": "me", "possessiveAdj": "my", "possessivePron": "mine" }
     },
     {
       "id": "en.person.you-sg",
@@ -19,7 +19,7 @@
       "freqRank": 2,
       "tags": ["pronoun", "subject"],
       "gloss": { "pl": "ty" },
-      "forms": { "agreement": "2sg", "pronounSubject": "you", "pronounObject": "you" }
+      "forms": { "agreement": "2sg", "pronounSubject": "you", "pronounObject": "you", "possessiveAdj": "your", "possessivePron": "yours" }
     },
     {
       "id": "en.person.he",
@@ -29,7 +29,7 @@
       "freqRank": 3,
       "tags": ["pronoun", "subject"],
       "gloss": { "pl": "on" },
-      "forms": { "agreement": "3sg", "pronounSubject": "he", "pronounObject": "him" }
+      "forms": { "agreement": "3sg", "pronounSubject": "he", "pronounObject": "him", "possessiveAdj": "his", "possessivePron": "his" }
     },
     {
       "id": "en.person.she",
@@ -39,7 +39,7 @@
       "freqRank": 4,
       "tags": ["pronoun", "subject"],
       "gloss": { "pl": "ona" },
-      "forms": { "agreement": "3sg", "pronounSubject": "she", "pronounObject": "her" }
+      "forms": { "agreement": "3sg", "pronounSubject": "she", "pronounObject": "her", "possessiveAdj": "her", "possessivePron": "hers" }
     },
     {
       "id": "en.person.it",
@@ -49,7 +49,7 @@
       "freqRank": 5,
       "tags": ["pronoun", "subject"],
       "gloss": { "pl": "ono / to" },
-      "forms": { "agreement": "3sg", "pronounSubject": "it", "pronounObject": "it" }
+      "forms": { "agreement": "3sg", "pronounSubject": "it", "pronounObject": "it", "possessiveAdj": "its", "possessivePron": "its" }
     },
     {
       "id": "en.person.we",
@@ -59,7 +59,7 @@
       "freqRank": 6,
       "tags": ["pronoun", "subject"],
       "gloss": { "pl": "my" },
-      "forms": { "agreement": "1pl", "pronounSubject": "we", "pronounObject": "us" }
+      "forms": { "agreement": "1pl", "pronounSubject": "we", "pronounObject": "us", "possessiveAdj": "our", "possessivePron": "ours" }
     },
     {
       "id": "en.person.they",
@@ -69,7 +69,7 @@
       "freqRank": 7,
       "tags": ["pronoun", "subject"],
       "gloss": { "pl": "oni / one" },
-      "forms": { "agreement": "3pl", "pronounSubject": "they", "pronounObject": "them" }
+      "forms": { "agreement": "3pl", "pronounSubject": "they", "pronounObject": "them", "possessiveAdj": "their", "possessivePron": "theirs" }
     },
     {
       "id": "en.person.tom",

@@ -1,0 +1,31 @@
+[
+  {
+    "id": "en.comparatives.fill",
+    "topicId": "en.adjectives.comparatives",
+    "language": "en",
+    "produces": "fill",
+    "slots": [
+      { "name": "p1", "pos": "person", "filter": { "agreement": "3sg" } },
+      { "name": "p2", "pos": "person", "filter": { "agreement": "3sg" } },
+      { "name": "adj", "pos": "adj", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "{p1} is ___ ({adj}) than {p2}.",
+    "answerPatterns": ["{adj:comparative}"],
+    "hint": "Add -er or use 'more'",
+    "explanation": "Short adjectives: -er. Long: 'more'. Irregular: good→better, bad→worse.",
+    "tags": ["comparative"]
+  },
+  {
+    "id": "en.comparatives.mcq",
+    "topicId": "en.adjectives.comparatives",
+    "language": "en",
+    "produces": "mcq",
+    "slots": [
+      { "name": "adj", "pos": "adj", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "My car is ___ than yours.",
+    "answerPatterns": ["{adj:comparative}"],
+    "distractorPatterns": ["{adj}", "more {adj}", "{adj:superlative}"],
+    "tags": ["comparative"]
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "language": "en",
+  "entries": [
+    {
+      "id": "en.prep.in",
+      "lemma": "in",
+      "pos": "preposition",
+      "cefr": "A1",
+      "freqRank": 600,
+      "tags": ["place", "time"],
+      "gloss": { "pl": "w" }
+    },
+    {
+      "id": "en.prep.on",
+      "lemma": "on",
+      "pos": "preposition",
+      "cefr": "A1",
+      "freqRank": 601,
+      "tags": ["place", "time"],
+      "gloss": { "pl": "na" }
+    },
+    {
+      "id": "en.prep.at",
+      "lemma": "at",
+      "pos": "preposition",
+      "cefr": "A1",
+      "freqRank": 602,
+      "tags": ["place", "time"],
+      "gloss": { "pl": "w / przy" }
+    },
+    {
+      "id": "en.prep.under",
+      "lemma": "under",
+      "pos": "preposition",
+      "cefr": "A1",
+      "freqRank": 603,
+      "tags": ["place"],
+      "gloss": { "pl": "pod" }
+    },
+    {
+      "id": "en.prep.next-to",
+      "lemma": "next to",
+      "pos": "preposition",
+      "cefr": "A1",
+      "freqRank": 604,
+      "tags": ["place"],
+      "gloss": { "pl": "obok" }
+    },
+    {
+      "id": "en.prep.behind",
+      "lemma": "behind",
+      "pos": "preposition",
+      "cefr": "A2",
+      "freqRank": 605,
+      "tags": ["place"],
+      "gloss": { "pl": "za" }
+    }
+  ]
+}

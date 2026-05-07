@@ -1,0 +1,30 @@
+[
+  {
+    "id": "en.articles.a-an-fill",
+    "topicId": "en.articles.indefinite",
+    "language": "en",
+    "produces": "fill",
+    "slots": [
+      { "name": "noun", "pos": "noun", "filter": { "countable": true, "cefrMax": "A2" } }
+    ],
+    "pattern": "I have ___ {noun}.",
+    "answerPatterns": ["{noun:article} {noun}"],
+    "hint": "a / an + noun",
+    "explanation": "'a' before consonant sounds, 'an' before vowel sounds.",
+    "tags": ["a-an"]
+  },
+  {
+    "id": "en.articles.a-an-mcq",
+    "topicId": "en.articles.indefinite",
+    "language": "en",
+    "produces": "mcq",
+    "slots": [
+      { "name": "noun", "pos": "noun", "filter": { "countable": true, "cefrMax": "A2" } }
+    ],
+    "pattern": "She bought ___ {noun}.",
+    "answerPatterns": ["{noun:article}"],
+    "distractorPatterns": ["{noun:article.wrong}", "the", "—"],
+    "explanation": "'a' before consonant sounds, 'an' before vowel sounds.",
+    "tags": ["a-an"]
+  }
+]

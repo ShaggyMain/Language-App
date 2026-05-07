@@ -1,0 +1,125 @@
+{
+  "language": "de",
+  "entries": [
+    {
+      "id": "de.noun.mann",
+      "lemma": "Mann",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 100,
+      "tags": ["person"],
+      "gloss": { "pl": "mężczyzna" },
+      "forms": { "gender": "m", "articleNom": "der", "articleAkk": "den", "plural": "Männer" }
+    },
+    {
+      "id": "de.noun.frau",
+      "lemma": "Frau",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 101,
+      "tags": ["person"],
+      "gloss": { "pl": "kobieta" },
+      "forms": { "gender": "f", "articleNom": "die", "articleAkk": "die", "plural": "Frauen" }
+    },
+    {
+      "id": "de.noun.kind",
+      "lemma": "Kind",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 102,
+      "tags": ["person"],
+      "gloss": { "pl": "dziecko" },
+      "forms": { "gender": "n", "articleNom": "das", "articleAkk": "das", "plural": "Kinder" }
+    },
+    {
+      "id": "de.noun.hund",
+      "lemma": "Hund",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 103,
+      "tags": ["animal"],
+      "gloss": { "pl": "pies" },
+      "forms": { "gender": "m", "articleNom": "der", "articleAkk": "den", "plural": "Hunde" }
+    },
+    {
+      "id": "de.noun.katze",
+      "lemma": "Katze",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 104,
+      "tags": ["animal"],
+      "gloss": { "pl": "kot" },
+      "forms": { "gender": "f", "articleNom": "die", "articleAkk": "die", "plural": "Katzen" }
+    },
+    {
+      "id": "de.noun.buch",
+      "lemma": "Buch",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 105,
+      "tags": ["object"],
+      "gloss": { "pl": "książka" },
+      "forms": { "gender": "n", "articleNom": "das", "articleAkk": "das", "plural": "Bücher" }
+    },
+    {
+      "id": "de.noun.haus",
+      "lemma": "Haus",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 106,
+      "tags": ["object", "place"],
+      "gloss": { "pl": "dom" },
+      "forms": { "gender": "n", "articleNom": "das", "articleAkk": "das", "plural": "Häuser" }
+    },
+    {
+      "id": "de.noun.auto",
+      "lemma": "Auto",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 107,
+      "tags": ["object", "vehicle"],
+      "gloss": { "pl": "samochód" },
+      "forms": { "gender": "n", "articleNom": "das", "articleAkk": "das", "plural": "Autos" }
+    },
+    {
+      "id": "de.noun.tisch",
+      "lemma": "Tisch",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 108,
+      "tags": ["object"],
+      "gloss": { "pl": "stół" },
+      "forms": { "gender": "m", "articleNom": "der", "articleAkk": "den", "plural": "Tische" }
+    },
+    {
+      "id": "de.noun.lampe",
+      "lemma": "Lampe",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 109,
+      "tags": ["object"],
+      "gloss": { "pl": "lampa" },
+      "forms": { "gender": "f", "articleNom": "die", "articleAkk": "die", "plural": "Lampen" }
+    },
+    {
+      "id": "de.noun.apfel",
+      "lemma": "Apfel",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 110,
+      "tags": ["food"],
+      "gloss": { "pl": "jabłko" },
+      "forms": { "gender": "m", "articleNom": "der", "articleAkk": "den", "plural": "Äpfel" }
+    },
+    {
+      "id": "de.noun.brot",
+      "lemma": "Brot",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 111,
+      "tags": ["food"],
+      "gloss": { "pl": "chleb" },
+      "forms": { "gender": "n", "articleNom": "das", "articleAkk": "das", "plural": "Brote" }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "en.articles.indefinite",
+  "language": "en",
+  "category": "articles",
+  "title": "Articles: a / an",
+  "summary": "Use 'a' before consonant sounds, 'an' before vowel sounds.",
+  "cefrLevel": "A1",
+  "prerequisites": [],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "We use **a** before words starting with a *consonant sound*, and **an** before words starting with a *vowel sound*.\n\nNote: it's about the **sound**, not the letter — *an hour* (silent h), *a university* ('y' sound)."
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "I have a dog.", "translation": "Mam psa." },
+        { "source": "She eats an apple every morning.", "translation": "Ona je codziennie jabłko." },
+        { "source": "He bought a new car.", "translation": "Kupił nowy samochód." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "I have ___ umbrella.",
+      "options": ["a", "an", "the", "—"],
+      "answer": 1,
+      "explanation": "'umbrella' starts with a vowel sound."
+    },
+    {
+      "type": "mcq",
+      "prompt": "She is ___ teacher.",
+      "options": ["a", "an", "the", "—"],
+      "answer": 0
+    },
+    {
+      "type": "fill",
+      "prompt": "He is ___ honest man.",
+      "answers": ["an"],
+      "hint": "silent h"
+    },
+    {
+      "type": "fill",
+      "prompt": "We watched ___ interesting movie.",
+      "answers": ["an"]
+    }
+  ]
+}

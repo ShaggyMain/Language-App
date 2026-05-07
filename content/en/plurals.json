@@ -1,0 +1,50 @@
+{
+  "id": "en.parts-of-speech.plurals",
+  "language": "en",
+  "category": "parts-of-speech",
+  "title": "Plurals",
+  "summary": "How to make nouns plural in English.",
+  "cefrLevel": "A1",
+  "prerequisites": [],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "Most nouns add **-s** to form the plural. Nouns ending in *-s, -x, -z, -ch, -sh* add **-es**. Nouns ending in *consonant + y* change to **-ies**.\n\nIrregular plurals: *child → children, man → men, woman → women, foot → feet, mouse → mice*."
+    },
+    {
+      "kind": "table",
+      "title": "Examples",
+      "headers": ["Singular", "Plural"],
+      "rows": [
+        ["car", "cars"],
+        ["box", "boxes"],
+        ["baby", "babies"],
+        ["child", "children"],
+        ["man", "men"]
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Plural of 'book': ___",
+      "answers": ["books"]
+    },
+    {
+      "type": "fill",
+      "prompt": "Plural of 'child': ___",
+      "answers": ["children"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Plural of 'box':",
+      "options": ["boxs", "boxes", "boxies", "boxen"],
+      "answer": 1
+    },
+    {
+      "type": "fill",
+      "prompt": "Plural of 'baby': ___",
+      "answers": ["babies"]
+    }
+  ]
+}

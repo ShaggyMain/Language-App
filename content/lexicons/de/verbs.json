@@ -1,0 +1,127 @@
+{
+  "language": "de",
+  "entries": [
+    {
+      "id": "de.verb.sein",
+      "lemma": "sein",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 1,
+      "tags": ["irregular", "auxiliary"],
+      "gloss": { "pl": "być" },
+      "forms": {
+        "irregular": true,
+        "present": { "1sg": "bin", "2sg": "bist", "3sg": "ist", "1pl": "sind", "2pl": "seid", "3pl": "sind" }
+      }
+    },
+    {
+      "id": "de.verb.haben",
+      "lemma": "haben",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 2,
+      "tags": ["irregular", "auxiliary"],
+      "gloss": { "pl": "mieć" },
+      "forms": {
+        "irregular": true,
+        "present": { "1sg": "habe", "2sg": "hast", "3sg": "hat", "1pl": "haben", "2pl": "habt", "3pl": "haben" }
+      }
+    },
+    {
+      "id": "de.verb.machen",
+      "lemma": "machen",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 10,
+      "tags": ["regular"],
+      "gloss": { "pl": "robić" },
+      "forms": { "irregular": false, "present": { "3sg": "macht" } }
+    },
+    {
+      "id": "de.verb.spielen",
+      "lemma": "spielen",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 11,
+      "tags": ["regular"],
+      "gloss": { "pl": "grać / bawić się" },
+      "forms": { "irregular": false, "present": { "3sg": "spielt" } }
+    },
+    {
+      "id": "de.verb.lernen",
+      "lemma": "lernen",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 12,
+      "tags": ["regular"],
+      "gloss": { "pl": "uczyć się" },
+      "forms": { "irregular": false, "present": { "3sg": "lernt" } }
+    },
+    {
+      "id": "de.verb.kaufen",
+      "lemma": "kaufen",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 13,
+      "tags": ["regular"],
+      "gloss": { "pl": "kupować" },
+      "forms": { "irregular": false, "present": { "3sg": "kauft" } }
+    },
+    {
+      "id": "de.verb.kochen",
+      "lemma": "kochen",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 14,
+      "tags": ["regular"],
+      "gloss": { "pl": "gotować" },
+      "forms": { "irregular": false, "present": { "3sg": "kocht" } }
+    },
+    {
+      "id": "de.verb.wohnen",
+      "lemma": "wohnen",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 15,
+      "tags": ["regular"],
+      "gloss": { "pl": "mieszkać" },
+      "forms": { "irregular": false, "present": { "3sg": "wohnt" } }
+    },
+    {
+      "id": "de.verb.arbeiten",
+      "lemma": "arbeiten",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 16,
+      "tags": ["regular"],
+      "gloss": { "pl": "pracować" },
+      "forms": {
+        "irregular": false,
+        "present": { "1sg": "arbeite", "2sg": "arbeitest", "3sg": "arbeitet", "1pl": "arbeiten", "2pl": "arbeitet", "3pl": "arbeiten" }
+      }
+    },
+    {
+      "id": "de.verb.suchen",
+      "lemma": "suchen",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 17,
+      "tags": ["regular"],
+      "gloss": { "pl": "szukać" },
+      "forms": { "irregular": false, "present": { "3sg": "sucht" } }
+    },
+    {
+      "id": "de.verb.sehen",
+      "lemma": "sehen",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 18,
+      "tags": ["irregular"],
+      "gloss": { "pl": "widzieć" },
+      "forms": {
+        "irregular": true,
+        "present": { "1sg": "sehe", "2sg": "siehst", "3sg": "sieht", "1pl": "sehen", "2pl": "seht", "3pl": "sehen" }
+      }
+    }
+  ]
+}

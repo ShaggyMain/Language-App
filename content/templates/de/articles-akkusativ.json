@@ -1,0 +1,29 @@
+[
+  {
+    "id": "de.articles.akkusativ-mcq",
+    "topicId": "de.articles.akkusativ",
+    "language": "de",
+    "produces": "mcq",
+    "slots": [
+      { "name": "noun", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "Ich sehe ___ {noun}.",
+    "answerPatterns": ["{noun:art.akk}"],
+    "distractorPatterns": ["{noun:art.akk.wrong}", "{noun:art.nom}", "ein"],
+    "explanation": "Akkusativ: tylko rodzaj męski zmienia się na 'den'.",
+    "tags": ["akkusativ"]
+  },
+  {
+    "id": "de.articles.akkusativ-fill",
+    "topicId": "de.articles.akkusativ",
+    "language": "de",
+    "produces": "fill",
+    "slots": [
+      { "name": "noun", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "Ich kaufe ___ {noun}.",
+    "answerPatterns": ["{noun:art.akk}"],
+    "hint": "Akkusativ — der → den, die/das bez zmian",
+    "tags": ["akkusativ"]
+  }
+]

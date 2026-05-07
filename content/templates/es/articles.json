@@ -1,0 +1,28 @@
+[
+  {
+    "id": "es.articles.fill",
+    "topicId": "es.articles.definite",
+    "language": "es",
+    "produces": "fill",
+    "slots": [
+      { "name": "noun", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "___ {noun} es nuevo.",
+    "answerPatterns": ["{noun:article}"],
+    "hint": "el / la (singular)",
+    "tags": ["definite"]
+  },
+  {
+    "id": "es.articles.mcq",
+    "topicId": "es.articles.definite",
+    "language": "es",
+    "produces": "mcq",
+    "slots": [
+      { "name": "noun", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "Veo ___ {noun}.",
+    "answerPatterns": ["{noun:article}"],
+    "distractorPatterns": ["{noun:article.wrong}", "un", "una"],
+    "tags": ["definite"]
+  }
+]

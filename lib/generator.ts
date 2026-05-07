@@ -20,6 +20,8 @@ import type {
   TopicTemplate,
 } from "./types";
 import { applyInflector as applyEn, type InflectCtx } from "./inflect/en";
+import { applyInflector as applyDe } from "./inflect/de";
+import { applyInflector as applyEs } from "./inflect/es";
 
 const CEFR_ORDER: CefrLevel[] = ["A1", "A2", "B1", "B2", "C1"];
 
@@ -37,6 +39,7 @@ export function buildLexiconBundle(language: Language, lexicons: Lexicon[]): Lex
     person: [],
     place: [],
     time: [],
+    preposition: [],
   };
   const byId: Record<string, LexiconEntry> = {};
   for (const lex of lexicons) {
@@ -117,6 +120,8 @@ function entryMatches(entry: LexiconEntry, slot: Slot): boolean {
   if (f.countable !== undefined && entry.forms?.countable !== f.countable) return false;
   if (f.agreement && entry.forms?.agreement !== f.agreement) return false;
   if (f.article && entry.forms?.article !== f.article) return false;
+  if (f.gender && entry.forms?.gender !== f.gender) return false;
+  if (f.category && entry.forms?.category !== f.category) return false;
   return true;
 }
 
@@ -132,6 +137,10 @@ function getInflector(language: Language) {
   switch (language) {
     case "en":
       return applyEn;
+    case "de":
+      return applyDe;
+    case "es":
+      return applyEs;
     default:
       throw new Error(`No inflection registry for language "${language}"`);
   }

@@ -1,0 +1,85 @@
+{
+  "language": "de",
+  "entries": [
+    {
+      "id": "de.person.ich",
+      "lemma": "ich",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 1,
+      "tags": ["pronoun"],
+      "gloss": { "pl": "ja" },
+      "forms": { "agreement": "1sg", "pronounSubject": "ich", "pronounObject": "mich" }
+    },
+    {
+      "id": "de.person.du",
+      "lemma": "du",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 2,
+      "tags": ["pronoun"],
+      "gloss": { "pl": "ty" },
+      "forms": { "agreement": "2sg", "pronounSubject": "du", "pronounObject": "dich" }
+    },
+    {
+      "id": "de.person.er",
+      "lemma": "er",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 3,
+      "tags": ["pronoun"],
+      "gloss": { "pl": "on" },
+      "forms": { "agreement": "3sg", "pronounSubject": "er", "pronounObject": "ihn" }
+    },
+    {
+      "id": "de.person.sie-sg",
+      "lemma": "sie",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 4,
+      "tags": ["pronoun"],
+      "gloss": { "pl": "ona" },
+      "forms": { "agreement": "3sg", "pronounSubject": "sie", "pronounObject": "sie" }
+    },
+    {
+      "id": "de.person.es",
+      "lemma": "es",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 5,
+      "tags": ["pronoun"],
+      "gloss": { "pl": "ono" },
+      "forms": { "agreement": "3sg", "pronounSubject": "es", "pronounObject": "es" }
+    },
+    {
+      "id": "de.person.wir",
+      "lemma": "wir",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 6,
+      "tags": ["pronoun"],
+      "gloss": { "pl": "my" },
+      "forms": { "agreement": "1pl", "pronounSubject": "wir", "pronounObject": "uns" }
+    },
+    {
+      "id": "de.person.ihr",
+      "lemma": "ihr",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 7,
+      "tags": ["pronoun"],
+      "gloss": { "pl": "wy" },
+      "forms": { "agreement": "2pl", "pronounSubject": "ihr", "pronounObject": "euch" }
+    },
+    {
+      "id": "de.person.sie-pl",
+      "lemma": "sie",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 8,
+      "tags": ["pronoun"],
+      "gloss": { "pl": "oni / one" },
+      "forms": { "agreement": "3pl", "pronounSubject": "sie", "pronounObject": "sie" }
+    }
+  ]
+}

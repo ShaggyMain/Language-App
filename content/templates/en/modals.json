@@ -1,0 +1,40 @@
+[
+  {
+    "id": "en.modals.can-mcq",
+    "topicId": "en.verbs.modals-can-must",
+    "language": "en",
+    "produces": "mcq",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "{subject} ___ {verb} very well.",
+    "answerPatterns": ["can {verb}"],
+    "distractorPatterns": [
+      "cans {verb}",
+      "can {verb:present.3sg}",
+      "is can {verb}"
+    ],
+    "explanation": "Modal 'can' is followed by the base form (no -s, no 'to').",
+    "tags": ["can"]
+  },
+  {
+    "id": "en.modals.must-mcq",
+    "topicId": "en.verbs.modals-can-must",
+    "language": "en",
+    "produces": "mcq",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "{subject} ___ {verb} now.",
+    "answerPatterns": ["must {verb}"],
+    "distractorPatterns": [
+      "must to {verb}",
+      "musts {verb}",
+      "must {verb:present.3sg}"
+    ],
+    "explanation": "Modal 'must' is followed by the base form (no 'to').",
+    "tags": ["must"]
+  }
+]

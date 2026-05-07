@@ -1,0 +1,50 @@
+{
+  "id": "de.articles.nominativ",
+  "language": "de",
+  "category": "articles",
+  "title": "Rodzajniki: der / die / das (Nominativ)",
+  "summary": "Rodzajniki określone w mianowniku — zależą od rodzaju rzeczownika.",
+  "cefrLevel": "A1",
+  "prerequisites": [],
+  "theory": [
+    {
+      "kind": "table",
+      "title": "Rodzajnik określony w mianowniku",
+      "headers": ["Rodzaj", "Rodzajnik", "Przykład"],
+      "rows": [
+        ["męski (m)", "der", "der Mann (mężczyzna)"],
+        ["żeński (f)", "die", "die Frau (kobieta)"],
+        ["nijaki (n)", "das", "das Kind (dziecko)"],
+        ["liczba mnoga", "die", "die Männer / die Frauen / die Kinder"]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "W niemieckim **rodzaj rzeczownika** trzeba zapamiętać razem z rzeczownikiem. Pomocnik: rzeczowniki na *-e* są często rodzaju żeńskiego (*die Lampe*), na *-chen / -lein* — nijakiego (*das Mädchen*).\n\nMianownik (Nominativ) to forma podstawowa — używamy go dla podmiotu zdania."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "___ Mann ist groß.",
+      "options": ["Der", "Die", "Das", "Den"],
+      "answer": 0
+    },
+    {
+      "type": "mcq",
+      "prompt": "___ Frau arbeitet hier.",
+      "options": ["Der", "Die", "Das", "Den"],
+      "answer": 1
+    },
+    {
+      "type": "fill",
+      "prompt": "___ Kind spielt im Garten.",
+      "answers": ["Das"]
+    },
+    {
+      "type": "fill",
+      "prompt": "___ Buch ist neu.",
+      "answers": ["Das"]
+    }
+  ]
+}

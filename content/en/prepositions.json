@@ -1,0 +1,61 @@
+{
+  "id": "en.prepositions.place-time",
+  "language": "en",
+  "category": "prepositions",
+  "title": "Prepositions: in, on, at",
+  "summary": "Choosing the right preposition for place and time.",
+  "cefrLevel": "A1",
+  "prerequisites": [],
+  "theory": [
+    {
+      "kind": "table",
+      "title": "Place",
+      "headers": ["Preposition", "When to use", "Example"],
+      "rows": [
+        ["in", "enclosed space, country, city", "in London, in the box"],
+        ["on", "surfaces, streets", "on the table, on Main Street"],
+        ["at", "specific point, addresses", "at the door, at home"]
+      ]
+    },
+    {
+      "kind": "table",
+      "title": "Time",
+      "headers": ["Preposition", "When to use", "Example"],
+      "rows": [
+        ["in", "months, years, parts of day", "in May, in 2020, in the morning"],
+        ["on", "days, dates", "on Monday, on July 4"],
+        ["at", "exact times, night", "at 7 o'clock, at night"]
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "I live ___ Warsaw.",
+      "options": ["in", "on", "at", "to"],
+      "answer": 0
+    },
+    {
+      "type": "mcq",
+      "prompt": "The book is ___ the table.",
+      "options": ["in", "on", "at", "to"],
+      "answer": 1
+    },
+    {
+      "type": "fill",
+      "prompt": "We meet ___ Monday.",
+      "answers": ["on"]
+    },
+    {
+      "type": "fill",
+      "prompt": "The train arrives ___ 9 o'clock.",
+      "answers": ["at"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "She was born ___ 1995.",
+      "options": ["in", "on", "at", "—"],
+      "answer": 0
+    }
+  ]
+}
