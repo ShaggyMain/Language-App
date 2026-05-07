@@ -9,7 +9,7 @@
       { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } },
       { "name": "obj", "pos": "noun", "filter": { "cefrMax": "A2" } }
     ],
-    "pattern": "{subject} ___ {obj}.",
+    "pattern": "{subject} ___ ({verb}) {obj}.",
     "answerPatterns": ["{verb:present.agree(subject)}"],
     "hint": "Present Simple — affirmative",
     "explanation": "Use 3rd person -s/-es with he/she/it; base form for I/you/we/they.",
@@ -45,7 +45,7 @@
       { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } },
       { "name": "obj", "pos": "noun", "filter": { "cefrMax": "A2" } }
     ],
-    "pattern": "{subject} ___ {obj}.",
+    "pattern": "{subject} ___ ({verb} — negative) {obj}.",
     "answerPatterns": ["{verb:do.negate(subject)}"],
     "hint": "Negative form: don't / doesn't + base verb",
     "explanation": "Use 'doesn't' with he/she/it, 'don't' otherwise. Verb stays in base form.",
