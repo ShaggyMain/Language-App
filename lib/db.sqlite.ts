@@ -50,6 +50,15 @@ CREATE TABLE IF NOT EXISTS session_log (
   finished_at INTEGER,
   summary_json TEXT
 );
+
+CREATE TABLE IF NOT EXISTS passed_lessons (
+  user_id TEXT NOT NULL,
+  topic_id TEXT NOT NULL,
+  first_passed_at INTEGER NOT NULL,
+  last_passed_at INTEGER NOT NULL,
+  pass_count INTEGER NOT NULL DEFAULT 1,
+  PRIMARY KEY (user_id, topic_id)
+);
 `;
 
 type CardRow = {
@@ -207,6 +216,23 @@ export async function createSqliteRepos(): Promise<Repos> {
         `UPDATE session_log SET finished_at = ?, summary_json = ? WHERE id = ?`,
         [finishedAt, JSON.stringify(summary), sessionId],
       );
+    },
+    async markPassed({ userId, topicId, at }) {
+      await db.runAsync(
+        `INSERT INTO passed_lessons (user_id, topic_id, first_passed_at, last_passed_at, pass_count)
+         VALUES (?, ?, ?, ?, 1)
+         ON CONFLICT(user_id, topic_id) DO UPDATE SET
+           last_passed_at = excluded.last_passed_at,
+           pass_count = pass_count + 1`,
+        [userId, topicId, at, at],
+      );
+    },
+    async passedTopicIds(userId) {
+      const rows = await db.getAllAsync<{ topic_id: string }>(
+        `SELECT topic_id FROM passed_lessons WHERE user_id = ?`,
+        [userId],
+      );
+      return new Set(rows.map((r) => r.topic_id));
     },
   };
 
