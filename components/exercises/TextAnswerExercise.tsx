@@ -1,7 +1,8 @@
 import { ReactNode, useState } from "react";
-import { Pressable, Text, TextInput, View } from "react-native";
+import { Text, TextInput, View } from "react-native";
 import { grade, type GradeResult } from "../../lib/grading";
 import { useTheme } from "../../lib/theme";
+import { PrimaryButton } from "../ui/PrimaryButton";
 
 type Props = {
   /** Header rendered above the input (instruction, source sentence, audio button, etc.). */
@@ -57,15 +58,9 @@ export function TextAnswerExercise({
         returnKeyType="done"
       />
       {!locked ? (
-        <Pressable
-          onPress={handle}
-          disabled={!value.trim()}
-          className={`mt-5 rounded-xl px-4 py-4 items-center ${value.trim() ? "bg-en" : "bg-surface border border-border"}`}
-        >
-          <Text className={`${value.trim() ? "text-white" : "text-muted"} text-base font-semibold`}>
-            Check
-          </Text>
-        </Pressable>
+        <View className="mt-6">
+          <PrimaryButton label="Check" onPress={handle} disabled={!value.trim()} />
+        </View>
       ) : null}
     </View>
   );

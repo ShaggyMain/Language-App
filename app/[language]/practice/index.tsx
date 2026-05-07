@@ -22,7 +22,8 @@ export default function PracticeScreen() {
     let cancelled = false;
     async function refresh() {
       const repos = await getRepos();
-      const m = await masteryMap(repos, currentUserId(), topics.map((t) => t.id));
+      const langTopics = parsed.success ? topicsForLanguage(lang) : [];
+      const m = await masteryMap(repos, currentUserId(), langTopics.map((t) => t.id));
       if (!cancelled) setMastery(m);
     }
     void refresh();
@@ -31,7 +32,8 @@ export default function PracticeScreen() {
       cancelled = true;
       unsub();
     };
-  }, [topics]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lang]);
 
   if (!parsed.success) return null;
   const meta = languageMeta(lang);

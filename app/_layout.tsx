@@ -1,6 +1,5 @@
 import "../global.css";
 import { useEffect } from "react";
-import { View } from "react-native";
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { SafeAreaProvider } from "react-native-safe-area-context";
@@ -8,7 +7,6 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { refreshAuthState, subscribeAuthState } from "../lib/auth";
 import { getRepos } from "../lib/db";
 import { syncPull } from "../lib/sync";
-import { THEME_VARS, useTheme } from "../lib/theme";
 
 export default function RootLayout() {
   useEffect(() => {
@@ -23,28 +21,24 @@ export default function RootLayout() {
     };
   }, []);
 
-  const { name, colors } = useTheme();
-
   return (
-    <GestureHandlerRootView style={[{ flex: 1 }, THEME_VARS[name]]}>
+    <GestureHandlerRootView style={{ flex: 1 }}>
       <SafeAreaProvider>
-        <StatusBar style={name === "dark" ? "light" : "dark"} />
-        <View style={[{ flex: 1, backgroundColor: colors.bg }, THEME_VARS[name]]}>
-          <Stack
-            screenOptions={{
-              headerStyle: { backgroundColor: colors.bg },
-              headerTintColor: colors.text,
-              contentStyle: { backgroundColor: colors.bg },
-            }}
-          >
-            <Stack.Screen name="index" options={{ headerShown: false }} />
-            <Stack.Screen name="onboarding" options={{ headerShown: false }} />
-            <Stack.Screen name="[language]" options={{ headerShown: false }} />
-            <Stack.Screen name="settings" options={{ title: "Settings" }} />
-            <Stack.Screen name="login" options={{ title: "Sign in" }} />
-            <Stack.Screen name="register" options={{ title: "Create account" }} />
-          </Stack>
-        </View>
+        <StatusBar style="light" />
+        <Stack
+          screenOptions={{
+            headerStyle: { backgroundColor: "#0b1220" },
+            headerTintColor: "#e6ecf5",
+            contentStyle: { backgroundColor: "#0b1220" },
+          }}
+        >
+          <Stack.Screen name="index" options={{ headerShown: false }} />
+          <Stack.Screen name="onboarding" options={{ headerShown: false }} />
+          <Stack.Screen name="[language]" options={{ headerShown: false }} />
+          <Stack.Screen name="settings" options={{ title: "Settings" }} />
+          <Stack.Screen name="login" options={{ title: "Sign in" }} />
+          <Stack.Screen name="register" options={{ title: "Create account" }} />
+        </Stack>
       </SafeAreaProvider>
     </GestureHandlerRootView>
   );

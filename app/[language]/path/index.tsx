@@ -26,8 +26,9 @@ export default function PathScreen() {
     async function refresh() {
       const repos = await getRepos();
       const uid = currentUserId();
+      const langTopics = parsed.success ? topicsForLanguage(lang) : [];
       const set = await repos.log.passedTopicIds(uid);
-      const mast = await masteryMap(repos, uid, topics.map((t) => t.id));
+      const mast = await masteryMap(repos, uid, langTopics.map((t) => t.id));
       if (!cancelled) {
         setPassed(set);
         setMastery(mast);
@@ -39,7 +40,8 @@ export default function PathScreen() {
       cancelled = true;
       unsub();
     };
-  }, [topics]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lang]);
 
   if (!parsed.success || !meta) return null;
 

@@ -1,7 +1,8 @@
 import { useEffect, useRef } from "react";
-import { Pressable, Text, View } from "react-native";
+import { Text, View } from "react-native";
 import type { GradeResult } from "../../lib/grading";
 import { errorHaptic, successHaptic, warningHaptic } from "../../lib/haptics";
+import { PrimaryButton } from "../ui/PrimaryButton";
 
 type Props = {
   result: GradeResult;
@@ -63,9 +64,9 @@ export function ResultSheet({ result, explanation, onNext, canonical }: Props) {
         </View>
       ) : null}
       {explanation ? <Text className="text-muted text-sm mb-3">{explanation}</Text> : null}
-      <Pressable onPress={onNext} className="bg-en rounded-xl py-3 items-center">
-        <Text className="text-white text-base font-semibold">Continue</Text>
-      </Pressable>
+      <View className="mt-1">
+        <PrimaryButton label="Continue" onPress={onNext} color={result.correct ? "#22c55e" : "#3b82f6"} />
+      </View>
     </View>
   );
 }

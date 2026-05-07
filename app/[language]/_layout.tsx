@@ -1,12 +1,6 @@
-import { Stack, useLocalSearchParams } from "expo-router";
-import { Language } from "../../lib/types";
-import { languageMeta } from "../../lib/languages";
+import { Stack } from "expo-router";
 
 export default function LanguageLayout() {
-  const { language } = useLocalSearchParams<{ language: string }>();
-  const parsed = Language.safeParse(language);
-  const title = parsed.success ? languageMeta(parsed.data).name : "Course";
-
   return (
     <Stack
       screenOptions={{
@@ -15,7 +9,7 @@ export default function LanguageLayout() {
         contentStyle: { backgroundColor: "#0b1220" },
       }}
     >
-      <Stack.Screen name="index" options={{ title }} />
+      <Stack.Screen name="index" options={{ headerShown: false }} />
       <Stack.Screen name="path/index" options={{ title: "Path" }} />
       <Stack.Screen name="path/[lessonId]" options={{ title: "Lesson" }} />
       <Stack.Screen name="study/index" options={{ title: "Study" }} />
