@@ -1,0 +1,47 @@
+{
+  "id": "en.verbs.modals-can-must",
+  "language": "en",
+  "category": "verbs",
+  "title": "Modals: can, must",
+  "summary": "Talking about ability and obligation.",
+  "cefrLevel": "A2",
+  "prerequisites": [],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "Modal verbs sit between the subject and the main verb. The main verb stays in **base form** (no -s, no -ing).\n\n- **can** = ability (\"be able to\"). *I can swim.*\n- **must** = strong obligation. *You must wear a helmet.*\n- **can't** = inability/prohibition. *He can't drive.*\n- **mustn't** = prohibition. *You mustn't smoke here.*\n\nNo *do/does* in negatives or questions: *Can you swim? — Yes, I can.*"
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "She can speak three languages.", "translation": "Mówi trzema językami." },
+        { "source": "You must finish your homework.", "translation": "Musisz skończyć zadanie domowe." },
+        { "source": "Can you help me?", "translation": "Możesz mi pomóc?" }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "I ___ (be able / swim) very well.",
+      "answers": ["can swim"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "She ___ speak French.",
+      "options": ["cans", "can", "can to", "is can"],
+      "answer": 1
+    },
+    {
+      "type": "fill",
+      "prompt": "You ___ (obligation / wear) a helmet here.",
+      "answers": ["must wear"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "We ___ to leave now.",
+      "options": ["must", "must to", "musts", "are must"],
+      "answer": 0
+    }
+  ]
+}

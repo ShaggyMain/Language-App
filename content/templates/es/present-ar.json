@@ -1,0 +1,30 @@
+[
+  {
+    "id": "es.present-ar.fill",
+    "topicId": "es.tenses.present-ar",
+    "language": "es",
+    "produces": "fill",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "tags": ["pronoun"] } },
+      { "name": "verb", "pos": "verb", "filter": { "tags": ["ar"] } }
+    ],
+    "pattern": "{subject} ___ ({verb}) hoy.",
+    "answerPatterns": ["{verb:present.agree(subject)}"],
+    "hint": "-o / -as / -a / -amos / -áis / -an",
+    "tags": ["ar"]
+  },
+  {
+    "id": "es.present-ar.mcq",
+    "topicId": "es.tenses.present-ar",
+    "language": "es",
+    "produces": "mcq",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "tags": ["pronoun"] } },
+      { "name": "verb", "pos": "verb", "filter": { "tags": ["ar"] } }
+    ],
+    "pattern": "{subject} ___ todos los días.",
+    "answerPatterns": ["{verb:present.agree(subject)}"],
+    "distractorPatterns": ["{verb:present.agree.wrong(subject)}", "{verb:base}"],
+    "tags": ["ar"]
+  }
+]

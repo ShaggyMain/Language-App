@@ -1,0 +1,58 @@
+{
+  "id": "en.tenses.present-continuous",
+  "language": "en",
+  "category": "tenses",
+  "title": "Present Continuous",
+  "summary": "Actions happening right now or around now.",
+  "cefrLevel": "A1",
+  "prerequisites": ["en.tenses.present-simple"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Present Continuous** = *am/is/are* + verb-**ing**. Use for actions happening at this moment, or temporary situations.\n\nForm:\n- I **am** working.\n- He/She/It **is** working.\n- You/We/They **are** working."
+    },
+    {
+      "kind": "table",
+      "title": "Conjugation: to read",
+      "headers": ["Person", "Form"],
+      "rows": [
+        ["I", "I am reading"],
+        ["you", "you are reading"],
+        ["he/she/it", "he is reading"],
+        ["we/they", "we are reading"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "She is sleeping now.", "translation": "Ona teraz śpi." },
+        { "source": "I am reading a book.", "translation": "Czytam książkę." },
+        { "source": "They are playing football.", "translation": "Grają w piłkę." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "Look! She ___ a book.",
+      "options": ["read", "is reading", "reads", "are reading"],
+      "answer": 1
+    },
+    {
+      "type": "fill",
+      "prompt": "I ___ (write) an email right now.",
+      "answers": ["am writing"]
+    },
+    {
+      "type": "fill",
+      "prompt": "They ___ (play) in the garden.",
+      "answers": ["are playing"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "We ___ TV at the moment.",
+      "options": ["watch", "watches", "are watching", "is watching"],
+      "answer": 2
+    }
+  ]
+}

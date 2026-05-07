@@ -1,0 +1,29 @@
+[
+  {
+    "id": "en.plurals.fill",
+    "topicId": "en.parts-of-speech.plurals",
+    "language": "en",
+    "produces": "fill",
+    "slots": [
+      { "name": "noun", "pos": "noun", "filter": { "countable": true, "cefrMax": "A2" } }
+    ],
+    "pattern": "Plural of '{noun}':",
+    "answerPatterns": ["{noun:plural}"],
+    "hint": "Add -s, -es or -ies",
+    "explanation": "Most nouns add -s; -es after s/x/z/ch/sh; consonant+y → -ies.",
+    "tags": ["plural"]
+  },
+  {
+    "id": "en.plurals.mcq",
+    "topicId": "en.parts-of-speech.plurals",
+    "language": "en",
+    "produces": "mcq",
+    "slots": [
+      { "name": "noun", "pos": "noun", "filter": { "countable": true, "cefrMax": "A2" } }
+    ],
+    "pattern": "I see two ___.",
+    "answerPatterns": ["{noun:plural}"],
+    "distractorPatterns": ["{noun}", "{noun}es", "{noun}ies"],
+    "tags": ["plural"]
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "de.present-regular.fill",
+    "topicId": "de.tenses.present-regular",
+    "language": "de",
+    "produces": "fill",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "tags": ["pronoun"] } },
+      { "name": "verb", "pos": "verb", "filter": { "tags": ["regular"] } }
+    ],
+    "pattern": "{subject} ___ ({verb}) heute.",
+    "answerPatterns": ["{verb:present.agree(subject)}"],
+    "hint": "Końcówki: -e, -st, -t, -en",
+    "tags": ["regular"]
+  },
+  {
+    "id": "de.present-regular.mcq",
+    "topicId": "de.tenses.present-regular",
+    "language": "de",
+    "produces": "mcq",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "tags": ["pronoun"] } },
+      { "name": "verb", "pos": "verb", "filter": { "tags": ["regular"] } }
+    ],
+    "pattern": "{subject} ___ jeden Tag.",
+    "answerPatterns": ["{verb:present.agree(subject)}"],
+    "distractorPatterns": ["{verb:present.agree.wrong(subject)}", "{verb:base}"],
+    "tags": ["regular"]
+  }
+]

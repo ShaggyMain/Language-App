@@ -123,11 +123,14 @@ export type Topic = z.infer<typeof Topic>;
  * language's inflection table has its own shape.
  * ────────────────────────────────────────────────────────────────────── */
 
-export const Pos = z.enum(["verb", "noun", "adj", "person", "place", "time"]);
+export const Pos = z.enum(["verb", "noun", "adj", "person", "place", "time", "preposition"]);
 export type Pos = z.infer<typeof Pos>;
 
 export const Agreement = z.enum(["1sg", "2sg", "3sg", "1pl", "2pl", "3pl"]);
 export type Agreement = z.infer<typeof Agreement>;
+
+export const Gender = z.enum(["m", "f", "n"]);
+export type Gender = z.infer<typeof Gender>;
 
 const VerbPresent = z.object({
   "1sg": z.string().optional(),
@@ -140,17 +143,36 @@ const VerbPresent = z.object({
 
 const Forms = z
   .object({
+    // verb
     present: VerbPresent.optional(),
     past: z.string().optional(),
     pastParticiple: z.string().optional(),
     gerund: z.string().optional(),
     irregular: z.boolean().optional(),
+    // noun
     plural: z.string().optional(),
     countable: z.boolean().optional(),
     article: z.enum(["a", "an"]).optional(),
+    gender: Gender.optional(),
+    /** German nominative article ("der" / "die" / "das"). */
+    articleNom: z.string().optional(),
+    /** German accusative article ("den" / "die" / "das"). */
+    articleAkk: z.string().optional(),
+    /** Spanish definite article ("el" / "la" / "los" / "las"). */
+    articleEs: z.string().optional(),
+    // person
     agreement: Agreement.optional(),
     pronounSubject: z.string().optional(),
     pronounObject: z.string().optional(),
+    /** Possessive adjective ("my", "your", "his", "her", "its", "our", "their"). */
+    possessiveAdj: z.string().optional(),
+    /** Possessive pronoun ("mine", "yours", ...). */
+    possessivePron: z.string().optional(),
+    // adjective
+    comparative: z.string().optional(),
+    superlative: z.string().optional(),
+    // preposition / time / place — semantic categories (e.g. "place", "time")
+    category: z.string().optional(),
   })
   .partial();
 export type Forms = z.infer<typeof Forms>;
@@ -181,6 +203,8 @@ export const SlotFilter = z
     countable: z.boolean().optional(),
     agreement: Agreement.optional(),
     article: z.enum(["a", "an"]).optional(),
+    gender: Gender.optional(),
+    category: z.string().optional(),
   })
   .partial();
 export type SlotFilter = z.infer<typeof SlotFilter>;

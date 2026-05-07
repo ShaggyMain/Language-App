@@ -1,0 +1,51 @@
+{
+  "id": "es.tenses.present-ar",
+  "language": "es",
+  "category": "tenses",
+  "title": "Presente — czasowniki -ar",
+  "summary": "Odmiana regularnych czasowników kończących się na -ar.",
+  "cefrLevel": "A1",
+  "prerequisites": [],
+  "theory": [
+    {
+      "kind": "table",
+      "title": "hablar (mówić)",
+      "headers": ["Osoba", "Forma"],
+      "rows": [
+        ["yo", "hablo"],
+        ["tú", "hablas"],
+        ["él/ella", "habla"],
+        ["nosotros", "hablamos"],
+        ["vosotros", "habláis"],
+        ["ellos", "hablan"]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "Końcówki czasowników regularnych na **-ar** w czasie teraźniejszym: **-o, -as, -a, -amos, -áis, -an**.\n\nTworzysz tematu odcinając **-ar**, dodając końcówki: *habl-o, habl-as, habl-a*..."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Yo ___ (hablar) español.",
+      "answers": ["hablo"]
+    },
+    {
+      "type": "fill",
+      "prompt": "Tú ___ (estudiar) inglés.",
+      "answers": ["estudias"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Ella ___ en una oficina.",
+      "options": ["trabajo", "trabajas", "trabaja", "trabajamos"],
+      "answer": 2
+    },
+    {
+      "type": "fill",
+      "prompt": "Nosotros ___ (cantar) bien.",
+      "answers": ["cantamos"]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "language": "es",
+  "entries": [
+    {
+      "id": "es.person.yo",
+      "lemma": "yo",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 1,
+      "tags": ["pronoun"],
+      "gloss": { "pl": "ja" },
+      "forms": { "agreement": "1sg", "pronounSubject": "yo", "pronounObject": "me" }
+    },
+    {
+      "id": "es.person.tu",
+      "lemma": "tú",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 2,
+      "tags": ["pronoun"],
+      "gloss": { "pl": "ty" },
+      "forms": { "agreement": "2sg", "pronounSubject": "tú", "pronounObject": "te" }
+    },
+    {
+      "id": "es.person.el",
+      "lemma": "él",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 3,
+      "tags": ["pronoun"],
+      "gloss": { "pl": "on" },
+      "forms": { "agreement": "3sg", "pronounSubject": "él", "pronounObject": "lo" }
+    },
+    {
+      "id": "es.person.ella",
+      "lemma": "ella",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 4,
+      "tags": ["pronoun"],
+      "gloss": { "pl": "ona" },
+      "forms": { "agreement": "3sg", "pronounSubject": "ella", "pronounObject": "la" }
+    },
+    {
+      "id": "es.person.nosotros",
+      "lemma": "nosotros",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 5,
+      "tags": ["pronoun"],
+      "gloss": { "pl": "my" },
+      "forms": { "agreement": "1pl", "pronounSubject": "nosotros", "pronounObject": "nos" }
+    },
+    {
+      "id": "es.person.vosotros",
+      "lemma": "vosotros",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 6,
+      "tags": ["pronoun"],
+      "gloss": { "pl": "wy" },
+      "forms": { "agreement": "2pl", "pronounSubject": "vosotros", "pronounObject": "os" }
+    },
+    {
+      "id": "es.person.ellos",
+      "lemma": "ellos",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 7,
+      "tags": ["pronoun"],
+      "gloss": { "pl": "oni" },
+      "forms": { "agreement": "3pl", "pronounSubject": "ellos", "pronounObject": "los" }
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "language": "en",
+  "entries": [
+    {
+      "id": "en.adj.big",
+      "lemma": "big",
+      "pos": "adj",
+      "cefr": "A1",
+      "freqRank": 500,
+      "tags": ["size"],
+      "gloss": { "pl": "duży" },
+      "forms": { "comparative": "bigger", "superlative": "biggest" }
+    },
+    {
+      "id": "en.adj.small",
+      "lemma": "small",
+      "pos": "adj",
+      "cefr": "A1",
+      "freqRank": 501,
+      "tags": ["size"],
+      "gloss": { "pl": "mały" },
+      "forms": { "comparative": "smaller", "superlative": "smallest" }
+    },
+    {
+      "id": "en.adj.tall",
+      "lemma": "tall",
+      "pos": "adj",
+      "cefr": "A1",
+      "freqRank": 502,
+      "tags": ["size"],
+      "gloss": { "pl": "wysoki" },
+      "forms": { "comparative": "taller", "superlative": "tallest" }
+    },
+    {
+      "id": "en.adj.short",
+      "lemma": "short",
+      "pos": "adj",
+      "cefr": "A1",
+      "freqRank": 503,
+      "tags": ["size"],
+      "gloss": { "pl": "krótki / niski" },
+      "forms": { "comparative": "shorter", "superlative": "shortest" }
+    },
+    {
+      "id": "en.adj.fast",
+      "lemma": "fast",
+      "pos": "adj",
+      "cefr": "A1",
+      "freqRank": 504,
+      "tags": ["speed"],
+      "gloss": { "pl": "szybki" },
+      "forms": { "comparative": "faster", "superlative": "fastest" }
+    },
+    {
+      "id": "en.adj.slow",
+      "lemma": "slow",
+      "pos": "adj",
+      "cefr": "A1",
+      "freqRank": 505,
+      "tags": ["speed"],
+      "gloss": { "pl": "wolny" },
+      "forms": { "comparative": "slower", "superlative": "slowest" }
+    },
+    {
+      "id": "en.adj.happy",
+      "lemma": "happy",
+      "pos": "adj",
+      "cefr": "A1",
+      "freqRank": 506,
+      "tags": ["mood"],
+      "gloss": { "pl": "szczęśliwy" },
+      "forms": { "comparative": "happier", "superlative": "happiest" }
+    },
+    {
+      "id": "en.adj.sad",
+      "lemma": "sad",
+      "pos": "adj",
+      "cefr": "A1",
+      "freqRank": 507,
+      "tags": ["mood"],
+      "gloss": { "pl": "smutny" },
+      "forms": { "comparative": "sadder", "superlative": "saddest" }
+    },
+    {
+      "id": "en.adj.good",
+      "lemma": "good",
+      "pos": "adj",
+      "cefr": "A1",
+      "freqRank": 508,
+      "tags": ["evaluation", "irregular"],
+      "gloss": { "pl": "dobry" },
+      "forms": { "irregular": true, "comparative": "better", "superlative": "best" }
+    },
+    {
+      "id": "en.adj.bad",
+      "lemma": "bad",
+      "pos": "adj",
+      "cefr": "A1",
+      "freqRank": 509,
+      "tags": ["evaluation", "irregular"],
+      "gloss": { "pl": "zły" },
+      "forms": { "irregular": true, "comparative": "worse", "superlative": "worst" }
+    },
+    {
+      "id": "en.adj.cold",
+      "lemma": "cold",
+      "pos": "adj",
+      "cefr": "A1",
+      "freqRank": 510,
+      "tags": ["temperature"],
+      "gloss": { "pl": "zimny" },
+      "forms": { "comparative": "colder", "superlative": "coldest" }
+    },
+    {
+      "id": "en.adj.hot",
+      "lemma": "hot",
+      "pos": "adj",
+      "cefr": "A1",
+      "freqRank": 511,
+      "tags": ["temperature"],
+      "gloss": { "pl": "gorący" },
+      "forms": { "comparative": "hotter", "superlative": "hottest" }
+    },
+    {
+      "id": "en.adj.expensive",
+      "lemma": "expensive",
+      "pos": "adj",
+      "cefr": "A2",
+      "freqRank": 512,
+      "tags": ["price"],
+      "gloss": { "pl": "drogi" },
+      "forms": { "comparative": "more expensive", "superlative": "most expensive" }
+    },
+    {
+      "id": "en.adj.cheap",
+      "lemma": "cheap",
+      "pos": "adj",
+      "cefr": "A2",
+      "freqRank": 513,
+      "tags": ["price"],
+      "gloss": { "pl": "tani" },
+      "forms": { "comparative": "cheaper", "superlative": "cheapest" }
+    },
+    {
+      "id": "en.adj.interesting",
+      "lemma": "interesting",
+      "pos": "adj",
+      "cefr": "A2",
+      "freqRank": 514,
+      "tags": ["evaluation"],
+      "gloss": { "pl": "interesujący" },
+      "forms": { "comparative": "more interesting", "superlative": "most interesting" }
+    }
+  ]
+}

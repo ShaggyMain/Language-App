@@ -1,0 +1,60 @@
+{
+  "id": "en.tenses.past-simple",
+  "language": "en",
+  "category": "tenses",
+  "title": "Past Simple",
+  "summary": "Completed actions in the past.",
+  "cefrLevel": "A2",
+  "prerequisites": ["en.tenses.present-simple"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Past Simple** is used for completed actions in the past. Most verbs add **-ed**, but many common verbs are *irregular*.\n\nNegative: did + not (didn't) + base verb.\nQuestion: Did + subject + base verb?"
+    },
+    {
+      "kind": "table",
+      "title": "Some irregular verbs",
+      "headers": ["Base", "Past"],
+      "rows": [
+        ["go", "went"],
+        ["see", "saw"],
+        ["eat", "ate"],
+        ["have", "had"],
+        ["do", "did"],
+        ["come", "came"],
+        ["buy", "bought"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "I worked late yesterday.", "translation": "Wczoraj pracowałem do późna." },
+        { "source": "She went to Paris last week.", "translation": "Pojechała do Paryża w zeszłym tygodniu." },
+        { "source": "We didn't see the movie.", "translation": "Nie obejrzeliśmy filmu." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Yesterday I ___ (work) late.",
+      "answers": ["worked"]
+    },
+    {
+      "type": "fill",
+      "prompt": "She ___ (go) to school yesterday.",
+      "answers": ["went"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "We ___ a great movie last night.",
+      "options": ["see", "saw", "seen", "seeing"],
+      "answer": 1
+    },
+    {
+      "type": "fill",
+      "prompt": "They ___ (buy) a new car.",
+      "answers": ["bought"]
+    }
+  ]
+}

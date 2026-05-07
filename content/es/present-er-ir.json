@@ -1,0 +1,64 @@
+{
+  "id": "es.tenses.present-er-ir",
+  "language": "es",
+  "category": "tenses",
+  "title": "Presente — czasowniki -er / -ir",
+  "summary": "Odmiana regularnych czasowników na -er i -ir.",
+  "cefrLevel": "A1",
+  "prerequisites": ["es.tenses.present-ar"],
+  "theory": [
+    {
+      "kind": "table",
+      "title": "comer (jeść) — er",
+      "headers": ["Osoba", "Forma"],
+      "rows": [
+        ["yo", "como"],
+        ["tú", "comes"],
+        ["él/ella", "come"],
+        ["nosotros", "comemos"],
+        ["vosotros", "coméis"],
+        ["ellos", "comen"]
+      ]
+    },
+    {
+      "kind": "table",
+      "title": "vivir (mieszkać) — ir",
+      "headers": ["Osoba", "Forma"],
+      "rows": [
+        ["yo", "vivo"],
+        ["tú", "vives"],
+        ["él/ella", "vive"],
+        ["nosotros", "vivimos"],
+        ["vosotros", "vivís"],
+        ["ellos", "viven"]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "Czasowniki **-er** i **-ir** różnią się tylko w 1. i 2. osobie liczby mnogiej: *com**emos** / com**éis*** vs *viv**imos** / viv**ís***. Pozostałe formy są identyczne."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Yo ___ (vivir) en Madrid.",
+      "answers": ["vivo"]
+    },
+    {
+      "type": "fill",
+      "prompt": "Nosotros ___ (comer) en casa.",
+      "answers": ["comemos"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Ellos ___ libros.",
+      "options": ["leo", "lees", "lee", "leen"],
+      "answer": 3
+    },
+    {
+      "type": "fill",
+      "prompt": "Tú ___ (escribir) un email.",
+      "answers": ["escribes"]
+    }
+  ]
+}

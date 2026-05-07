@@ -1,0 +1,46 @@
+{
+  "id": "en.adjectives.comparatives",
+  "language": "en",
+  "category": "adjectives",
+  "title": "Comparatives",
+  "summary": "Comparing two things with -er or 'more'.",
+  "cefrLevel": "A2",
+  "prerequisites": [],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Comparatives** are used to compare two things.\n\n- **Short adjectives** (1 syllable): add **-er** → *fast → faster, big → bigger*.\n- **Two-syllable ending in -y**: change to **-ier** → *happy → happier*.\n- **Long adjectives**: use **more** → *more interesting*.\n- **Irregular**: *good → better, bad → worse*.\n\nUse **than** to compare: *Tom is taller than Anna.*"
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "She is taller than her sister.", "translation": "Jest wyższa od swojej siostry." },
+        { "source": "This book is more interesting than that one.", "translation": "Ta książka jest bardziej interesująca niż tamta." },
+        { "source": "Today is worse than yesterday.", "translation": "Dziś jest gorzej niż wczoraj." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Tom is ___ (tall) than Anna.",
+      "answers": ["taller"]
+    },
+    {
+      "type": "fill",
+      "prompt": "This is ___ (good) than that.",
+      "answers": ["better"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "My car is ___ than yours.",
+      "options": ["fast", "faster", "more fast", "fastest"],
+      "answer": 1
+    },
+    {
+      "type": "fill",
+      "prompt": "She is ___ (happy) than before.",
+      "answers": ["happier"]
+    }
+  ]
+}

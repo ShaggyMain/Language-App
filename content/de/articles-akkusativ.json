@@ -1,0 +1,50 @@
+{
+  "id": "de.articles.akkusativ",
+  "language": "de",
+  "category": "cases",
+  "title": "Rodzajniki: den / die / das (Akkusativ)",
+  "summary": "Biernik (Akkusativ) — rodzaj męski się zmienia, pozostałe nie.",
+  "cefrLevel": "A1",
+  "prerequisites": ["de.articles.nominativ"],
+  "theory": [
+    {
+      "kind": "table",
+      "title": "Akkusativ — rodzajniki określone",
+      "headers": ["Rodzaj", "Nominativ", "Akkusativ"],
+      "rows": [
+        ["m", "der Mann", "den Mann"],
+        ["f", "die Frau", "die Frau"],
+        ["n", "das Kind", "das Kind"],
+        ["pl", "die Männer", "die Männer"]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "Tylko **rodzaj męski** zmienia formę: *der → den*. Żeński, nijaki i liczba mnoga zostają bez zmian.\n\nAkkusativ używamy m.in. po czasownikach jak *haben, sehen, kaufen*: *Ich habe **einen** Hund. / Er kauft **den** Apfel.*"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "Ich kaufe ___ Apfel.",
+      "options": ["der", "die", "das", "den"],
+      "answer": 3
+    },
+    {
+      "type": "mcq",
+      "prompt": "Sie sieht ___ Frau.",
+      "options": ["der", "die", "das", "den"],
+      "answer": 1
+    },
+    {
+      "type": "fill",
+      "prompt": "Wir haben ___ (m) Hund.",
+      "answers": ["den"]
+    },
+    {
+      "type": "fill",
+      "prompt": "Er liest ___ (n) Buch.",
+      "answers": ["das"]
+    }
+  ]
+}

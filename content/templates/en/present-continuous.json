@@ -1,0 +1,38 @@
+[
+  {
+    "id": "en.present-continuous.fill",
+    "topicId": "en.tenses.present-continuous",
+    "language": "en",
+    "produces": "fill",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } },
+      { "name": "obj", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "{subject} ___ {obj} now.",
+    "answerPatterns": ["{verb:be.agree(subject)} {verb:gerund}"],
+    "hint": "am/is/are + verb-ing",
+    "explanation": "Use 'am' with I, 'is' with he/she/it, 'are' with you/we/they.",
+    "tags": ["affirmative"]
+  },
+  {
+    "id": "en.present-continuous.mcq",
+    "topicId": "en.tenses.present-continuous",
+    "language": "en",
+    "produces": "mcq",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } },
+      { "name": "obj", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "Look! {subject} ___ {obj}.",
+    "answerPatterns": ["{verb:be.agree(subject)} {verb:gerund}"],
+    "distractorPatterns": [
+      "{verb:be.agree.wrong(subject)} {verb:gerund}",
+      "{verb:present.agree(subject)}",
+      "{verb:gerund}"
+    ],
+    "explanation": "Present continuous: am/is/are + -ing.",
+    "tags": ["affirmative"]
+  }
+]

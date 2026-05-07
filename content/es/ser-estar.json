@@ -1,0 +1,65 @@
+{
+  "id": "es.verbs.ser-estar",
+  "language": "es",
+  "category": "verbs",
+  "title": "Ser vs estar",
+  "summary": "Dwa hiszpańskie czasowniki 'być' — kiedy którego użyć.",
+  "cefrLevel": "A1",
+  "prerequisites": [],
+  "theory": [
+    {
+      "kind": "table",
+      "title": "ser — cechy stałe",
+      "headers": ["Osoba", "Forma"],
+      "rows": [
+        ["yo", "soy"],
+        ["tú", "eres"],
+        ["él/ella", "es"],
+        ["nosotros", "somos"],
+        ["vosotros", "sois"],
+        ["ellos", "son"]
+      ]
+    },
+    {
+      "kind": "table",
+      "title": "estar — stan / miejsce",
+      "headers": ["Osoba", "Forma"],
+      "rows": [
+        ["yo", "estoy"],
+        ["tú", "estás"],
+        ["él/ella", "está"],
+        ["nosotros", "estamos"],
+        ["vosotros", "estáis"],
+        ["ellos", "están"]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "**Ser** = tożsamość, zawód, narodowość, cecha stała. *Soy polaco. Ella es médica.*\n\n**Estar** = stan chwilowy, miejsce, samopoczucie. *Estoy cansado. La casa está en Madrid.*"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "Yo ___ profesor.",
+      "options": ["soy", "estoy", "es", "está"],
+      "answer": 0
+    },
+    {
+      "type": "mcq",
+      "prompt": "El libro ___ en la mesa.",
+      "options": ["es", "está", "soy", "estoy"],
+      "answer": 1
+    },
+    {
+      "type": "fill",
+      "prompt": "Nosotros ___ (estar) cansados.",
+      "answers": ["estamos"]
+    },
+    {
+      "type": "fill",
+      "prompt": "Ella ___ (ser) doctora.",
+      "answers": ["es"]
+    }
+  ]
+}

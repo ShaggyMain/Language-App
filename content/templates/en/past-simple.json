@@ -1,0 +1,38 @@
+[
+  {
+    "id": "en.past-simple.fill",
+    "topicId": "en.tenses.past-simple",
+    "language": "en",
+    "produces": "fill",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } },
+      { "name": "obj", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "Yesterday {subject} ___ {obj}.",
+    "answerPatterns": ["{verb:past}"],
+    "hint": "Past Simple form",
+    "explanation": "Regular verbs: add -ed. Irregular verbs have their own past form.",
+    "tags": ["affirmative"]
+  },
+  {
+    "id": "en.past-simple.mcq",
+    "topicId": "en.tenses.past-simple",
+    "language": "en",
+    "produces": "mcq",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } },
+      { "name": "obj", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "Last week {subject} ___ {obj}.",
+    "answerPatterns": ["{verb:past}"],
+    "distractorPatterns": [
+      "{verb:base}",
+      "{verb:present.3sg}",
+      "{verb:gerund}"
+    ],
+    "explanation": "Past Simple — used for completed past actions.",
+    "tags": ["affirmative"]
+  }
+]

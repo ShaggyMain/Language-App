@@ -1,0 +1,44 @@
+[
+  {
+    "id": "es.present-er-ir.fill",
+    "topicId": "es.tenses.present-er-ir",
+    "language": "es",
+    "produces": "fill",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "tags": ["pronoun"] } },
+      { "name": "verb", "pos": "verb", "filter": { "tags": ["er"] } }
+    ],
+    "pattern": "{subject} ___ ({verb}) ahora.",
+    "answerPatterns": ["{verb:present.agree(subject)}"],
+    "hint": "-o / -es / -e / -emos / -éis / -en",
+    "tags": ["er"]
+  },
+  {
+    "id": "es.present-ir.fill",
+    "topicId": "es.tenses.present-er-ir",
+    "language": "es",
+    "produces": "fill",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "tags": ["pronoun"] } },
+      { "name": "verb", "pos": "verb", "filter": { "tags": ["ir"] } }
+    ],
+    "pattern": "{subject} ___ ({verb}) hoy.",
+    "answerPatterns": ["{verb:present.agree(subject)}"],
+    "hint": "-o / -es / -e / -imos / -ís / -en",
+    "tags": ["ir"]
+  },
+  {
+    "id": "es.present-er-ir.mcq",
+    "topicId": "es.tenses.present-er-ir",
+    "language": "es",
+    "produces": "mcq",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "tags": ["pronoun"] } },
+      { "name": "verb", "pos": "verb", "filter": { "tags": ["er"] } }
+    ],
+    "pattern": "{subject} ___ todos los días.",
+    "answerPatterns": ["{verb:present.agree(subject)}"],
+    "distractorPatterns": ["{verb:present.agree.wrong(subject)}", "{verb:base}"],
+    "tags": ["er"]
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "en.possessives.fill",
+    "topicId": "en.pronouns.possessives",
+    "language": "en",
+    "produces": "fill",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "tags": ["pronoun"] } },
+      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } },
+      { "name": "obj", "pos": "noun", "filter": { "countable": true, "cefrMax": "A2" } }
+    ],
+    "pattern": "{subject} {verb:present.agree(subject)} ___ {obj}.",
+    "answerPatterns": ["{subject:pron.poss}"],
+    "hint": "my / your / his / her / our / their",
+    "tags": ["possessive"]
+  },
+  {
+    "id": "en.possessives.mcq",
+    "topicId": "en.pronouns.possessives",
+    "language": "en",
+    "produces": "mcq",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "tags": ["pronoun"] } },
+      { "name": "obj", "pos": "noun", "filter": { "countable": true, "cefrMax": "A2" } }
+    ],
+    "pattern": "This is ___ {obj}.",
+    "answerPatterns": ["{subject:pron.poss}"],
+    "distractorPatterns": [
+      "{subject:pron.subject}",
+      "{subject:pron.object}",
+      "the"
+    ],
+    "tags": ["possessive"]
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "id": "de.tenses.present-regular",
+  "language": "de",
+  "category": "tenses",
+  "title": "Czasowniki regularne — Präsens",
+  "summary": "Odmiana czasowników regularnych w czasie teraźniejszym.",
+  "cefrLevel": "A1",
+  "prerequisites": [],
+  "theory": [
+    {
+      "kind": "table",
+      "title": "Końcówki regularne — machen (robić)",
+      "headers": ["Osoba", "Forma"],
+      "rows": [
+        ["ich", "mach-e"],
+        ["du", "mach-st"],
+        ["er/sie/es", "mach-t"],
+        ["wir", "mach-en"],
+        ["ihr", "mach-t"],
+        ["sie/Sie", "mach-en"]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "Bezokolicznik kończy się na **-en** (rzadziej **-n**). Tworzysz tematu odcinając **-en**, a następnie dodając końcówki: **-e, -st, -t, -en, -t, -en**.\n\nGdy temat kończy się na -t, -d (np. *arbeiten*), wstawiamy **-e-** dla wymowy: *du arbeit**e**st, er arbeit**e**t*."
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Ich lerne Deutsch.", "translation": "Uczę się niemieckiego." },
+        { "source": "Sie spielt Klavier.", "translation": "Ona gra na pianinie." },
+        { "source": "Wir wohnen in Berlin.", "translation": "Mieszkamy w Berlinie." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Ich ___ (lernen) Deutsch.",
+      "answers": ["lerne"]
+    },
+    {
+      "type": "fill",
+      "prompt": "Du ___ (spielen) Fußball.",
+      "answers": ["spielst"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Er ___ in Hamburg.",
+      "options": ["wohne", "wohnst", "wohnt", "wohnen"],
+      "answer": 2
+    },
+    {
+      "type": "fill",
+      "prompt": "Wir ___ (kochen) gern.",
+      "answers": ["kochen"]
+    }
+  ]
+}
