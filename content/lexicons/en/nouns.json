@@ -1,0 +1,245 @@
+{
+  "language": "en",
+  "entries": [
+    {
+      "id": "en.noun.coffee",
+      "lemma": "coffee",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 100,
+      "tags": ["food", "drink", "uncountable"],
+      "gloss": { "pl": "kawa" },
+      "forms": { "countable": false }
+    },
+    {
+      "id": "en.noun.tea",
+      "lemma": "tea",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 101,
+      "tags": ["food", "drink", "uncountable"],
+      "gloss": { "pl": "herbata" },
+      "forms": { "countable": false }
+    },
+    {
+      "id": "en.noun.water",
+      "lemma": "water",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 102,
+      "tags": ["food", "drink", "uncountable"],
+      "gloss": { "pl": "woda" },
+      "forms": { "countable": false }
+    },
+    {
+      "id": "en.noun.milk",
+      "lemma": "milk",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 103,
+      "tags": ["food", "drink", "uncountable"],
+      "gloss": { "pl": "mleko" },
+      "forms": { "countable": false }
+    },
+    {
+      "id": "en.noun.bread",
+      "lemma": "bread",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 104,
+      "tags": ["food", "uncountable"],
+      "gloss": { "pl": "chleb" },
+      "forms": { "countable": false }
+    },
+    {
+      "id": "en.noun.apple",
+      "lemma": "apple",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 105,
+      "tags": ["food", "fruit"],
+      "gloss": { "pl": "jabłko" },
+      "forms": { "countable": true, "plural": "apples", "article": "an" }
+    },
+    {
+      "id": "en.noun.book",
+      "lemma": "book",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 106,
+      "tags": ["object"],
+      "gloss": { "pl": "książka" },
+      "forms": { "countable": true, "plural": "books", "article": "a" }
+    },
+    {
+      "id": "en.noun.car",
+      "lemma": "car",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 107,
+      "tags": ["object", "vehicle"],
+      "gloss": { "pl": "samochód" },
+      "forms": { "countable": true, "plural": "cars", "article": "a" }
+    },
+    {
+      "id": "en.noun.house",
+      "lemma": "house",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 108,
+      "tags": ["object", "place"],
+      "gloss": { "pl": "dom" },
+      "forms": { "countable": true, "plural": "houses", "article": "a" }
+    },
+    {
+      "id": "en.noun.dog",
+      "lemma": "dog",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 109,
+      "tags": ["animal"],
+      "gloss": { "pl": "pies" },
+      "forms": { "countable": true, "plural": "dogs", "article": "a" }
+    },
+    {
+      "id": "en.noun.cat",
+      "lemma": "cat",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 110,
+      "tags": ["animal"],
+      "gloss": { "pl": "kot" },
+      "forms": { "countable": true, "plural": "cats", "article": "a" }
+    },
+    {
+      "id": "en.noun.song",
+      "lemma": "song",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 111,
+      "tags": ["object", "music"],
+      "gloss": { "pl": "piosenka" },
+      "forms": { "countable": true, "plural": "songs", "article": "a" }
+    },
+    {
+      "id": "en.noun.movie",
+      "lemma": "movie",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 112,
+      "tags": ["object"],
+      "gloss": { "pl": "film" },
+      "forms": { "countable": true, "plural": "movies", "article": "a" }
+    },
+    {
+      "id": "en.noun.email",
+      "lemma": "email",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 113,
+      "tags": ["object"],
+      "gloss": { "pl": "e-mail" },
+      "forms": { "countable": true, "plural": "emails", "article": "an" }
+    },
+    {
+      "id": "en.noun.letter",
+      "lemma": "letter",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 114,
+      "tags": ["object"],
+      "gloss": { "pl": "list" },
+      "forms": { "countable": true, "plural": "letters", "article": "a" }
+    },
+    {
+      "id": "en.noun.pizza",
+      "lemma": "pizza",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 115,
+      "tags": ["food"],
+      "gloss": { "pl": "pizza" },
+      "forms": { "countable": true, "plural": "pizzas", "article": "a" }
+    },
+    {
+      "id": "en.noun.juice",
+      "lemma": "juice",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 116,
+      "tags": ["food", "drink", "uncountable"],
+      "gloss": { "pl": "sok" },
+      "forms": { "countable": false }
+    },
+    {
+      "id": "en.noun.english",
+      "lemma": "English",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 117,
+      "tags": ["language", "uncountable"],
+      "gloss": { "pl": "angielski" },
+      "forms": { "countable": false }
+    },
+    {
+      "id": "en.noun.football",
+      "lemma": "football",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 118,
+      "tags": ["sport", "uncountable"],
+      "gloss": { "pl": "piłka nożna" },
+      "forms": { "countable": false }
+    },
+    {
+      "id": "en.noun.guitar",
+      "lemma": "guitar",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 119,
+      "tags": ["object", "music"],
+      "gloss": { "pl": "gitara" },
+      "forms": { "countable": true, "plural": "guitars", "article": "a" }
+    },
+    {
+      "id": "en.noun.umbrella",
+      "lemma": "umbrella",
+      "pos": "noun",
+      "cefr": "A2",
+      "freqRank": 200,
+      "tags": ["object"],
+      "gloss": { "pl": "parasol" },
+      "forms": { "countable": true, "plural": "umbrellas", "article": "an" }
+    },
+    {
+      "id": "en.noun.orange",
+      "lemma": "orange",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 130,
+      "tags": ["food", "fruit"],
+      "gloss": { "pl": "pomarańcza" },
+      "forms": { "countable": true, "plural": "oranges", "article": "an" }
+    },
+    {
+      "id": "en.noun.egg",
+      "lemma": "egg",
+      "pos": "noun",
+      "cefr": "A1",
+      "freqRank": 131,
+      "tags": ["food"],
+      "gloss": { "pl": "jajko" },
+      "forms": { "countable": true, "plural": "eggs", "article": "an" }
+    },
+    {
+      "id": "en.noun.idea",
+      "lemma": "idea",
+      "pos": "noun",
+      "cefr": "A2",
+      "freqRank": 220,
+      "tags": ["abstract"],
+      "gloss": { "pl": "pomysł" },
+      "forms": { "countable": true, "plural": "ideas", "article": "an" }
+    }
+  ]
+}

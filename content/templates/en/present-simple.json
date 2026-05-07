@@ -1,0 +1,74 @@
+[
+  {
+    "id": "en.present-simple.affirm-fill",
+    "topicId": "en.tenses.present-simple",
+    "language": "en",
+    "produces": "fill",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } },
+      { "name": "obj", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "{subject} ___ {obj}.",
+    "answerPatterns": ["{verb:present.agree(subject)}"],
+    "hint": "Present Simple — affirmative",
+    "explanation": "Use 3rd person -s/-es with he/she/it; base form for I/you/we/they.",
+    "tags": ["affirmative"]
+  },
+  {
+    "id": "en.present-simple.3sg-mcq",
+    "topicId": "en.tenses.present-simple",
+    "language": "en",
+    "produces": "mcq",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "agreement": "3sg", "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } },
+      { "name": "obj", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "{subject} ___ {obj} every day.",
+    "answerPatterns": ["{verb:present.3sg}"],
+    "distractorPatterns": [
+      "{verb:base}",
+      "{verb:gerund}",
+      "{verb:cont.agree(subject)}"
+    ],
+    "explanation": "3rd person singular adds -s/-es in the Present Simple.",
+    "tags": ["affirmative", "3sg"]
+  },
+  {
+    "id": "en.present-simple.negation-fill",
+    "topicId": "en.tenses.present-simple",
+    "language": "en",
+    "produces": "fill",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } },
+      { "name": "obj", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "{subject} ___ {obj}.",
+    "answerPatterns": ["{verb:do.negate(subject)}"],
+    "hint": "Negative form: don't / doesn't + base verb",
+    "explanation": "Use 'doesn't' with he/she/it, 'don't' otherwise. Verb stays in base form.",
+    "tags": ["negation"]
+  },
+  {
+    "id": "en.present-simple.negation-mcq",
+    "topicId": "en.tenses.present-simple",
+    "language": "en",
+    "produces": "mcq",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } },
+      { "name": "obj", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "{subject} ___ {obj}.",
+    "answerPatterns": ["{verb:do.negate(subject)}"],
+    "distractorPatterns": [
+      "{verb:do.negate.wrong(subject)}",
+      "not {verb:base}",
+      "{verb:base} not"
+    ],
+    "explanation": "Don't with I/you/we/they; doesn't with he/she/it.",
+    "tags": ["negation"]
+  }
+]

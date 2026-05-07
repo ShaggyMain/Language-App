@@ -1,0 +1,305 @@
+{
+  "language": "en",
+  "entries": [
+    {
+      "id": "en.verb.work",
+      "lemma": "work",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 50,
+      "tags": ["action", "regular"],
+      "gloss": { "pl": "pracować" },
+      "forms": { "irregular": false, "present": { "3sg": "works" }, "gerund": "working", "past": "worked" }
+    },
+    {
+      "id": "en.verb.live",
+      "lemma": "live",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 51,
+      "tags": ["action", "regular"],
+      "gloss": { "pl": "mieszkać / żyć" },
+      "forms": { "irregular": false, "present": { "3sg": "lives" }, "gerund": "living", "past": "lived" }
+    },
+    {
+      "id": "en.verb.play",
+      "lemma": "play",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 52,
+      "tags": ["action", "regular"],
+      "gloss": { "pl": "grać / bawić się" },
+      "forms": { "irregular": false, "present": { "3sg": "plays" }, "gerund": "playing", "past": "played" }
+    },
+    {
+      "id": "en.verb.like",
+      "lemma": "like",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 53,
+      "tags": ["state", "regular"],
+      "gloss": { "pl": "lubić" },
+      "forms": { "irregular": false, "present": { "3sg": "likes" }, "gerund": "liking", "past": "liked" }
+    },
+    {
+      "id": "en.verb.want",
+      "lemma": "want",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 54,
+      "tags": ["state", "regular"],
+      "gloss": { "pl": "chcieć" },
+      "forms": { "irregular": false, "present": { "3sg": "wants" }, "gerund": "wanting", "past": "wanted" }
+    },
+    {
+      "id": "en.verb.need",
+      "lemma": "need",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 55,
+      "tags": ["state", "regular"],
+      "gloss": { "pl": "potrzebować" },
+      "forms": { "irregular": false, "present": { "3sg": "needs" }, "gerund": "needing", "past": "needed" }
+    },
+    {
+      "id": "en.verb.read",
+      "lemma": "read",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 56,
+      "tags": ["action", "regular"],
+      "gloss": { "pl": "czytać" },
+      "forms": { "irregular": false, "present": { "3sg": "reads" }, "gerund": "reading", "past": "read" }
+    },
+    {
+      "id": "en.verb.write",
+      "lemma": "write",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 57,
+      "tags": ["action", "irregular"],
+      "gloss": { "pl": "pisać" },
+      "forms": { "irregular": true, "present": { "3sg": "writes" }, "gerund": "writing", "past": "wrote" }
+    },
+    {
+      "id": "en.verb.speak",
+      "lemma": "speak",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 58,
+      "tags": ["action", "irregular"],
+      "gloss": { "pl": "mówić" },
+      "forms": { "irregular": true, "present": { "3sg": "speaks" }, "gerund": "speaking", "past": "spoke" }
+    },
+    {
+      "id": "en.verb.eat",
+      "lemma": "eat",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 59,
+      "tags": ["action", "irregular"],
+      "gloss": { "pl": "jeść" },
+      "forms": { "irregular": true, "present": { "3sg": "eats" }, "gerund": "eating", "past": "ate" }
+    },
+    {
+      "id": "en.verb.drink",
+      "lemma": "drink",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 60,
+      "tags": ["action", "irregular"],
+      "gloss": { "pl": "pić" },
+      "forms": { "irregular": true, "present": { "3sg": "drinks" }, "gerund": "drinking", "past": "drank" }
+    },
+    {
+      "id": "en.verb.go",
+      "lemma": "go",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 10,
+      "tags": ["action", "irregular"],
+      "gloss": { "pl": "iść / jechać" },
+      "forms": { "irregular": true, "present": { "3sg": "goes" }, "gerund": "going", "past": "went" }
+    },
+    {
+      "id": "en.verb.do",
+      "lemma": "do",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 8,
+      "tags": ["action", "irregular", "auxiliary"],
+      "gloss": { "pl": "robić" },
+      "forms": { "irregular": true, "present": { "3sg": "does" }, "gerund": "doing", "past": "did" }
+    },
+    {
+      "id": "en.verb.make",
+      "lemma": "make",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 12,
+      "tags": ["action", "irregular"],
+      "gloss": { "pl": "robić / tworzyć" },
+      "forms": { "irregular": true, "present": { "3sg": "makes" }, "gerund": "making", "past": "made" }
+    },
+    {
+      "id": "en.verb.have",
+      "lemma": "have",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 5,
+      "tags": ["state", "irregular", "auxiliary"],
+      "gloss": { "pl": "mieć" },
+      "forms": { "irregular": true, "present": { "3sg": "has" }, "gerund": "having", "past": "had" }
+    },
+    {
+      "id": "en.verb.know",
+      "lemma": "know",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 20,
+      "tags": ["state", "irregular"],
+      "gloss": { "pl": "wiedzieć / znać" },
+      "forms": { "irregular": true, "present": { "3sg": "knows" }, "gerund": "knowing", "past": "knew" }
+    },
+    {
+      "id": "en.verb.see",
+      "lemma": "see",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 21,
+      "tags": ["state", "irregular"],
+      "gloss": { "pl": "widzieć" },
+      "forms": { "irregular": true, "present": { "3sg": "sees" }, "gerund": "seeing", "past": "saw" }
+    },
+    {
+      "id": "en.verb.come",
+      "lemma": "come",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 22,
+      "tags": ["action", "irregular"],
+      "gloss": { "pl": "przychodzić" },
+      "forms": { "irregular": true, "present": { "3sg": "comes" }, "gerund": "coming", "past": "came" }
+    },
+    {
+      "id": "en.verb.watch",
+      "lemma": "watch",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 70,
+      "tags": ["action", "regular"],
+      "gloss": { "pl": "oglądać" },
+      "forms": { "irregular": false, "present": { "3sg": "watches" }, "gerund": "watching", "past": "watched" }
+    },
+    {
+      "id": "en.verb.study",
+      "lemma": "study",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 71,
+      "tags": ["action", "regular"],
+      "gloss": { "pl": "uczyć się / studiować" },
+      "forms": { "irregular": false, "present": { "3sg": "studies" }, "gerund": "studying", "past": "studied" }
+    },
+    {
+      "id": "en.verb.cook",
+      "lemma": "cook",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 72,
+      "tags": ["action", "regular"],
+      "gloss": { "pl": "gotować" },
+      "forms": { "irregular": false, "present": { "3sg": "cooks" }, "gerund": "cooking", "past": "cooked" }
+    },
+    {
+      "id": "en.verb.drive",
+      "lemma": "drive",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 73,
+      "tags": ["action", "irregular"],
+      "gloss": { "pl": "jechać / prowadzić" },
+      "forms": { "irregular": true, "present": { "3sg": "drives" }, "gerund": "driving", "past": "drove" }
+    },
+    {
+      "id": "en.verb.run",
+      "lemma": "run",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 74,
+      "tags": ["action", "irregular"],
+      "gloss": { "pl": "biegać" },
+      "forms": { "irregular": true, "present": { "3sg": "runs" }, "gerund": "running", "past": "ran" }
+    },
+    {
+      "id": "en.verb.swim",
+      "lemma": "swim",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 75,
+      "tags": ["action", "irregular"],
+      "gloss": { "pl": "pływać" },
+      "forms": { "irregular": true, "present": { "3sg": "swims" }, "gerund": "swimming", "past": "swam" }
+    },
+    {
+      "id": "en.verb.sing",
+      "lemma": "sing",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 76,
+      "tags": ["action", "irregular"],
+      "gloss": { "pl": "śpiewać" },
+      "forms": { "irregular": true, "present": { "3sg": "sings" }, "gerund": "singing", "past": "sang" }
+    },
+    {
+      "id": "en.verb.dance",
+      "lemma": "dance",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 77,
+      "tags": ["action", "regular"],
+      "gloss": { "pl": "tańczyć" },
+      "forms": { "irregular": false, "present": { "3sg": "dances" }, "gerund": "dancing", "past": "danced" }
+    },
+    {
+      "id": "en.verb.sleep",
+      "lemma": "sleep",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 78,
+      "tags": ["state", "irregular"],
+      "gloss": { "pl": "spać" },
+      "forms": { "irregular": true, "present": { "3sg": "sleeps" }, "gerund": "sleeping", "past": "slept" }
+    },
+    {
+      "id": "en.verb.teach",
+      "lemma": "teach",
+      "pos": "verb",
+      "cefr": "A2",
+      "freqRank": 80,
+      "tags": ["action", "irregular"],
+      "gloss": { "pl": "uczyć (kogoś)" },
+      "forms": { "irregular": true, "present": { "3sg": "teaches" }, "gerund": "teaching", "past": "taught" }
+    },
+    {
+      "id": "en.verb.buy",
+      "lemma": "buy",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 81,
+      "tags": ["action", "irregular"],
+      "gloss": { "pl": "kupować" },
+      "forms": { "irregular": true, "present": { "3sg": "buys" }, "gerund": "buying", "past": "bought" }
+    },
+    {
+      "id": "en.verb.sell",
+      "lemma": "sell",
+      "pos": "verb",
+      "cefr": "A2",
+      "freqRank": 82,
+      "tags": ["action", "irregular"],
+      "gloss": { "pl": "sprzedawać" },
+      "forms": { "irregular": true, "present": { "3sg": "sells" }, "gerund": "selling", "past": "sold" }
+    }
+  ]
+}
