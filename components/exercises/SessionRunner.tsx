@@ -8,7 +8,7 @@
  */
 
 import { useEffect, useMemo, useReducer, useRef, useState } from "react";
-import { ActivityIndicator, KeyboardAvoidingView, Platform, ScrollView, Text, View } from "react-native";
+import { KeyboardAvoidingView, Platform, ScrollView, Text, View } from "react-native";
 import Animated, { SlideInRight, FadeIn } from "react-native-reanimated";
 import { router } from "expo-router";
 import type { Topic } from "../../lib/types";
@@ -33,6 +33,8 @@ import { Language } from "../../lib/types";
 import { currentUserId } from "../../lib/auth";
 import { syncPushPassed, syncPushSrs } from "../../lib/sync";
 import { bumpStreak } from "../../lib/streak";
+import { awardXp, computeSessionXp } from "../../lib/xp";
+import { SkeletonCard } from "../ui/Skeleton";
 
 type Props = {
   language: string;
@@ -123,20 +125,38 @@ export function SessionRunner({ language, topic, mode, count = 10 }: Props) {
     const sum = summarize(state);
     const finishedAt = Date.now();
     void repos.log.finishSession({ sessionId: sid, finishedAt, summary: sum });
-    void bumpStreak(new Date(finishedAt));
-    if (state.mode === "path" && sum.passedPath) {
-      void repos.log.markPassed({ userId: currentUserId(), topicId: topic.id, at: finishedAt });
-      void syncPushPassed(topic.id, finishedAt);
-    }
+
+    (async () => {
+      const streakAfter = await bumpStreak(new Date(finishedAt));
+      const passedTopicsBefore = await repos.log.passedTopicIds(currentUserId());
+      const firstPathPass = state.mode === "path" && sum.passedPath && !passedTopicsBefore.has(topic.id);
+
+      if (state.mode === "path" && sum.passedPath) {
+        await repos.log.markPassed({ userId: currentUserId(), topicId: topic.id, at: finishedAt });
+        void syncPushPassed(topic.id, finishedAt);
+      }
+      const xp = computeSessionXp({
+        summary: sum,
+        streakAlive: streakAfter.streak >= 1,
+        firstPathPass,
+      });
+      if (xp.total > 0) await awardXp(xp.total, finishedAt);
+    })();
+
     publishSession(state, sum);
     router.replace(`/${language}/results`);
   }, [state.phase, state, topic.id, language]);
 
   if (loading) {
     return (
-      <View className="flex-1 items-center justify-center">
-        <ActivityIndicator color="#3b82f6" />
-        <Text className="text-muted mt-3">Preparing session…</Text>
+      <View className="flex-1">
+        <View className="h-2 rounded-full bg-surface border border-border mb-6 overflow-hidden">
+          <View className="h-full w-1/12 bg-en/60" />
+        </View>
+        <SkeletonCard />
+        <SkeletonCard />
+        <SkeletonCard />
+        <Text className="text-muted text-center mt-3">Preparing session…</Text>
       </View>
     );
   }

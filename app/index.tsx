@@ -3,10 +3,11 @@ import { ActivityIndicator, Text, View } from "react-native";
 import { router } from "expo-router";
 import { Screen } from "../components/ui/Screen";
 import { Card } from "../components/ui/Card";
-import { StreakPill } from "../components/ui/StreakPill";
+import { StatsBanner } from "../components/ui/StatsBanner";
 import { LANGUAGES } from "../lib/languages";
 import { loadPreferences } from "../lib/preferences";
 import { loadStreak } from "../lib/streak";
+import { loadXp } from "../lib/xp";
 
 export default function LanguagePicker() {
   const [ready, setReady] = useState(false);
@@ -21,6 +22,7 @@ export default function LanguagePicker() {
         return;
       }
       void loadStreak();
+      void loadXp();
       setReady(true);
     })();
     return () => {
@@ -39,9 +41,9 @@ export default function LanguagePicker() {
   }
 
   return (
-    <Screen title="Choose a language">
-      <StreakPill />
-      <Text className="text-muted mb-6">Pick a course to start learning grammar.</Text>
+    <Screen title="Grammar Trail">
+      <StatsBanner />
+      <Text className="text-muted mb-4">Pick a course to continue learning.</Text>
       {LANGUAGES.map((lang) => (
         <Card
           key={lang.code}
