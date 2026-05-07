@@ -1,0 +1,64 @@
+{
+  "id": "en.verbs.modals-advanced",
+  "language": "en",
+  "category": "verbs",
+  "title": "Modals: should, might, would",
+  "summary": "Advice, possibility, and hypothetical.",
+  "cefrLevel": "A2",
+  "prerequisites": ["en.verbs.modals-can-must"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "More modals — same syntax (modal + base verb, no -s, no 'to'):\n\n- **should** = advice / mild obligation. *You should drink more water.*\n- **might** = possibility (less certain than 'may'). *It might rain.*\n- **would** = polite request, hypothetical. *I would like a coffee. — Would you help me?*\n\nNegative: **shouldn't, might not, wouldn't.**"
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "You should see a doctor.", "translation": "Powinieneś iść do lekarza." },
+        { "source": "She might be late.", "translation": "Ona może się spóźnić." },
+        { "source": "I would like to order, please.", "translation": "Chciałbym zamówić, proszę." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "You ___ exercise every day. It's good for you.",
+      "options": ["must", "should", "might", "would"],
+      "answer": 1
+    },
+    {
+      "type": "fill",
+      "prompt": "She ___ (might / come) later, I'm not sure.",
+      "answers": ["might come"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Czy mógłbyś mi pomóc?",
+      "answers": ["Would you help me?", "Could you help me?"]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "He should to study more.",
+      "answers": ["He should study more."],
+      "explanation": "Modals are not followed by 'to'."
+    },
+    {
+      "type": "match",
+      "pairs": [
+        { "left": "should", "right": "advice" },
+        { "left": "might", "right": "possibility" },
+        { "left": "would", "right": "polite request" },
+        { "left": "must", "right": "strong obligation" }
+      ]
+    },
+    {
+      "type": "transform",
+      "instruction": "Make the sentence negative.",
+      "source": "You should tell her.",
+      "answers": ["You shouldn't tell her.", "You should not tell her."]
+    }
+  ]
+}

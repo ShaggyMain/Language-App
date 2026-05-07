@@ -1,0 +1,66 @@
+{
+  "id": "en.verbs.passive-voice",
+  "language": "en",
+  "category": "voice",
+  "title": "Passive Voice",
+  "summary": "When the focus is on the action, not who does it.",
+  "cefrLevel": "B1",
+  "prerequisites": ["en.tenses.past-simple", "en.tenses.present-perfect"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Passive voice** = *be* + **past participle**. Use it when the doer is unknown, unimportant, or obvious.\n\n- **Active**: *They built this house in 1990.*\n- **Passive**: *This house was built in 1990.*\n\nForms:\n- Present: *am/is/are + past participle* — *English is spoken here.*\n- Past: *was/were + past participle* — *The cake was eaten.*\n- Present perfect: *have/has been + past participle* — *The work has been done.*\n\nUse **by + agent** to mention the doer if it matters: *The book was written **by Tolkien**.*"
+    },
+    {
+      "kind": "table",
+      "title": "Active → Passive transform",
+      "headers": ["Active", "Passive"],
+      "rows": [
+        ["She wrote the letter.", "The letter was written (by her)."],
+        ["They make cars here.", "Cars are made here."],
+        ["Someone has cleaned the room.", "The room has been cleaned."]
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "English ___ in many countries.",
+      "options": ["speaks", "is spoken", "speak", "is speak"],
+      "answer": 1
+    },
+    {
+      "type": "fill",
+      "prompt": "The cake ___ (eat) by the children.",
+      "answers": ["was eaten"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Ta książka została napisana w 1950 roku.",
+      "answers": ["This book was written in 1950.", "The book was written in 1950."]
+    },
+    {
+      "type": "transform",
+      "instruction": "Rewrite in the passive voice.",
+      "source": "They built the bridge last year.",
+      "answers": ["The bridge was built last year.", "The bridge was built (by them) last year."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "The window was break by the wind.",
+      "answers": ["The window was broken by the wind."],
+      "explanation": "Use the past participle 'broken', not the base form 'break'."
+    },
+    {
+      "type": "match",
+      "pairs": [
+        { "left": "is written", "right": "Present passive" },
+        { "left": "was made", "right": "Past passive" },
+        { "left": "has been done", "right": "Present perfect passive" },
+        { "left": "will be sent", "right": "Future passive" }
+      ]
+    }
+  ]
+}

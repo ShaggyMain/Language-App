@@ -1,0 +1,55 @@
+{
+  "id": "en.tenses.future-going-to",
+  "language": "en",
+  "category": "tenses",
+  "title": "Future: 'going to'",
+  "summary": "Plans, intentions, and predictions based on evidence.",
+  "cefrLevel": "A2",
+  "prerequisites": ["en.tenses.present-continuous"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**'going to' future** = *am/is/are* + **going to** + base verb. Use for:\n\n- **Plans / intentions** (decided beforehand): *I'm going to study tonight.*\n- **Predictions based on evidence**: *Look at those clouds — it's going to rain.*\n\nDifferent from *will*, which is for spontaneous decisions and pure predictions."
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "She is going to visit her parents.", "translation": "Odwiedzi swoich rodziców." },
+        { "source": "We're going to learn Spanish next year.", "translation": "Nauczymy się hiszpańskiego w przyszłym roku." },
+        { "source": "Look — he's going to fall!", "translation": "Patrz — zaraz upadnie!" }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "I ___ (going to / call) my mom tonight.",
+      "answers": ["am going to call", "'m going to call"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "She ___ a new car next month.",
+      "options": ["going to buy", "is going buy", "is going to buy", "is buy"],
+      "answer": 2
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Oni zamierzają jutro wyjechać.",
+      "answers": ["They are going to leave tomorrow.", "They're going to leave tomorrow."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "We are going to studying tonight.",
+      "answers": ["We are going to study tonight.", "We're going to study tonight."],
+      "explanation": "After 'going to' use the base form, not -ing."
+    },
+    {
+      "type": "transform",
+      "instruction": "Make the sentence negative.",
+      "source": "He is going to come.",
+      "answers": ["He is not going to come.", "He isn't going to come.", "He's not going to come."]
+    }
+  ]
+}

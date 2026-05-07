@@ -152,6 +152,41 @@ export const inflectors: Record<string, Inflector> = {
   /** Wrong past form: present 3sg as a distractor. */
   "past.wrong": (entry) => present3sg(entry),
 
+  /** Past participle (for perfect tenses + passive). */
+  pastParticiple: (entry) =>
+    entry.forms?.pastParticiple ?? entry.forms?.past ?? regularPast(entry.lemma),
+
+  /**
+   * Present perfect agreeing with subject: "have/has + past participle".
+   * Usage: {verb:perf.agree(subject)}
+   */
+  "perf.agree": (entry, args, ctx) => {
+    const subj = lookupSubject(args[0] ?? "subject", ctx);
+    const aux = agreementOf(subj) === "3sg" ? "has" : "have";
+    const pp = entry.forms?.pastParticiple ?? entry.forms?.past ?? regularPast(entry.lemma);
+    return `${aux} ${pp}`;
+  },
+
+  /** Wrong perfect form: swap auxiliary. */
+  "perf.agree.wrong": (entry, args, ctx) => {
+    const subj = lookupSubject(args[0] ?? "subject", ctx);
+    const aux = agreementOf(subj) === "3sg" ? "have" : "has";
+    const pp = entry.forms?.pastParticiple ?? entry.forms?.past ?? regularPast(entry.lemma);
+    return `${aux} ${pp}`;
+  },
+
+  /**
+   * Passive form agreeing with subject: "is/are + past participle".
+   * Usage: {verb:passive.agree(subject)}
+   */
+  "passive.agree": (entry, args, ctx) => {
+    const subj = lookupSubject(args[0] ?? "subject", ctx);
+    const ag = agreementOf(subj);
+    const aux = ag === "1sg" ? "am" : ag === "3sg" ? "is" : "are";
+    const pp = entry.forms?.pastParticiple ?? entry.forms?.past ?? regularPast(entry.lemma);
+    return `${aux} ${pp}`;
+  },
+
   /** Possessive adjective of the subject (my / your / his / her / our / their). */
   "pron.poss": (entry) => entry.forms?.possessiveAdj ?? `${entry.lemma}'s`,
 

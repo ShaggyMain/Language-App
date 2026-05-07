@@ -1,0 +1,70 @@
+{
+  "id": "en.tenses.present-perfect",
+  "language": "en",
+  "category": "tenses",
+  "title": "Present Perfect",
+  "summary": "Past actions with a connection to the present.",
+  "cefrLevel": "A2",
+  "prerequisites": ["en.tenses.past-simple"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Present Perfect** = *have/has* + past participle. Use it for:\n\n- Experiences (no specific time): *I have visited Paris.*\n- Actions with present relevance: *She has lost her keys.*\n- Unfinished time periods: *We have lived here for 5 years.*\n\nKey words: **ever, never, already, yet, just, for, since.**\n\nDo NOT use Present Perfect with finished time markers like *yesterday, last week, in 2010* — use Past Simple instead."
+    },
+    {
+      "kind": "table",
+      "title": "Form: to see (irregular)",
+      "headers": ["Person", "Affirmative", "Negative"],
+      "rows": [
+        ["I/you/we/they", "have seen", "haven't seen"],
+        ["he/she/it", "has seen", "hasn't seen"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "I have never been to Japan.", "translation": "Nigdy nie byłem w Japonii." },
+        { "source": "Have you finished your homework yet?", "translation": "Skończyłeś już zadanie?" },
+        { "source": "She has just arrived.", "translation": "Ona właśnie przyjechała." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "I ___ never been to Spain.",
+      "options": ["have", "has", "had", "am"],
+      "answer": 0
+    },
+    {
+      "type": "fill",
+      "prompt": "She ___ (just / arrive).",
+      "answers": ["has just arrived"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Czy widziałeś już ten film?",
+      "answers": ["Have you seen this movie yet?", "Have you already seen this movie?"]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "I have seen him yesterday.",
+      "answers": ["I saw him yesterday."],
+      "explanation": "With 'yesterday' use Past Simple, not Present Perfect."
+    },
+    {
+      "type": "transform",
+      "instruction": "Make the sentence negative.",
+      "source": "They have finished the project.",
+      "answers": ["They haven't finished the project.", "They have not finished the project."]
+    },
+    {
+      "type": "order",
+      "prompt": "Build a question.",
+      "tokens": ["Have", "you", "ever", "tried", "sushi", "?"],
+      "answer": ["Have", "you", "ever", "tried", "sushi", "?"]
+    }
+  ]
+}

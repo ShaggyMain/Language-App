@@ -158,12 +158,8 @@ export async function pickSessionExercises(
     picked.push(it);
   }
 
-  // 4b. Authored (only those that produce a renderable Exercise type the UI knows)
-  const supported = (ex: Exercise): boolean => ex.type === "fill" || ex.type === "mcq";
-  const supportedAuthored = shuffle(
-    authored.filter((a) => supported(a.exercise)),
-    rng,
-  );
+  // 4b. Authored — UI now supports every type defined on Exercise; render all.
+  const supportedAuthored = shuffle(authored, rng);
   let authoredAdded = 0;
   for (const a of supportedAuthored) {
     if (authoredAdded >= minAuthored) break;

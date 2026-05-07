@@ -1,0 +1,34 @@
+[
+  {
+    "id": "en.modals-advanced.should-mcq",
+    "topicId": "en.verbs.modals-advanced",
+    "language": "en",
+    "produces": "mcq",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "{subject} ___ {verb} more often. It's good advice.",
+    "answerPatterns": ["should {verb}"],
+    "distractorPatterns": [
+      "should to {verb}",
+      "shoulds {verb}",
+      "should {verb:present.3sg}"
+    ],
+    "tags": ["should"]
+  },
+  {
+    "id": "en.modals-advanced.might-fill",
+    "topicId": "en.verbs.modals-advanced",
+    "language": "en",
+    "produces": "fill",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "{subject} ___ ({verb}) later, I'm not sure.",
+    "answerPatterns": ["might {verb:base}"],
+    "hint": "might + base verb",
+    "tags": ["might"]
+  }
+]

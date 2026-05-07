@@ -1,0 +1,35 @@
+[
+  {
+    "id": "en.passive.present-fill",
+    "topicId": "en.verbs.passive-voice",
+    "language": "en",
+    "produces": "fill",
+    "slots": [
+      { "name": "subject", "pos": "noun", "filter": { "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "tags": ["irregular"], "cefrMax": "A2" } }
+    ],
+    "pattern": "The {subject} ___ ({verb}) here every day.",
+    "answerPatterns": ["is {verb:pastParticiple}"],
+    "hint": "is/are + past participle",
+    "tags": ["present-passive"]
+  },
+  {
+    "id": "en.passive.past-mcq",
+    "topicId": "en.verbs.passive-voice",
+    "language": "en",
+    "produces": "mcq",
+    "slots": [
+      { "name": "subject", "pos": "noun", "filter": { "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "tags": ["irregular"], "cefrMax": "A2" } }
+    ],
+    "pattern": "The {subject} ___ yesterday.",
+    "answerPatterns": ["was {verb:pastParticiple}"],
+    "distractorPatterns": [
+      "was {verb:past}",
+      "is {verb:pastParticiple}",
+      "{verb:past}"
+    ],
+    "explanation": "Past passive: was/were + past participle.",
+    "tags": ["past-passive"]
+  }
+]
