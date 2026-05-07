@@ -28,8 +28,8 @@ import { ratingFromGrade, review } from "../../lib/srs";
 import { ExerciseRenderer } from "./ExerciseRenderer";
 import { ResultSheet } from "./ResultSheet";
 import { Language } from "../../lib/types";
-
-const USER_ID = "local";
+import { currentUserId } from "../../lib/auth";
+import { syncPushPassed, syncPushSrs } from "../../lib/sync";
 
 type Props = {
   language: string;
@@ -58,13 +58,13 @@ export function SessionRunner({ language, topic, mode, count = 10 }: Props) {
         reposRef.current = repos;
         const startedAt = Date.now();
         const sessionId = await repos.log.startSession({
-          userId: USER_ID,
+          userId: currentUserId(),
           topicId: topic.id,
           startedAt,
         });
         sessionIdRef.current = sessionId;
         const items = await pickSessionExercises(topic, templates, lex, repos, {
-          userId: USER_ID,
+          userId: currentUserId(),
           mode,
           count,
         });
@@ -118,7 +118,12 @@ export function SessionRunner({ language, topic, mode, count = 10 }: Props) {
       }
     }
     const sum = summarize(state);
-    void repos.log.finishSession({ sessionId: sid, finishedAt: Date.now(), summary: sum });
+    const finishedAt = Date.now();
+    void repos.log.finishSession({ sessionId: sid, finishedAt, summary: sum });
+    if (state.mode === "path" && sum.passedPath) {
+      void repos.log.markPassed({ userId: currentUserId(), topicId: topic.id, at: finishedAt });
+      void syncPushPassed(topic.id, finishedAt);
+    }
     publishSession(state, sum);
     router.replace(`/${language}/results`);
   }, [state.phase, state, topic.id, language]);
@@ -209,16 +214,13 @@ async function persistItem(
   topicId: string,
   item: SessionItem & { result: GradeResult },
 ): Promise<void> {
-  await recordItemSeen(repos, USER_ID, topicId, sessionId, item, item.result.correct);
+  await recordItemSeen(repos, currentUserId(), topicId, sessionId, item, item.result.correct);
   if (item.origin === "authored" || !item.templateId || !item.slotIds) return;
-  const card = await repos.srs.getCard(USER_ID, item.instanceHash);
+  const card = await repos.srs.getCard(currentUserId(), item.instanceHash);
   const next = review(card, ratingFromGrade(item.result));
-  await repos.srs.upsertCard({
-    userId: USER_ID,
-    topicId,
-    instance: { templateId: item.templateId, instanceHash: item.instanceHash, slotIds: item.slotIds },
-    card: next,
-  });
+  const instance = { templateId: item.templateId, instanceHash: item.instanceHash, slotIds: item.slotIds };
+  await repos.srs.upsertCard({ userId: currentUserId(), topicId, instance, card: next });
+  void syncPushSrs(topicId, instance, next);
 }
 
 function ProgressBar({ current, total }: { current: number; total: number }) {

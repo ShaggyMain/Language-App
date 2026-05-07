@@ -60,6 +60,10 @@ export interface SessionLogRepo {
   /** Allocate a fresh sessionId. Used by SeenRepo to group instances. */
   startSession(input: { userId: string; topicId: string; startedAt: number }): Promise<number>;
   finishSession(input: { sessionId: number; finishedAt: number; summary: object }): Promise<void>;
+  /** Record that this user passed this topic (≥80% overall, ≥70% per type). */
+  markPassed(input: { userId: string; topicId: string; at: number }): Promise<void>;
+  /** Topic ids the user has ever passed — used by path gating. */
+  passedTopicIds(userId: string): Promise<Set<string>>;
 }
 
 export type Repos = {
@@ -75,6 +79,7 @@ export function createMemoryRepos(): Repos {
   const cards = new Map<string, { userId: string; topicId: string; instance: StoredInstance; card: Card }>();
   let nextSessionId = 1;
   const sessions = new Map<number, { userId: string; topicId: string; startedAt: number; finishedAt?: number; summary?: object }>();
+  const passed = new Map<string, Set<string>>(); // userId → topicIds
 
   const seen: SeenRepo = {
     async markSeen({ userId, topicId, sessionId, instance, correct }) {
@@ -148,6 +153,17 @@ export function createMemoryRepos(): Repos {
         s.finishedAt = finishedAt;
         s.summary = summary;
       }
+    },
+    async markPassed({ userId, topicId }) {
+      let set = passed.get(userId);
+      if (!set) {
+        set = new Set();
+        passed.set(userId, set);
+      }
+      set.add(topicId);
+    },
+    async passedTopicIds(userId) {
+      return new Set(passed.get(userId) ?? []);
     },
   };
 

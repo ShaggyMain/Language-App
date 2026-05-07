@@ -1,6 +1,7 @@
 import { Pressable, Text, View } from "react-native";
 import * as Speech from "expo-speech";
 import type { GradeResult } from "../../lib/grading";
+import { getCachedPreferences } from "../../lib/preferences";
 import { TextAnswerExercise } from "./TextAnswerExercise";
 
 type Props = {
@@ -16,7 +17,7 @@ export function DictationExercise({ audioText, ttsLanguage, answers, result, onS
   function play() {
     try {
       Speech.stop();
-      Speech.speak(audioText, { language: ttsLanguage, rate: 0.9 });
+      Speech.speak(audioText, { language: ttsLanguage, rate: getCachedPreferences().ttsRate });
     } catch {
       // expo-speech is unavailable on web preview; degrade gracefully
     }

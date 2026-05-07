@@ -7,21 +7,38 @@
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "icon": "./assets/icon.png",
     "splash": {
+      "image": "./assets/splash.png",
       "backgroundColor": "#0b1220",
       "resizeMode": "contain"
     },
+    "ios": {
+      "bundleIdentifier": "com.example.languageapp",
+      "supportsTablet": true,
+      "buildNumber": "1"
+    },
     "android": {
       "package": "com.example.languageapp",
+      "versionCode": 1,
       "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#0b1220"
       }
+    },
+    "web": {
+      "bundler": "metro"
     },
     "plugins": [
       "expo-router"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "REPLACE_WITH_YOUR_EAS_PROJECT_ID"
+      }
     }
   }
 }
