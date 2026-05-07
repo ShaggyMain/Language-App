@@ -9,7 +9,7 @@
       { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } },
       { "name": "obj", "pos": "noun", "filter": { "cefrMax": "A2" } }
     ],
-    "pattern": "{subject} ___ {obj} tomorrow.",
+    "pattern": "{subject} ___ ({verb}) {obj} tomorrow.",
     "answerPatterns": ["{verb:be.agree(subject)} going to {verb:base}"],
     "hint": "am/is/are going to + base verb",
     "tags": ["affirmative"]

@@ -9,7 +9,7 @@
       { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } },
       { "name": "obj", "pos": "noun", "filter": { "cefrMax": "A2" } }
     ],
-    "pattern": "Yesterday {subject} ___ {obj}.",
+    "pattern": "Yesterday {subject} ___ ({verb}) {obj}.",
     "answerPatterns": ["{verb:past}"],
     "hint": "Past Simple form",
     "explanation": "Regular verbs: add -ed. Irregular verbs have their own past form.",
@@ -45,7 +45,7 @@
       { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } },
       { "name": "obj", "pos": "noun", "filter": { "cefrMax": "A2" } }
     ],
-    "pattern": "{subject} ___ {obj} yesterday.",
+    "pattern": "{subject} ___ ({verb} — negative) {obj} yesterday.",
     "answerPatterns": ["didn't {verb:base}", "did not {verb:base}"],
     "hint": "didn't / did not + base verb",
     "explanation": "Past Simple negation: didn't + base form. Don't use the past form here.",

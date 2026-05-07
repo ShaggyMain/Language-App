@@ -9,7 +9,7 @@
       { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } },
       { "name": "obj", "pos": "noun", "filter": { "cefrMax": "A2" } }
     ],
-    "pattern": "{subject} ___ {obj} now.",
+    "pattern": "{subject} ___ ({verb}) {obj} now.",
     "answerPatterns": ["{verb:be.agree(subject)} {verb:gerund}"],
     "hint": "am/is/are + verb-ing",
     "explanation": "Use 'am' with I, 'is' with he/she/it, 'are' with you/we/they.",
@@ -45,7 +45,7 @@
       { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } },
       { "name": "obj", "pos": "noun", "filter": { "cefrMax": "A2" } }
     ],
-    "pattern": "{subject} ___ {obj} right now.",
+    "pattern": "{subject} ___ ({verb} — negative) {obj} right now.",
     "answerPatterns": ["{verb:be.agree(subject)} not {verb:gerund}"],
     "hint": "am/is/are + not + verb-ing",
     "tags": ["negation"]
