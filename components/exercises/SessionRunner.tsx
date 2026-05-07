@@ -27,6 +27,7 @@ import { publishSession } from "../../lib/sessionStore";
 import { ratingFromGrade, review } from "../../lib/srs";
 import { ExerciseRenderer } from "./ExerciseRenderer";
 import { ResultSheet } from "./ResultSheet";
+import { Language } from "../../lib/types";
 
 const USER_ID = "local";
 
@@ -140,29 +141,7 @@ export function SessionRunner({ language, topic, mode, count = 10 }: Props) {
   const cur = state.items[state.cursor];
   const locked = state.phase === "showing-result";
 
-  function handleSubmit(raw: string, pickedIndex?: number) {
-    const cur = state.items[state.cursor];
-    let result: GradeResult;
-    if (cur.exercise.type === "mcq") {
-      const correct = pickedIndex === cur.exercise.answer;
-      result = {
-        correct,
-        score: correct ? 1 : 0,
-        closest: cur.exercise.options[cur.exercise.answer],
-        diff: [{ text: raw, kind: correct ? "same" : "extra" }],
-        reason: correct ? "exact" : "wrong",
-      };
-    } else if (cur.exercise.type === "fill") {
-      result = grade(raw, cur.exercise.answers);
-    } else {
-      result = {
-        correct: false,
-        score: 0,
-        closest: "",
-        diff: [],
-        reason: "wrong",
-      };
-    }
+  function handleSubmit(raw: string, result: GradeResult) {
     dispatch({ type: "SUBMIT", userInput: raw, result });
   }
 
@@ -170,20 +149,23 @@ export function SessionRunner({ language, topic, mode, count = 10 }: Props) {
     dispatch({ type: "NEXT" });
   }
 
-  const canonical = cur.exercise.type === "fill" ? cur.exercise.answers[0] : undefined;
-  const explanation =
-    cur.exercise.type === "mcq" || cur.exercise.type === "fill" ? cur.exercise.explanation : undefined;
+  const canonical = canonicalAnswer(cur.exercise);
+  const explanation = "explanation" in cur.exercise ? cur.exercise.explanation : undefined;
 
   const pickedIndex =
     cur.exercise.type === "mcq" && typeof cur.userInput === "string"
       ? cur.exercise.options.indexOf(cur.userInput)
       : undefined;
 
+  const langParsed = Language.safeParse(language);
+  const lang = langParsed.success ? langParsed.data : "en";
+
   return (
     <View className="flex-1">
       <ProgressBar current={state.cursor + 1} total={state.items.length} />
       <ExerciseRenderer
         exercise={cur.exercise}
+        language={lang}
         locked={locked}
         userInput={cur.userInput}
         pickedIndex={pickedIndex}
@@ -200,6 +182,25 @@ export function SessionRunner({ language, topic, mode, count = 10 }: Props) {
       ) : null}
     </View>
   );
+}
+
+function canonicalAnswer(ex: import("../../lib/types").Exercise): string | undefined {
+  switch (ex.type) {
+    case "fill":
+    case "translate":
+    case "transform":
+    case "errorFix":
+    case "dictation":
+      return ex.answers[0];
+    case "order":
+      return ex.answer.join(" ");
+    case "conjugate":
+      return ex.persons.map((p) => `${p.person}: ${p.answer}`).join(" · ");
+    case "match":
+      return ex.pairs.map((p) => `${p.left} → ${p.right}`).join("; ");
+    default:
+      return undefined;
+  }
 }
 
 async function persistItem(

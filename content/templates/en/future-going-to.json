@@ -1,0 +1,36 @@
+[
+  {
+    "id": "en.future-going-to.fill",
+    "topicId": "en.tenses.future-going-to",
+    "language": "en",
+    "produces": "fill",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } },
+      { "name": "obj", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "{subject} ___ {obj} tomorrow.",
+    "answerPatterns": ["{verb:be.agree(subject)} going to {verb:base}"],
+    "hint": "am/is/are going to + base verb",
+    "tags": ["affirmative"]
+  },
+  {
+    "id": "en.future-going-to.mcq",
+    "topicId": "en.tenses.future-going-to",
+    "language": "en",
+    "produces": "mcq",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } },
+      { "name": "obj", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "{subject} ___ {obj} next week.",
+    "answerPatterns": ["{verb:be.agree(subject)} going to {verb:base}"],
+    "distractorPatterns": [
+      "going to {verb:base}",
+      "{verb:be.agree(subject)} going {verb:base}",
+      "{verb:be.agree(subject)} going to {verb:gerund}"
+    ],
+    "tags": ["affirmative"]
+  }
+]

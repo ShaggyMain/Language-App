@@ -1,0 +1,61 @@
+{
+  "id": "en.conditionals.first",
+  "language": "en",
+  "category": "moods",
+  "title": "First Conditional",
+  "summary": "Real future possibilities: 'if + present, will + base'.",
+  "cefrLevel": "B1",
+  "prerequisites": ["en.tenses.present-simple"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**First Conditional** describes a *real* future possibility — something that may well happen.\n\nForm:\n\n> **If + Present Simple, will + base verb.**\n\nExamples:\n- *If it rains, we'll stay home.*\n- *I'll call you if I have time.*\n\nNote: in the *if-clause* we use **present**, even though we're talking about the future. After **will**, use the **base form** (no -s, no to)."
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "If you study, you will pass.", "translation": "Jeśli się będziesz uczyć, zdasz." },
+        { "source": "She will come if you invite her.", "translation": "Przyjdzie, jeśli ją zaprosisz." },
+        { "source": "If we don't hurry, we'll be late.", "translation": "Jeśli się nie pośpieszymy, spóźnimy się." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "If it ___ tomorrow, we'll cancel the trip.",
+      "options": ["rain", "rains", "will rain", "is raining"],
+      "answer": 1
+    },
+    {
+      "type": "fill",
+      "prompt": "If you call me, I ___ (help) you.",
+      "answers": ["will help", "'ll help"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Jeśli będę miał czas, zadzwonię.",
+      "answers": ["If I have time, I will call.", "I will call if I have time.", "If I have time, I'll call."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "If she will come, we will start.",
+      "answers": ["If she comes, we will start.", "If she comes, we'll start."],
+      "explanation": "No 'will' in the if-clause — use present simple."
+    },
+    {
+      "type": "order",
+      "prompt": "Build a first-conditional sentence.",
+      "tokens": ["If", "you", "study", ",", "you", "will", "pass", "."],
+      "answer": ["If", "you", "study", ",", "you", "will", "pass", "."]
+    },
+    {
+      "type": "transform",
+      "instruction": "Combine into a first-conditional sentence.",
+      "source": "It is sunny. We go to the beach.",
+      "answers": ["If it is sunny, we will go to the beach.", "If it's sunny, we'll go to the beach."]
+    }
+  ]
+}

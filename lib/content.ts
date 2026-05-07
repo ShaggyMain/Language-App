@@ -11,6 +11,11 @@ import enModals from "../content/en/modals.json";
 import enPrepositions from "../content/en/prepositions.json";
 import enPossessives from "../content/en/possessives.json";
 import enDemonstratives from "../content/en/demonstratives.json";
+import enPresentPerfect from "../content/en/present-perfect.json";
+import enFutureGoingTo from "../content/en/future-going-to.json";
+import enConditionalsFirst from "../content/en/conditionals-first.json";
+import enPassiveVoice from "../content/en/passive-voice.json";
+import enModalsAdvanced from "../content/en/modals-advanced.json";
 
 // EN lexicons
 import enPersons from "../content/lexicons/en/persons.json";
@@ -32,6 +37,11 @@ import enTplModals from "../content/templates/en/modals.json";
 import enTplPrepositions from "../content/templates/en/prepositions.json";
 import enTplPossessives from "../content/templates/en/possessives.json";
 import enTplDemonstratives from "../content/templates/en/demonstratives.json";
+import enTplPresentPerfect from "../content/templates/en/present-perfect.json";
+import enTplFutureGoingTo from "../content/templates/en/future-going-to.json";
+import enTplConditionalsFirst from "../content/templates/en/conditionals-first.json";
+import enTplPassiveVoice from "../content/templates/en/passive-voice.json";
+import enTplModalsAdvanced from "../content/templates/en/modals-advanced.json";
 
 // DE
 import deArticlesNominativ from "../content/de/articles-nominativ.json";
@@ -72,6 +82,11 @@ const RAW_TOPICS: unknown[] = [
   enPrepositions,
   enPossessives,
   enDemonstratives,
+  enPresentPerfect,
+  enFutureGoingTo,
+  enConditionalsFirst,
+  enPassiveVoice,
+  enModalsAdvanced,
   deArticlesNominativ,
   deArticlesAkkusativ,
   deSeinHaben,
@@ -109,6 +124,11 @@ const RAW_TEMPLATE_FILES: unknown[] = [
   enTplPrepositions,
   enTplPossessives,
   enTplDemonstratives,
+  enTplPresentPerfect,
+  enTplFutureGoingTo,
+  enTplConditionalsFirst,
+  enTplPassiveVoice,
+  enTplModalsAdvanced,
   deTplArticlesNominativ,
   deTplArticlesAkkusativ,
   deTplSeinHaben,

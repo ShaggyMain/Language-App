@@ -1,16 +1,27 @@
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import { Pressable, Text, TextInput, View } from "react-native";
 import { grade, type GradeResult } from "../../lib/grading";
 
 type Props = {
-  prompt: string;
+  /** Header rendered above the input (instruction, source sentence, audio button, etc.). */
+  header: ReactNode;
   answers: string[];
   hint?: string;
+  placeholder?: string;
   result?: { correct: boolean; userInput?: string };
   onSubmit: (raw: string, result: GradeResult) => void;
+  multiline?: boolean;
 };
 
-export function FillExercise({ prompt, answers, hint, result, onSubmit }: Props) {
+export function TextAnswerExercise({
+  header,
+  answers,
+  hint,
+  placeholder,
+  result,
+  onSubmit,
+  multiline,
+}: Props) {
   const [value, setValue] = useState(result?.userInput ?? "");
   const locked = !!result;
 
@@ -28,17 +39,18 @@ export function FillExercise({ prompt, answers, hint, result, onSubmit }: Props)
 
   return (
     <View>
-      <Text className="text-text text-xl mb-6 leading-7">{prompt}</Text>
+      {header}
       {hint ? <Text className="text-muted text-sm mb-3">{hint}</Text> : null}
       <TextInput
         className={`rounded-xl border px-4 py-3 text-text text-base ${inputBg}`}
         value={value}
         onChangeText={setValue}
         editable={!locked}
-        placeholder="Type your answer…"
+        placeholder={placeholder ?? "Type your answer…"}
         placeholderTextColor="#8aa0c2"
         autoCapitalize="none"
         autoCorrect={false}
+        multiline={multiline}
         onSubmitEditing={handle}
         returnKeyType="done"
       />

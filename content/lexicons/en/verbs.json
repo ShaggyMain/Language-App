@@ -7,7 +7,7 @@
       "pos": "verb",
       "cefr": "A1",
       "freqRank": 50,
-      "tags": ["action", "regular"],
+      "tags": ["action", "regular", "intransitive"],
       "gloss": { "pl": "pracować" },
       "forms": { "irregular": false, "present": { "3sg": "works" }, "gerund": "working", "past": "worked" }
     },
@@ -79,7 +79,7 @@
       "freqRank": 57,
       "tags": ["action", "irregular"],
       "gloss": { "pl": "pisać" },
-      "forms": { "irregular": true, "present": { "3sg": "writes" }, "gerund": "writing", "past": "wrote" }
+      "forms": { "irregular": true, "present": { "3sg": "writes" }, "gerund": "writing", "past": "wrote", "pastParticiple": "written" }
     },
     {
       "id": "en.verb.speak",
@@ -89,7 +89,7 @@
       "freqRank": 58,
       "tags": ["action", "irregular"],
       "gloss": { "pl": "mówić" },
-      "forms": { "irregular": true, "present": { "3sg": "speaks" }, "gerund": "speaking", "past": "spoke" }
+      "forms": { "irregular": true, "present": { "3sg": "speaks" }, "gerund": "speaking", "past": "spoke", "pastParticiple": "spoken" }
     },
     {
       "id": "en.verb.eat",
@@ -99,7 +99,7 @@
       "freqRank": 59,
       "tags": ["action", "irregular"],
       "gloss": { "pl": "jeść" },
-      "forms": { "irregular": true, "present": { "3sg": "eats" }, "gerund": "eating", "past": "ate" }
+      "forms": { "irregular": true, "present": { "3sg": "eats" }, "gerund": "eating", "past": "ate", "pastParticiple": "eaten" }
     },
     {
       "id": "en.verb.drink",
@@ -109,7 +109,7 @@
       "freqRank": 60,
       "tags": ["action", "irregular"],
       "gloss": { "pl": "pić" },
-      "forms": { "irregular": true, "present": { "3sg": "drinks" }, "gerund": "drinking", "past": "drank" }
+      "forms": { "irregular": true, "present": { "3sg": "drinks" }, "gerund": "drinking", "past": "drank", "pastParticiple": "drunk" }
     },
     {
       "id": "en.verb.go",
@@ -119,7 +119,7 @@
       "freqRank": 10,
       "tags": ["action", "irregular"],
       "gloss": { "pl": "iść / jechać" },
-      "forms": { "irregular": true, "present": { "3sg": "goes" }, "gerund": "going", "past": "went" }
+      "forms": { "irregular": true, "present": { "3sg": "goes" }, "gerund": "going", "past": "went", "pastParticiple": "gone" }
     },
     {
       "id": "en.verb.do",
@@ -129,7 +129,7 @@
       "freqRank": 8,
       "tags": ["action", "irregular", "auxiliary"],
       "gloss": { "pl": "robić" },
-      "forms": { "irregular": true, "present": { "3sg": "does" }, "gerund": "doing", "past": "did" }
+      "forms": { "irregular": true, "present": { "3sg": "does" }, "gerund": "doing", "past": "did", "pastParticiple": "done" }
     },
     {
       "id": "en.verb.make",
@@ -139,7 +139,7 @@
       "freqRank": 12,
       "tags": ["action", "irregular"],
       "gloss": { "pl": "robić / tworzyć" },
-      "forms": { "irregular": true, "present": { "3sg": "makes" }, "gerund": "making", "past": "made" }
+      "forms": { "irregular": true, "present": { "3sg": "makes" }, "gerund": "making", "past": "made", "pastParticiple": "made" }
     },
     {
       "id": "en.verb.have",
@@ -149,7 +149,7 @@
       "freqRank": 5,
       "tags": ["state", "irregular", "auxiliary"],
       "gloss": { "pl": "mieć" },
-      "forms": { "irregular": true, "present": { "3sg": "has" }, "gerund": "having", "past": "had" }
+      "forms": { "irregular": true, "present": { "3sg": "has" }, "gerund": "having", "past": "had", "pastParticiple": "had" }
     },
     {
       "id": "en.verb.know",
@@ -159,7 +159,7 @@
       "freqRank": 20,
       "tags": ["state", "irregular"],
       "gloss": { "pl": "wiedzieć / znać" },
-      "forms": { "irregular": true, "present": { "3sg": "knows" }, "gerund": "knowing", "past": "knew" }
+      "forms": { "irregular": true, "present": { "3sg": "knows" }, "gerund": "knowing", "past": "knew", "pastParticiple": "known" }
     },
     {
       "id": "en.verb.see",
@@ -169,7 +169,7 @@
       "freqRank": 21,
       "tags": ["state", "irregular"],
       "gloss": { "pl": "widzieć" },
-      "forms": { "irregular": true, "present": { "3sg": "sees" }, "gerund": "seeing", "past": "saw" }
+      "forms": { "irregular": true, "present": { "3sg": "sees" }, "gerund": "seeing", "past": "saw", "pastParticiple": "seen" }
     },
     {
       "id": "en.verb.come",
@@ -179,7 +179,7 @@
       "freqRank": 22,
       "tags": ["action", "irregular"],
       "gloss": { "pl": "przychodzić" },
-      "forms": { "irregular": true, "present": { "3sg": "comes" }, "gerund": "coming", "past": "came" }
+      "forms": { "irregular": true, "present": { "3sg": "comes" }, "gerund": "coming", "past": "came", "pastParticiple": "come" }
     },
     {
       "id": "en.verb.watch",
@@ -219,7 +219,7 @@
       "freqRank": 73,
       "tags": ["action", "irregular"],
       "gloss": { "pl": "jechać / prowadzić" },
-      "forms": { "irregular": true, "present": { "3sg": "drives" }, "gerund": "driving", "past": "drove" }
+      "forms": { "irregular": true, "present": { "3sg": "drives" }, "gerund": "driving", "past": "drove", "pastParticiple": "driven" }
     },
     {
       "id": "en.verb.run",
@@ -229,7 +229,7 @@
       "freqRank": 74,
       "tags": ["action", "irregular"],
       "gloss": { "pl": "biegać" },
-      "forms": { "irregular": true, "present": { "3sg": "runs" }, "gerund": "running", "past": "ran" }
+      "forms": { "irregular": true, "present": { "3sg": "runs" }, "gerund": "running", "past": "ran", "pastParticiple": "run" }
     },
     {
       "id": "en.verb.swim",
@@ -239,7 +239,7 @@
       "freqRank": 75,
       "tags": ["action", "irregular"],
       "gloss": { "pl": "pływać" },
-      "forms": { "irregular": true, "present": { "3sg": "swims" }, "gerund": "swimming", "past": "swam" }
+      "forms": { "irregular": true, "present": { "3sg": "swims" }, "gerund": "swimming", "past": "swam", "pastParticiple": "swum" }
     },
     {
       "id": "en.verb.sing",
@@ -249,7 +249,7 @@
       "freqRank": 76,
       "tags": ["action", "irregular"],
       "gloss": { "pl": "śpiewać" },
-      "forms": { "irregular": true, "present": { "3sg": "sings" }, "gerund": "singing", "past": "sang" }
+      "forms": { "irregular": true, "present": { "3sg": "sings" }, "gerund": "singing", "past": "sang", "pastParticiple": "sung" }
     },
     {
       "id": "en.verb.dance",
@@ -269,7 +269,7 @@
       "freqRank": 78,
       "tags": ["state", "irregular"],
       "gloss": { "pl": "spać" },
-      "forms": { "irregular": true, "present": { "3sg": "sleeps" }, "gerund": "sleeping", "past": "slept" }
+      "forms": { "irregular": true, "present": { "3sg": "sleeps" }, "gerund": "sleeping", "past": "slept", "pastParticiple": "slept" }
     },
     {
       "id": "en.verb.teach",
@@ -279,7 +279,7 @@
       "freqRank": 80,
       "tags": ["action", "irregular"],
       "gloss": { "pl": "uczyć (kogoś)" },
-      "forms": { "irregular": true, "present": { "3sg": "teaches" }, "gerund": "teaching", "past": "taught" }
+      "forms": { "irregular": true, "present": { "3sg": "teaches" }, "gerund": "teaching", "past": "taught", "pastParticiple": "taught" }
     },
     {
       "id": "en.verb.buy",
@@ -289,7 +289,7 @@
       "freqRank": 81,
       "tags": ["action", "irregular"],
       "gloss": { "pl": "kupować" },
-      "forms": { "irregular": true, "present": { "3sg": "buys" }, "gerund": "buying", "past": "bought" }
+      "forms": { "irregular": true, "present": { "3sg": "buys" }, "gerund": "buying", "past": "bought", "pastParticiple": "bought" }
     },
     {
       "id": "en.verb.sell",
@@ -299,7 +299,7 @@
       "freqRank": 82,
       "tags": ["action", "irregular"],
       "gloss": { "pl": "sprzedawać" },
-      "forms": { "irregular": true, "present": { "3sg": "sells" }, "gerund": "selling", "past": "sold" }
+      "forms": { "irregular": true, "present": { "3sg": "sells" }, "gerund": "selling", "past": "sold", "pastParticiple": "sold" }
     }
   ]
 }

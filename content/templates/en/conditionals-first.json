@@ -1,0 +1,36 @@
+[
+  {
+    "id": "en.conditionals.first-fill",
+    "topicId": "en.conditionals.first",
+    "language": "en",
+    "produces": "fill",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "agreement": "3sg", "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "If you ask, {subject} ___ ({verb}) you.",
+    "answerPatterns": ["will {verb:base}"],
+    "hint": "will + base verb",
+    "explanation": "Main clause uses 'will + base'. The if-clause stays in present.",
+    "tags": ["main-clause"]
+  },
+  {
+    "id": "en.conditionals.first-mcq",
+    "topicId": "en.conditionals.first",
+    "language": "en",
+    "produces": "mcq",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "If {subject} ___ time, {subject:pron.subject} will help.",
+    "answerPatterns": ["{verb:present.agree(subject)}"],
+    "distractorPatterns": [
+      "will {verb:base}",
+      "{verb:base}",
+      "{verb:gerund}"
+    ],
+    "explanation": "If-clause uses present simple, NOT 'will'.",
+    "tags": ["if-clause"]
+  }
+]

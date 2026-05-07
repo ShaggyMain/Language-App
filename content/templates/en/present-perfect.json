@@ -1,0 +1,35 @@
+[
+  {
+    "id": "en.present-perfect.fill",
+    "topicId": "en.tenses.present-perfect",
+    "language": "en",
+    "produces": "fill",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "tags": ["pronoun"] } },
+      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "{subject} never ___ ({verb}) anything like this.",
+    "answerPatterns": ["{verb:perf.agree(subject)}"],
+    "hint": "have/has + past participle",
+    "tags": ["affirmative"]
+  },
+  {
+    "id": "en.present-perfect.mcq",
+    "topicId": "en.tenses.present-perfect",
+    "language": "en",
+    "produces": "mcq",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "{subject} just ___ {verb:gerund}.",
+    "answerPatterns": ["{verb:perf.agree(subject)}"],
+    "distractorPatterns": [
+      "{verb:past}",
+      "{verb:present.agree(subject)}",
+      "{verb:base}"
+    ],
+    "explanation": "Present Perfect = have/has + past participle.",
+    "tags": ["affirmative"]
+  }
+]

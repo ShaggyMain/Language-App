@@ -1,14 +1,13 @@
 import { useState } from "react";
 import { Pressable, Text, View } from "react-native";
+import type { GradeResult } from "../../lib/grading";
 
 type Props = {
   prompt: string;
   options: string[];
-  /** Index of the correct option (used after submission to highlight). */
   answer: number;
-  /** Already-answered state — disables interaction and shows correct/wrong. */
   result?: { correct: boolean; pickedIndex?: number };
-  onSubmit: (pickedIndex: number, raw: string) => void;
+  onSubmit: (raw: string, result: GradeResult) => void;
 };
 
 export function McqExercise({ prompt, options, answer, result, onSubmit }: Props) {
@@ -18,7 +17,15 @@ export function McqExercise({ prompt, options, answer, result, onSubmit }: Props
   function handlePress(idx: number) {
     if (locked) return;
     setPicked(idx);
-    onSubmit(idx, options[idx]);
+    const correct = idx === answer;
+    const raw = options[idx];
+    onSubmit(raw, {
+      correct,
+      score: correct ? 1 : 0,
+      closest: options[answer],
+      diff: [{ text: raw, kind: correct ? "same" : "extra" }],
+      reason: correct ? "exact" : "wrong",
+    });
   }
 
   return (
