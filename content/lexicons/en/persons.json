@@ -1,0 +1,135 @@
+{
+  "language": "en",
+  "entries": [
+    {
+      "id": "en.person.i",
+      "lemma": "I",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 1,
+      "tags": ["pronoun", "subject"],
+      "gloss": { "pl": "ja" },
+      "forms": { "agreement": "1sg", "pronounSubject": "I", "pronounObject": "me" }
+    },
+    {
+      "id": "en.person.you-sg",
+      "lemma": "you",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 2,
+      "tags": ["pronoun", "subject"],
+      "gloss": { "pl": "ty" },
+      "forms": { "agreement": "2sg", "pronounSubject": "you", "pronounObject": "you" }
+    },
+    {
+      "id": "en.person.he",
+      "lemma": "he",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 3,
+      "tags": ["pronoun", "subject"],
+      "gloss": { "pl": "on" },
+      "forms": { "agreement": "3sg", "pronounSubject": "he", "pronounObject": "him" }
+    },
+    {
+      "id": "en.person.she",
+      "lemma": "she",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 4,
+      "tags": ["pronoun", "subject"],
+      "gloss": { "pl": "ona" },
+      "forms": { "agreement": "3sg", "pronounSubject": "she", "pronounObject": "her" }
+    },
+    {
+      "id": "en.person.it",
+      "lemma": "it",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 5,
+      "tags": ["pronoun", "subject"],
+      "gloss": { "pl": "ono / to" },
+      "forms": { "agreement": "3sg", "pronounSubject": "it", "pronounObject": "it" }
+    },
+    {
+      "id": "en.person.we",
+      "lemma": "we",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 6,
+      "tags": ["pronoun", "subject"],
+      "gloss": { "pl": "my" },
+      "forms": { "agreement": "1pl", "pronounSubject": "we", "pronounObject": "us" }
+    },
+    {
+      "id": "en.person.they",
+      "lemma": "they",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 7,
+      "tags": ["pronoun", "subject"],
+      "gloss": { "pl": "oni / one" },
+      "forms": { "agreement": "3pl", "pronounSubject": "they", "pronounObject": "them" }
+    },
+    {
+      "id": "en.person.tom",
+      "lemma": "Tom",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 100,
+      "tags": ["name"],
+      "gloss": { "pl": "Tom" },
+      "forms": { "agreement": "3sg" }
+    },
+    {
+      "id": "en.person.anna",
+      "lemma": "Anna",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 101,
+      "tags": ["name"],
+      "gloss": { "pl": "Anna" },
+      "forms": { "agreement": "3sg" }
+    },
+    {
+      "id": "en.person.my-brother",
+      "lemma": "my brother",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 200,
+      "tags": ["family"],
+      "gloss": { "pl": "mój brat" },
+      "forms": { "agreement": "3sg" }
+    },
+    {
+      "id": "en.person.my-sister",
+      "lemma": "my sister",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 201,
+      "tags": ["family"],
+      "gloss": { "pl": "moja siostra" },
+      "forms": { "agreement": "3sg" }
+    },
+    {
+      "id": "en.person.my-parents",
+      "lemma": "my parents",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 202,
+      "tags": ["family"],
+      "gloss": { "pl": "moi rodzice" },
+      "forms": { "agreement": "3pl" }
+    },
+    {
+      "id": "en.person.the-children",
+      "lemma": "the children",
+      "pos": "person",
+      "cefr": "A1",
+      "freqRank": 210,
+      "tags": ["family"],
+      "gloss": { "pl": "dzieci" },
+      "forms": { "agreement": "3pl" }
+    }
+  ]
+}

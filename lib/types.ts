@@ -39,7 +39,7 @@ export type TheoryBlock = z.infer<typeof TheoryBlock>;
 
 const baseExercise = { explanation: z.string().optional() };
 
-const Exercise = z.discriminatedUnion("type", [
+export const Exercise = z.discriminatedUnion("type", [
   z.object({
     ...baseExercise,
     type: z.literal("mcq"),
@@ -115,3 +115,100 @@ export const Topic = z.object({
   exercises: z.array(Exercise).min(1),
 });
 export type Topic = z.infer<typeof Topic>;
+
+/* ───────────────────────── Lexicon + Templates ─────────────────────────
+ * Generator layer: TopicTemplate is a parameterized sentence that, when
+ * combined with a Lexicon, produces concrete `Exercise` instances. Schemas
+ * here are validated by zod but kept permissive on `forms` because each
+ * language's inflection table has its own shape.
+ * ────────────────────────────────────────────────────────────────────── */
+
+export const Pos = z.enum(["verb", "noun", "adj", "person", "place", "time"]);
+export type Pos = z.infer<typeof Pos>;
+
+export const Agreement = z.enum(["1sg", "2sg", "3sg", "1pl", "2pl", "3pl"]);
+export type Agreement = z.infer<typeof Agreement>;
+
+const VerbPresent = z.object({
+  "1sg": z.string().optional(),
+  "2sg": z.string().optional(),
+  "3sg": z.string(),
+  "1pl": z.string().optional(),
+  "2pl": z.string().optional(),
+  "3pl": z.string().optional(),
+});
+
+const Forms = z
+  .object({
+    present: VerbPresent.optional(),
+    past: z.string().optional(),
+    pastParticiple: z.string().optional(),
+    gerund: z.string().optional(),
+    irregular: z.boolean().optional(),
+    plural: z.string().optional(),
+    countable: z.boolean().optional(),
+    article: z.enum(["a", "an"]).optional(),
+    agreement: Agreement.optional(),
+    pronounSubject: z.string().optional(),
+    pronounObject: z.string().optional(),
+  })
+  .partial();
+export type Forms = z.infer<typeof Forms>;
+
+export const LexiconEntry = z.object({
+  id: z.string(),
+  lemma: z.string(),
+  pos: Pos,
+  cefr: CefrLevel,
+  freqRank: z.number().int().positive().optional(),
+  tags: z.array(z.string()).default([]),
+  gloss: z.object({ pl: z.string() }),
+  forms: Forms.optional(),
+});
+export type LexiconEntry = z.infer<typeof LexiconEntry>;
+
+export const Lexicon = z.object({
+  language: Language,
+  entries: z.array(LexiconEntry),
+});
+export type Lexicon = z.infer<typeof Lexicon>;
+
+export const SlotFilter = z
+  .object({
+    cefrMax: CefrLevel.optional(),
+    tags: z.array(z.string()).optional(),
+    irregular: z.boolean().optional(),
+    countable: z.boolean().optional(),
+    agreement: Agreement.optional(),
+    article: z.enum(["a", "an"]).optional(),
+  })
+  .partial();
+export type SlotFilter = z.infer<typeof SlotFilter>;
+
+export const Slot = z.object({
+  name: z.string(),
+  pos: Pos,
+  filter: SlotFilter.optional(),
+  /** If set, copy the chosen entry from another slot (e.g. agreement binding). */
+  bind: z.string().optional(),
+});
+export type Slot = z.infer<typeof Slot>;
+
+export const TopicTemplate = z.object({
+  id: z.string(),
+  topicId: z.string(),
+  language: Language,
+  produces: z.enum(["mcq", "fill"]),
+  slots: z.array(Slot),
+  /** Sentence with `___` for blank and `{slot}` placeholders. */
+  pattern: z.string(),
+  /** Filler(s) for the blank. First entry is the canonical answer. */
+  answerPatterns: z.array(z.string()).min(1),
+  /** Manual distractor patterns for MCQ. Rendered like answerPatterns. */
+  distractorPatterns: z.array(z.string()).default([]),
+  hint: z.string().optional(),
+  explanation: z.string().optional(),
+  weight: z.number().positive().default(1),
+  tags: z.array(z.string()).default([]),
+});
+export type TopicTemplate = z.infer<typeof TopicTemplate>;

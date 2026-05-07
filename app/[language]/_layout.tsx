@@ -22,6 +22,7 @@ export default function LanguageLayout() {
       <Stack.Screen name="study/[topicId]" options={{ title: "Topic" }} />
       <Stack.Screen name="practice/index" options={{ title: "Practice" }} />
       <Stack.Screen name="practice/[topicId]" options={{ title: "Practice" }} />
+      <Stack.Screen name="results" options={{ title: "Results" }} />
     </Stack>
   );
 }

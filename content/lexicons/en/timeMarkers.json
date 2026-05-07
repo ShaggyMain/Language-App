@@ -1,0 +1,77 @@
+{
+  "language": "en",
+  "entries": [
+    {
+      "id": "en.time.every-day",
+      "lemma": "every day",
+      "pos": "time",
+      "cefr": "A1",
+      "freqRank": 400,
+      "tags": ["frequency"],
+      "gloss": { "pl": "codziennie" }
+    },
+    {
+      "id": "en.time.always",
+      "lemma": "always",
+      "pos": "time",
+      "cefr": "A1",
+      "freqRank": 401,
+      "tags": ["frequency"],
+      "gloss": { "pl": "zawsze" }
+    },
+    {
+      "id": "en.time.usually",
+      "lemma": "usually",
+      "pos": "time",
+      "cefr": "A1",
+      "freqRank": 402,
+      "tags": ["frequency"],
+      "gloss": { "pl": "zwykle" }
+    },
+    {
+      "id": "en.time.often",
+      "lemma": "often",
+      "pos": "time",
+      "cefr": "A1",
+      "freqRank": 403,
+      "tags": ["frequency"],
+      "gloss": { "pl": "często" }
+    },
+    {
+      "id": "en.time.sometimes",
+      "lemma": "sometimes",
+      "pos": "time",
+      "cefr": "A1",
+      "freqRank": 404,
+      "tags": ["frequency"],
+      "gloss": { "pl": "czasami" }
+    },
+    {
+      "id": "en.time.never",
+      "lemma": "never",
+      "pos": "time",
+      "cefr": "A1",
+      "freqRank": 405,
+      "tags": ["frequency"],
+      "gloss": { "pl": "nigdy" }
+    },
+    {
+      "id": "en.time.on-mondays",
+      "lemma": "on Mondays",
+      "pos": "time",
+      "cefr": "A1",
+      "freqRank": 406,
+      "tags": ["frequency"],
+      "gloss": { "pl": "w poniedziałki" }
+    },
+    {
+      "id": "en.time.in-the-morning",
+      "lemma": "in the morning",
+      "pos": "time",
+      "cefr": "A1",
+      "freqRank": 407,
+      "tags": ["time-of-day"],
+      "gloss": { "pl": "rano" }
+    }
+  ]
+}

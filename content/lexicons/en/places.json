@@ -1,0 +1,77 @@
+{
+  "language": "en",
+  "entries": [
+    {
+      "id": "en.place.school",
+      "lemma": "school",
+      "pos": "place",
+      "cefr": "A1",
+      "freqRank": 300,
+      "tags": [],
+      "gloss": { "pl": "szkoła" }
+    },
+    {
+      "id": "en.place.home",
+      "lemma": "home",
+      "pos": "place",
+      "cefr": "A1",
+      "freqRank": 301,
+      "tags": [],
+      "gloss": { "pl": "dom" }
+    },
+    {
+      "id": "en.place.work",
+      "lemma": "work",
+      "pos": "place",
+      "cefr": "A1",
+      "freqRank": 302,
+      "tags": [],
+      "gloss": { "pl": "praca" }
+    },
+    {
+      "id": "en.place.park",
+      "lemma": "the park",
+      "pos": "place",
+      "cefr": "A1",
+      "freqRank": 303,
+      "tags": [],
+      "gloss": { "pl": "park" }
+    },
+    {
+      "id": "en.place.gym",
+      "lemma": "the gym",
+      "pos": "place",
+      "cefr": "A2",
+      "freqRank": 304,
+      "tags": [],
+      "gloss": { "pl": "siłownia" }
+    },
+    {
+      "id": "en.place.london",
+      "lemma": "London",
+      "pos": "place",
+      "cefr": "A1",
+      "freqRank": 305,
+      "tags": ["city"],
+      "gloss": { "pl": "Londyn" }
+    },
+    {
+      "id": "en.place.warsaw",
+      "lemma": "Warsaw",
+      "pos": "place",
+      "cefr": "A1",
+      "freqRank": 306,
+      "tags": ["city"],
+      "gloss": { "pl": "Warszawa" }
+    },
+    {
+      "id": "en.place.beach",
+      "lemma": "the beach",
+      "pos": "place",
+      "cefr": "A1",
+      "freqRank": 307,
+      "tags": [],
+      "gloss": { "pl": "plaża" }
+    }
+  ]
+}
