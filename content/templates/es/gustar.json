@@ -1,0 +1,29 @@
+[
+  {
+    "id": "es.gustar.fill",
+    "topicId": "es.verbs.gustar",
+    "language": "es",
+    "produces": "fill",
+    "slots": [
+      { "name": "exp", "pos": "person", "filter": { "tags": ["pronoun"] } },
+      { "name": "thing", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "A {exp} ___ gusta {thing:article} {thing}.",
+    "answerPatterns": ["{exp:gustar.indirect}"],
+    "hint": "me / te / le / nos / os / les",
+    "tags": ["gustar"]
+  },
+  {
+    "id": "es.gustar.mcq",
+    "topicId": "es.verbs.gustar",
+    "language": "es",
+    "produces": "mcq",
+    "slots": [
+      { "name": "exp", "pos": "person", "filter": { "tags": ["pronoun"] } }
+    ],
+    "pattern": "A {exp:pron.subject} ___ gusta el café.",
+    "answerPatterns": ["{exp:gustar.indirect}"],
+    "distractorPatterns": ["{exp:pron.subject}", "el", "la"],
+    "tags": ["gustar"]
+  }
+]

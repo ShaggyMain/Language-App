@@ -1,0 +1,15 @@
+[
+  {
+    "id": "es.plural.fill",
+    "topicId": "es.parts-of-speech.plural",
+    "language": "es",
+    "produces": "fill",
+    "slots": [
+      { "name": "noun", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "Singular: {noun} → Plural:",
+    "answerPatterns": ["{noun:plural}"],
+    "hint": "samogłoska + s, spółgłoska + es",
+    "tags": ["plural"]
+  }
+]

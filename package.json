@@ -16,6 +16,7 @@
     "@supabase/supabase-js": "^2.45.4",
     "expo": "~54.0.0",
     "expo-constants": "~18.0.13",
+    "expo-haptics": "^55.0.14",
     "expo-linking": "~8.0.12",
     "expo-router": "~6.0.23",
     "expo-speech": "~14.0.8",
@@ -49,8 +50,13 @@
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
-    "testMatch": ["**/lib/**/*.test.ts"],
-    "testPathIgnorePatterns": ["/node_modules/", "/.expo/"]
+    "testMatch": [
+      "**/lib/**/*.test.ts"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/.expo/"
+    ]
   },
   "private": true
 }

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "de.plural.fill",
+    "topicId": "de.parts-of-speech.plural",
+    "language": "de",
+    "produces": "fill",
+    "slots": [
+      { "name": "noun", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "Ein {noun} → zwei ___",
+    "answerPatterns": ["{noun:plural}"],
+    "hint": "Niemiecki plural — końcówka zależy od słowa",
+    "tags": ["plural"]
+  }
+]

@@ -1,0 +1,50 @@
+{
+  "id": "es.articles.indefinite",
+  "language": "es",
+  "category": "articles",
+  "title": "Rodzajniki nieokreślone: un / una / unos / unas",
+  "summary": "Hiszpański odpowiednik 'a/an' (oraz 'some' w pluralu).",
+  "cefrLevel": "A1",
+  "prerequisites": ["es.articles.definite"],
+  "theory": [
+    {
+      "kind": "table",
+      "title": "Rodzajniki nieokreślone",
+      "headers": ["Rodzaj", "Singular", "Plural"],
+      "rows": [
+        ["męski", "un libro", "unos libros"],
+        ["żeński", "una casa", "unas casas"]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "Używamy **un / una / unos / unas** podobnie jak angielskiego *a / an / some* — gdy mówimy o czymś nowym lub nieokreślonym.\n\n*Tengo **un** perro.* (Mam psa.)\n*Compré **unas** flores.* (Kupiłam (jakieś) kwiaty.)"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "Tengo ___ libro interesante.",
+      "options": ["un", "una", "el", "la"],
+      "answer": 0
+    },
+    {
+      "type": "fill",
+      "prompt": "Ella compra ___ casa nueva.",
+      "answers": ["una"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "es",
+      "source": "Mam jakieś przyjaciółki w Madrycie.",
+      "answers": ["Tengo unas amigas en Madrid."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Quiero un manzana.",
+      "answers": ["Quiero una manzana."],
+      "explanation": "'manzana' jest rodzaju żeńskiego."
+    }
+  ]
+}

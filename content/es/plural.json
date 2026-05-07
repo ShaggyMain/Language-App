@@ -1,0 +1,51 @@
+{
+  "id": "es.parts-of-speech.plural",
+  "language": "es",
+  "category": "parts-of-speech",
+  "title": "Liczba mnoga rzeczowników",
+  "summary": "Reguły tworzenia liczby mnogiej w hiszpańskim.",
+  "cefrLevel": "A1",
+  "prerequisites": [],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "Tworzenie liczby mnogiej w hiszpańskim:\n\n- Słowa kończące się na **samogłoskę** dodają **-s** : *libro → libros, casa → casas*\n- Słowa kończące się na **spółgłoskę** dodają **-es** : *ciudad → ciudades, mes → meses*\n- Słowa kończące się na **-z** zmieniają na **-ces** : *luz → luces, vez → veces*\n\nRodzajniki w pluralu: **los / las**."
+    },
+    {
+      "kind": "table",
+      "title": "Przykłady",
+      "headers": ["Singular", "Plural"],
+      "rows": [
+        ["el libro", "los libros"],
+        ["la casa", "las casas"],
+        ["la ciudad", "las ciudades"],
+        ["la luz", "las luces"]
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Plural: el coche → ___",
+      "answers": ["los coches"]
+    },
+    {
+      "type": "fill",
+      "prompt": "Plural: la mesa → ___",
+      "answers": ["las mesas"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Plural of 'el amigo':",
+      "options": ["los amigo", "las amigos", "los amigos", "los amigues"],
+      "answer": 2
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "es",
+      "source": "Mam dwóch przyjaciół.",
+      "answers": ["Tengo dos amigos."]
+    }
+  ]
+}

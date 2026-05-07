@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Pressable, Text, View } from "react-native";
 import type { GradeResult } from "../../lib/grading";
+import { tapHaptic } from "../../lib/haptics";
 
 type Props = {
   prompt: string;
@@ -16,6 +17,7 @@ export function McqExercise({ prompt, options, answer, result, onSubmit }: Props
 
   function handlePress(idx: number) {
     if (locked) return;
+    tapHaptic();
     setPicked(idx);
     const correct = idx === answer;
     const raw = options[idx];

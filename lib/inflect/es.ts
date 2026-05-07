@@ -72,6 +72,11 @@ function articleFor(n: LexiconEntry, plural: boolean): string {
 export const inflectors: Record<string, Inflector> = {
   base: (e) => e.lemma,
 
+  /** Subject-form pronoun ("yo", "tú", ...). */
+  "pron.subject": (entry) => entry.forms?.pronounSubject ?? entry.lemma,
+  /** Object-form pronoun ("me", "te", "lo", ...). */
+  "pron.object": (entry) => entry.forms?.pronounObject ?? entry.lemma,
+
   /** Verb conjugated for subject (present indicative). */
   "present.agree": (entry, args, ctx) => {
     const subj = lookupSlot(args[0] ?? "subject", ctx);
@@ -92,6 +97,63 @@ export const inflectors: Record<string, Inflector> = {
   "article.wrong": (entry) => {
     const correct = articleFor(entry, pluralOf(entry));
     return correct === "el" ? "la" : correct === "la" ? "el" : correct === "los" ? "las" : "los";
+  },
+
+  /** Indefinite article matching gender + number — un/una/unos/unas. */
+  "article.indef": (entry) => {
+    const g = genderOf(entry);
+    const plural = pluralOf(entry);
+    if (plural) return g === "f" ? "unas" : "unos";
+    return g === "f" ? "una" : "un";
+  },
+
+  "article.indef.wrong": (entry) => {
+    const correct = (() => {
+      const g = genderOf(entry);
+      return pluralOf(entry) ? (g === "f" ? "unas" : "unos") : g === "f" ? "una" : "un";
+    })();
+    return correct === "un" ? "una" : correct === "una" ? "un" : correct === "unos" ? "unas" : "unos";
+  },
+
+  /** Plural form of a noun. Spanish plurals are mostly +s / +es. */
+  plural: (entry) => entry.forms?.plural ?? (entry.lemma.match(/[aeiouáéíóú]$/i) ? entry.lemma + "s" : entry.lemma + "es"),
+
+  /** Past participle: -ar → -ado, -er/-ir → -ido. Irregulars from forms.pastParticiple. */
+  pastParticiple: (entry) => {
+    if (entry.forms?.pastParticiple) return entry.forms.pastParticiple;
+    const lemma = entry.lemma;
+    if (lemma.endsWith("ar")) return lemma.slice(0, -2) + "ado";
+    if (lemma.endsWith("er") || lemma.endsWith("ir")) return lemma.slice(0, -2) + "ido";
+    return lemma;
+  },
+
+  /**
+   * Present perfect (pretérito perfecto): "he/has/ha/hemos/habéis/han + participle".
+   * Usage: {verb:perf.agree(subject)}
+   */
+  "perf.agree": (entry, args, ctx) => {
+    const subj = lookupSlot(args[0] ?? "subject", ctx);
+    const ag = agreementOf(subj);
+    const aux: Record<Agreement, string> = {
+      "1sg": "he",
+      "2sg": "has",
+      "3sg": "ha",
+      "1pl": "hemos",
+      "2pl": "habéis",
+      "3pl": "han",
+    };
+    const pp = entry.forms?.pastParticiple ?? (entry.lemma.endsWith("ar") ? entry.lemma.slice(0, -2) + "ado" : entry.lemma.slice(0, -2) + "ido");
+    return `${aux[ag]} ${pp}`;
+  },
+
+  /**
+   * "me/te/le gusta(n)" — quirky Spanish construction. The "subject" of
+   * gustar is the thing that pleases; the experiencer is in indirect-object
+   * form. Usage: {experiencer:gustar.indirect} returns "me/te/le/nos/os/les".
+   */
+  "gustar.indirect": (entry) => {
+    const ag = agreementOf(entry);
+    return ag === "1sg" ? "me" : ag === "2sg" ? "te" : ag === "1pl" ? "nos" : ag === "2pl" ? "os" : ag === "3pl" ? "les" : "le";
   },
 };
 

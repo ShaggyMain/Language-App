@@ -1,0 +1,67 @@
+{
+  "id": "es.tenses.preterito-perfecto",
+  "language": "es",
+  "category": "tenses",
+  "title": "Pretérito perfecto",
+  "summary": "Czas teraźniejszy dokonany — 'haber + participio'.",
+  "cefrLevel": "A2",
+  "prerequisites": ["es.tenses.present-ar", "es.tenses.present-er-ir"],
+  "theory": [
+    {
+      "kind": "table",
+      "title": "haber — odmiana",
+      "headers": ["Osoba", "Forma"],
+      "rows": [
+        ["yo", "he"],
+        ["tú", "has"],
+        ["él/ella", "ha"],
+        ["nosotros", "hemos"],
+        ["vosotros", "habéis"],
+        ["ellos/as", "han"]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "**Pretérito perfecto** = *haber* + **participio pasado**. Używamy go dla:\n\n- czynności z dziś / tego tygodnia / miesiąca, *Hoy he comido pizza.*\n- doświadczeń życiowych: *He visitado España.*\n- zmian z efektem teraźniejszym: *Ha llovido — la calle está mojada.*\n\n**Participio**: regularne czasowniki **-ar** dają **-ado**, **-er/-ir** dają **-ido**.\n*hablar → hablado, comer → comido, vivir → vivido.*\n\nNieregularne (warto zapamiętać): *ver → visto, hacer → hecho, abrir → abierto, escribir → escrito*."
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "He estudiado español.", "translation": "Uczyłem się hiszpańskiego." },
+        { "source": "¿Has comido?", "translation": "Jadłeś już?" },
+        { "source": "Nunca hemos visitado París.", "translation": "Nigdy nie byliśmy w Paryżu." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Hoy yo ___ (estudiar).",
+      "answers": ["he estudiado"]
+    },
+    {
+      "type": "fill",
+      "prompt": "¿Tú ya ___ (comer)?",
+      "answers": ["has comido"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Nosotros ___ vivido en Madrid dos años.",
+      "options": ["he", "has", "hemos", "han"],
+      "answer": 2
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "es",
+      "source": "Oni nigdy tego nie robili.",
+      "answers": ["Nunca lo han hecho.", "Ellos nunca lo han hecho."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Yo he comer una manzana.",
+      "answers": ["Yo he comido una manzana."],
+      "explanation": "Po 'haber' zawsze idzie participio (-ado / -ido)."
+    }
+  ]
+}

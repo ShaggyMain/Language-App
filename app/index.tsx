@@ -3,8 +3,10 @@ import { ActivityIndicator, Text, View } from "react-native";
 import { router } from "expo-router";
 import { Screen } from "../components/ui/Screen";
 import { Card } from "../components/ui/Card";
+import { StreakPill } from "../components/ui/StreakPill";
 import { LANGUAGES } from "../lib/languages";
 import { loadPreferences } from "../lib/preferences";
+import { loadStreak } from "../lib/streak";
 
 export default function LanguagePicker() {
   const [ready, setReady] = useState(false);
@@ -18,6 +20,7 @@ export default function LanguagePicker() {
         router.replace("/onboarding");
         return;
       }
+      void loadStreak();
       setReady(true);
     })();
     return () => {
@@ -37,6 +40,7 @@ export default function LanguagePicker() {
 
   return (
     <Screen title="Choose a language">
+      <StreakPill />
       <Text className="text-muted mb-6">Pick a course to start learning grammar.</Text>
       {LANGUAGES.map((lang) => (
         <Card

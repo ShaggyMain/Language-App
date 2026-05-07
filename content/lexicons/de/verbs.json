@@ -111,6 +111,45 @@
       "forms": { "irregular": false, "present": { "3sg": "sucht" } }
     },
     {
+      "id": "de.verb.koennen",
+      "lemma": "können",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 5,
+      "tags": ["irregular", "modal"],
+      "gloss": { "pl": "móc / umieć" },
+      "forms": {
+        "irregular": true,
+        "present": { "1sg": "kann", "2sg": "kannst", "3sg": "kann", "1pl": "können", "2pl": "könnt", "3pl": "können" }
+      }
+    },
+    {
+      "id": "de.verb.muessen",
+      "lemma": "müssen",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 6,
+      "tags": ["irregular", "modal"],
+      "gloss": { "pl": "musieć" },
+      "forms": {
+        "irregular": true,
+        "present": { "1sg": "muss", "2sg": "musst", "3sg": "muss", "1pl": "müssen", "2pl": "müsst", "3pl": "müssen" }
+      }
+    },
+    {
+      "id": "de.verb.wollen",
+      "lemma": "wollen",
+      "pos": "verb",
+      "cefr": "A1",
+      "freqRank": 7,
+      "tags": ["irregular", "modal"],
+      "gloss": { "pl": "chcieć" },
+      "forms": {
+        "irregular": true,
+        "present": { "1sg": "will", "2sg": "willst", "3sg": "will", "1pl": "wollen", "2pl": "wollt", "3pl": "wollen" }
+      }
+    },
+    {
       "id": "de.verb.sehen",
       "lemma": "sehen",
       "pos": "verb",

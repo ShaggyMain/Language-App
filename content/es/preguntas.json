@@ -1,0 +1,64 @@
+{
+  "id": "es.syntax.preguntas",
+  "language": "es",
+  "category": "syntax",
+  "title": "Pytania (qué, dónde, cuándo, ...)",
+  "summary": "Słowa pytajne i ich akcenty.",
+  "cefrLevel": "A1",
+  "prerequisites": [],
+  "theory": [
+    {
+      "kind": "table",
+      "title": "Najczęstsze słowa pytajne",
+      "headers": ["Hiszpański", "Polski", "Przykład"],
+      "rows": [
+        ["¿Qué?", "Co?", "¿Qué haces?"],
+        ["¿Quién?", "Kto?", "¿Quién es?"],
+        ["¿Dónde?", "Gdzie?", "¿Dónde vives?"],
+        ["¿Cuándo?", "Kiedy?", "¿Cuándo vienes?"],
+        ["¿Cómo?", "Jak?", "¿Cómo te llamas?"],
+        ["¿Por qué?", "Dlaczego?", "¿Por qué estudias?"],
+        ["¿Cuánto/a?", "Ile?", "¿Cuánto cuesta?"]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "**Akcenty są obowiązkowe** — pisemnie odróżniają słowa pytajne od ich nie-pytających odpowiedników: *qué* (co?) vs *que* (że).\n\nW hiszpańskim pytania zaczynają się **odwróconym znakiem zapytania ¿** i kończą zwykłym **?**.\n\nSzyk słów: *¿słowo-pytajne + czasownik + podmiot?*"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "¿___ te llamas? — Me llamo Anna.",
+      "answers": ["Cómo"]
+    },
+    {
+      "type": "fill",
+      "prompt": "¿___ vives? — En Madrid.",
+      "answers": ["Dónde"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "¿___ años tienes?",
+      "options": ["Qué", "Cuánto", "Cuántos", "Cómo"],
+      "answer": 2
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "es",
+      "source": "Skąd jesteś?",
+      "answers": ["¿De dónde eres?"]
+    },
+    {
+      "type": "match",
+      "pairs": [
+        { "left": "qué", "right": "co" },
+        { "left": "quién", "right": "kto" },
+        { "left": "dónde", "right": "gdzie" },
+        { "left": "cuándo", "right": "kiedy" },
+        { "left": "por qué", "right": "dlaczego" }
+      ]
+    }
+  ]
+}

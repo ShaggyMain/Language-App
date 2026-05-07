@@ -5,11 +5,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bg: "#0b1220",
-        surface: "#111a2e",
-        border: "#1f2a44",
-        text: "#e6ecf5",
-        muted: "#8aa0c2",
+        // Theme-driven tokens — driven by CSS variables set on the root
+        // view. See lib/theme.ts for the dark/light palettes.
+        bg: "rgb(var(--color-bg) / <alpha-value>)",
+        surface: "rgb(var(--color-surface) / <alpha-value>)",
+        border: "rgb(var(--color-border) / <alpha-value>)",
+        text: "rgb(var(--color-text) / <alpha-value>)",
+        muted: "rgb(var(--color-muted) / <alpha-value>)",
+        // Brand + semantic stay constant across themes.
         en: "#3b82f6",
         de: "#f59e0b",
         es: "#ef4444",

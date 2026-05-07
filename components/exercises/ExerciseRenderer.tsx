@@ -97,6 +97,7 @@ export function ExerciseRenderer({
       return (
         <DictationExercise
           audioText={exercise.audioText}
+          audioUrl={exercise.audioUrl}
           ttsLanguage={TTS_LANG[language]}
           answers={exercise.answers}
           result={submitted ? { correct: submitted.correct, userInput: submitted.userInput } : undefined}

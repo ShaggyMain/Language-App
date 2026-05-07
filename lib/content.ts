@@ -48,6 +48,11 @@ import deArticlesNominativ from "../content/de/articles-nominativ.json";
 import deArticlesAkkusativ from "../content/de/articles-akkusativ.json";
 import deSeinHaben from "../content/de/sein-haben.json";
 import dePresentRegular from "../content/de/present-regular.json";
+import deModalverben from "../content/de/modalverben.json";
+import deNegation from "../content/de/negation.json";
+import dePlural from "../content/de/plural.json";
+import dePersonalpronomen from "../content/de/personalpronomen.json";
+import deWfragen from "../content/de/wfragen.json";
 import dePersons from "../content/lexicons/de/persons.json";
 import deVerbs from "../content/lexicons/de/verbs.json";
 import deNouns from "../content/lexicons/de/nouns.json";
@@ -55,12 +60,23 @@ import deTplArticlesNominativ from "../content/templates/de/articles-nominativ.j
 import deTplArticlesAkkusativ from "../content/templates/de/articles-akkusativ.json";
 import deTplSeinHaben from "../content/templates/de/sein-haben.json";
 import deTplPresentRegular from "../content/templates/de/present-regular.json";
+import deTplModalverben from "../content/templates/de/modalverben.json";
+import deTplNegation from "../content/templates/de/negation.json";
+import deTplPlural from "../content/templates/de/plural.json";
+import deTplPersonalpronomen from "../content/templates/de/personalpronomen.json";
+import deTplWfragen from "../content/templates/de/wfragen.json";
 
 // ES
 import esArticles from "../content/es/articles.json";
 import esSerEstar from "../content/es/ser-estar.json";
 import esPresentAr from "../content/es/present-ar.json";
 import esPresentErIr from "../content/es/present-er-ir.json";
+import esArticlesIndefinite from "../content/es/articles-indefinite.json";
+import esPlural from "../content/es/plural.json";
+import esGustar from "../content/es/gustar.json";
+import esPossessives from "../content/es/possessives.json";
+import esPreteritoPerfecto from "../content/es/preterito-perfecto.json";
+import esPreguntas from "../content/es/preguntas.json";
 import esPersons from "../content/lexicons/es/persons.json";
 import esVerbs from "../content/lexicons/es/verbs.json";
 import esNouns from "../content/lexicons/es/nouns.json";
@@ -68,6 +84,12 @@ import esTplArticles from "../content/templates/es/articles.json";
 import esTplSerEstar from "../content/templates/es/ser-estar.json";
 import esTplPresentAr from "../content/templates/es/present-ar.json";
 import esTplPresentErIr from "../content/templates/es/present-er-ir.json";
+import esTplArticlesIndefinite from "../content/templates/es/articles-indefinite.json";
+import esTplPlural from "../content/templates/es/plural.json";
+import esTplGustar from "../content/templates/es/gustar.json";
+import esTplPossessives from "../content/templates/es/possessives.json";
+import esTplPreteritoPerfecto from "../content/templates/es/preterito-perfecto.json";
+import esTplPreguntas from "../content/templates/es/preguntas.json";
 
 import { buildLexiconBundle, type LexiconBundle } from "./generator";
 
@@ -91,10 +113,21 @@ const RAW_TOPICS: unknown[] = [
   deArticlesAkkusativ,
   deSeinHaben,
   dePresentRegular,
+  deModalverben,
+  deNegation,
+  dePlural,
+  dePersonalpronomen,
+  deWfragen,
   esArticles,
   esSerEstar,
   esPresentAr,
   esPresentErIr,
+  esArticlesIndefinite,
+  esPlural,
+  esGustar,
+  esPossessives,
+  esPreteritoPerfecto,
+  esPreguntas,
 ];
 
 const RAW_LEXICONS: unknown[] = [
@@ -133,10 +166,21 @@ const RAW_TEMPLATE_FILES: unknown[] = [
   deTplArticlesAkkusativ,
   deTplSeinHaben,
   deTplPresentRegular,
+  deTplModalverben,
+  deTplNegation,
+  deTplPlural,
+  deTplPersonalpronomen,
+  deTplWfragen,
   esTplArticles,
   esTplSerEstar,
   esTplPresentAr,
   esTplPresentErIr,
+  esTplArticlesIndefinite,
+  esTplPlural,
+  esTplGustar,
+  esTplPossessives,
+  esTplPreteritoPerfecto,
+  esTplPreguntas,
 ];
 
 type Caches = {

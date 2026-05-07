@@ -92,6 +92,12 @@ export const Exercise = z.discriminatedUnion("type", [
     ...baseExercise,
     type: z.literal("dictation"),
     audioText: z.string(),
+    /**
+     * Optional pre-recorded audio URL. When present, the player will fetch
+     * and play this instead of using TTS. Useful for A1/A2 where natural
+     * pronunciation matters more than the synthetic voice can deliver.
+     */
+    audioUrl: z.string().url().optional(),
     answers: z.array(z.string()).min(1),
   }),
   z.object({

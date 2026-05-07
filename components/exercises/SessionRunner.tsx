@@ -9,6 +9,7 @@
 
 import { useEffect, useMemo, useReducer, useRef, useState } from "react";
 import { ActivityIndicator, Text, View } from "react-native";
+import Animated, { FadeIn } from "react-native-reanimated";
 import { router } from "expo-router";
 import type { Topic } from "../../lib/types";
 import { getRepos, type Repos } from "../../lib/db";
@@ -30,6 +31,7 @@ import { ResultSheet } from "./ResultSheet";
 import { Language } from "../../lib/types";
 import { currentUserId } from "../../lib/auth";
 import { syncPushPassed, syncPushSrs } from "../../lib/sync";
+import { bumpStreak } from "../../lib/streak";
 
 type Props = {
   language: string;
@@ -120,6 +122,7 @@ export function SessionRunner({ language, topic, mode, count = 10 }: Props) {
     const sum = summarize(state);
     const finishedAt = Date.now();
     void repos.log.finishSession({ sessionId: sid, finishedAt, summary: sum });
+    void bumpStreak(new Date(finishedAt));
     if (state.mode === "path" && sum.passedPath) {
       void repos.log.markPassed({ userId: currentUserId(), topicId: topic.id, at: finishedAt });
       void syncPushPassed(topic.id, finishedAt);
@@ -168,23 +171,27 @@ export function SessionRunner({ language, topic, mode, count = 10 }: Props) {
   return (
     <View className="flex-1">
       <ProgressBar current={state.cursor + 1} total={state.items.length} />
-      <ExerciseRenderer
-        exercise={cur.exercise}
-        language={lang}
-        locked={locked}
-        userInput={cur.userInput}
-        pickedIndex={pickedIndex}
-        resultCorrect={cur.result?.correct}
-        onSubmit={handleSubmit}
-      />
-      {locked && cur.result ? (
-        <ResultSheet
-          result={cur.result}
-          explanation={explanation}
-          canonical={canonical}
-          onNext={handleNext}
+      <Animated.View key={state.cursor} entering={FadeIn.duration(220)} className="flex-1">
+        <ExerciseRenderer
+          exercise={cur.exercise}
+          language={lang}
+          locked={locked}
+          userInput={cur.userInput}
+          pickedIndex={pickedIndex}
+          resultCorrect={cur.result?.correct}
+          onSubmit={handleSubmit}
         />
-      ) : null}
+        {locked && cur.result ? (
+          <Animated.View entering={FadeIn.duration(180).delay(40)}>
+            <ResultSheet
+              result={cur.result}
+              explanation={explanation}
+              canonical={canonical}
+              onNext={handleNext}
+            />
+          </Animated.View>
+        ) : null}
+      </Animated.View>
     </View>
   );
 }

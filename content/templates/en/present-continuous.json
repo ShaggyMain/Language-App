@@ -34,5 +34,20 @@
     ],
     "explanation": "Present continuous: am/is/are + -ing.",
     "tags": ["affirmative"]
+  },
+  {
+    "id": "en.present-continuous.negation-fill",
+    "topicId": "en.tenses.present-continuous",
+    "language": "en",
+    "produces": "fill",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } },
+      { "name": "obj", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "{subject} ___ {obj} right now.",
+    "answerPatterns": ["{verb:be.agree(subject)} not {verb:gerund}"],
+    "hint": "am/is/are + not + verb-ing",
+    "tags": ["negation"]
   }
 ]

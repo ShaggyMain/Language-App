@@ -1,5 +1,7 @@
+import { useEffect, useRef } from "react";
 import { Pressable, Text, View } from "react-native";
 import type { GradeResult } from "../../lib/grading";
+import { errorHaptic, successHaptic, warningHaptic } from "../../lib/haptics";
 
 type Props = {
   result: GradeResult;
@@ -10,6 +12,15 @@ type Props = {
 };
 
 export function ResultSheet({ result, explanation, onNext, canonical }: Props) {
+  const seenRef = useRef<GradeResult | null>(null);
+  useEffect(() => {
+    if (seenRef.current === result) return;
+    seenRef.current = result;
+    if (result.correct) successHaptic();
+    else if (result.reason === "near") warningHaptic();
+    else errorHaptic();
+  }, [result]);
+
   const headline = result.correct
     ? "Correct!"
     : result.reason === "near"

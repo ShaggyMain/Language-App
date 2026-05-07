@@ -31,5 +31,20 @@
     ],
     "explanation": "Present Perfect = have/has + past participle.",
     "tags": ["affirmative"]
+  },
+  {
+    "id": "en.present-perfect.ever-mcq",
+    "topicId": "en.tenses.present-perfect",
+    "language": "en",
+    "produces": "mcq",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "tags": ["irregular"], "cefrMax": "A2" } }
+    ],
+    "pattern": "___ {subject:pron.subject} ever {verb:pastParticiple}?",
+    "answerPatterns": ["{subject:aux.perf}"],
+    "distractorPatterns": ["Did", "Do", "Was"],
+    "explanation": "'Have' for I/you/we/they; 'Has' for he/she/it.",
+    "tags": ["question", "ever"]
   }
 ]

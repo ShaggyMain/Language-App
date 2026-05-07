@@ -109,6 +109,45 @@ export default function SettingsScreen() {
         </View>
       </View>
 
+      <Text className="text-muted text-xs uppercase tracking-wide mb-2">Theme</Text>
+      <View className="bg-surface border border-border rounded-2xl p-4 mb-6">
+        <View className="flex-row gap-2">
+          {(["system", "dark", "light"] as const).map((mode) => {
+            const selected = prefs.theme === mode;
+            return (
+              <Pressable
+                key={mode}
+                onPress={() => void savePreferences({ theme: mode })}
+                className={`flex-1 rounded-lg border px-3 py-2 items-center ${selected ? "bg-en/20 border-en" : "bg-bg border-border"}`}
+              >
+                <Text className={`capitalize ${selected ? "text-en font-semibold" : "text-text"}`}>
+                  {mode}
+                </Text>
+              </Pressable>
+            );
+          })}
+        </View>
+      </View>
+
+      <Text className="text-muted text-xs uppercase tracking-wide mb-2">Daily goal</Text>
+      <View className="bg-surface border border-border rounded-2xl p-4 mb-6">
+        <Text className="text-text mb-3">Sessions per day to keep your streak</Text>
+        <View className="flex-row gap-2">
+          {[1, 3, 5].map((n) => {
+            const selected = prefs.dailyGoal === n;
+            return (
+              <Pressable
+                key={n}
+                onPress={() => void savePreferences({ dailyGoal: n })}
+                className={`flex-1 rounded-lg border px-3 py-2 items-center ${selected ? "bg-en/20 border-en" : "bg-bg border-border"}`}
+              >
+                <Text className={selected ? "text-en font-semibold" : "text-text"}>{n}</Text>
+              </Pressable>
+            );
+          })}
+        </View>
+      </View>
+
       <Text className="text-muted text-xs uppercase tracking-wide mb-2">Defaults</Text>
       <View className="bg-surface border border-border rounded-2xl p-4 mb-6">
         <Text className="text-text">Default language</Text>
