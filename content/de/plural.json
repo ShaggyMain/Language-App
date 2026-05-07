@@ -1,0 +1,52 @@
+{
+  "id": "de.parts-of-speech.plural",
+  "language": "de",
+  "category": "parts-of-speech",
+  "title": "Liczba mnoga rzeczowników",
+  "summary": "Niemieckie plurale są nieregularne — trzeba zapamiętać.",
+  "cefrLevel": "A1",
+  "prerequisites": [],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "W niemieckim nie ma jednej reguły tworzenia liczby mnogiej. Najczęstsze końcówki to:\n\n- **-e** : *Tag → Tage, Hund → Hunde*\n- **-en/-n** : *Frau → Frauen, Katze → Katzen*\n- **-er** (często z umlautem) : *Buch → Bücher, Mann → Männer*\n- **-s** : *Auto → Autos, Hotel → Hotels*\n- **bez końcówki** (czasem z umlautem) : *Lehrer → Lehrer, Apfel → Äpfel*\n\nW liczbie mnogiej rodzajnik to zawsze **die**, niezależnie od rodzaju w singularze."
+    },
+    {
+      "kind": "table",
+      "title": "Przykłady",
+      "headers": ["Singular", "Plural"],
+      "rows": [
+        ["der Mann", "die Männer"],
+        ["die Frau", "die Frauen"],
+        ["das Kind", "die Kinder"],
+        ["das Buch", "die Bücher"],
+        ["das Auto", "die Autos"]
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Plural: das Buch → die ___",
+      "answers": ["Bücher"]
+    },
+    {
+      "type": "fill",
+      "prompt": "Plural: der Mann → die ___",
+      "answers": ["Männer"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Plural: das Auto",
+      "options": ["Autoen", "Autos", "Auten", "Autos"],
+      "answer": 1
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Mam dwoje dzieci.",
+      "answers": ["Ich habe zwei Kinder."]
+    }
+  ]
+}

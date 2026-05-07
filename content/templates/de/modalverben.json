@@ -1,0 +1,33 @@
+[
+  {
+    "id": "de.modalverben.fill",
+    "topicId": "de.verbs.modalverben",
+    "language": "de",
+    "produces": "fill",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "tags": ["pronoun"] } },
+      { "name": "modal", "pos": "verb", "filter": { "tags": ["modal"] } }
+    ],
+    "pattern": "{subject} ___ ({modal}) heute viel arbeiten.",
+    "answerPatterns": ["{modal:present.agree(subject)}"],
+    "hint": "Odmień modal — uwaga na 1. i 3. osobę singular",
+    "tags": ["modal"]
+  },
+  {
+    "id": "de.modalverben.mcq",
+    "topicId": "de.verbs.modalverben",
+    "language": "de",
+    "produces": "mcq",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "tags": ["pronoun"] } },
+      { "name": "modal", "pos": "verb", "filter": { "tags": ["modal"] } }
+    ],
+    "pattern": "{subject} ___ Deutsch lernen.",
+    "answerPatterns": ["{modal:present.agree(subject)}"],
+    "distractorPatterns": [
+      "{modal:present.agree.wrong(subject)}",
+      "{modal:base}"
+    ],
+    "tags": ["modal"]
+  }
+]

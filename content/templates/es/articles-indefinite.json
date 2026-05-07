@@ -1,0 +1,28 @@
+[
+  {
+    "id": "es.articles.indef-fill",
+    "topicId": "es.articles.indefinite",
+    "language": "es",
+    "produces": "fill",
+    "slots": [
+      { "name": "noun", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "Tengo ___ {noun}.",
+    "answerPatterns": ["{noun:article.indef}"],
+    "hint": "un / una zależnie od rodzaju",
+    "tags": ["indefinite"]
+  },
+  {
+    "id": "es.articles.indef-mcq",
+    "topicId": "es.articles.indefinite",
+    "language": "es",
+    "produces": "mcq",
+    "slots": [
+      { "name": "noun", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "Veo ___ {noun}.",
+    "answerPatterns": ["{noun:article.indef}"],
+    "distractorPatterns": ["{noun:article.indef.wrong}", "{noun:article}", "el"],
+    "tags": ["indefinite"]
+  }
+]

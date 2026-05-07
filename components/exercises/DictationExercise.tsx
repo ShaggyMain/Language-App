@@ -6,6 +6,12 @@ import { TextAnswerExercise } from "./TextAnswerExercise";
 
 type Props = {
   audioText: string;
+  /**
+   * Optional pre-recorded audio. When present, we'd ideally fetch and play
+   * via expo-audio. Left as a passthrough for now — TTS still works and
+   * authoring content tags can declare the URL ahead of recording.
+   */
+  audioUrl?: string;
   /** BCP-47 language tag for the TTS voice ("en-US", "de-DE", "es-ES"). */
   ttsLanguage?: string;
   answers: string[];
@@ -13,10 +19,13 @@ type Props = {
   onSubmit: (raw: string, result: GradeResult) => void;
 };
 
-export function DictationExercise({ audioText, ttsLanguage, answers, result, onSubmit }: Props) {
+export function DictationExercise({ audioText, audioUrl, ttsLanguage, answers, result, onSubmit }: Props) {
   function play() {
     try {
       Speech.stop();
+      // Future: when an audioUrl is provided, prefer expo-audio playback
+      // over TTS. For now we always TTS — the field is reserved infra.
+      void audioUrl;
       Speech.speak(audioText, { language: ttsLanguage, rate: getCachedPreferences().ttsRate });
     } catch {
       // expo-speech is unavailable on web preview; degrade gracefully

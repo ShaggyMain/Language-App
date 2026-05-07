@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    /* Default = dark. Active palette is injected at runtime via lib/theme.ts. */
+    --color-bg: 11 18 32;
+    --color-surface: 17 26 46;
+    --color-border: 31 42 68;
+    --color-text: 230 236 245;
+    --color-muted: 138 160 194;
+  }
+}

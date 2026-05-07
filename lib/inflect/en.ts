@@ -157,6 +157,18 @@ export const inflectors: Record<string, Inflector> = {
     entry.forms?.pastParticiple ?? entry.forms?.past ?? regularPast(entry.lemma),
 
   /**
+   * Just the perfect-tense auxiliary for the subject — "Have" / "Has".
+   * Used by question patterns: "Have you ever seen?". Capitalized so it
+   * works at the start of a sentence; downstream code can lowercase if
+   * the slot is mid-sentence.
+   * Usage: {subject:aux.perf} (called on a person slot)
+   */
+  "aux.perf": (entry) => (entry.forms?.agreement === "3sg" ? "Has" : "Have"),
+
+  /** Lowercase variant for mid-sentence use. */
+  "aux.perf.lower": (entry) => (entry.forms?.agreement === "3sg" ? "has" : "have"),
+
+  /**
    * Present perfect agreeing with subject: "have/has + past participle".
    * Usage: {verb:perf.agree(subject)}
    */

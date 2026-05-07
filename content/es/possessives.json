@@ -1,0 +1,61 @@
+{
+  "id": "es.pronouns.possessives",
+  "language": "es",
+  "category": "pronouns",
+  "title": "Zaimki dzierżawcze",
+  "summary": "mi, tu, su, nuestro — i ich liczby mnogie.",
+  "cefrLevel": "A1",
+  "prerequisites": [],
+  "theory": [
+    {
+      "kind": "table",
+      "title": "Zaimki dzierżawcze (krótkie, przed rzeczownikiem)",
+      "headers": ["Osoba", "Singular", "Plural"],
+      "rows": [
+        ["yo", "mi", "mis"],
+        ["tú", "tu", "tus"],
+        ["él/ella", "su", "sus"],
+        ["nosotros", "nuestro/a", "nuestros/as"],
+        ["vosotros", "vuestro/a", "vuestros/as"],
+        ["ellos/as", "su", "sus"]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "Zaimki *mi, tu, su* mają tylko dwie formy: singular i plural — **nie zmieniają się przez rodzaj**.\n\n*Mi libro, mi casa.* (Moja książka, mój dom.)\n\nALe **nuestro / vuestro** odmieniają się przez rodzaj: *nuestro libro, **nuestra** casa, **nuestros** libros, **nuestras** casas.*"
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Mi hermano vive en Madrid.", "translation": "Mój brat mieszka w Madrycie." },
+        { "source": "¿Dónde están tus llaves?", "translation": "Gdzie są twoje klucze?" },
+        { "source": "Nuestra casa es grande.", "translation": "Nasz dom jest duży." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Yo tengo un perro. ___ perro es grande.",
+      "answers": ["Mi"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "¿Cómo se llama ___ amigo? (yours)",
+      "options": ["mi", "tu", "su", "tus"],
+      "answer": 1
+    },
+    {
+      "type": "fill",
+      "prompt": "Nosotros tenemos dos hijos. ___ hijos son pequeños.",
+      "answers": ["Nuestros"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "es",
+      "source": "Twoje klucze są na stole.",
+      "answers": ["Tus llaves están en la mesa."]
+    }
+  ]
+}

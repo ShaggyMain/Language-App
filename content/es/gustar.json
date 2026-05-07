@@ -1,0 +1,62 @@
+{
+  "id": "es.verbs.gustar",
+  "language": "es",
+  "category": "verbs",
+  "title": "Me gusta / te gusta",
+  "summary": "Hiszpańska konstrukcja typu 'mi się podoba'.",
+  "cefrLevel": "A1",
+  "prerequisites": ["es.tenses.present-ar"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Gustar** nie znaczy dosłownie *lubić* — działa jak polskie *podobać się*. To, co się podoba, jest podmiotem; ten kto lubi, jest dopełnieniem dalszym.\n\n*Me **gusta** el café.* (Lubię kawę / Kawa mi się podoba.)\n*Me **gustan** los libros.* (Lubię książki — czasownik w pluralu, bo *libros* są w pluralu!)"
+    },
+    {
+      "kind": "table",
+      "title": "Zaimki",
+      "headers": ["Osoba", "Forma"],
+      "rows": [
+        ["mnie (1sg)", "me gusta(n)"],
+        ["tobie (2sg)", "te gusta(n)"],
+        ["jemu/jej (3sg)", "le gusta(n)"],
+        ["nam (1pl)", "nos gusta(n)"],
+        ["wam (2pl)", "os gusta(n)"],
+        ["im (3pl)", "les gusta(n)"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Me gusta el chocolate.", "translation": "Lubię czekoladę." },
+        { "source": "¿Te gustan los gatos?", "translation": "Lubisz koty?" },
+        { "source": "Nos gusta cocinar.", "translation": "Lubimy gotować." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "___ gusta el café.",
+      "options": ["Yo", "Mí", "Me", "Mi"],
+      "answer": 2
+    },
+    {
+      "type": "fill",
+      "prompt": "A nosotros ___ (gustar) los libros.",
+      "answers": ["nos gustan"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "es",
+      "source": "Lubię muzykę.",
+      "answers": ["Me gusta la música."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Me gusto los gatos.",
+      "answers": ["Me gustan los gatos."],
+      "explanation": "Czasownik zgadza się z tym, co się podoba — 'gatos' są w pluralu."
+    }
+  ]
+}

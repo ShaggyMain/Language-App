@@ -13,8 +13,9 @@ export type Preferences = {
   selfReportedLevel: CefrLevel;
   /** TTS speech rate; 1.0 is the default Speech.speak rate. */
   ttsRate: number;
-  /** Reserved for future light-theme support; only "dark" works today. */
-  theme: "dark" | "light";
+  theme: "dark" | "light" | "system";
+  /** How many sessions per day count as a "completed" goal day. */
+  dailyGoal: number;
 };
 
 const DEFAULTS: Preferences = {
@@ -22,7 +23,8 @@ const DEFAULTS: Preferences = {
   defaultLanguage: "en",
   selfReportedLevel: "A1",
   ttsRate: 0.9,
-  theme: "dark",
+  theme: "system",
+  dailyGoal: 1,
 };
 
 const KEY = "lang-app:preferences:v1";

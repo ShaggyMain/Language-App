@@ -1,0 +1,72 @@
+{
+  "id": "de.pronouns.personal",
+  "language": "de",
+  "category": "pronouns",
+  "title": "Zaimki osobowe (Nominativ + Akkusativ)",
+  "summary": "Kto/co (mianownik) vs kogo/co (biernik).",
+  "cefrLevel": "A1",
+  "prerequisites": [],
+  "theory": [
+    {
+      "kind": "table",
+      "title": "Zaimki osobowe",
+      "headers": ["Osoba", "Nominativ", "Akkusativ"],
+      "rows": [
+        ["1sg", "ich", "mich"],
+        ["2sg", "du", "dich"],
+        ["3sg m", "er", "ihn"],
+        ["3sg f", "sie", "sie"],
+        ["3sg n", "es", "es"],
+        ["1pl", "wir", "uns"],
+        ["2pl", "ihr", "euch"],
+        ["3pl", "sie / Sie", "sie / Sie"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Ich sehe dich.", "translation": "Widzę cię." },
+        { "source": "Sie liebt mich.", "translation": "Ona mnie kocha." },
+        { "source": "Wir kennen euch.", "translation": "Znamy was." }
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "Po czasownikach jak *sehen, kennen, lieben, haben, kaufen* używamy **Akkusativu** (kogo? co?)."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Ich sehe ___ (you-singular).",
+      "answers": ["dich"]
+    },
+    {
+      "type": "fill",
+      "prompt": "Sie kennt ___ (him).",
+      "answers": ["ihn"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Er liebt ___.",
+      "options": ["mich", "ich", "mir", "meine"],
+      "answer": 0
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "My was widzimy.",
+      "answers": ["Wir sehen euch."]
+    },
+    {
+      "type": "match",
+      "pairs": [
+        { "left": "ich", "right": "mich" },
+        { "left": "du", "right": "dich" },
+        { "left": "er", "right": "ihn" },
+        { "left": "wir", "right": "uns" }
+      ]
+    }
+  ]
+}

@@ -27,5 +27,18 @@
     "answerPatterns": ["{adj:comparative}"],
     "distractorPatterns": ["{adj}", "more {adj}", "{adj:superlative}"],
     "tags": ["comparative"]
+  },
+  {
+    "id": "en.superlatives.fill",
+    "topicId": "en.adjectives.comparatives",
+    "language": "en",
+    "produces": "fill",
+    "slots": [
+      { "name": "adj", "pos": "adj", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "It's the ___ ({adj}) day of the year.",
+    "answerPatterns": ["{adj:superlative}"],
+    "hint": "the + -est / most",
+    "tags": ["superlative"]
   }
 ]

@@ -34,5 +34,41 @@
     ],
     "explanation": "Past Simple — used for completed past actions.",
     "tags": ["affirmative"]
+  },
+  {
+    "id": "en.past-simple.negation-fill",
+    "topicId": "en.tenses.past-simple",
+    "language": "en",
+    "produces": "fill",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } },
+      { "name": "obj", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "{subject} ___ {obj} yesterday.",
+    "answerPatterns": ["didn't {verb:base}", "did not {verb:base}"],
+    "hint": "didn't / did not + base verb",
+    "explanation": "Past Simple negation: didn't + base form. Don't use the past form here.",
+    "tags": ["negation"]
+  },
+  {
+    "id": "en.past-simple.irregular-mcq",
+    "topicId": "en.tenses.past-simple",
+    "language": "en",
+    "produces": "mcq",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "tags": ["irregular"], "cefrMax": "A2" } },
+      { "name": "obj", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "Last summer {subject} ___ {obj}.",
+    "answerPatterns": ["{verb:past}"],
+    "distractorPatterns": [
+      "{verb:base}ed",
+      "{verb:base}",
+      "{verb:pastParticiple}"
+    ],
+    "explanation": "Irregular verbs have unique past forms — memorize them.",
+    "tags": ["irregular"]
   }
 ]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "es.preterito-perfecto.fill",
+    "topicId": "es.tenses.preterito-perfecto",
+    "language": "es",
+    "produces": "fill",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "tags": ["pronoun"] } },
+      { "name": "verb", "pos": "verb", "filter": { "tags": ["regular"] } }
+    ],
+    "pattern": "{subject} ___ ({verb}) hoy.",
+    "answerPatterns": ["{verb:perf.agree(subject)}"],
+    "hint": "haber + participio (-ado / -ido)",
+    "tags": ["affirmative"]
+  },
+  {
+    "id": "es.preterito-perfecto.mcq",
+    "topicId": "es.tenses.preterito-perfecto",
+    "language": "es",
+    "produces": "mcq",
+    "slots": [
+      { "name": "subject", "pos": "person", "filter": { "tags": ["pronoun"] } },
+      { "name": "verb", "pos": "verb", "filter": { "tags": ["regular"] } }
+    ],
+    "pattern": "{subject} ___ esta semana.",
+    "answerPatterns": ["{verb:perf.agree(subject)}"],
+    "distractorPatterns": [
+      "{verb:base}",
+      "{verb:present.agree(subject)}",
+      "{verb:pastParticiple}"
+    ],
+    "tags": ["affirmative"]
+  }
+]

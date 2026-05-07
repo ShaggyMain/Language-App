@@ -1,0 +1,70 @@
+{
+  "id": "de.syntax.wfragen",
+  "language": "de",
+  "category": "syntax",
+  "title": "Pytania (W-Fragen)",
+  "summary": "wer, was, wo, wann, wie, warum.",
+  "cefrLevel": "A1",
+  "prerequisites": [],
+  "theory": [
+    {
+      "kind": "table",
+      "title": "Najczęstsze słowa pytajne",
+      "headers": ["Niemiecki", "Polski", "Przykład"],
+      "rows": [
+        ["wer", "kto", "Wer ist das?"],
+        ["was", "co", "Was machst du?"],
+        ["wo", "gdzie", "Wo wohnst du?"],
+        ["wann", "kiedy", "Wann kommst du?"],
+        ["wie", "jak", "Wie heißt du?"],
+        ["warum", "dlaczego", "Warum lernst du Deutsch?"],
+        ["woher", "skąd", "Woher kommst du?"]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "**Szyk** w pytaniach z W-Fragen: **W-Wort + czasownik + podmiot + reszta**.\n\n*Wo wohnst du?* (Gdzie mieszkasz?)\n*Was kauft sie?* (Co ona kupuje?)\n\nW pytaniach **tak/nie** (bez słowa pytającego) czasownik idzie na pierwsze miejsce: *Wohnst du in Berlin?*"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "___ heißt du? — Ich heiße Anna.",
+      "options": ["Was", "Wer", "Wie", "Wo"],
+      "answer": 2
+    },
+    {
+      "type": "fill",
+      "prompt": "___ wohnst du? — In Berlin.",
+      "answers": ["Wo"]
+    },
+    {
+      "type": "fill",
+      "prompt": "___ kommst du? — Aus Polen.",
+      "answers": ["Woher"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Co ty robisz?",
+      "answers": ["Was machst du?"]
+    },
+    {
+      "type": "order",
+      "prompt": "Ułóż pytanie.",
+      "tokens": ["Wann", "kommst", "du", "?"],
+      "answer": ["Wann", "kommst", "du", "?"]
+    },
+    {
+      "type": "match",
+      "pairs": [
+        { "left": "wer", "right": "kto" },
+        { "left": "was", "right": "co" },
+        { "left": "wo", "right": "gdzie" },
+        { "left": "wann", "right": "kiedy" },
+        { "left": "warum", "right": "dlaczego" }
+      ]
+    }
+  ]
+}

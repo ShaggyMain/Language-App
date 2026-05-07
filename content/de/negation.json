@@ -1,0 +1,60 @@
+{
+  "id": "de.syntax.negation",
+  "language": "de",
+  "category": "syntax",
+  "title": "Negation: nicht / kein",
+  "summary": "Dwa sposoby przeczenia w niemieckim.",
+  "cefrLevel": "A1",
+  "prerequisites": ["de.articles.akkusativ"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "Niemiecki ma **dwa sposoby** przeczenia:\n\n- **kein / keine** — gdy przeczymy rzeczownikowi (zastępuje *ein/eine*). Odmienia się jak rodzajnik nieokreślony.\n- **nicht** — w pozostałych przypadkach (czasownik, przymiotnik, przysłówek, rzeczownik z określonym rodzajnikiem)."
+    },
+    {
+      "kind": "table",
+      "title": "kein — Akkusativ",
+      "headers": ["Rodzaj", "Forma", "Przykład"],
+      "rows": [
+        ["m", "keinen", "Ich habe keinen Hund."],
+        ["f", "keine", "Ich habe keine Katze."],
+        ["n", "kein", "Ich habe kein Auto."],
+        ["pl", "keine", "Ich habe keine Bücher."]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Ich habe keinen Hund.", "translation": "Nie mam psa." },
+        { "source": "Sie ist nicht müde.", "translation": "Ona nie jest zmęczona." },
+        { "source": "Wir kommen nicht.", "translation": "Nie przychodzimy." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "Ich habe ___ Auto.",
+      "options": ["nicht", "keinen", "kein", "keine"],
+      "answer": 2
+    },
+    {
+      "type": "fill",
+      "prompt": "Wir haben ___ (negation, m) Hund.",
+      "answers": ["keinen"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Er ist ___ glücklich.",
+      "options": ["kein", "keine", "nicht", "keinen"],
+      "answer": 2
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Nie mamy czasu.",
+      "answers": ["Wir haben keine Zeit."]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "de.negation.kein-akk-fill",
+    "topicId": "de.syntax.negation",
+    "language": "de",
+    "produces": "fill",
+    "slots": [
+      { "name": "noun", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "Ich habe ___ {noun}.",
+    "answerPatterns": ["{noun:kein.akk}"],
+    "hint": "kein / keine / keinen w bierniku",
+    "tags": ["kein", "akkusativ"]
+  },
+  {
+    "id": "de.negation.kein-akk-mcq",
+    "topicId": "de.syntax.negation",
+    "language": "de",
+    "produces": "mcq",
+    "slots": [
+      { "name": "noun", "pos": "noun", "filter": { "cefrMax": "A2" } }
+    ],
+    "pattern": "Wir haben ___ {noun}.",
+    "answerPatterns": ["{noun:kein.akk}"],
+    "distractorPatterns": ["{noun:kein.akk.wrong}", "nicht", "{noun:art.akk}"],
+    "tags": ["kein", "akkusativ"]
+  }
+]

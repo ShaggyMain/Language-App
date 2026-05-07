@@ -1,0 +1,67 @@
+{
+  "id": "de.verbs.modalverben",
+  "language": "de",
+  "category": "verbs",
+  "title": "Modalverben: können, müssen, wollen",
+  "summary": "Czasowniki modalne — odmiana i pozycja w zdaniu.",
+  "cefrLevel": "A1",
+  "prerequisites": ["de.verbs.sein-haben"],
+  "theory": [
+    {
+      "kind": "table",
+      "title": "können / müssen / wollen — Präsens",
+      "headers": ["Osoba", "können", "müssen", "wollen"],
+      "rows": [
+        ["ich", "kann", "muss", "will"],
+        ["du", "kannst", "musst", "willst"],
+        ["er/sie/es", "kann", "muss", "will"],
+        ["wir", "können", "müssen", "wollen"],
+        ["ihr", "könnt", "müsst", "wollt"],
+        ["sie/Sie", "können", "müssen", "wollen"]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "**Czasowniki modalne** działają tak jak angielskie *can / must*: osobny czasownik główny zostaje w bezokoliczniku i idzie na koniec zdania.\n\n*Ich **muss** heute viel **arbeiten**.* (Muszę dziś dużo pracować.)\n*Wir **können** Deutsch **sprechen**.* (Umiemy mówić po niemiecku.)\n\nUwaga: 1. i 3. osoba liczby pojedynczej mają identyczną formę: *ich kann = er kann*."
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Ich kann schwimmen.", "translation": "Umiem pływać." },
+        { "source": "Du musst lernen.", "translation": "Musisz się uczyć." },
+        { "source": "Sie will nach Berlin.", "translation": "Ona chce (jechać) do Berlina." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Ich ___ (können) gut kochen.",
+      "answers": ["kann"]
+    },
+    {
+      "type": "fill",
+      "prompt": "Du ___ (müssen) jetzt schlafen.",
+      "answers": ["musst"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Wir ___ Deutsch lernen.",
+      "options": ["könnt", "kannst", "können", "kann"],
+      "answer": 2
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "On chce kupić samochód.",
+      "answers": ["Er will ein Auto kaufen.", "Er will einen Wagen kaufen."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Ich kann schwimme.",
+      "answers": ["Ich kann schwimmen."],
+      "explanation": "Po czasowniku modalnym idzie bezokolicznik (-en)."
+    }
+  ]
+}

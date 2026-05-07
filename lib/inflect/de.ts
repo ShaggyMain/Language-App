@@ -79,6 +79,35 @@ export const inflectors: Record<string, Inflector> = {
     const correct = entry.forms?.articleAkk ?? AKK_BY_GENDER[genderOf(entry)];
     return correct === "den" ? "die" : correct === "die" ? "das" : "den";
   },
+
+  /**
+   * Negation article "kein" agreeing with the noun's gender (nominativ).
+   * Usage: {noun:kein.nom}
+   */
+  "kein.nom": (entry) => {
+    const g = genderOf(entry);
+    return g === "f" ? "keine" : "kein";
+  },
+
+  /**
+   * Negation article "kein" in accusative.
+   * Usage: {noun:kein.akk}
+   */
+  "kein.akk": (entry) => {
+    const g = genderOf(entry);
+    if (g === "m") return "keinen";
+    if (g === "f") return "keine";
+    return "kein";
+  },
+
+  /** Wrong "kein" form distractor — pick a different gender's. */
+  "kein.akk.wrong": (entry) => {
+    const correct = entry.forms?.gender === "m" ? "keinen" : entry.forms?.gender === "f" ? "keine" : "kein";
+    return correct === "keinen" ? "keine" : correct === "keine" ? "kein" : "keinen";
+  },
+
+  /** Noun plural form (German plurals are highly irregular — uses forms.plural). */
+  plural: (entry) => entry.forms?.plural ?? entry.lemma,
 };
 
 export function applyInflector(name: string, entry: LexiconEntry, args: string[], ctx: InflectCtx): string {
