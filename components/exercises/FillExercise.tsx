@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Pressable, Text, TextInput, View } from "react-native";
 import { grade, type GradeResult } from "../../lib/grading";
+import { useTheme } from "../../lib/theme";
 
 type Props = {
   prompt: string;
@@ -13,6 +14,7 @@ type Props = {
 export function FillExercise({ prompt, answers, hint, result, onSubmit }: Props) {
   const [value, setValue] = useState(result?.userInput ?? "");
   const locked = !!result;
+  const { colors } = useTheme();
 
   function handle() {
     if (locked) return;
@@ -36,7 +38,7 @@ export function FillExercise({ prompt, answers, hint, result, onSubmit }: Props)
         onChangeText={setValue}
         editable={!locked}
         placeholder="Type your answer…"
-        placeholderTextColor="#8aa0c2"
+        placeholderTextColor={colors.muted}
         autoCapitalize="none"
         autoCorrect={false}
         onSubmitEditing={handle}

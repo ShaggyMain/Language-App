@@ -59,6 +59,15 @@ CREATE TABLE IF NOT EXISTS passed_lessons (
   pass_count INTEGER NOT NULL DEFAULT 1,
   PRIMARY KEY (user_id, topic_id)
 );
+
+CREATE TABLE IF NOT EXISTS type_stats (
+  user_id TEXT NOT NULL,
+  topic_id TEXT NOT NULL,
+  type TEXT NOT NULL,
+  correct_count INTEGER NOT NULL DEFAULT 0,
+  total_count INTEGER NOT NULL DEFAULT 0,
+  PRIMARY KEY (user_id, topic_id, type)
+);
 `;
 
 type CardRow = {
@@ -233,6 +242,32 @@ export async function createSqliteRepos(): Promise<Repos> {
         [userId],
       );
       return new Set(rows.map((r) => r.topic_id));
+    },
+    async recordTypeStat({ userId, topicId, type, correct }) {
+      await db.runAsync(
+        `INSERT INTO type_stats (user_id, topic_id, type, correct_count, total_count)
+         VALUES (?, ?, ?, ?, 1)
+         ON CONFLICT(user_id, topic_id, type) DO UPDATE SET
+           correct_count = correct_count + ?,
+           total_count = total_count + 1`,
+        [userId, topicId, type, correct ? 1 : 0, correct ? 1 : 0],
+      );
+    },
+    async accuracyByType(userId, topicId) {
+      const rows = await db.getAllAsync<{ type: string; correct_count: number; total_count: number }>(
+        `SELECT type, correct_count, total_count FROM type_stats
+         WHERE user_id = ? AND topic_id = ?`,
+        [userId, topicId],
+      );
+      const out: Record<string, { correct: number; total: number; pct: number }> = {};
+      for (const r of rows) {
+        out[r.type] = {
+          correct: r.correct_count,
+          total: r.total_count,
+          pct: r.total_count ? r.correct_count / r.total_count : 0,
+        };
+      }
+      return out;
     },
   };
 

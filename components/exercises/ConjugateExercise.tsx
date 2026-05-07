@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Pressable, Text, TextInput, View } from "react-native";
 import { grade, type GradeResult } from "../../lib/grading";
+import { useTheme } from "../../lib/theme";
 
 type Person = { person: string; answer: string };
 
@@ -18,6 +19,7 @@ export function ConjugateExercise({ verb, tense, persons, result, onSubmit }: Pr
     : persons.map(() => "");
   const [values, setValues] = useState<string[]>(initial);
   const locked = !!result;
+  const { colors } = useTheme();
 
   function setAt(i: number, v: string) {
     setValues((arr) => arr.map((x, j) => (j === i ? v : x)));
@@ -69,7 +71,7 @@ export function ConjugateExercise({ verb, tense, persons, result, onSubmit }: Pr
                 autoCapitalize="none"
                 autoCorrect={false}
                 placeholder="…"
-                placeholderTextColor="#8aa0c2"
+                placeholderTextColor={colors.muted}
               />
               {locked ? (
                 <Text className="text-muted text-xs">{p.answer}</Text>

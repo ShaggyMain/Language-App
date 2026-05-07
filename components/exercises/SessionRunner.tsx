@@ -8,8 +8,8 @@
  */
 
 import { useEffect, useMemo, useReducer, useRef, useState } from "react";
-import { ActivityIndicator, Text, View } from "react-native";
-import Animated, { FadeIn } from "react-native-reanimated";
+import { KeyboardAvoidingView, Platform, ScrollView, Text, View } from "react-native";
+import Animated, { SlideInRight, FadeIn } from "react-native-reanimated";
 import { router } from "expo-router";
 import type { Topic } from "../../lib/types";
 import { getRepos, type Repos } from "../../lib/db";
@@ -27,11 +27,14 @@ import {
 import { publishSession } from "../../lib/sessionStore";
 import { ratingFromGrade, review } from "../../lib/srs";
 import { ExerciseRenderer } from "./ExerciseRenderer";
+import { ExerciseTypeHint } from "./ExerciseTypeHint";
 import { ResultSheet } from "./ResultSheet";
 import { Language } from "../../lib/types";
 import { currentUserId } from "../../lib/auth";
 import { syncPushPassed, syncPushSrs } from "../../lib/sync";
 import { bumpStreak } from "../../lib/streak";
+import { awardXp, computeSessionXp } from "../../lib/xp";
+import { SkeletonCard } from "../ui/Skeleton";
 
 type Props = {
   language: string;
@@ -122,20 +125,38 @@ export function SessionRunner({ language, topic, mode, count = 10 }: Props) {
     const sum = summarize(state);
     const finishedAt = Date.now();
     void repos.log.finishSession({ sessionId: sid, finishedAt, summary: sum });
-    void bumpStreak(new Date(finishedAt));
-    if (state.mode === "path" && sum.passedPath) {
-      void repos.log.markPassed({ userId: currentUserId(), topicId: topic.id, at: finishedAt });
-      void syncPushPassed(topic.id, finishedAt);
-    }
+
+    (async () => {
+      const streakAfter = await bumpStreak(new Date(finishedAt));
+      const passedTopicsBefore = await repos.log.passedTopicIds(currentUserId());
+      const firstPathPass = state.mode === "path" && sum.passedPath && !passedTopicsBefore.has(topic.id);
+
+      if (state.mode === "path" && sum.passedPath) {
+        await repos.log.markPassed({ userId: currentUserId(), topicId: topic.id, at: finishedAt });
+        void syncPushPassed(topic.id, finishedAt);
+      }
+      const xp = computeSessionXp({
+        summary: sum,
+        streakAlive: streakAfter.streak >= 1,
+        firstPathPass,
+      });
+      if (xp.total > 0) await awardXp(xp.total, finishedAt);
+    })();
+
     publishSession(state, sum);
     router.replace(`/${language}/results`);
   }, [state.phase, state, topic.id, language]);
 
   if (loading) {
     return (
-      <View className="flex-1 items-center justify-center">
-        <ActivityIndicator color="#3b82f6" />
-        <Text className="text-muted mt-3">Preparing session…</Text>
+      <View className="flex-1">
+        <View className="h-2 rounded-full bg-surface border border-border mb-6 overflow-hidden">
+          <View className="h-full w-1/12 bg-en/60" />
+        </View>
+        <SkeletonCard />
+        <SkeletonCard />
+        <SkeletonCard />
+        <Text className="text-muted text-center mt-3">Preparing session…</Text>
       </View>
     );
   }
@@ -169,30 +190,44 @@ export function SessionRunner({ language, topic, mode, count = 10 }: Props) {
   const lang = langParsed.success ? langParsed.data : "en";
 
   return (
-    <View className="flex-1">
-      <ProgressBar current={state.cursor + 1} total={state.items.length} />
-      <Animated.View key={state.cursor} entering={FadeIn.duration(220)} className="flex-1">
-        <ExerciseRenderer
-          exercise={cur.exercise}
-          language={lang}
-          locked={locked}
-          userInput={cur.userInput}
-          pickedIndex={pickedIndex}
-          resultCorrect={cur.result?.correct}
-          onSubmit={handleSubmit}
-        />
-        {locked && cur.result ? (
-          <Animated.View entering={FadeIn.duration(180).delay(40)}>
-            <ResultSheet
-              result={cur.result}
-              explanation={explanation}
-              canonical={canonical}
-              onNext={handleNext}
-            />
-          </Animated.View>
-        ) : null}
-      </Animated.View>
-    </View>
+    <KeyboardAvoidingView
+      behavior={Platform.OS === "ios" ? "padding" : undefined}
+      keyboardVerticalOffset={Platform.OS === "ios" ? 80 : 0}
+      className="flex-1"
+    >
+      <ScrollView
+        className="flex-1"
+        contentContainerClassName="pb-12"
+        keyboardShouldPersistTaps="handled"
+      >
+        <ProgressBar current={state.cursor + 1} total={state.items.length} />
+        <Animated.View
+          key={state.cursor}
+          entering={SlideInRight.duration(240).springify().damping(18)}
+        >
+          <ExerciseTypeHint type={cur.exercise.type} />
+          <ExerciseRenderer
+            exercise={cur.exercise}
+            language={lang}
+            locked={locked}
+            userInput={cur.userInput}
+            pickedIndex={pickedIndex}
+            resultCorrect={cur.result?.correct}
+            onSubmit={handleSubmit}
+          />
+          {locked && cur.result ? (
+            <Animated.View entering={FadeIn.duration(180).delay(40)}>
+              <ResultSheet
+                result={cur.result}
+                explanation={explanation}
+                canonical={canonical}
+                onNext={handleNext}
+              />
+            </Animated.View>
+          ) : null}
+        </Animated.View>
+      </ScrollView>
+    </KeyboardAvoidingView>
   );
 }
 
@@ -222,6 +257,12 @@ async function persistItem(
   item: SessionItem & { result: GradeResult },
 ): Promise<void> {
   await recordItemSeen(repos, currentUserId(), topicId, sessionId, item, item.result.correct);
+  await repos.log.recordTypeStat({
+    userId: currentUserId(),
+    topicId,
+    type: item.exercise.type,
+    correct: item.result.correct,
+  });
   if (item.origin === "authored" || !item.templateId || !item.slotIds) return;
   const card = await repos.srs.getCard(currentUserId(), item.instanceHash);
   const next = review(card, ratingFromGrade(item.result));

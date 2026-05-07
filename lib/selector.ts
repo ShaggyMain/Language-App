@@ -102,6 +102,52 @@ export async function pickSessionExercises(
   const seedStr = opts.seed ?? `${opts.userId}:${topic.id}:${opts.mode}:${Math.floor(now.getTime() / 86400000)}`;
   const rng = mulberry32(seedNum(seedStr));
 
+  /* Adaptive weights per exercise type, computed from history.
+   *   weight = clamp(1 + (1 - accuracy) * 3, 0.5, 4)
+   *   - Types user nails (acc ≥ 0.9) get neutral-to-low weight (~1.0–1.3)
+   *   - Types user struggles with (acc 0.5) get 2.5× weight
+   *   - Types user is failing (acc 0.0) get 4× weight
+   *   - Untested types get neutral weight (1.0)
+   *   - Floor of 5 attempts before stats kick in (avoid early bias)
+   */
+  const accuracy = await repos.log.accuracyByType(opts.userId, topic.id);
+  function typeWeight(type: string): number {
+    const stat = accuracy[type];
+    if (!stat || stat.total < 5) return 1;
+    const w = 1 + (1 - stat.pct) * 3;
+    return Math.max(0.5, Math.min(4, w));
+  }
+  /**
+   * Iteratively draws up to `n` items without replacement, weighted by
+   * typeWeight. The returned ORDER itself is biased — items with higher
+   * weight tend to come first — so callers can soft-cap with slice(0, k)
+   * and still get the adaptive effect.
+   */
+  function pickWeighted<T extends { exercise: { type: string } }>(pool: T[], n: number): T[] {
+    const taken: T[] = [];
+    const remaining = pool.slice();
+    const limit = Math.min(n, pool.length);
+    for (let i = 0; i < limit && remaining.length > 0; i++) {
+      const weights = remaining.map((it) => typeWeight(it.exercise.type));
+      const total = weights.reduce((s, w) => s + w, 0);
+      if (total <= 0) {
+        taken.push(remaining[0]);
+        remaining.shift();
+        continue;
+      }
+      let roll = rng() * total;
+      let idx = 0;
+      for (; idx < weights.length; idx++) {
+        roll -= weights[idx];
+        if (roll <= 0) break;
+      }
+      idx = Math.min(idx, remaining.length - 1);
+      taken.push(remaining[idx]);
+      remaining.splice(idx, 1);
+    }
+    return taken;
+  }
+
   /* 1. SRS-due (rehydrate via compileInstance) ─────────────────── */
   const dueLimit = Math.ceil(count * 0.3);
   const dueRaw = await repos.srs.due(opts.userId, topic.id, now, dueLimit);
@@ -159,7 +205,8 @@ export async function pickSessionExercises(
   }
 
   // 4b. Authored — UI now supports every type defined on Exercise; render all.
-  const supportedAuthored = shuffle(authored, rng);
+  // Weighted shuffle so weak types are favored.
+  const supportedAuthored = pickWeighted(authored, authored.length);
   let authoredAdded = 0;
   for (const a of supportedAuthored) {
     if (authoredAdded >= minAuthored) break;
@@ -168,8 +215,9 @@ export async function pickSessionExercises(
     authoredAdded++;
   }
 
-  // 4c. Fill from generator pool, respecting mix
-  const shuffledGen = shuffle(genPool, rng);
+  // 4c. Fill from generator pool, respecting mix. Generator items are mostly
+  // mcq/fill so the weighting still applies but matters less than for authored.
+  const shuffledGen = pickWeighted(genPool, genPool.length);
   for (const it of shuffledGen) {
     if (picked.length >= target) break;
     if (picked.find((p) => p.instanceHash === it.instanceHash)) continue;

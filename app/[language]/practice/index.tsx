@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Text, View } from "react-native";
 import { useLocalSearchParams, router } from "expo-router";
 import { Screen } from "../../../components/ui/Screen";
@@ -5,14 +6,35 @@ import { Card } from "../../../components/ui/Card";
 import { Language } from "../../../lib/types";
 import { topicsForLanguage } from "../../../lib/content";
 import { languageMeta } from "../../../lib/languages";
+import { getRepos } from "../../../lib/db";
+import { currentUserId, subscribeAuthState } from "../../../lib/auth";
+import { masteryMap, type Mastery } from "../../../lib/mastery";
 
 export default function PracticeScreen() {
   const { language } = useLocalSearchParams<{ language: string }>();
   const parsed = Language.safeParse(language);
+  const [mastery, setMastery] = useState<Record<string, Mastery>>({});
+
+  const lang = parsed.success ? parsed.data : "en";
+  const topics = parsed.success ? topicsForLanguage(lang) : [];
+
+  useEffect(() => {
+    let cancelled = false;
+    async function refresh() {
+      const repos = await getRepos();
+      const m = await masteryMap(repos, currentUserId(), topics.map((t) => t.id));
+      if (!cancelled) setMastery(m);
+    }
+    void refresh();
+    const unsub = subscribeAuthState(() => void refresh());
+    return () => {
+      cancelled = true;
+      unsub();
+    };
+  }, [topics]);
+
   if (!parsed.success) return null;
-  const lang = parsed.data;
   const meta = languageMeta(lang);
-  const topics = topicsForLanguage(lang);
 
   return (
     <Screen title="Practice">
@@ -26,8 +48,10 @@ export default function PracticeScreen() {
           <Card
             key={t.id}
             title={t.title}
-            subtitle={`${t.exercises.length} exercises available`}
+            subtitle={t.summary}
+            badge={`${t.cefrLevel} · ${t.exercises.length} exercises`}
             accent={meta.accent}
+            progress={mastery[t.id]?.score ?? 0}
             onPress={() => router.push(`/${lang}/practice/${encodeURIComponent(t.id)}`)}
           />
         ))

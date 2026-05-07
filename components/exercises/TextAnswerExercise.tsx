@@ -1,6 +1,7 @@
 import { ReactNode, useState } from "react";
 import { Pressable, Text, TextInput, View } from "react-native";
 import { grade, type GradeResult } from "../../lib/grading";
+import { useTheme } from "../../lib/theme";
 
 type Props = {
   /** Header rendered above the input (instruction, source sentence, audio button, etc.). */
@@ -24,6 +25,7 @@ export function TextAnswerExercise({
 }: Props) {
   const [value, setValue] = useState(result?.userInput ?? "");
   const locked = !!result;
+  const { colors } = useTheme();
 
   function handle() {
     if (locked) return;
@@ -47,7 +49,7 @@ export function TextAnswerExercise({
         onChangeText={setValue}
         editable={!locked}
         placeholder={placeholder ?? "Type your answer…"}
-        placeholderTextColor="#8aa0c2"
+        placeholderTextColor={colors.muted}
         autoCapitalize="none"
         autoCorrect={false}
         multiline={multiline}

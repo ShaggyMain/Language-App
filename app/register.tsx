@@ -3,6 +3,7 @@ import { ActivityIndicator, Pressable, Text, TextInput, View } from "react-nativ
 import { router } from "expo-router";
 import { Screen } from "../components/ui/Screen";
 import { supabase, supabaseConfigured } from "../lib/supabase";
+import { useTheme } from "../lib/theme";
 
 export default function RegisterScreen() {
   const [email, setEmail] = useState("");
@@ -10,6 +11,7 @@ export default function RegisterScreen() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [info, setInfo] = useState<string | null>(null);
+  const { colors } = useTheme();
 
   async function handleSignUp() {
     if (!supabase) {
@@ -52,7 +54,7 @@ export default function RegisterScreen() {
         autoCorrect={false}
         keyboardType="email-address"
         placeholder="you@example.com"
-        placeholderTextColor="#8aa0c2"
+        placeholderTextColor={colors.muted}
       />
 
       <Text className="text-muted text-xs uppercase tracking-wide mb-2">Password</Text>
@@ -63,7 +65,7 @@ export default function RegisterScreen() {
         secureTextEntry
         autoCapitalize="none"
         placeholder="At least 8 characters"
-        placeholderTextColor="#8aa0c2"
+        placeholderTextColor={colors.muted}
       />
       <Text className="text-muted text-xs mb-4">Minimum 8 characters.</Text>
 
