@@ -149,22 +149,22 @@ export function SessionRunner({ language, topic, mode, count = 10 }: Props) {
 
   if (loading) {
     return (
-      <View className="flex-1">
-        <View className="h-2 rounded-full bg-surface border border-border mb-6 overflow-hidden">
-          <View className="h-full w-1/12 bg-en/60" />
+      <View style={{ flex: 1 }}>
+        <View style={{ height: 8, borderRadius: 4, backgroundColor: "#111a2e", borderWidth: 1, borderColor: "#1f2a44", marginBottom: 24, overflow: "hidden" }}>
+          <View style={{ height: "100%", width: "8%", backgroundColor: "#3b82f640" }} />
         </View>
         <SkeletonCard />
         <SkeletonCard />
         <SkeletonCard />
-        <Text className="text-muted text-center mt-3">Preparing session…</Text>
+        <Text style={{ color: "#8aa0c2", textAlign: "center", marginTop: 12 }}>Preparing session…</Text>
       </View>
     );
   }
   if (error) {
-    return <Text className="text-error">{error}</Text>;
+    return <Text style={{ color: "#f43f5e" }}>{error}</Text>;
   }
   if (state.items.length === 0 || state.phase === "finished") {
-    return <Text className="text-muted">Session complete.</Text>;
+    return <Text style={{ color: "#8aa0c2" }}>Session complete.</Text>;
   }
 
   const cur = state.items[state.cursor];
@@ -193,17 +193,17 @@ export function SessionRunner({ language, topic, mode, count = 10 }: Props) {
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : undefined}
       keyboardVerticalOffset={Platform.OS === "ios" ? 80 : 0}
-      className="flex-1"
+      style={{ flex: 1 }}
     >
       <ScrollView
-        className="flex-1"
-        contentContainerClassName="pb-12"
+        style={{ flex: 1 }}
+        contentContainerStyle={{ paddingBottom: 48 }}
         keyboardShouldPersistTaps="handled"
       >
         <ProgressBar current={state.cursor + 1} total={state.items.length} />
         <Animated.View
           key={state.cursor}
-          entering={SlideInRight.duration(240).springify().damping(18)}
+          entering={SlideInRight.duration(200).springify().damping(28)}
         >
           <ExerciseTypeHint type={cur.exercise.type} />
           <ExerciseRenderer
@@ -274,12 +274,12 @@ async function persistItem(
 function ProgressBar({ current, total }: { current: number; total: number }) {
   const pct = Math.min(100, Math.round((current / Math.max(1, total)) * 100));
   return (
-    <View className="mb-6">
-      <Text className="text-muted text-xs mb-2">
+    <View style={{ marginBottom: 24 }}>
+      <Text style={{ color: "#8aa0c2", fontSize: 12, marginBottom: 8 }}>
         {current} / {total}
       </Text>
-      <View className="h-2 rounded-full bg-surface border border-border overflow-hidden">
-        <View className="h-full bg-en" style={{ width: `${pct}%` }} />
+      <View style={{ height: 8, borderRadius: 4, backgroundColor: "#111a2e", borderWidth: 1, borderColor: "#1f2a44", overflow: "hidden" }}>
+        <View style={{ height: "100%", backgroundColor: "#3b82f6", borderRadius: 4, width: `${pct}%` }} />
       </View>
     </View>
   );

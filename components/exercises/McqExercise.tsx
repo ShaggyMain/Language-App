@@ -3,6 +3,15 @@ import { Pressable, Text, View } from "react-native";
 import type { GradeResult } from "../../lib/grading";
 import { tapHaptic } from "../../lib/haptics";
 
+const C = {
+  surface: "#111a2e",
+  border: "#1f2a44",
+  text: "#e6ecf5",
+  en: "#3b82f6",
+  success: "#22c55e",
+  error: "#f43f5e",
+} as const;
+
 type Props = {
   prompt: string;
   options: string[];
@@ -32,25 +41,35 @@ export function McqExercise({ prompt, options, answer, result, onSubmit }: Props
 
   return (
     <View>
-      <Text className="text-text text-xl mb-6 leading-7">{prompt}</Text>
-      <View className="gap-3">
+      <Text style={{ color: C.text, fontSize: 19, marginBottom: 24, lineHeight: 28 }}>
+        {prompt}
+      </Text>
+      <View style={{ gap: 10 }}>
         {options.map((opt, idx) => {
           const selected = picked === idx;
-          let bg = "bg-surface border-border";
+          let bgColor = C.surface;
+          let borderColor = C.border;
           if (locked) {
-            if (idx === answer) bg = "bg-success/20 border-success";
-            else if (selected) bg = "bg-error/20 border-error";
+            if (idx === answer) { bgColor = "#22c55e22"; borderColor = C.success; }
+            else if (selected) { bgColor = "#f43f5e22"; borderColor = C.error; }
           } else if (selected) {
-            bg = "bg-en/20 border-en";
+            bgColor = "#3b82f622"; borderColor = C.en;
           }
           return (
             <Pressable
               key={idx}
               onPress={() => handlePress(idx)}
               disabled={locked}
-              className={`rounded-xl border px-4 py-4 ${bg}`}
+              style={{
+                borderRadius: 12,
+                borderWidth: 1.5,
+                borderColor,
+                backgroundColor: bgColor,
+                paddingHorizontal: 16,
+                paddingVertical: 16,
+              }}
             >
-              <Text className="text-text text-base">{opt}</Text>
+              <Text style={{ color: C.text, fontSize: 16 }}>{opt}</Text>
             </Pressable>
           );
         })}
