@@ -29,17 +29,11 @@ export default function PathScreen() {
       const langTopics = parsed.success ? topicsForLanguage(lang) : [];
       const set = await repos.log.passedTopicIds(uid);
       const mast = await masteryMap(repos, uid, langTopics.map((t) => t.id));
-      if (!cancelled) {
-        setPassed(set);
-        setMastery(mast);
-      }
+      if (!cancelled) { setPassed(set); setMastery(mast); }
     }
     void refresh();
     const unsub = subscribeAuthState(() => void refresh());
-    return () => {
-      cancelled = true;
-      unsub();
-    };
+    return () => { cancelled = true; unsub(); };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lang]);
 
@@ -52,17 +46,37 @@ export default function PathScreen() {
 
   return (
     <Screen title="Path">
-      <Text className="text-muted mb-6">
+      <Text style={{ color: "#8aa0c2", fontSize: 14, marginBottom: 20, lineHeight: 20 }}>
         Complete each lesson with ≥ 80% to unlock the next.
       </Text>
       {warned ? (
-        <View className="bg-warning/15 border border-warning rounded-xl px-3 py-2 mb-4">
-          <Text className="text-text text-sm">Pass {warned} first to unlock this lesson.</Text>
+        <View
+          style={{
+            backgroundColor: "#eab30818",
+            borderWidth: 1,
+            borderColor: "#eab308",
+            borderRadius: 12,
+            paddingHorizontal: 14,
+            paddingVertical: 10,
+            marginBottom: 14,
+          }}
+        >
+          <Text style={{ color: "#e6ecf5", fontSize: 13 }}>
+            Pass "{warned}" first to unlock this lesson.
+          </Text>
         </View>
       ) : null}
       {topics.length === 0 ? (
-        <View className="bg-surface border border-border rounded-2xl p-5">
-          <Text className="text-text">No lessons yet for {meta.name}.</Text>
+        <View
+          style={{
+            backgroundColor: "#111a2e",
+            borderWidth: 1,
+            borderColor: "#1f2a44",
+            borderRadius: 16,
+            padding: 20,
+          }}
+        >
+          <Text style={{ color: "#e6ecf5" }}>No lessons yet for {meta.name}.</Text>
         </View>
       ) : (
         topics.map((t, idx) => {

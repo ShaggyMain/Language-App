@@ -3,20 +3,23 @@ import { Text, View } from "react-native";
 import { ProgressRing } from "./ProgressRing";
 import { PressableScale } from "./PressableScale";
 
+const C = {
+  surface: "#111a2e",
+  border: "#1f2a44",
+  success: "#22c55e",
+  text: "#e6ecf5",
+  muted: "#8aa0c2",
+  bg: "#0b1220",
+} as const;
+
 type Props = {
   title: string;
   subtitle?: string;
-  /** Hex color for the left accent stripe. */
   accent?: string;
-  /** Optional leading icon node (lucide icon, emoji, etc). */
   icon?: ReactNode;
-  /** Optional trailing decoration. */
   trailing?: ReactNode;
-  /** Mastery progress 0..1; renders a ring on the right. */
   progress?: number;
-  /** Small badge rendered under the title (e.g. "A1 · 8 exercises"). */
   badge?: string;
-  /** Visual state — affects opacity/border. */
   state?: "active" | "locked" | "passed";
   onPress?: () => void;
 };
@@ -32,26 +35,52 @@ export function Card({
   state = "active",
   onPress,
 }: Props) {
-  const opacity = state === "locked" ? "opacity-50" : "";
-  const borderTone = state === "passed" ? "border-success/40" : "border-border";
+  const opacity = state === "locked" ? 0.45 : 1;
+  const borderColor = state === "passed" ? "#22c55e55" : C.border;
 
   return (
     <PressableScale
       onPress={onPress}
       disabled={!onPress}
-      className={`bg-surface border ${borderTone} rounded-2xl p-5 mb-3 min-h-[64px] ${opacity}`}
+      style={{
+        backgroundColor: C.surface,
+        borderWidth: 1,
+        borderColor,
+        borderRadius: 16,
+        padding: 18,
+        marginBottom: 10,
+        minHeight: 64,
+        opacity,
+      }}
     >
-      <View className="flex-row items-center gap-3">
+      <View style={{ flexDirection: "row", alignItems: "center", gap: 12 }}>
         {accent ? (
-          <View className="w-1.5 h-12 rounded-full" style={{ backgroundColor: accent }} />
+          <View style={{ width: 4, height: 44, borderRadius: 2, backgroundColor: accent }} />
         ) : null}
-        {icon ? <View className="mr-1">{icon}</View> : null}
-        <View className="flex-1">
-          <Text className="text-text text-lg font-semibold">{title}</Text>
-          {subtitle ? <Text className="text-muted text-sm mt-1">{subtitle}</Text> : null}
+        {icon ? <View style={{ marginRight: 4 }}>{icon}</View> : null}
+        <View style={{ flex: 1 }}>
+          <Text style={{ color: C.text, fontSize: 16, fontWeight: "600", lineHeight: 22 }}>
+            {title}
+          </Text>
+          {subtitle ? (
+            <Text style={{ color: C.muted, fontSize: 13, marginTop: 3, lineHeight: 18 }}>
+              {subtitle}
+            </Text>
+          ) : null}
           {badge ? (
-            <View className="self-start mt-2 bg-bg border border-border rounded-md px-2 py-0.5">
-              <Text className="text-muted text-xs">{badge}</Text>
+            <View
+              style={{
+                alignSelf: "flex-start",
+                marginTop: 8,
+                backgroundColor: C.bg,
+                borderWidth: 1,
+                borderColor: C.border,
+                borderRadius: 6,
+                paddingHorizontal: 8,
+                paddingVertical: 3,
+              }}
+            >
+              <Text style={{ color: C.muted, fontSize: 11 }}>{badge}</Text>
             </View>
           ) : null}
         </View>
