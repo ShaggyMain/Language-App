@@ -1,11 +1,18 @@
 import { ReactNode, useState } from "react";
 import { Text, TextInput, View } from "react-native";
 import { grade, type GradeResult } from "../../lib/grading";
-import { useTheme } from "../../lib/theme";
 import { PrimaryButton } from "../ui/PrimaryButton";
 
+const C = {
+  surface: "#111a2e",
+  border: "#1f2a44",
+  text: "#e6ecf5",
+  muted: "#8aa0c2",
+  success: "#22c55e",
+  error: "#f43f5e",
+} as const;
+
 type Props = {
-  /** Header rendered above the input (instruction, source sentence, audio button, etc.). */
   header: ReactNode;
   answers: string[];
   hint?: string;
@@ -26,7 +33,6 @@ export function TextAnswerExercise({
 }: Props) {
   const [value, setValue] = useState(result?.userInput ?? "");
   const locked = !!result;
-  const { colors } = useTheme();
 
   function handle() {
     if (locked) return;
@@ -35,22 +41,35 @@ export function TextAnswerExercise({
     onSubmit(trimmed, grade(trimmed, answers));
   }
 
-  let inputBg = "bg-surface border-border";
+  let inputBgColor = C.surface;
+  let inputBorderColor = C.border;
   if (locked) {
-    inputBg = result.correct ? "bg-success/20 border-success" : "bg-error/20 border-error";
+    if (result.correct) { inputBgColor = "#22c55e22"; inputBorderColor = C.success; }
+    else { inputBgColor = "#f43f5e22"; inputBorderColor = C.error; }
   }
 
   return (
     <View>
       {header}
-      {hint ? <Text className="text-muted text-sm mb-3">{hint}</Text> : null}
+      {hint ? (
+        <Text style={{ color: C.muted, fontSize: 13, marginBottom: 12 }}>{hint}</Text>
+      ) : null}
       <TextInput
-        className={`rounded-xl border px-4 py-3 text-text text-base ${inputBg}`}
+        style={{
+          borderRadius: 12,
+          borderWidth: 1.5,
+          borderColor: inputBorderColor,
+          backgroundColor: inputBgColor,
+          paddingHorizontal: 16,
+          paddingVertical: 14,
+          color: C.text,
+          fontSize: 16,
+        }}
         value={value}
         onChangeText={setValue}
         editable={!locked}
         placeholder={placeholder ?? "Type your answer…"}
-        placeholderTextColor={colors.muted}
+        placeholderTextColor={C.muted}
         autoCapitalize="none"
         autoCorrect={false}
         multiline={multiline}
@@ -58,7 +77,7 @@ export function TextAnswerExercise({
         returnKeyType="done"
       />
       {!locked ? (
-        <View className="mt-6">
+        <View style={{ marginTop: 24 }}>
           <PrimaryButton label="Check" onPress={handle} disabled={!value.trim()} />
         </View>
       ) : null}

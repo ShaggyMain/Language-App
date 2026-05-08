@@ -1,7 +1,16 @@
 import { useState } from "react";
 import { Pressable, Text, TextInput, View } from "react-native";
 import { grade, type GradeResult } from "../../lib/grading";
-import { useTheme } from "../../lib/theme";
+
+const C = {
+  surface: "#111a2e",
+  border: "#1f2a44",
+  text: "#e6ecf5",
+  muted: "#8aa0c2",
+  en: "#3b82f6",
+  success: "#22c55e",
+  error: "#f43f5e",
+} as const;
 
 type Person = { person: string; answer: string };
 
@@ -19,7 +28,6 @@ export function ConjugateExercise({ verb, tense, persons, result, onSubmit }: Pr
     : persons.map(() => "");
   const [values, setValues] = useState<string[]>(initial);
   const locked = !!result;
-  const { colors } = useTheme();
 
   function setAt(i: number, v: string) {
     setValues((arr) => arr.map((x, j) => (j === i ? v : x)));
@@ -28,7 +36,6 @@ export function ConjugateExercise({ verb, tense, persons, result, onSubmit }: Pr
   function handle() {
     if (locked) return;
     if (values.some((v) => !v.trim())) return;
-
     const perRow: GradeResult[] = persons.map((p, i) => grade(values[i], [p.answer]));
     const allCorrect = perRow.every((r) => r.correct);
     const avgScore = perRow.reduce((s, r) => s + r.score, 0) / perRow.length;
@@ -38,10 +45,7 @@ export function ConjugateExercise({ verb, tense, persons, result, onSubmit }: Pr
       correct: allCorrect,
       score: avgScore,
       closest,
-      diff:
-        wrongIdx >= 0
-          ? perRow[wrongIdx].diff
-          : [{ text: closest, kind: "same" }],
+      diff: wrongIdx >= 0 ? perRow[wrongIdx].diff : [{ text: closest, kind: "same" }],
       reason: allCorrect ? "exact" : avgScore >= 0.7 ? "near" : "wrong",
     };
     onSubmit(JSON.stringify(values), composite);
@@ -51,30 +55,47 @@ export function ConjugateExercise({ verb, tense, persons, result, onSubmit }: Pr
 
   return (
     <View>
-      <Text className="text-muted text-xs uppercase tracking-wide mb-2">{tense}</Text>
-      <Text className="text-text text-xl mb-5">{verb}</Text>
-      <View className="gap-3">
+      <Text style={{ color: C.muted, fontSize: 11, textTransform: "uppercase", letterSpacing: 1, marginBottom: 6 }}>
+        {tense}
+      </Text>
+      <Text style={{ color: C.text, fontSize: 19, marginBottom: 20 }}>{verb}</Text>
+      <View style={{ gap: 10 }}>
         {persons.map((p, i) => {
-          let bg = "bg-surface border-border";
+          let bgColor = C.surface;
+          let borderColor = C.border;
           if (locked) {
             const ok = grade(values[i] ?? "", [p.answer]).correct;
-            bg = ok ? "bg-success/15 border-success/60" : "bg-error/15 border-error/60";
+            if (ok) { bgColor = "#22c55e18"; borderColor = C.success; }
+            else { bgColor = "#f43f5e18"; borderColor = C.error; }
           }
           return (
-            <View key={p.person} className={`flex-row items-center gap-3 rounded-xl border px-3 py-2 ${bg}`}>
-              <Text className="text-muted w-20">{p.person}</Text>
+            <View
+              key={p.person}
+              style={{
+                flexDirection: "row",
+                alignItems: "center",
+                gap: 12,
+                borderRadius: 12,
+                borderWidth: 1.5,
+                borderColor,
+                backgroundColor: bgColor,
+                paddingHorizontal: 12,
+                paddingVertical: 10,
+              }}
+            >
+              <Text style={{ color: C.muted, width: 80, fontSize: 14 }}>{p.person}</Text>
               <TextInput
-                className="flex-1 text-text text-base px-2 py-2"
+                style={{ flex: 1, color: C.text, fontSize: 15, paddingVertical: 4 }}
                 value={values[i]}
                 onChangeText={(v) => setAt(i, v)}
                 editable={!locked}
                 autoCapitalize="none"
                 autoCorrect={false}
                 placeholder="…"
-                placeholderTextColor={colors.muted}
+                placeholderTextColor={C.muted}
               />
               {locked ? (
-                <Text className="text-muted text-xs">{p.answer}</Text>
+                <Text style={{ color: C.muted, fontSize: 12 }}>{p.answer}</Text>
               ) : null}
             </View>
           );
@@ -84,9 +105,17 @@ export function ConjugateExercise({ verb, tense, persons, result, onSubmit }: Pr
         <Pressable
           onPress={handle}
           disabled={!ready}
-          className={`mt-5 rounded-xl px-4 py-4 items-center ${ready ? "bg-en" : "bg-surface border border-border"}`}
+          style={{
+            marginTop: 20,
+            borderRadius: 12,
+            paddingVertical: 16,
+            alignItems: "center",
+            backgroundColor: ready ? C.en : C.surface,
+            borderWidth: ready ? 0 : 1,
+            borderColor: C.border,
+          }}
         >
-          <Text className={`${ready ? "text-white" : "text-muted"} text-base font-semibold`}>
+          <Text style={{ color: ready ? "white" : C.muted, fontSize: 16, fontWeight: "600" }}>
             Check
           </Text>
         </Pressable>

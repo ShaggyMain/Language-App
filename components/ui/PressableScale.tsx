@@ -5,17 +5,12 @@ import Animated, { useAnimatedStyle, useSharedValue, withSpring } from "react-na
 type Props = Omit<PressableProps, "onPressIn" | "onPressOut" | "children" | "style"> & {
   children: ReactNode;
   className?: string;
-  /** Static style merged with the animated transform. */
   style?: StyleProp<ViewStyle>;
-  /** Scale factor when pressed. 1 = no animation. */
   pressedScale?: number;
 };
 
 const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 
-/**
- * Drop-in Pressable with a spring-driven scale-down on press.
- */
 export function PressableScale({
   children,
   className,
@@ -33,10 +28,10 @@ export function PressableScale({
     <AnimatedPressable
       {...rest}
       onPressIn={() => {
-        sv.value = withSpring(pressedScale, { damping: 18, stiffness: 250 });
+        sv.value = withSpring(pressedScale, { damping: 30, stiffness: 320 });
       }}
       onPressOut={() => {
-        sv.value = withSpring(1, { damping: 14, stiffness: 200 });
+        sv.value = withSpring(1, { damping: 26, stiffness: 300 });
       }}
       style={[animatedStyle, style]}
       className={className}

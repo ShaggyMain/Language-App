@@ -11,19 +11,12 @@ import Animated, {
 const AnimatedCircle = Animated.createAnimatedComponent(Circle);
 
 type Props = {
-  /** 0..1 — fill progress. */
   progress: number;
-  /** Outer diameter, px. */
   size?: number;
-  /** Stroke width, px. */
   thickness?: number;
-  /** Hex color of the filled arc. Defaults to brand blue. */
   color?: string;
-  /** Hex color of the empty track. */
   trackColor?: string;
-  /** Optional centered label rendered inside the ring. */
   label?: string;
-  /** Override default label color. */
   labelColor?: string;
 };
 
@@ -52,7 +45,7 @@ export function ProgressRing({
   }));
 
   return (
-    <View style={{ width: size, height: size }} className="items-center justify-center">
+    <View style={{ width: size, height: size, alignItems: "center", justifyContent: "center" }}>
       <Svg width={size} height={size}>
         <Circle
           cx={size / 2}
@@ -72,13 +65,22 @@ export function ProgressRing({
           strokeDasharray={`${circumference} ${circumference}`}
           fill="transparent"
           animatedProps={animatedProps}
-          // Start at 12 o'clock instead of 3.
           transform={`rotate(-90 ${size / 2} ${size / 2})`}
         />
       </Svg>
       {label !== undefined ? (
-        <View className="absolute inset-0 items-center justify-center">
-          <Text style={{ color: labelColor, fontSize: size * 0.28, fontWeight: "700" }}>
+        <View
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Text style={{ color: labelColor, fontSize: size * 0.2, fontWeight: "700" }}>
             {label}
           </Text>
         </View>

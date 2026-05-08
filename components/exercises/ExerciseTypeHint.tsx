@@ -29,15 +29,23 @@ export function ExerciseTypeHint({ type }: { type: Exercise["type"] }) {
         await markHintSeen(id);
       }
     })();
-    return () => {
-      cancelled = true;
-    };
+    return () => { cancelled = true; };
   }, [type, text]);
 
   if (!text || !show) return null;
   return (
-    <View className="bg-en/15 border border-en/40 rounded-xl px-3 py-2 mb-4">
-      <Text className="text-text text-sm">{text}</Text>
+    <View
+      style={{
+        backgroundColor: "#3b82f618",
+        borderWidth: 1,
+        borderColor: "#3b82f655",
+        borderRadius: 12,
+        paddingHorizontal: 12,
+        paddingVertical: 10,
+        marginBottom: 16,
+      }}
+    >
+      <Text style={{ color: "#e6ecf5", fontSize: 13, lineHeight: 19 }}>{text}</Text>
     </View>
   );
 }
