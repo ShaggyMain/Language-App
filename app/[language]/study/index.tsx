@@ -16,10 +16,20 @@ export default function StudyScreen() {
 
   return (
     <Screen title="Study">
-      <Text className="text-muted mb-6">Read theory at your own pace. No grading here.</Text>
+      <Text style={{ color: "#8aa0c2", fontSize: 14, marginBottom: 20, lineHeight: 20 }}>
+        Read theory at your own pace. No grading here.
+      </Text>
       {topics.length === 0 ? (
-        <View className="bg-surface border border-border rounded-2xl p-5">
-          <Text className="text-text">No topics yet for {meta.name}.</Text>
+        <View
+          style={{
+            backgroundColor: "#111a2e",
+            borderWidth: 1,
+            borderColor: "#1f2a44",
+            borderRadius: 16,
+            padding: 20,
+          }}
+        >
+          <Text style={{ color: "#e6ecf5" }}>No topics yet for {meta.name}.</Text>
         </View>
       ) : (
         topics.map((t) => (

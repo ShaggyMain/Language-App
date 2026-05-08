@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { Alert, Pressable, Text, View } from "react-native";
+import { Alert, Pressable, ScrollView, Text, View } from "react-native";
 import { router } from "expo-router";
 import * as Speech from "expo-speech";
-import { Screen } from "../components/ui/Screen";
+import { SafeAreaView } from "react-native-safe-area-context";
 import {
   loadPreferences,
   resetPreferences,
@@ -12,6 +12,16 @@ import {
 } from "../lib/preferences";
 import { supabase, supabaseConfigured } from "../lib/supabase";
 
+const C = {
+  bg: "#0b1220",
+  surface: "#111a2e",
+  border: "#1f2a44",
+  text: "#e6ecf5",
+  muted: "#8aa0c2",
+  en: "#3b82f6",
+  error: "#f43f5e",
+} as const;
+
 const TTS_RATES: { value: number; label: string }[] = [
   { value: 0.7, label: "0.7×" },
   { value: 0.85, label: "0.85×" },
@@ -19,6 +29,45 @@ const TTS_RATES: { value: number; label: string }[] = [
   { value: 1.15, label: "1.15×" },
   { value: 1.3, label: "1.3×" },
 ];
+
+function SectionLabel({ children }: { children: string }) {
+  return (
+    <Text
+      style={{
+        color: C.muted,
+        fontSize: 11,
+        fontWeight: "600",
+        letterSpacing: 1,
+        textTransform: "uppercase",
+        marginBottom: 8,
+        marginTop: 4,
+      }}
+    >
+      {children}
+    </Text>
+  );
+}
+
+function SettingsCard({ children }: { children: React.ReactNode }) {
+  return (
+    <View
+      style={{
+        backgroundColor: C.surface,
+        borderWidth: 1,
+        borderColor: C.border,
+        borderRadius: 16,
+        padding: 18,
+        marginBottom: 20,
+      }}
+    >
+      {children}
+    </View>
+  );
+}
+
+function Divider() {
+  return <View style={{ height: 1, backgroundColor: C.border, marginVertical: 14 }} />;
+}
 
 export default function SettingsScreen() {
   const [prefs, setPrefs] = useState<Preferences | null>(null);
@@ -31,10 +80,7 @@ export default function SettingsScreen() {
       if (!cancelled) setPrefs(p);
     })();
     const unsub = subscribePreferences((p) => setPrefs(p));
-    return () => {
-      cancelled = true;
-      unsub();
-    };
+    return () => { cancelled = true; unsub(); };
   }, []);
 
   useEffect(() => {
@@ -47,10 +93,7 @@ export default function SettingsScreen() {
     const { data: sub } = supabase.auth.onAuthStateChange((_e, session) => {
       setEmail(session?.user?.email ?? null);
     });
-    return () => {
-      cancelled = true;
-      sub.subscription.unsubscribe();
-    };
+    return () => { cancelled = true; sub.subscription.unsubscribe(); };
   }, []);
 
   if (!prefs) return null;
@@ -60,15 +103,13 @@ export default function SettingsScreen() {
     try {
       Speech.stop();
       Speech.speak("Hello, this is a sample.", { rate });
-    } catch {
-      // best-effort preview
-    }
+    } catch { /* best-effort */ }
   }
 
   function handleReset() {
     Alert.alert(
       "Reset progress?",
-      "This wipes onboarding state and preferences. Lesson history (SRS, sessions) is kept.",
+      "This wipes onboarding state and preferences. Lesson history is kept.",
       [
         { text: "Cancel", style: "cancel" },
         {
@@ -89,110 +130,198 @@ export default function SettingsScreen() {
   }
 
   return (
-    <Screen title="Settings">
-      <Text className="text-muted text-xs uppercase tracking-wide mb-2">Audio</Text>
-      <View className="bg-surface border border-border rounded-2xl p-4 mb-6">
-        <Text className="text-text mb-3">Speech rate (dictation TTS)</Text>
-        <View className="flex-row gap-2 flex-wrap">
-          {TTS_RATES.map((r) => {
-            const selected = Math.abs(prefs.ttsRate - r.value) < 0.001;
-            return (
-              <Pressable
-                key={r.value}
-                onPress={() => setRate(r.value)}
-                className={`rounded-lg border px-3 py-2 ${selected ? "bg-en/20 border-en" : "bg-bg border-border"}`}
-              >
-                <Text className={selected ? "text-en font-semibold" : "text-text"}>{r.label}</Text>
-              </Pressable>
-            );
-          })}
-        </View>
-      </View>
-
-      <Text className="text-muted text-xs uppercase tracking-wide mb-2">Daily goal</Text>
-      <View className="bg-surface border border-border rounded-2xl p-4 mb-6">
-        <Text className="text-text mb-3">Sessions per day to keep your streak</Text>
-        <View className="flex-row gap-2">
-          {[1, 3, 5].map((n) => {
-            const selected = prefs.dailyGoal === n;
-            return (
-              <Pressable
-                key={n}
-                onPress={() => void savePreferences({ dailyGoal: n })}
-                className={`flex-1 rounded-lg border px-3 py-2 items-center ${selected ? "bg-en/20 border-en" : "bg-bg border-border"}`}
-              >
-                <Text className={selected ? "text-en font-semibold" : "text-text"}>{n}</Text>
-              </Pressable>
-            );
-          })}
-        </View>
-      </View>
-
-      <Text className="text-muted text-xs uppercase tracking-wide mb-2">Defaults</Text>
-      <View className="bg-surface border border-border rounded-2xl p-4 mb-6">
-        <Text className="text-text">Default language</Text>
-        <Text className="text-muted text-sm mt-1">{prefs.defaultLanguage.toUpperCase()}</Text>
-        <View className="h-px bg-border my-3" />
-        <Text className="text-text">Self-reported level</Text>
-        <Text className="text-muted text-sm mt-1">{prefs.selfReportedLevel}</Text>
-        <Pressable
-          onPress={() => router.push("/onboarding")}
-          className="mt-3 rounded-lg border border-border bg-bg px-3 py-2 self-start"
-        >
-          <Text className="text-text text-sm">Change…</Text>
-        </Pressable>
-      </View>
-
-      <Text className="text-muted text-xs uppercase tracking-wide mb-2">Account</Text>
-      <View className="bg-surface border border-border rounded-2xl p-4 mb-6">
-        {!supabaseConfigured ? (
-          <>
-            <Text className="text-text">Cloud sync not configured</Text>
-            <Text className="text-muted text-sm mt-1">
-              Add EXPO_PUBLIC_SUPABASE_URL and EXPO_PUBLIC_SUPABASE_ANON_KEY to enable accounts and
-              cross-device sync. The app works fully offline without them.
-            </Text>
-          </>
-        ) : email ? (
-          <>
-            <Text className="text-text">Signed in as</Text>
-            <Text className="text-muted text-sm mt-1 mb-3">{email}</Text>
-            <Pressable onPress={handleSignOut} className="rounded-lg bg-error/15 border border-error px-3 py-2 self-start">
-              <Text className="text-error font-semibold">Sign out</Text>
-            </Pressable>
-          </>
-        ) : (
-          <>
-            <Text className="text-text">Not signed in</Text>
-            <Text className="text-muted text-sm mt-1 mb-3">
-              Sign in to sync your progress across devices.
-            </Text>
-            <View className="flex-row gap-2">
-              <Pressable
-                onPress={() => router.push("/login")}
-                className="rounded-lg bg-en px-3 py-2"
-              >
-                <Text className="text-white font-semibold">Sign in</Text>
-              </Pressable>
-              <Pressable
-                onPress={() => router.push("/register")}
-                className="rounded-lg border border-border bg-bg px-3 py-2"
-              >
-                <Text className="text-text font-semibold">Create account</Text>
-              </Pressable>
-            </View>
-          </>
-        )}
-      </View>
-
-      <Text className="text-muted text-xs uppercase tracking-wide mb-2">Danger zone</Text>
-      <Pressable
-        onPress={handleReset}
-        className="bg-error/15 border border-error rounded-2xl p-4"
+    <SafeAreaView style={{ flex: 1, backgroundColor: C.bg }} edges={["bottom"]}>
+      <ScrollView
+        style={{ flex: 1, paddingHorizontal: 20 }}
+        contentContainerStyle={{ paddingTop: 20, paddingBottom: 48 }}
+        showsVerticalScrollIndicator={false}
       >
-        <Text className="text-error font-semibold">Reset preferences</Text>
-        <Text className="text-muted text-sm mt-1">Clear onboarding + audio settings.</Text>
-      </Pressable>
-    </Screen>
+        {/* Audio */}
+        <SectionLabel>Audio</SectionLabel>
+        <SettingsCard>
+          <Text style={{ color: C.text, fontSize: 15, fontWeight: "500", marginBottom: 14 }}>
+            Speech rate (dictation TTS)
+          </Text>
+          <View style={{ flexDirection: "row", gap: 8, flexWrap: "wrap" }}>
+            {TTS_RATES.map((r) => {
+              const selected = Math.abs(prefs.ttsRate - r.value) < 0.001;
+              return (
+                <Pressable
+                  key={r.value}
+                  onPress={() => setRate(r.value)}
+                  style={{
+                    borderRadius: 10,
+                    borderWidth: 1.5,
+                    paddingHorizontal: 14,
+                    paddingVertical: 8,
+                    backgroundColor: selected ? "#3b82f622" : C.bg,
+                    borderColor: selected ? C.en : C.border,
+                  }}
+                >
+                  <Text style={{ color: selected ? C.en : C.text, fontWeight: selected ? "700" : "400" }}>
+                    {r.label}
+                  </Text>
+                </Pressable>
+              );
+            })}
+          </View>
+        </SettingsCard>
+
+        {/* Daily goal */}
+        <SectionLabel>Daily goal</SectionLabel>
+        <SettingsCard>
+          <Text style={{ color: C.text, fontSize: 15, fontWeight: "500", marginBottom: 14 }}>
+            Sessions per day to keep your streak
+          </Text>
+          <View style={{ flexDirection: "row", gap: 10 }}>
+            {[1, 3, 5].map((n) => {
+              const selected = prefs.dailyGoal === n;
+              return (
+                <Pressable
+                  key={n}
+                  onPress={() => void savePreferences({ dailyGoal: n })}
+                  style={{
+                    flex: 1,
+                    borderRadius: 10,
+                    borderWidth: 1.5,
+                    paddingVertical: 10,
+                    alignItems: "center",
+                    backgroundColor: selected ? "#3b82f622" : C.bg,
+                    borderColor: selected ? C.en : C.border,
+                  }}
+                >
+                  <Text style={{ color: selected ? C.en : C.text, fontWeight: selected ? "700" : "400", fontSize: 16 }}>
+                    {n}
+                  </Text>
+                </Pressable>
+              );
+            })}
+          </View>
+        </SettingsCard>
+
+        {/* Defaults */}
+        <SectionLabel>Defaults</SectionLabel>
+        <SettingsCard>
+          <Text style={{ color: C.muted, fontSize: 12, textTransform: "uppercase", letterSpacing: 0.5 }}>
+            Default language
+          </Text>
+          <Text style={{ color: C.text, fontSize: 16, fontWeight: "600", marginTop: 4 }}>
+            {prefs.defaultLanguage.toUpperCase()}
+          </Text>
+          <Divider />
+          <Text style={{ color: C.muted, fontSize: 12, textTransform: "uppercase", letterSpacing: 0.5 }}>
+            Self-reported level
+          </Text>
+          <Text style={{ color: C.text, fontSize: 16, fontWeight: "600", marginTop: 4 }}>
+            {prefs.selfReportedLevel}
+          </Text>
+          <Pressable
+            onPress={() => router.push("/onboarding")}
+            style={{
+              marginTop: 14,
+              borderRadius: 10,
+              borderWidth: 1,
+              borderColor: C.border,
+              backgroundColor: C.bg,
+              paddingHorizontal: 14,
+              paddingVertical: 8,
+              alignSelf: "flex-start",
+            }}
+          >
+            <Text style={{ color: C.text, fontSize: 14 }}>Change…</Text>
+          </Pressable>
+        </SettingsCard>
+
+        {/* Account */}
+        <SectionLabel>Account</SectionLabel>
+        <SettingsCard>
+          {!supabaseConfigured ? (
+            <>
+              <Text style={{ color: C.text, fontSize: 15, fontWeight: "500" }}>
+                Cloud sync not configured
+              </Text>
+              <Text style={{ color: C.muted, fontSize: 13, marginTop: 6, lineHeight: 20 }}>
+                Add EXPO_PUBLIC_SUPABASE_URL and EXPO_PUBLIC_SUPABASE_ANON_KEY to enable accounts and
+                cross-device sync. The app works fully offline without them.
+              </Text>
+            </>
+          ) : email ? (
+            <>
+              <Text style={{ color: C.muted, fontSize: 12, textTransform: "uppercase", letterSpacing: 0.5 }}>
+                Signed in as
+              </Text>
+              <Text style={{ color: C.text, fontSize: 15, fontWeight: "500", marginTop: 4, marginBottom: 14 }}>
+                {email}
+              </Text>
+              <Pressable
+                onPress={handleSignOut}
+                style={{
+                  borderRadius: 10,
+                  borderWidth: 1.5,
+                  borderColor: C.error,
+                  backgroundColor: "#f43f5e18",
+                  paddingHorizontal: 16,
+                  paddingVertical: 9,
+                  alignSelf: "flex-start",
+                }}
+              >
+                <Text style={{ color: C.error, fontWeight: "700" }}>Sign out</Text>
+              </Pressable>
+            </>
+          ) : (
+            <>
+              <Text style={{ color: C.text, fontSize: 15, fontWeight: "500" }}>Not signed in</Text>
+              <Text style={{ color: C.muted, fontSize: 13, marginTop: 6, marginBottom: 14, lineHeight: 20 }}>
+                Sign in to sync your progress across devices.
+              </Text>
+              <View style={{ flexDirection: "row", gap: 10 }}>
+                <Pressable
+                  onPress={() => router.push("/login")}
+                  style={{
+                    borderRadius: 10,
+                    backgroundColor: C.en,
+                    paddingHorizontal: 16,
+                    paddingVertical: 9,
+                  }}
+                >
+                  <Text style={{ color: "white", fontWeight: "700" }}>Sign in</Text>
+                </Pressable>
+                <Pressable
+                  onPress={() => router.push("/register")}
+                  style={{
+                    borderRadius: 10,
+                    borderWidth: 1,
+                    borderColor: C.border,
+                    backgroundColor: C.bg,
+                    paddingHorizontal: 16,
+                    paddingVertical: 9,
+                  }}
+                >
+                  <Text style={{ color: C.text, fontWeight: "600" }}>Create account</Text>
+                </Pressable>
+              </View>
+            </>
+          )}
+        </SettingsCard>
+
+        {/* Danger zone */}
+        <SectionLabel>Danger zone</SectionLabel>
+        <Pressable
+          onPress={handleReset}
+          style={{
+            backgroundColor: "#f43f5e18",
+            borderWidth: 1.5,
+            borderColor: C.error,
+            borderRadius: 16,
+            padding: 18,
+          }}
+        >
+          <Text style={{ color: C.error, fontSize: 15, fontWeight: "700" }}>Reset preferences</Text>
+          <Text style={{ color: C.muted, fontSize: 13, marginTop: 4 }}>
+            Clear onboarding + audio settings.
+          </Text>
+        </Pressable>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
