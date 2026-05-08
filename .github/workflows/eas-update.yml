@@ -5,6 +5,12 @@ on:
     branches:
       - main
       - claude/redesign-app-ui-HtCu7
+  workflow_dispatch:
+    inputs:
+      message:
+        description: "Opis aktualizacji"
+        required: false
+        default: "Manual update"
 
 jobs:
   update:
@@ -32,7 +38,7 @@ jobs:
       - name: Send update to preview branch
         run: |
           eas update --branch preview --platform android \
-            --message "Auto: ${{ github.event.head_commit.message }}" \
+            --message "${{ github.event.inputs.message || format('Auto: {0}', github.event.head_commit.message) }}" \
             --non-interactive
         env:
           CI: "1"
