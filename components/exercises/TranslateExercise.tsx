@@ -16,10 +16,10 @@ export function TranslateExercise({ from, to, source, answers, result, onSubmit 
     <TextAnswerExercise
       header={
         <>
-          <Text className="text-muted text-xs uppercase tracking-wide mb-2">
+          <Text style={{ color: "#8aa0c2", fontSize: 11, textTransform: "uppercase", letterSpacing: 1, marginBottom: 6 }}>
             Translate {from.toUpperCase()} → {to.toUpperCase()}
           </Text>
-          <Text className="text-text text-xl mb-6 leading-7">{source}</Text>
+          <Text style={{ color: "#e6ecf5", fontSize: 19, lineHeight: 28, marginBottom: 24 }}>{source}</Text>
         </>
       }
       answers={answers}

@@ -25,7 +25,7 @@ export function ProgressRing({
   size = 56,
   thickness = 6,
   color = "#3b82f6",
-  trackColor = "#1f2a44",
+  trackColor = "#2a3a5c",
   label,
   labelColor = "#e6ecf5",
 }: Props) {

@@ -15,7 +15,7 @@ export function PressableScale({
   children,
   className,
   style,
-  pressedScale = 0.97,
+  pressedScale = 0.98,
   ...rest
 }: Props) {
   const sv = useSharedValue(1);
@@ -28,10 +28,10 @@ export function PressableScale({
     <AnimatedPressable
       {...rest}
       onPressIn={() => {
-        sv.value = withSpring(pressedScale, { damping: 30, stiffness: 320 });
+        sv.value = withSpring(pressedScale, { damping: 40, stiffness: 350 });
       }}
       onPressOut={() => {
-        sv.value = withSpring(1, { damping: 26, stiffness: 300 });
+        sv.value = withSpring(1, { damping: 36, stiffness: 320 });
       }}
       style={[animatedStyle, style]}
       className={className}
