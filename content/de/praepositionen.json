@@ -1,0 +1,154 @@
+{
+  "id": "de.syntax.praepositionen",
+  "language": "de",
+  "category": "syntax",
+  "title": "Präpositionen der Zeit und des Ortes",
+  "summary": "Przyimki czasu i miejsca: um, am, im, an, in, nach, von, bis, bei, mit, zu.",
+  "cefrLevel": "A1",
+  "prerequisites": ["de.verbs.sein-haben"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "Przyimki (Präpositionen) łączą się z konkretnymi przypadkami i mają ustalone znaczenia.\n\n**Przyimki CZASU:**\n- **um** + godzina: *um 8 Uhr* (o ósmej)\n- **am** + dzień tygodnia / data: *am Montag*, *am 3. Mai*\n- **im** + miesiąc / pora roku: *im Januar*, *im Sommer*\n- **von...bis** + zakres czasu: *von Montag bis Freitag*\n\n**Przyimki MIEJSCA:**\n- **in** (w, do — z Dativ dla miejsca, z Akkusativ dla kierunku): *in der Stadt* (w mieście), *in die Stadt* (do miasta)\n- **an** (przy, nad): *an der Küste* (nad morzem), *an der Universität* (na uniwersytecie)\n- **auf** (na — poziomej powierzchni): *auf dem Tisch* (na stole)\n- **bei** (u, przy): *bei meiner Mutter* (u mojej mamy), *bei der Arbeit* (w pracy)\n- **nach** + nazwa miejsca (bez rodzajnika): *nach Berlin*, *nach Deutschland*, *nach Hause* (do domu)\n- **zu** (do — z Dativ): *zu Hause* (w domu), *zu Fuß* (pieszo), *zum Arzt* (do lekarza)"
+    },
+    {
+      "kind": "table",
+      "title": "Przyimki czasu",
+      "headers": ["Przyimek", "Użycie", "Przykład"],
+      "rows": [
+        ["um", "godzina", "um 8 Uhr, um Mitternacht"],
+        ["am", "dzień tygodnia, data", "am Montag, am 5. März"],
+        ["im", "miesiąc, pora roku", "im Juli, im Winter"],
+        ["von...bis", "zakres czasu", "von 9 bis 17 Uhr"],
+        ["seit", "od (trwa nadal)", "seit zwei Jahren"]
+      ]
+    },
+    {
+      "kind": "table",
+      "title": "Przyimki miejsca",
+      "headers": ["Przyimek", "Użycie", "Przykład"],
+      "rows": [
+        ["in", "w (miejscu)", "in der Stadt, in Deutschland"],
+        ["an", "przy, nad", "an der Küste, am Bahnhof"],
+        ["auf", "na (powierzchni)", "auf dem Tisch, auf der Straße"],
+        ["bei", "u kogoś, przy", "bei meiner Mutter, bei der Arbeit"],
+        ["nach", "do (miejsca bez rodz.)", "nach Berlin, nach Hause"],
+        ["zu", "do (z rodzajnikiem)", "zum Arzt, zur Schule, zu Hause"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Der Kurs beginnt um 9 Uhr.", "translation": "Kurs zaczyna się o 9." },
+        { "source": "Am Samstag fahren wir nach Hamburg.", "translation": "W sobotę jedziemy do Hamburga." },
+        { "source": "Im Winter ist es kalt.", "translation": "Zimą jest zimno." },
+        { "source": "Das Buch liegt auf dem Tisch.", "translation": "Książka leży na stole." },
+        { "source": "Ich bin zu Hause.", "translation": "Jestem w domu." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "Wychodzę z pracy ___ 17 Uhr.",
+      "options": ["im", "am", "um", "bei"],
+      "answer": 2,
+      "explanation": "'um' używamy z godzinami. Ich gehe um 17 Uhr aus der Arbeit."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Mam urodziny ___ März.",
+      "options": ["am", "um", "im", "in"],
+      "answer": 2,
+      "explanation": "'im' używamy z miesiącami i porami roku: im März, im Sommer."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Das Buch liegt ___ dem Tisch.",
+      "options": ["in", "an", "auf", "bei"],
+      "answer": 2,
+      "explanation": "'auf' oznacza 'na' poziomej powierzchni: Das Buch liegt auf dem Tisch."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Wir fahren morgen ___ Berlin.",
+      "options": ["in", "zu", "bei", "nach"],
+      "answer": 3,
+      "explanation": "Do miast i krajów (bez rodzajnika) używamy 'nach': nach Berlin, nach Polen."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Ich bin ___ Hause und lese ein Buch.",
+      "options": ["nach", "zum", "zu", "bei"],
+      "answer": 2,
+      "explanation": "'zu Hause' = w domu (miejsce). 'nach Hause' = do domu (kierunek). Ponieważ jestem (Ort), używamy 'zu Hause'."
+    },
+    {
+      "type": "fill",
+      "prompt": "Der Unterricht ist ___ (am/im) Montag ___ (um/im) 8 Uhr.",
+      "answers": ["am", "um"],
+      "hint": "Dzień tygodnia -> am; godzina -> um."
+    },
+    {
+      "type": "fill",
+      "prompt": "Meine Katze schläft ___ (auf/in) dem Sofa.",
+      "answers": ["auf"],
+      "hint": "'auf' = na powierzchni. Sofa jest poziomą powierzchnią."
+    },
+    {
+      "type": "fill",
+      "prompt": "Sie arbeitet ___ (von/bei) 9 ___ (bis/nach) 17 Uhr.",
+      "answers": ["von", "bis"],
+      "hint": "'von...bis' = od...do (zakres czasu)."
+    },
+    {
+      "type": "fill",
+      "prompt": "Ich gehe morgen ___ (zum/nach) Arzt.",
+      "answers": ["zum"],
+      "hint": "'zu' + dem = 'zum'. Do osoby lub instytucji z rodzajnikiem używamy 'zu'."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Szkoła zaczyna się o ósmej.",
+      "answers": ["Die Schule beginnt um 8 Uhr.", "Die Schule fängt um 8 Uhr an."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Latem jedziemy do Niemiec.",
+      "answers": ["Im Sommer fahren wir nach Deutschland.", "Wir fahren im Sommer nach Deutschland."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Ona mieszka u swojej mamy.",
+      "answers": ["Sie wohnt bei ihrer Mutter."]
+    },
+    {
+      "type": "order",
+      "prompt": "Ułóż zdanie: W poniedziałek mam spotkanie o 10.",
+      "tokens": ["am", "habe", "Montag", "Ich", "um", "ein", "Treffen", "10", "Uhr"],
+      "answer": ["Am", "Montag", "habe", "ich", "um", "10", "Uhr", "ein", "Treffen"]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Ich gehe nach Hause bei meiner Mutter.",
+      "answers": ["Ich gehe nach Hause.", "Ich bin bei meiner Mutter."],
+      "explanation": "'nach Hause' oznacza ruch 'do domu', a 'bei meiner Mutter' oznacza miejsce 'u mamy'. To dwa różne miejsca — nie można ich połączyć w jedno zdanie bez zmiany sensu."
+    },
+    {
+      "type": "match",
+      "pairs": [
+        { "left": "um 8 Uhr", "right": "o 8 rano (godzina)" },
+        { "left": "am Dienstag", "right": "we wtorek (dzień)" },
+        { "left": "im August", "right": "w sierpniu (miesiąc)" },
+        { "left": "nach Berlin", "right": "do Berlina (kierunek)" },
+        { "left": "zu Hause", "right": "w domu (miejsce)" }
+      ]
+    }
+  ]
+}

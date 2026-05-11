@@ -1,0 +1,262 @@
+{
+  "id": "de.tenses.plusquamperfekt",
+  "language": "de",
+  "category": "tenses",
+  "title": "Plusquamperfekt",
+  "summary": "Czas zaprzeszly — hatte/war + Partizip II. Opisuje czynnosc wczesniejsza niz inna czynnosc w przeszlosci.",
+  "cefrLevel": "B1",
+  "prerequisites": [
+    "de.tenses.perfekt",
+    "de.tenses.praeteritum"
+  ],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Plusquamperfekt** (czas zaprzeszly) opisuje czynnosc, ktora zaszla **przed** inna czynnoscia w przeszlosci. Odpowiada polskiemu czasowi zaprzeszlemu lub angielskiemu Past Perfect.\n\nScheme: **hatte/war (odmienione) + ... + Partizip II**\n\nTa sama zasada, co w Perfekt:\n- Wiekszos czasownikow: **hatte + Partizip II**\n- Czasowniki ruchu i zmiany stanu: **war + Partizip II**\n\nPrzykladowe zdania:\n- *Nachdem er gegessen hatte, schlief er ein.* (Po tym jak zjadl, zasnal.)\n- *Als sie ankam, hatten wir schon gegessen.* (Gdy przyjechala, juz bylismy po jedzeniu.)"
+    },
+    {
+      "kind": "table",
+      "title": "hatte i war — odmiana w Plusquamperfekt",
+      "headers": [
+        "Osoba",
+        "hatte (miec/Perfekt z haben)",
+        "war (byc/Perfekt z sein)"
+      ],
+      "rows": [
+        [
+          "ich",
+          "hatte",
+          "war"
+        ],
+        [
+          "du",
+          "hattest",
+          "warst"
+        ],
+        [
+          "er/sie/es",
+          "hatte",
+          "war"
+        ],
+        [
+          "wir",
+          "hatten",
+          "waren"
+        ],
+        [
+          "ihr",
+          "hattet",
+          "wart"
+        ],
+        [
+          "sie/Sie",
+          "hatten",
+          "waren"
+        ]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "**Kiedy uzywamy Plusquamperfekt?**\n\nPluquamperfekt pojawia sie najczesciej razem z czasem **Prateritum** przy opisywaniu sekwencji zdarzen w przeszlosci.\n\nCzeste spojniki i slowa sygnalowe:\n- **nachdem** (po tym jak) — czesc zdania z *nachdem* ma zazwyczaj Plusquamperfekt, zdanie glowne — Prateritum lub Perfekt\n- **als** (gdy) — jesli akcja glowna nastapila przed inna przeszla akcja\n- **bevor** (zanim) — zdanie glowne w Plusquamperfekt\n- **sobald** (gdy tylko)\n- **schon** (juz), **noch nicht** (jeszcze nie), **gerade** (wlasnie), **bereits** (juz/uprzednio)"
+    },
+    {
+      "kind": "examples",
+      "items": [
+        {
+          "source": "Nachdem sie die Prufung bestanden hatte, feierte sie mit ihren Freunden.",
+          "translation": "Po tym jak zdala egzamin, swietowala z przyjaciolmi."
+        },
+        {
+          "source": "Als wir am Bahnhof ankamen, war der Zug schon abgefahren.",
+          "translation": "Gdy dotarlismy na dworzec, pociag juz odjechal."
+        },
+        {
+          "source": "Er hatte das Buch schon gelesen, bevor der Film herauskam.",
+          "translation": "Przeczytal ksiazke, zanim film wyszedl."
+        },
+        {
+          "source": "Sie war noch nie in Berlin gewesen.",
+          "translation": "Nigdy wczesniej nie byla w Berlinie."
+        },
+        {
+          "source": "Ich hatte gerade gegessen, als das Telefon klingelte.",
+          "translation": "Wlasnie skonczylem jesc, gdy zadzwonil telefon."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Nachdem er die E-Mail geschrieben ___, schickte er sie ab. (haben, Plusquamperfekt)",
+      "answers": [
+        "hatte"
+      ],
+      "explanation": "schreiben uzywa 'haben'. Plusquamperfekt: hatte + geschrieben."
+    },
+    {
+      "type": "fill",
+      "prompt": "Als wir ankamen, ___ die Gaste schon gegangen. (sein, Plusquamperfekt, l. mn.)",
+      "answers": [
+        "waren"
+      ],
+      "explanation": "gehen uzywa 'sein'. L. mn. (wir/die Gaste): waren. Partizip II: gegangen."
+    },
+    {
+      "type": "fill",
+      "prompt": "Sie ___ ihr Portemonnaie verloren, bevor sie das Geld abheben konnte.",
+      "answers": [
+        "hatte"
+      ],
+      "explanation": "verlieren uzywa 'haben'. 3. osoba l. poj.: hatte + verloren."
+    },
+    {
+      "type": "fill",
+      "prompt": "Nachdem wir das Museum besucht ___, gingen wir ins Restaurant.",
+      "answers": [
+        "hatten"
+      ],
+      "explanation": "besuchen uzywa 'haben'. L. mn. (wir): hatten + besucht."
+    },
+    {
+      "type": "fill",
+      "prompt": "Der Zug ___ schon abgefahren, als ich auf dem Bahnsteig ankam.",
+      "answers": [
+        "war"
+      ],
+      "explanation": "abfahren (ruch) uzywa 'sein'. 3. osoba l. poj.: war + abgefahren."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Ktore zdanie jest poprawne w Plusquamperfekt?",
+      "options": [
+        "Nachdem er gegessen hatte, er schlief ein.",
+        "Nachdem er gegessen hatte, schlief er ein.",
+        "Nachdem er hatte gegessen, schlief er ein.",
+        "Nachdem er hat gegessen, schlief er ein."
+      ],
+      "answer": 1,
+      "explanation": "W zdaniu podrz. z 'nachdem' orzeczenie idzie na koniec: 'gegessen hatte'. W zdaniu glownym po inwersji: 'schlief er ein'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Wybierz poprawny czasownik posilkowy: 'Sie ___ noch nie in Paris gewesen.'",
+      "options": [
+        "hatte",
+        "war",
+        "hat",
+        "ist"
+      ],
+      "answer": 1,
+      "explanation": "sein uzywa 'sein' jako czasownika posilkowego we wszystkich czasach zlozonych. Plusquamperfekt: war + gewesen."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Ktore zdanie poprawnie opisuje sekwencje: 'najpierw ona przeczytala raport, potem weszla na zebranie'?",
+      "options": [
+        "Als sie ins Meeting ging, hat sie den Bericht gelesen.",
+        "Als sie ins Meeting ging, hatte sie den Bericht schon gelesen.",
+        "Als sie ins Meeting gegangen war, liest sie den Bericht.",
+        "Bevor sie ins Meeting gegangen hatte, las sie den Bericht."
+      ],
+      "answer": 1,
+      "explanation": "Wcześniejsza czynnosc (czytanie) = Plusquamperfekt: hatte ... gelesen. Pozniejsza (wejscie na zebranie) = Prateritum: ging."
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Nachdem ich geschlafen hatte, fuhlte ich mich besser.",
+        "Nachdem ich geschlafen hatte, habe ich mich besser gefuhlt."
+      ],
+      "explanation": "schlafen uzywa 'haben'. Plusquamperfekt: hatte geschlafen. Zdanie glowne: Prateritum lub Perfekt.",
+      "from": "pl",
+      "to": "de",
+      "source": "Przetlumacz na jezyk niemiecki: 'Po tym jak pospatam, poczulam sie lepiej.' (nachdem, Plusquamperfekt)"
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Als er ankam, waren wir schon gegangen.",
+        "Als er ankam, waren wir schon weggegangen."
+      ],
+      "explanation": "gehen/weggehen uzywa 'sein'. L. mn. (wir): waren + gegangen. Slowo sygnalowe: schon.",
+      "from": "pl",
+      "to": "de",
+      "source": "Przetlumacz na jezyk niemiecki: 'Gdy przyjechal, juz wyszlismy.' (als, schon)"
+    },
+    {
+      "type": "errorFix",
+      "explanation": "Po 'nachdem' z Prateritum w zdaniu glownym nalezy uzyc Plusquamperfekt: 'hatte ... gemacht', nie Perfekt 'hat ... gemacht'.",
+      "sentence": "Nachdem er die Hausaufgaben gemacht hat, spielte er Fussball.",
+      "answers": [
+        "Nachdem er die Hausaufgaben gemacht hatte, spielte er Fussball."
+      ]
+    },
+    {
+      "type": "errorFix",
+      "explanation": "W zdaniu glownym (nie podrz.) obowiazuje szyk V2: czasownik posilkowy 'hatte' stoi na miejscu 2, podmiot po nim.",
+      "sentence": "Als wir ankamen, der Film schon begonnen hatte.",
+      "answers": [
+        "Als wir ankamen, hatte der Film schon begonnen."
+      ]
+    },
+    {
+      "type": "errorFix",
+      "explanation": "kommen to czasownik ruchu — uzywa 'sein', nie 'haben'. Plusquamperfekt: war + gekommen.",
+      "sentence": "Nachdem sie nach Hause gekommen hatte, rief sie ihre Mutter an.",
+      "answers": [
+        "Nachdem sie nach Hause gekommen war, rief sie ihre Mutter an."
+      ]
+    },
+    {
+      "type": "order",
+      "prompt": "Uloz zdanie z podanych slow:",
+      "answer": [
+        "Als",
+        "ich",
+        "ankam,",
+        "hatte",
+        "er",
+        "schon",
+        "gegessen."
+      ],
+      "explanation": "Zdanie podrz. z 'als' na poczatku: inwersja w zdaniu glownym. 'schon' przed Partizip II podkreslalo wczesniejszosc zdarzenia.",
+      "tokens": [
+        "er",
+        "schon",
+        "hatte",
+        "gegessen",
+        "als",
+        "ich",
+        "ankam"
+      ]
+    },
+    {
+      "type": "order",
+      "prompt": "Uloz zdanie z podanych slow:",
+      "answer": [
+        "Nachdem",
+        "wir",
+        "den",
+        "Film",
+        "gesehen",
+        "hatten,",
+        "gingen",
+        "wir",
+        "nach",
+        "Hause."
+      ],
+      "explanation": "Zdanie z 'nachdem': czasownik posilkowy na koncu zdania podrz. (hatten). Po przecinku inwersja: gingen wir.",
+      "tokens": [
+        "nachdem",
+        "wir",
+        "den Film",
+        "gesehen",
+        "hatten",
+        "gingen",
+        "wir",
+        "nach Hause"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "id": "de.tenses.futur-I",
+  "language": "de",
+  "category": "tenses",
+  "title": "Futur I",
+  "summary": "Czas przyszły Futur I — werden + bezokolicznik. Używany do przepowiedni, obietnic i przypuszczeń.",
+  "cefrLevel": "B1",
+  "prerequisites": ["de.tenses.praeteritum"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Futur I** tworzymy za pomocą odmienionych form **werden** oraz **bezokolicznika** (Infinitiv) na końcu zdania.\n\nFormuła: **werden (odmienione) + ... + Infinitiv (na końcu)**\n\n**Zastosowania Futur I:**\n1. **Przepowiednia / prognoza:** *Es wird morgen regnen.* (Jutro będzie padać.)\n2. **Obietnica:** *Ich werde dich anrufen.* (Zadzwonię do ciebie.)\n3. **Przypuszczenie o teraźniejszości** (z wohl/wahrscheinlich): *Er wird wohl krank sein.* (Pewnie jest chory.)\n\n**Uwaga:** W języku mówionym czas teraźniejszy z przysłówkiem często zastępuje Futur I przy planowanej przyszłości:\n*Morgen fahre ich nach Berlin.* (Jutro jadę do Berlina.) — poprawna alternatywa dla *Morgen werde ich nach Berlin fahren.*\n\n**Szyk zdania:** werden stoi na pozycji drugiej (predykat), a bezokolicznik na końcu:\n*Morgen **werde** ich viel **arbeiten**.* (Jutro będę dużo pracować.)"
+    },
+    {
+      "kind": "table",
+      "title": "Odmiana werden w czasie teraźniejszym",
+      "headers": ["Osoba", "werden"],
+      "rows": [
+        ["ich", "werde"],
+        ["du", "wirst"],
+        ["er/sie/es", "wird"],
+        ["wir", "werden"],
+        ["ihr", "werdet"],
+        ["sie/Sie", "werden"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Es wird morgen schneien.", "translation": "Jutro będzie padać śnieg." },
+        { "source": "Wir werden das Problem lösen.", "translation": "Rozwiążemy ten problem." },
+        { "source": "Du wirst das sicher schaffen.", "translation": "Na pewno ci się uda." },
+        { "source": "Sie werden pünktlich ankommen.", "translation": "Przyjadą punktualnie." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Ich ___ (werden) morgen früh aufstehen.",
+      "answers": ["werde"],
+      "hint": "Pierwsza osoba liczby pojedynczej: ich werde."
+    },
+    {
+      "type": "fill",
+      "prompt": "Du ___ (werden) das Examen bestehen.",
+      "answers": ["wirst"],
+      "hint": "Druga osoba liczby pojedynczej: du wirst."
+    },
+    {
+      "type": "fill",
+      "prompt": "Es ___ (werden) heute Abend kalt.",
+      "answers": ["wird"],
+      "hint": "Trzecia osoba liczby pojedynczej: es wird."
+    },
+    {
+      "type": "fill",
+      "prompt": "Ihr ___ (werden) die Antwort bald wissen.",
+      "answers": ["werdet"],
+      "hint": "Druga osoba liczby mnogiej: ihr werdet."
+    },
+    {
+      "type": "order",
+      "prompt": "Ułóż zdanie w Futur I: 'Jutro pojadę do Berlina.'",
+      "tokens": ["nach", "Morgen", "Berlin", "ich", "werde", "fahren"],
+      "answer": ["Morgen", "werde", "ich", "nach", "Berlin", "fahren"]
+    },
+    {
+      "type": "order",
+      "prompt": "Ułóż zdanie w Futur I: 'Ona wkrótce zadzwoni.'",
+      "tokens": ["bald", "sie", "anrufen", "wird"],
+      "answer": ["Sie", "wird", "bald", "anrufen"]
+    },
+    {
+      "type": "transform",
+      "instruction": "Przekształć zdanie z czasu teraźniejszego na Futur I.",
+      "source": "Er lernt jeden Tag Vokabeln.",
+      "answers": ["Er wird jeden Tag Vokabeln lernen."]
+    },
+    {
+      "type": "transform",
+      "instruction": "Przekształć zdanie z czasu teraźniejszego na Futur I.",
+      "source": "Wir besuchen nächste Woche unsere Großeltern.",
+      "answers": ["Wir werden nächste Woche unsere Großeltern besuchen."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Es ___ morgen wahrscheinlich regnen.",
+      "options": ["werde", "wirst", "wird", "werden"],
+      "answer": 2,
+      "explanation": "Podmiot 'es' to trzecia osoba liczby pojedynczej: es wird."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Jak poprawnie powiemy: 'Będziemy razem pracować'?",
+      "options": [
+        "Wir werden zusammen arbeiten.",
+        "Wir werden zusammen arbeitet.",
+        "Wir werdet zusammen arbeiten.",
+        "Wir werde zusammen arbeiten."
+      ],
+      "answer": 0,
+      "explanation": "'wir' wymaga formy 'werden', a bezokolicznik 'arbeiten' idzie na koniec zdania."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Które zdanie jest gramatycznie poprawne?",
+      "options": [
+        "Ich werde das Buch lesen morgen.",
+        "Morgen werde lesen ich das Buch.",
+        "Morgen werde ich das Buch lesen.",
+        "Morgen ich werde das Buch lesen."
+      ],
+      "answer": 2,
+      "explanation": "Szyk zdania: werden na pozycji 2. (Morgen = 1.), podmiot po werden, bezokolicznik na końcu."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "On pewnie jest zmęczony.",
+      "answers": ["Er wird wohl müde sein.", "Er wird wahrscheinlich müde sein."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Obiecuję, że zrobię to jutro.",
+      "answers": ["Ich verspreche, ich werde das morgen machen.", "Ich werde das morgen machen, ich verspreche es.", "Ich werde das morgen erledigen."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Morgen ich werde nach Hause kommen.",
+      "answers": ["Morgen werde ich nach Hause kommen."],
+      "explanation": "Reguła V2: czasownik odmieniony (werden) musi stać na pozycji drugiej. Po przysłówku 'Morgen' następuje 'werde', a podmiot 'ich' po nim."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Sie wird morgen kaufen das Brot.",
+      "answers": ["Sie wird morgen das Brot kaufen."],
+      "explanation": "Bezokolicznik w Futur I musi stać na końcu zdania. 'kaufen' powinno być ostatnim wyrazem."
+    }
+  ]
+}

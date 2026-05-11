@@ -1,0 +1,132 @@
+{
+  "id": "de.syntax.infinitiv-zu",
+  "language": "de",
+  "category": "syntax",
+  "title": "Infinitiv mit zu",
+  "summary": "Bezokolicznik z zu — po pewnych czasownikach i wyrażeniach zamiast zdania podrzędnego ze dass.",
+  "cefrLevel": "B1",
+  "prerequisites": ["de.verbs.trennbare-verben"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Infinitiv mit zu** zastępuje zdanie podrzędne z *dass*, gdy **podmiot obu zdań jest ten sam**.\n\n*Er hofft, dass er gewinnt.* => *Er hofft zu gewinnen.*\n*Ich versuche, dass ich lerne.* => *Ich versuche zu lernen.*\n\nJeśli podmiot jest **różny**, używamy *dass*:\n*Ich hoffe, dass du kommst.* (nie można zastąpić zu-Infinitivem)\n\n**Typowe czasowniki + zu + Infinitiv:**\nversuchen, hoffen, vergessen, anfangen, aufhören, beschließen, empfehlen, erlauben, bitten, helfen, lernen, vorhaben, versprechen, planen\n\n**Wyrażenia z Es ist... + zu + Infinitiv:**\n*Es ist wichtig / schön / leicht / schwer / möglich / notwendig / gut / interessant zu ...*\n\n**Czasowniki rozdzielnie złożone:** zu wstawia się **między** przedrostek a rdzeń:\n- *aufmachen* => *aufzumachen*\n- *anrufen* => *anzurufen*\n- *einkaufen* => *einzukaufen*\n\n**Um...zu (żeby / w celu):** podaje cel, który najczęściej różni się podmiotem od zdania głównego lub dotyczy tej samej osoby:\n*Ich lerne Deutsch, um in Deutschland zu arbeiten.*\n*Sie spart Geld, um ein Fahrrad zu kaufen.*"
+    },
+    {
+      "kind": "table",
+      "title": "Budowa zu-Infinitivu",
+      "headers": ["Typ czasownika", "Forma", "Przykład"],
+      "rows": [
+        ["normalny", "zu + Infinitiv", "zu lernen, zu kaufen"],
+        ["rozdzielnie złożony", "Prefix + zu + Stamm + (en)", "aufzumachen, anzurufen"],
+        ["um...zu (cel)", "um ... zu + Infinitiv", "um zu arbeiten"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Er versucht, Deutsch zu lernen.", "translation": "On stara się uczyć niemieckiego." },
+        { "source": "Sie hat vergessen, die Tür abzuschließen.", "translation": "Ona zapomniała zamknąć drzwi na klucz." },
+        { "source": "Es ist schön, hier zu sein.", "translation": "Miło tu być." },
+        { "source": "Ich fahre in die Stadt, um einzukaufen.", "translation": "Jadę do miasta, żeby zrobić zakupy." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Er versucht, die Prüfung ___ (bestehen).",
+      "answers": ["zu bestehen"],
+      "hint": "Normalny czasownik: zu + Infinitiv."
+    },
+    {
+      "type": "fill",
+      "prompt": "Sie hat vergessen, das Licht ___ (ausschalten).",
+      "answers": ["auszuschalten"],
+      "hint": "Czasownik rozdzielnie złożony (aus-schalten): zu wstawiamy między przedrostek a rdzeń."
+    },
+    {
+      "type": "fill",
+      "prompt": "Es ist wichtig, jeden Tag Sport ___ (machen).",
+      "answers": ["zu machen"],
+      "hint": "Po 'Es ist wichtig' używamy zu + Infinitiv."
+    },
+    {
+      "type": "fill",
+      "prompt": "Ich habe beschlossen, früh ___ (aufstehen).",
+      "answers": ["aufzustehen"],
+      "hint": "aufstehen jest rozdzielnie złożony: auf-zu-stehen."
+    },
+    {
+      "type": "fill",
+      "prompt": "Wir planen, nächstes Jahr nach Japan ___ (reisen).",
+      "answers": ["zu reisen"],
+      "hint": "Normalny czasownik: zu + Infinitiv."
+    },
+    {
+      "type": "transform",
+      "instruction": "Przekształć zdanie ze dass na konstrukcję zu + Infinitiv, jeśli to możliwe.",
+      "source": "Er hofft, dass er bald Arbeit findet.",
+      "answers": ["Er hofft, bald Arbeit zu finden."]
+    },
+    {
+      "type": "transform",
+      "instruction": "Przekształć zdanie ze dass na konstrukcję zu + Infinitiv, jeśli to możliwe.",
+      "source": "Sie hat angefangen, dass sie das Buch liest.",
+      "answers": ["Sie hat angefangen, das Buch zu lesen."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Ich lerne Deutsch, ___ in Deutschland zu studieren.",
+      "options": ["um", "damit", "dass", "weil"],
+      "answer": 0,
+      "explanation": "'um...zu' wyraża cel (ten sam podmiot). 'damit' używamy, gdy podmiot jest inny lub z bezokolicznikiem bez zu."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Es ist leicht, ___ kochen.",
+      "options": ["zu", "um zu", "damit zu", "um"],
+      "answer": 0,
+      "explanation": "Po 'Es ist leicht' stosujemy zu + Infinitiv. Samo 'zu kochen'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Welche Form ist korrekt? Sie hat vergessen, mich ___.",
+      "options": ["anzurufen", "zu anrufen", "anrufen zu", "zu rufen an"],
+      "answer": 0,
+      "explanation": "'anrufen' to czasownik rozdzielnie złożony: zu wstawiamy między 'an' i 'rufen' => 'anzurufen'."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Obiecał mi zadzwonić.",
+      "answers": ["Er hat mir versprochen, anzurufen.", "Er hat mir versprochen, mich anzurufen."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Trudno mi jest wstawać wcześnie.",
+      "answers": ["Es ist schwer für mich, früh aufzustehen.", "Es fällt mir schwer, früh aufzustehen."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Idę do sklepu, żeby kupić chleb.",
+      "answers": ["Ich gehe in den Laden, um Brot zu kaufen.", "Ich gehe in den Supermarkt, um Brot zu kaufen.", "Ich gehe einkaufen, um Brot zu kaufen."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Sie versucht, die Tür aufzumachen zu.",
+      "answers": ["Sie versucht, die Tür aufzumachen."],
+      "explanation": "Przy czasownikach rozdzielnie złożonych zu wchodzi między przedrostek a rdzeń: 'aufzumachen'. Nie dodajemy drugiego 'zu' na końcu."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Er hat vergessen, zu anrufen mich.",
+      "answers": ["Er hat vergessen, mich anzurufen."],
+      "explanation": "Czasownik rozdzielnie złożony 'anrufen' wymaga formy 'anzurufen' (zu między przedrostkiem a rdzeniem). Dopełnienie 'mich' idzie przed bezokolicznikiem."
+    }
+  ]
+}

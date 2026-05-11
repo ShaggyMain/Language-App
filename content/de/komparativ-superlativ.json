@@ -1,0 +1,236 @@
+{
+  "id": "de.adjectives.komparativ-superlativ",
+  "language": "de",
+  "category": "adjectives",
+  "title": "Komparativ und Superlativ",
+  "summary": "Stopniowanie przymiotnikow — stopien wyzszy (Komparativ) z -er oraz najwyzszy (Superlativ) z am -sten, a takze formy nieregularne.",
+  "cefrLevel": "A2",
+  "prerequisites": [
+    "de.cases.articles-nominativ"
+  ],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Stopniowanie przymiotnikow w jezyku niemieckim**\n\nJezyk niemiecki tworzy stopien wyzszy i najwyzszy regularnie przez dodawanie koncocwek do przymiotnika:\n\n- **Stopien równy (Positiv):** schnell\n- **Stopien wyzszy (Komparativ):** schnell**er**\n- **Stopien najwyzszy (Superlativ):** am schnell**sten**\n\nSuperlativ w funkcji orzecznikowej zawsze uzywamy z **am**: *Das ist am besten.*"
+    },
+    {
+      "kind": "table",
+      "title": "Regularne stopniowanie",
+      "headers": [
+        "Positiv",
+        "Komparativ",
+        "Superlativ",
+        "Tlumaczenie"
+      ],
+      "rows": [
+        [
+          "schnell",
+          "schneller",
+          "am schnellsten",
+          "szybki"
+        ],
+        [
+          "klein",
+          "kleiner",
+          "am kleinsten",
+          "maly"
+        ],
+        [
+          "schön",
+          "schöner",
+          "am schönsten",
+          "piekny"
+        ],
+        [
+          "billig",
+          "billiger",
+          "am billigsten",
+          "tani"
+        ],
+        [
+          "interessant",
+          "interessanter",
+          "am interessantesten",
+          "interesujacy"
+        ]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "**Przeglos (Umlaut) w Komparativ i Superlativ**\n\nNiektóre jednosylabowe przymiotniki otrzymuja przeglos (a->ä, o->ö, u->ü):\n\n- alt -> **äl**ter -> am **äl**testen\n- jung -> **jün**ger -> am **jün**gsten\n- groß -> **grö**ßer -> am **grö**ßten\n- warm -> **wär**mer -> am **wär**msten\n- kalt -> **käl**ter -> am **käl**testen\n- lang -> **län**ger -> am **läng**sten\n- kurz -> **kür**zer -> am **kür**zesten\n- stark -> **stär**ker -> am **stär**ksten"
+    },
+    {
+      "kind": "text",
+      "markdown": "**Formy nieregularne — trzeba zapamietac!**\n\n- gut -> **besser** -> am **besten**\n- viel -> **mehr** -> am **meisten**\n- gern -> **lieber** -> am **liebsten**\n- hoch -> **höher** -> am **höchsten**\n- nah -> **näher** -> am **nächsten**"
+    },
+    {
+      "kind": "text",
+      "markdown": "**Komparativ jako okreslnik przy rzeczowniku (atrybutywnie)**\n\nGdy przymiotnik stoi przed rzeczownikiem, do formy Komparativ dodajemy standardowa koncocwke przymiotnikowa:\n\n- *ein schnell**es** Auto* (Positiv, Nom, n)\n- *ein schnell**eres** Auto* (Komparativ, Nom, n)\n- *das alt**e** Haus* -> *das **äl**ter**e** Haus*\n\n**Porównania:**\n- Tak samo jak: *so ... wie* (Er ist so groß wie ich.)\n- Wyzszy stopien: *...er als* (Sie ist größer als ich.)"
+    },
+    {
+      "kind": "examples",
+      "items": [
+        {
+          "source": "Dieses Auto ist schneller als jenes.",
+          "translation": "Ten samochód jest szybszy niz tamten."
+        },
+        {
+          "source": "München ist größer als Salzburg.",
+          "translation": "Monachium jest wieksze niz Salzburg."
+        },
+        {
+          "source": "Dieser Wein ist am besten.",
+          "translation": "To wino jest najlepsze."
+        },
+        {
+          "source": "Im Winter ist es kälter als im Herbst.",
+          "translation": "Zima jest zimniej niz jesienia."
+        },
+        {
+          "source": "Ich esse lieber Pizza als Salat.",
+          "translation": "Wole jesc pizze niz salate."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Mein Bruder ist ___ (alt + Komparativ) als ich.",
+      "answers": [
+        "älter"
+      ],
+      "explanation": "alt tworzy Komparativ z przeglosem: alt -> älter."
+    },
+    {
+      "type": "fill",
+      "prompt": "Von allen Schülern läuft Anna am ___ (schnell + Superlativ).",
+      "answers": [
+        "schnellsten"
+      ],
+      "explanation": "Superlativ od schnell: am schnellsten."
+    },
+    {
+      "type": "fill",
+      "prompt": "Dieser Film ist ___ (gut + Komparativ) als der letzte.",
+      "answers": [
+        "besser"
+      ],
+      "explanation": "gut ma nieregularny Komparativ: besser."
+    },
+    {
+      "type": "fill",
+      "prompt": "Im Sommer ist es ___ (warm + Komparativ) als im Frühling.",
+      "answers": [
+        "wärmer"
+      ],
+      "explanation": "warm tworzy Komparativ z przeglosem: warm -> wärmer."
+    },
+    {
+      "type": "fill",
+      "prompt": "Das ist das ___ (hoch + Superlativ, atrybutywnie) Gebäude der Stadt. = das ___ Gebäude",
+      "answers": [
+        "höchste"
+      ],
+      "explanation": "hoch -> Komparativ: höher, Superlativ atrybutywny: das höchste (koncocwka -e po rodzajniku okreslonym, Nom., n)."
+    },
+    {
+      "type": "fill",
+      "prompt": "Sie hat ___ (viel + Komparativ) Bücher als ihr Bruder.",
+      "answers": [
+        "mehr"
+      ],
+      "explanation": "viel ma nieregularny Komparativ: mehr."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Jak powiemy 'To jest najlepsze wino'?",
+      "options": [
+        "Das ist das gutste Wein.",
+        "Das ist am besten Wein.",
+        "Das ist das beste Wein.",
+        "Das ist der beste Wein."
+      ],
+      "answer": 3,
+      "explanation": "Wein jest rodzaju meskiego (der), wiec w Nominativ: der beste Wein. Superlativ atrybutywny: gut -> best-."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Które zdanie jest poprawne?",
+      "options": [
+        "Er ist so groß wie sein Vater.",
+        "Er ist so groß als sein Vater.",
+        "Er ist so großer wie sein Vater.",
+        "Er ist so großer als sein Vater."
+      ],
+      "answer": 0,
+      "explanation": "Porównanie równosci: so + Positiv + wie."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Co oznacza: 'Ich fahre am liebsten mit dem Zug.'?",
+      "options": [
+        "Lubie jezdzic pociagiem.",
+        "Najchetniej jezdzę pociagiem.",
+        "Jezdzę pociagiem tak samo chetnie.",
+        "Moge jezdzic pociagiem."
+      ],
+      "answer": 1,
+      "explanation": "am liebsten = najchetniej (Superlativ od gern)."
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Deutschland ist größer als Österreich."
+      ],
+      "explanation": "groß tworzy Komparativ z przeglosem: größer. Porównanie nierównosci: Komparativ + als.",
+      "from": "pl",
+      "to": "de",
+      "source": "Niemcy jest wieksze niz Austria.' (Deutschland/Österreich, Komparativ von groß)"
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Dieses Buch ist am interessantesten."
+      ],
+      "explanation": "Superlativ orzecznikowy: am interessantesten. Buch jest rodzaju nijakiego (das), ale w funkcji orzecznikowej uzywamy am + -sten.",
+      "from": "pl",
+      "to": "de",
+      "source": "Ta ksiazka jest najciekawsza.' (interessant, Superlativ orzecznikowy)"
+    },
+    {
+      "type": "errorFix",
+      "explanation": "jung tworzy Komparativ z przeglosem: jung -> jünger (nie: junger).",
+      "sentence": "Meine Schwester ist junger als ich.",
+      "answers": [
+        "Meine Schwester ist jünger als ich."
+      ]
+    },
+    {
+      "type": "errorFix",
+      "explanation": "gut ma nieregularny Superlativ: best-. W funkcji atrybutywnej: das beste Restaurant (nie am gutsten).",
+      "sentence": "Das ist am gutsten Restaurant in der Stadt.",
+      "answers": [
+        "Das ist das beste Restaurant in der Stadt."
+      ]
+    },
+    {
+      "type": "transform",
+      "explanation": "Komparativ od groß to größer (z przeglosem). Porównanie nierównosci: größer als.",
+      "instruction": "Przeksztalc w zdanie porównawcze z Komparativ",
+      "source": "Paul: 1,80 m — Klaus: 1,75 m",
+      "answers": [
+        "Paul ist größer als Klaus."
+      ]
+    },
+    {
+      "type": "transform",
+      "explanation": "Superlativ orzecznikowy: am schönsten. Mozna powiedziec 'es ist am schönsten' zamiast uzyc formy atrybutywnej.",
+      "instruction": "Utwórz zdanie z Superlativ",
+      "source": "Der Sommer ist die schönste Jahreszeit.",
+      "answers": [
+        "Im Sommer ist es am schönsten."
+      ]
+    }
+  ]
+}

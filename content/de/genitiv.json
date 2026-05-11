@@ -1,0 +1,133 @@
+{
+  "id": "de.cases.genitiv",
+  "language": "de",
+  "category": "cases",
+  "title": "Genitiv",
+  "summary": "Dopełniacz — wyraża przynależność. Formy członków rodzajnikowych i końcówka -s/-es dla rzeczowników.",
+  "cefrLevel": "B1",
+  "prerequisites": ["de.cases.dativ"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Genitiv (dopełniacz)** wyraża przede wszystkim **przynależność** — odpowiada polskiemu dopełniaczowi lub angielskiemu 's oraz 'of'.\n\n*Das ist das Auto des Mannes.* (To jest samochód tego mężczyzny.)\n*Die Tasche der Frau ist rot.* (Torba tej kobiety jest czerwona.)\n\nRzeczowniki rodzaju **męskiego i nijakiego** w Genitivie przyjmują końcówkę **-s** (krótkie słowa) lub **-es** (dłuższe, kończące się na -s, -ß, -z, -x):\n- *der Mann* => *des Mannes*\n- *das Buch* => *des Buches*\n- *das Kind* => *des Kindes*\n\nRzeczowniki **żeńskie i liczba mnoga** nie zmieniają formy — zmienia się tylko rodzajnik:\n- *die Frau* => *der Frau*\n- *die Bücher* => *der Bücher*\n\n**Przyimki wymagające Genitivu:** wegen (z powodu), trotz (pomimo), während (podczas), statt/anstatt (zamiast), aufgrund (z powodu/na podstawie), innerhalb (wewnątrz), außerhalb (na zewnątrz).\n\n*Wegen des Regens bleibe ich zu Hause.* (Z powodu deszczu zostaję w domu.)\n*Trotz des schlechten Wetters gingen sie spazieren.* (Pomimo złej pogody poszli na spacer.)\n\nW języku mówionym Genitiv bywa zastępowany przez **von + Dativ**: *das Auto von dem Mann* zamiast *das Auto des Mannes*."
+    },
+    {
+      "kind": "table",
+      "title": "Rodzajniki określone w Genitivie",
+      "headers": ["Rodzaj", "Nominativ", "Genitiv", "Przykład"],
+      "rows": [
+        ["męski (m)", "der", "des + -s/-es", "des Mannes"],
+        ["nijaki (n)", "das", "des + -s/-es", "des Buches"],
+        ["żeński (f)", "die", "der", "der Frau"],
+        ["l. mnoga", "die", "der", "der Kinder"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Das ist der Hund des Nachbarn.", "translation": "To jest pies sąsiada." },
+        { "source": "Wegen der Kälte trage ich eine Jacke.", "translation": "Z powodu zimna noszę kurtkę." },
+        { "source": "Während des Unterrichts ist er eingeschlafen.", "translation": "Podczas lekcji zasnął." },
+        { "source": "Statt des Kuchens aß sie ein Eis.", "translation": "Zamiast ciasta zjadła lody." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Das Fahrrad ___ (der Bruder) ist neu.",
+      "answers": ["des Bruders"],
+      "hint": "Rzeczownik męski: des + -s => des Bruders."
+    },
+    {
+      "type": "fill",
+      "prompt": "Die Farbe ___ (das Haus) gefällt mir nicht.",
+      "answers": ["des Hauses"],
+      "hint": "Rzeczownik nijaki kończący się na -s: des + -es => des Hauses."
+    },
+    {
+      "type": "fill",
+      "prompt": "Der Name ___ (die Lehrerin) ist Frau Müller.",
+      "answers": ["der Lehrerin"],
+      "hint": "Rzeczownik żeński: rodzajnik zmienia się na 'der', rzeczownik bez zmian."
+    },
+    {
+      "type": "fill",
+      "prompt": "Trotz ___ (der Regen) ging er joggen.",
+      "answers": ["des Regens"],
+      "hint": "trotz + Genitiv; der Regen (m) => des Regens."
+    },
+    {
+      "type": "fill",
+      "prompt": "Während ___ (die Pause) darf man rausgehen.",
+      "answers": ["der Pause"],
+      "hint": "während + Genitiv; die Pause (f) => der Pause."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Wegen ___ Lärms konnte ich nicht schlafen.",
+      "options": ["dem", "des", "der", "den"],
+      "answer": 1,
+      "explanation": "'wegen' rządzi Genitivem; der Lärm (m) => des Lärms."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Das ist die Meinung ___ Chefin.",
+      "options": ["des", "dem", "den", "der"],
+      "answer": 3,
+      "explanation": "die Chefin (f) => Genitiv: der Chefin."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Aufgrund ___ schlechten Note muss er die Prüfung wiederholen.",
+      "options": ["der", "des", "dem", "den"],
+      "answer": 0,
+      "explanation": "'aufgrund' + Genitiv; die Note (f) => der Note. 'schlechten' to odpowiednia końcówka przymiotnika w Genitivie."
+    },
+    {
+      "type": "transform",
+      "instruction": "Połącz dwa zdania za pomocą Genitivu.",
+      "source": "Das ist ein Hut. Der Hut gehört dem alten Mann.",
+      "answers": ["Das ist der Hut des alten Mannes.", "Das ist ein Hut des alten Mannes."]
+    },
+    {
+      "type": "transform",
+      "instruction": "Połącz dwa zdania za pomocą Genitivu.",
+      "source": "Ich lese ein Buch. Das Buch gehört meiner Schwester.",
+      "answers": ["Ich lese das Buch meiner Schwester.", "Ich lese ein Buch meiner Schwester."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Z powodu choroby nie mogę przyjść.",
+      "answers": ["Wegen der Krankheit kann ich nicht kommen.", "Wegen meiner Krankheit kann ich nicht kommen."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Kolor tego samochodu jest czerwony.",
+      "answers": ["Die Farbe des Autos ist rot.", "Die Farbe dieses Autos ist rot."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Pomimo zmęczenia skończyła pracę.",
+      "answers": ["Trotz der Müdigkeit hat sie die Arbeit beendet.", "Trotz der Müdigkeit beendete sie die Arbeit.", "Trotz ihrer Müdigkeit hat sie die Arbeit beendet."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Wegen dem Regen bleibe ich zu Hause.",
+      "answers": ["Wegen des Regens bleibe ich zu Hause."],
+      "explanation": "'wegen' wymaga Genitivu, nie Dativu. 'dem Regen' to Dativ — poprawna forma to 'des Regens'."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Das ist das Zimmer von mein Bruder.",
+      "answers": ["Das ist das Zimmer meines Bruders.", "Das ist das Zimmer von meinem Bruder."],
+      "explanation": "Po 'von' trzeba Dativ: 'von meinem Bruder'. Alternatywnie poprawny Genitiv: 'meines Bruders'. Forma 'von mein Bruder' jest błędna w obu przypadkach."
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "id": "de.syntax.passiv",
+  "language": "de",
+  "category": "syntax",
+  "title": "Passiv Präsens",
+  "summary": "Strona bierna w czasie teraźniejszym — werden + Partizip II. Skupia uwagę na czynności, nie na sprawcy.",
+  "cefrLevel": "B1",
+  "prerequisites": ["de.tenses.perfekt"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Strona bierna (Passiv Präsens)** tworzymy za pomocą odmienionych form czasownika **werden** oraz **Partizip II** czasownika głównego.\n\nFormuła: **werden (odmienione) + Partizip II**\n\n*Das Buch wird gelesen.* (Książka jest czytana.)\n*Der Brief wird geschrieben.* (List jest pisany.)\n\nW stronie biernej podmiotem staje się obiekt czynności — sprawca (Agens) jest opcjonalny i wyraża się przez **von + Dativ**:\n*Das Buch wird von dem Schüler gelesen.* (Książka jest czytana przez ucznia.)\n\nPorównanie strony czynnej i biernej:\n- Aktiv: *Die Köchin kocht die Suppe.*\n- Passiv: *Die Suppe wird von der Köchin gekocht.*\n\nPytanie: *Wer macht das?* => *Von wem wird das gemacht?*"
+    },
+    {
+      "kind": "table",
+      "title": "Odmiana werden w czasie teraźniejszym",
+      "headers": ["Osoba", "werden"],
+      "rows": [
+        ["ich", "werde"],
+        ["du", "wirst"],
+        ["er/sie/es", "wird"],
+        ["wir", "werden"],
+        ["ihr", "werdet"],
+        ["sie/Sie", "werden"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Das Fenster wird geöffnet.", "translation": "Okno jest otwierane." },
+        { "source": "Die Autos werden repariert.", "translation": "Samochody są naprawiane." },
+        { "source": "Das Essen wird von der Mutter gekocht.", "translation": "Jedzenie jest gotowane przez mamę." },
+        { "source": "Die Hausaufgaben werden gemacht.", "translation": "Zadania domowe są odrabiane." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "transform",
+      "instruction": "Zamień zdanie ze strony czynnej na stronę bierną (Passiv Präsens). Pomiń sprawcę.",
+      "source": "Der Arzt untersucht den Patienten.",
+      "answers": ["Der Patient wird untersucht.", "Der Patient wird vom Arzt untersucht.", "Der Patient wird von dem Arzt untersucht."]
+    },
+    {
+      "type": "transform",
+      "instruction": "Zamień zdanie ze strony czynnej na stronę bierną (Passiv Präsens). Pomiń sprawcę.",
+      "source": "Die Studentin liest das Buch.",
+      "answers": ["Das Buch wird gelesen.", "Das Buch wird von der Studentin gelesen."]
+    },
+    {
+      "type": "transform",
+      "instruction": "Zamień zdanie ze strony czynnej na stronę bierną (Passiv Präsens). Zachowaj sprawcę z von + Dativ.",
+      "source": "Der Mechaniker repariert das Auto.",
+      "answers": ["Das Auto wird von dem Mechaniker repariert.", "Das Auto wird vom Mechaniker repariert."]
+    },
+    {
+      "type": "fill",
+      "prompt": "Das Formular ___ (werden, er/sie/es) ausgefüllt.",
+      "answers": ["wird"],
+      "hint": "Podmiot to 'das Formular' — rodzaj nijaki, trzecia osoba liczby pojedynczej."
+    },
+    {
+      "type": "fill",
+      "prompt": "Die Briefe ___ (werden, sie/pl) jeden Tag geschrieben.",
+      "answers": ["werden"],
+      "hint": "Podmiot to 'die Briefe' — liczba mnoga."
+    },
+    {
+      "type": "fill",
+      "prompt": "Ich ___ (werden) von meinem Chef gelobt.",
+      "answers": ["werde"],
+      "hint": "Pierwsza osoba liczby pojedynczej: ich werde."
+    },
+    {
+      "type": "fill",
+      "prompt": "Das Abendessen wird von der Grossmutter ___. (kochen)",
+      "answers": ["gekocht"],
+      "hint": "Partizip II od 'kochen': ge- + kocht."
+    },
+    {
+      "type": "fill",
+      "prompt": "Die Tür wird von dem Kind ___. (schließen)",
+      "answers": ["geschlossen"],
+      "hint": "Partizip II od 'schließen' — czasownik mocny: geschlossen."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Welche Form ist korrekt? Das Haus ___ gebaut.",
+      "options": ["wird", "wirst", "werdet", "worden"],
+      "answer": 0,
+      "explanation": "'Das Haus' to podmiot w trzeciej osobie liczby pojedynczej, więc używamy 'wird'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Jak powiemy po niemiecku 'List jest wysyłany przez sekretarkę'?",
+      "options": [
+        "Der Brief wird von der Sekretärin geschickt.",
+        "Der Brief wird von der Sekretärin schicken.",
+        "Der Brief wird durch die Sekretärin geschickt.",
+        "Die Sekretärin wird den Brief geschickt."
+      ],
+      "answer": 0,
+      "explanation": "Sprawcę wyraża von + Dativ: von der Sekretärin. Partizip II od schicken to geschickt."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Ihr ___ jeden Tag beobachtet.",
+      "options": ["werde", "wirst", "werdet", "wird"],
+      "answer": 2,
+      "explanation": "Podmiot 'ihr' (wy) wymaga formy 'werdet'."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Okna są myte co tydzień.",
+      "answers": ["Die Fenster werden jede Woche geputzt.", "Die Fenster werden jede Woche gewaschen."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Nowa szkoła jest budowana w naszym mieście.",
+      "answers": ["Eine neue Schule wird in unserer Stadt gebaut.", "In unserer Stadt wird eine neue Schule gebaut."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Das Buch wird von dem Schüler lesen.",
+      "answers": ["Das Buch wird von dem Schüler gelesen."],
+      "explanation": "W stronie biernej potrzebujemy Partizip II, nie bezokolicznika. 'lesen' => 'gelesen'."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Die Hausaufgaben werden gemacht von den Schülern.",
+      "answers": ["Die Hausaufgaben werden von den Schülern gemacht."],
+      "explanation": "Partizip II musi stać na końcu zdania. 'von den Schülern' (sprawca) idzie przed Partizip II."
+    }
+  ]
+}

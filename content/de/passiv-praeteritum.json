@@ -1,0 +1,228 @@
+{
+  "id": "de.syntax.passiv-praeteritum",
+  "language": "de",
+  "category": "syntax",
+  "title": "Passiv Praeteritum und Passiv mit Modalverben",
+  "summary": "Strona bierna w czasie przeszlym (wurde + Partizip II) oraz z czasownikami modalnymi.",
+  "cefrLevel": "B2",
+  "prerequisites": [
+    "de.syntax.passiv",
+    "de.verbs.konjunktiv-II"
+  ],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Passiv Prateritum** tworzymy wedlug schematu:\n\n**wurde/wurden + Partizip II**\n\n*wurde* to forma Prateritum od *werden*.\n\nPrzykladowe zdania:\n- *Das Haus wurde gebaut.* (Dom zostal zbudowany.)\n- *Der Brief wurde gestern geschrieben.* (List zostal napisany wczoraj.)\n- *Die Fenster wurden gereinigt.* (Okna zostaly wyczyszczone.)\n\nPorownanie czasow strony biernej:\n- **Prasens Passiv:** Das Haus wird gebaut.\n- **Prateritum Passiv:** Das Haus wurde gebaut.\n- **Perfekt Passiv:** Das Haus ist gebaut worden."
+    },
+    {
+      "kind": "table",
+      "title": "Odmiana 'werden' w Prateritum",
+      "headers": [
+        "Osoba",
+        "Forma"
+      ],
+      "rows": [
+        [
+          "ich",
+          "wurde"
+        ],
+        [
+          "du",
+          "wurdest"
+        ],
+        [
+          "er/sie/es",
+          "wurde"
+        ],
+        [
+          "wir",
+          "wurden"
+        ],
+        [
+          "ihr",
+          "wurdet"
+        ],
+        [
+          "sie/Sie",
+          "wurden"
+        ]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "**Uwaga: worden vs. geworden**\n\nW **Perfekt Passiv** uzywamy *worden* (nie *geworden*):\n- *Das Haus ist gebaut **worden**.* (poprawnie)\n- *Das Haus ist gebaut **geworden**.* (BLAD)\n\n*geworden* pojawia sie tylko przy *werden* uzytym samodzielnie jako czasownik:\n- *Er ist Arzt geworden.* (Zostal lekarzem.)"
+    },
+    {
+      "kind": "text",
+      "markdown": "**Passiv z czasownikami modalnymi (Prasens):**\n\nScheme: **Modal (odmieniony) + Partizip II + werden**\n\n- *Das muss gemacht werden.* (To musi zostac zrobione.)\n- *Das kann repariert werden.* (To moze zostac naprawione.)\n- *Das darf nicht vergessen werden.* (Tego nie wolno zapomniec.)\n- *Der Text soll ubersetzt werden.* (Tekst ma zostac przetlumaczony.)\n\n**Passiv z czasownikami modalnymi (Prateritum):**\n\nScheme: **Modal Prateritum + Partizip II + werden**\n\n- *Das musste gemacht werden.* (To musiao zostac zrobione.)\n- *Das konnte repariert werden.* (To moglo zostac naprawione.)\n- *Das durfte nicht vergessen werden.* (Tego nie wolno bylo zapomniec.)"
+    },
+    {
+      "kind": "examples",
+      "items": [
+        {
+          "source": "Die Brucke wurde im Jahr 1900 gebaut.",
+          "translation": "Most zostal zbudowany w 1900 roku."
+        },
+        {
+          "source": "Die Pakete wurden gestern geliefert.",
+          "translation": "Paczki zostaly dostarczone wczoraj."
+        },
+        {
+          "source": "Das Problem kann leicht gelost werden.",
+          "translation": "Problem moze zostac latwo rozwiazany."
+        },
+        {
+          "source": "Die Aufgaben mussten bis Freitag abgegeben werden.",
+          "translation": "Zadania musialy zostac oddane do piatku."
+        },
+        {
+          "source": "Der Aufsatz ist von der Lehrerin korrigiert worden.",
+          "translation": "Wypracowanie zostalo poprawione przez nauczycielke."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Das Auto ___ gestern repariert. (Passiv Prateritum)",
+      "answers": [
+        "wurde"
+      ],
+      "explanation": "Passiv Prateritum: wurde + Partizip II. Podmiot 'Das Auto' (neutrum, l. poj.) wymaga formy 'wurde'."
+    },
+    {
+      "type": "fill",
+      "prompt": "Die Briefe ___ morgens ausgetragen. (Passiv Prateritum, l. mn.)",
+      "answers": [
+        "wurden"
+      ],
+      "explanation": "Liczba mnoga: wurden + Partizip II."
+    },
+    {
+      "type": "fill",
+      "prompt": "Das Gebaude muss sofort ___ werden. (renovieren)",
+      "answers": [
+        "renoviert"
+      ],
+      "explanation": "Passiv z modalnym: muss + Partizip II + werden. renovieren (reg.): renoviert."
+    },
+    {
+      "type": "fill",
+      "prompt": "Der Fehler ___ nicht gemacht werden. (durfen, Prateritum)",
+      "answers": [
+        "durfte"
+      ],
+      "explanation": "Passiv z modal. Prateritum: durfte + Partizip II + werden."
+    },
+    {
+      "type": "fill",
+      "prompt": "Das Buch ist von einem bekannten Autor geschrieben ___.",
+      "answers": [
+        "worden"
+      ],
+      "explanation": "Perfekt Passiv: ist + Partizip II + worden. Nie 'geworden' — to forma dla samodzielnego 'werden'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Ktore zdanie jest poprawnym zdaniem w Passiv Prateritum?",
+      "options": [
+        "Das Fenster ist geoffnet geworden.",
+        "Das Fenster wurde geoffnet.",
+        "Das Fenster hat geoffnet werden.",
+        "Das Fenster worden geoffnet."
+      ],
+      "answer": 1,
+      "explanation": "Passiv Prateritum: wurde + Partizip II. Forma 'geworden' w Perfekt Passiv jest bledna — tam uzywamy 'worden'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Wybierz poprawne tlumaczenie: 'Ta praca musi zostac oddana do poniedzialku.'",
+      "options": [
+        "Diese Arbeit muss bis Montag abgegeben haben.",
+        "Diese Arbeit musste bis Montag abgeben werden.",
+        "Diese Arbeit muss bis Montag abgegeben werden.",
+        "Diese Arbeit wird bis Montag abgegeben mussen."
+      ],
+      "answer": 2,
+      "explanation": "Passiv z modalnym (Prasens): muss + Partizip II (abgegeben) + werden."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Ktora forma jest poprawna w zdaniu: 'Der Dieb ___ von der Polizei gefangen ___.'?",
+      "options": [
+        "ist ... geworden",
+        "wurde ... geworden",
+        "ist ... worden",
+        "wurde ... worden"
+      ],
+      "answer": 2,
+      "explanation": "Perfekt Passiv: ist + Partizip II + worden. 'geworden' uzywa sie tylko przy samodzielnym 'werden'."
+    },
+    {
+      "type": "transform",
+      "explanation": "Podmiot staje sie dopeninieniem z 'von + Dativ' (vom Mechaniker). Dopelnienie staje sie podmiotem. Orzeczenie: wurde + Partizip II (repariert).",
+      "instruction": "Zamien na strone bierna w Prateritum",
+      "source": "Der Mechaniker reparierte das Auto.",
+      "answers": [
+        "Das Auto wurde vom Mechaniker repariert."
+      ]
+    },
+    {
+      "type": "transform",
+      "explanation": "Passiv z modalnym: mussen + Partizip II (ausgefullt) + werden. 'man' odpada. Dopelnienie (die Formulare) staje sie podmiotem.",
+      "instruction": "Zamien na strone bierna z modalnym w Prasens",
+      "source": "Man muss die Formulare ausfullen.",
+      "answers": [
+        "Die Formulare mussen ausgefullt werden."
+      ]
+    },
+    {
+      "type": "transform",
+      "explanation": "Passiv z modalnym Prateritum: konnte + Partizip II (gelost) + werden.",
+      "instruction": "Zamien na strone bierna z modalnym w Prateritum",
+      "source": "Man konnte das Problem losen.",
+      "answers": [
+        "Das Problem konnte gelost werden."
+      ]
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Die alte Brucke wurde letztes Jahr abgerissen.",
+        "Die alte Brucke wurde im letzten Jahr abgerissen."
+      ],
+      "explanation": "Passiv Prateritum: wurde + Partizip II (abgerissen). 'die alte Brucke' — zenski, wiec 'die' jako podmiot.",
+      "from": "pl",
+      "to": "de",
+      "source": "Przetlumacz na jezyk niemiecki: 'Stary most zostal zburzony w ubieglym roku.' (Passiv Prateritum)"
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Diese Dokumente konnen morgen geschickt werden.",
+        "Diese Unterlagen konnen morgen verschickt werden."
+      ],
+      "explanation": "Passiv z modalnym Prasens: konnen + Partizip II + werden. 'Dokumente/Unterlagen' — l. mn.",
+      "from": "pl",
+      "to": "de",
+      "source": "Przetlumacz na jezyk niemiecki: 'Te dokumenty moga zostac wyslane jutro.' (Passiv z modalnym)"
+    },
+    {
+      "type": "errorFix",
+      "explanation": "W Perfekt Passiv uzywamy 'worden', nie 'geworden'. 'geworden' to forma przy samodzielnym 'werden' (np. Er ist Arzt geworden).",
+      "sentence": "Das Haus ist im Jahr 1990 gebaut geworden.",
+      "answers": [
+        "Das Haus ist im Jahr 1990 gebaut worden."
+      ]
+    },
+    {
+      "type": "errorFix",
+      "explanation": "Passiv z modalnym wymaga Partizip II (geschrieben), nie bezokolicznika (schreiben).",
+      "sentence": "Der Brief musste gestern schreiben werden.",
+      "answers": [
+        "Der Brief musste gestern geschrieben werden."
+      ]
+    }
+  ]
+}

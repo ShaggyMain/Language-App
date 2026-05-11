@@ -1,0 +1,151 @@
+{
+  "id": "de.cases.dativ",
+  "language": "de",
+  "category": "cases",
+  "title": "Dativ",
+  "summary": "Celownik — forma po przyimkach mit, bei, von, zu, aus, nach, seit, gegenüber i jako dopełnienie dalsze.",
+  "cefrLevel": "A2",
+  "prerequisites": ["de.cases.articles-akkusativ"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "Dativ (celownik) odpowiada na pytanie **Wem?** (Komu?). Używamy go:\n\n1. **Po przyimkach wymagających Dativu** (zawsze Dativ): *mit, bei, von, zu, aus, nach, seit, gegenüber*\n   - *mit dem Hund* (z psem), *bei der Frau* (przy kobiecie), *von dem / vom Kind* (od dziecka)\n\n2. **Jako dopełnienie dalsze** (indirect object — ktoś, komu coś dajemy lub mówimy):\n   - *Ich gebe **dem Mann** das Buch.* (Daję mężczyźnie książkę.)\n   - *Sie schreibt **der Frau** einen Brief.* (Pisze kobiecie list.)\n\n**Rodzajniki w Dativie:**\n- der Mann → **dem** Mann\n- die Frau → **der** Frau\n- das Kind → **dem** Kind\n- die Kinder (pl) → **den** Kindern (+ n w rzeczowniku!)\n\n**Zaimki dzierżawcze w Dativie:**\n- mein → **meinem** (m/n), **meiner** (f), **meinen** (pl)"
+    },
+    {
+      "kind": "table",
+      "title": "Rodzajniki w Nominativ, Akkusativ i Dativ",
+      "headers": ["Rodzaj", "Nominativ", "Akkusativ", "Dativ"],
+      "rows": [
+        ["männlich (m)", "der", "den", "dem"],
+        ["weiblich (f)", "die", "die", "der"],
+        ["sächlich (n)", "das", "das", "dem"],
+        ["Plural", "die", "die", "den (+n)"]
+      ]
+    },
+    {
+      "kind": "table",
+      "title": "Przyimki wymagające zawsze Dativu",
+      "headers": ["Przyimek", "Znaczenie", "Przykład"],
+      "rows": [
+        ["mit", "z (kimś/czymś)", "mit dem Freund"],
+        ["bei", "u, przy", "bei der Arbeit"],
+        ["von", "od, z", "von dem Kind (vom Kind)"],
+        ["zu", "do (osoby/miejsca)", "zu der Schule (zur Schule)"],
+        ["aus", "z (skąd)", "aus dem Haus"],
+        ["nach", "do (miasta/kraju)", "nach der Schule"],
+        ["seit", "od (czas trwający)", "seit einem Jahr"],
+        ["gegenüber", "naprzeciwko", "gegenüber dem Bahnhof"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Ich fahre mit dem Bus.", "translation": "Jadę autobusem." },
+        { "source": "Das Kind kommt aus dem Haus.", "translation": "Dziecko wychodzi z domu." },
+        { "source": "Ich gebe dem Mann das Buch.", "translation": "Daję mężczyźnie książkę." },
+        { "source": "Er wohnt seit einem Jahr in Berlin.", "translation": "Mieszka w Berlinie od roku." },
+        { "source": "Sie hilft ihrer Mutter.", "translation": "Ona pomaga swojej mamie." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "Ich fahre mit ___ Auto. (das Auto)",
+      "options": ["das", "dem", "den", "der"],
+      "answer": 1,
+      "explanation": "Auto jest rodzaju nijakiego (das). Po przyimku 'mit' (zawsze Dativ) używamy 'dem': mit dem Auto."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Er spricht mit ___ Frau. (die Frau)",
+      "options": ["der", "die", "dem", "den"],
+      "answer": 0,
+      "explanation": "Frau jest rodzaju żeńskiego (die). W Dativie rodzajnik żeński zmienia się na 'der': mit der Frau."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Das Kind kommt aus ___ Schule. (die Schule)",
+      "options": ["dem", "den", "der", "die"],
+      "answer": 2,
+      "explanation": "Schule jest rodzaju żeńskiego (die). W Dativie: der Schule. Poprawnie: aus der Schule."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Ich gebe ___ Mann das Buch. (der Mann)",
+      "options": ["der", "den", "dem", "die"],
+      "answer": 2,
+      "explanation": "Mann jest rodzaju męskiego (der). Jako dopełnienie dalsze (Wem?) używamy Dativu: dem Mann."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Który przyimek zawsze wymaga Dativu?",
+      "options": ["durch", "für", "mit", "ohne"],
+      "answer": 2,
+      "explanation": "'mit' zawsze rządzi Dativem. 'durch', 'für' i 'ohne' wymagają Akkusativu."
+    },
+    {
+      "type": "fill",
+      "prompt": "Er wohnt gegenüber ___ (dem/der/den) Bahnhof. (der Bahnhof)",
+      "answers": ["dem"],
+      "hint": "Bahnhof jest rodzaju męskiego. 'gegenüber' + Dativ: dem Bahnhof."
+    },
+    {
+      "type": "fill",
+      "prompt": "Ich bin seit ___ (einem/einer/einem) Jahr in Deutschland. (ein Jahr, n)",
+      "answers": ["einem"],
+      "hint": "Jahr jest rodzaju nijakiego. Zaimek nieokreślony w Dativie (n): einem."
+    },
+    {
+      "type": "fill",
+      "prompt": "Sie gibt ___ (dem/der) Kind das Spielzeug. (das Kind)",
+      "answers": ["dem"],
+      "hint": "Kind jest rodzaju nijakiego. Dopełnienie dalsze w Dativie (n): dem."
+    },
+    {
+      "type": "fill",
+      "prompt": "Wir kommen aus ___ (dem/der) Stadt. (die Stadt)",
+      "answers": ["der"],
+      "hint": "Stadt jest rodzaju żeńskiego. W Dativie rodzajnik żeński to 'der'."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Jadę z przyjacielem. (der Freund)",
+      "answers": ["Ich fahre mit dem Freund.", "Ich fahre mit meinem Freund."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Daję kobiecie książkę.",
+      "answers": ["Ich gebe der Frau das Buch.", "Ich gebe der Frau ein Buch."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Ona mieszka u swojej babci.",
+      "answers": ["Sie wohnt bei ihrer Großmutter.", "Sie wohnt bei ihrer Oma."]
+    },
+    {
+      "type": "transform",
+      "instruction": "Rozszerz zdanie o dopełnienie dalsze w Dativie. Dodaj wskazaną osobę jako odbiorcę.",
+      "source": "Ich schreibe einen Brief. (die Mutter)",
+      "answers": ["Ich schreibe der Mutter einen Brief.", "Ich schreibe meiner Mutter einen Brief."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Ich fahre mit den Bus.",
+      "answers": ["Ich fahre mit dem Bus."],
+      "explanation": "'mit' zawsze wymaga Dativu. Bus jest rodzaju męskiego (der Bus), a Dativ männlich to 'dem', nie 'den'. 'den' to Akkusativ männski."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Er gibt die Frau das Buch.",
+      "answers": ["Er gibt der Frau das Buch."],
+      "explanation": "Frau jako dopełnienie dalsze (Wem? — komu?) wymaga Dativu. Dativ żeński to 'der Frau', nie 'die Frau' (to Nominativ lub Akkusativ)."
+    }
+  ]
+}

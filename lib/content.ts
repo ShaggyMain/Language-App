@@ -87,7 +87,7 @@ import enTplConditionalsFirst from "../content/templates/en/conditionals-first.j
 import enTplPassiveVoice from "../content/templates/en/passive-voice.json";
 import enTplModalsAdvanced from "../content/templates/en/modals-advanced.json";
 
-// DE
+// DE — original 9
 import deArticlesNominativ from "../content/de/articles-nominativ.json";
 import deArticlesAkkusativ from "../content/de/articles-akkusativ.json";
 import deSeinHaben from "../content/de/sein-haben.json";
@@ -97,6 +97,34 @@ import deNegation from "../content/de/negation.json";
 import dePlural from "../content/de/plural.json";
 import dePersonalpronomen from "../content/de/personalpronomen.json";
 import deWfragen from "../content/de/wfragen.json";
+// DE — A1 additions
+import dePossessivpronomen from "../content/de/possessivpronomen.json";
+import deImperativ from "../content/de/imperativ.json";
+import deJaNeinFragen from "../content/de/ja-nein-fragen.json";
+import deTrennbareVerben from "../content/de/trennbare-verben.json";
+import dePraepositionen from "../content/de/praepositionen.json";
+// DE — A2 additions
+import deDativ from "../content/de/dativ.json";
+import dePerfekt from "../content/de/perfekt.json";
+import deKomparativSuperlativ from "../content/de/komparativ-superlativ.json";
+import deWechselpraepositionen from "../content/de/wechselpraepositionen.json";
+import deKonjunktionen from "../content/de/konjunktionen.json";
+import dePraeteritum from "../content/de/praeteritum.json";
+import deRelativsaetze from "../content/de/relativsaetze.json";
+import deReflexiveVerben from "../content/de/reflexive-verben.json";
+// DE — B1 additions
+import dePassiv from "../content/de/passiv.json";
+import deGenitiv from "../content/de/genitiv.json";
+import deInfinitivZu from "../content/de/infinitiv-zu.json";
+import deFuturI from "../content/de/futur-I.json";
+import deKonjunktivII from "../content/de/konjunktiv-II.json";
+import deNebensaetzeErweitert from "../content/de/nebensaetze-erweitert.json";
+import dePlusquamperfekt from "../content/de/plusquamperfekt.json";
+// DE — B2 additions
+import dePassivPraeteritum from "../content/de/passiv-praeteritum.json";
+import deZweiteiligeKonnektoren from "../content/de/zweiteilige-konnektoren.json";
+import deKonjunktivI from "../content/de/konjunktiv-I.json";
+import deModalpartikeln from "../content/de/modalpartikeln.json";
 import dePersons from "../content/lexicons/de/persons.json";
 import deVerbs from "../content/lexicons/de/verbs.json";
 import deNouns from "../content/lexicons/de/nouns.json";
@@ -197,6 +225,7 @@ const RAW_TOPICS: unknown[] = [
   enSubjunctive,
   enModalsPerfect,
   enDiscourseMarkers,
+  // German — A1
   deArticlesNominativ,
   deArticlesAkkusativ,
   deSeinHaben,
@@ -206,6 +235,33 @@ const RAW_TOPICS: unknown[] = [
   dePlural,
   dePersonalpronomen,
   deWfragen,
+  dePossessivpronomen,
+  deImperativ,
+  deJaNeinFragen,
+  deTrennbareVerben,
+  dePraepositionen,
+  // German — A2
+  deDativ,
+  dePerfekt,
+  deKomparativSuperlativ,
+  deWechselpraepositionen,
+  deKonjunktionen,
+  dePraeteritum,
+  deRelativsaetze,
+  deReflexiveVerben,
+  // German — B1
+  dePassiv,
+  deGenitiv,
+  deInfinitivZu,
+  deFuturI,
+  deKonjunktivII,
+  deNebensaetzeErweitert,
+  dePlusquamperfekt,
+  // German — B2
+  dePassivPraeteritum,
+  deZweiteiligeKonnektoren,
+  deKonjunktivI,
+  deModalpartikeln,
   esArticles,
   esSerEstar,
   esPresentAr,

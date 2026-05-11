@@ -1,0 +1,226 @@
+{
+  "id": "de.syntax.relativsaetze",
+  "language": "de",
+  "category": "syntax",
+  "title": "Relativsätze",
+  "summary": "Zdania wzgledne — zaimek wzgledny odmienia sie jak rodzajnik okreslony, a jego rodzaj pochodzi od rzeczownika, do którego sie odnosi, a przypadek od roli w zdaniu podrzednym.",
+  "cefrLevel": "A2",
+  "prerequisites": [
+    "de.cases.dativ",
+    "de.syntax.konjunktionen"
+  ],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Relativsätze (Zdania wzgledne)**\n\nZdania wzgledne bliziej opisuja rzeczownik. Wprowadzane sa przez **zaimek wzgledny** (Relativpronomen), który:\n\n1. Odnosi sie do poprzedzajacego rzeczownika — jego **rodzaj (Genus)** i **liczba** sa takie same jak tego rzeczownika\n2. Jego **przypadek (Kasus)** zalezny jest od roli w zdaniu podrzednym\n3. **Czasownik idzie na KONIEC zdania wzglednego**\n4. Zdanie wzgledne oddzielamy **przecinkiem**"
+    },
+    {
+      "kind": "table",
+      "title": "Deklinacja zaimka wzglednego",
+      "headers": [
+        "Przypadek",
+        "Maskulinum (m)",
+        "Femininum (f)",
+        "Neutrum (n)",
+        "Plural (pl)"
+      ],
+      "rows": [
+        [
+          "Nominativ",
+          "der",
+          "die",
+          "das",
+          "die"
+        ],
+        [
+          "Akkusativ",
+          "den",
+          "die",
+          "das",
+          "die"
+        ],
+        [
+          "Dativ",
+          "dem",
+          "der",
+          "dem",
+          "denen"
+        ]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "**Jak wybrac odpowiedni zaimek wzgledny?**\n\n**Krok 1:** Ustal rodzaj i liczbe rzeczownika, do którego sie odnosi zaimek.\n**Krok 2:** Ustal, jaka role pelni zaimek w zdaniu podrzednym:\n- Jest podmiotem (kto? co?) -> **Nominativ**\n- Jest dopelnieniem blizszym (kogo? co?) -> **Akkusativ**\n- Jest dopelnieniem dalszym (komu? czemu?) -> **Dativ**\n\n*Das ist der Mann, **der** hier wohnt.* -> Mann (m), podmiot -> Nom: **der**\n*Das ist der Mann, **den** ich kenne.* -> Mann (m), dopelnienie blizsze -> Akk: **den**\n*Das ist der Mann, **dem** ich helfe.* -> Mann (m), dopelnienie dalsze -> Dat: **dem**"
+    },
+    {
+      "kind": "examples",
+      "items": [
+        {
+          "source": "Das Buch, das ich lese, ist interessant.",
+          "translation": "Ksiazka, która czytam, jest interesujaca. (Buch = n, Akk)"
+        },
+        {
+          "source": "Die Frau, der ich helfe, ist meine Lehrerin.",
+          "translation": "Kobieta, której pomagam, jest moja nauczycielka. (Frau = f, Dat)"
+        },
+        {
+          "source": "Die Kinder, die im Park spielen, sind laut.",
+          "translation": "Dzieci, które bawia sie w parku, sa glosne. (Kinder = pl, Nom)"
+        },
+        {
+          "source": "Der Film, den wir gesehen haben, war sehr gut.",
+          "translation": "Film, który obejrzelismy, byl bardzo dobry. (Film = m, Akk)"
+        }
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "**Przyimek + zaimek wzgledny**\n\nJesli w zdaniu wzglednym potrzebny jest przyimek, stoi on **przed zaimkiem wzglednym**:\n\n*Das ist das Hotel, **in dem** ich gewohnt habe.* (in + Dat -> dem, n)\n*Der Freund, **mit dem** ich spiele, heißt Tom.* (mit + Dat -> dem, m)\n*Das ist die Stadt, **durch die** wir gefahren sind.* (durch + Akk -> die, f)"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Das ist der Lehrer, ___ mich Deutsch gelehrt hat. (Lehrer = m, podmiot -> Nominativ)",
+      "answers": [
+        "der"
+      ],
+      "explanation": "Lehrer = Maskulinum. Zaimek jest podmiotem zdania wzglednego -> Nominativ: der."
+    },
+    {
+      "type": "fill",
+      "prompt": "Das Buch, ___ ich gekauft habe, ist sehr interessant. (Buch = n, dopelnienie blizsze -> Akkusativ)",
+      "answers": [
+        "das"
+      ],
+      "explanation": "Buch = Neutrum. Zaimek jest dopelnieniem blizszym (co kupilam?) -> Akkusativ: das."
+    },
+    {
+      "type": "fill",
+      "prompt": "Die Frau, ___ ich die Tasche gegeben habe, ist sehr nett. (Frau = f, dopelnienie dalsze -> Dativ)",
+      "answers": [
+        "der"
+      ],
+      "explanation": "Frau = Femininum. Zaimek jest dopelnieniem dalszym (komu dalem torebke?) -> Dativ: der."
+    },
+    {
+      "type": "fill",
+      "prompt": "Die Kinder, ___ im Garten spielen, sind meine Nachbarn. (Kinder = pl, podmiot -> Nominativ Plural)",
+      "answers": [
+        "die"
+      ],
+      "explanation": "Kinder = Plural. Zaimek jest podmiotem -> Nominativ Plural: die."
+    },
+    {
+      "type": "fill",
+      "prompt": "Das ist das Restaurant, in ___ wir immer essen. (Restaurant = n, in + Dativ)",
+      "answers": [
+        "dem"
+      ],
+      "explanation": "Restaurant = Neutrum. Przyimek in z Dativ (lokalizacja) -> dem."
+    },
+    {
+      "type": "fill",
+      "prompt": "Der Mann, ___ ich auf der Straße getroffen habe, ist ein alter Freund. (Mann = m, Akkusativ)",
+      "answers": [
+        "den"
+      ],
+      "explanation": "Mann = Maskulinum. treffen wymaga Akkusativ (kogo spotkalm?) -> den."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Uzupelnij: 'Das ist die Sängerin, ___ ich sehr mag.' (Sängerin = f, mögen + Akkusativ)",
+      "options": [
+        "der",
+        "die",
+        "das",
+        "denen"
+      ],
+      "answer": 1,
+      "explanation": "Sängerin = Femininum. mögen wymaga Akkusativ. Akkusativ Femininum: die."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Które zdanie jest poprawne?",
+      "options": [
+        "Das ist der Freund, der ich kenne.",
+        "Das ist der Freund, den ich kenne.",
+        "Das ist der Freund, dem ich kenne.",
+        "Das ist der Freund, das ich kenne."
+      ],
+      "answer": 1,
+      "explanation": "kennen wymaga Akkusativ. Freund = Maskulinum, Akkusativ: den."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Uzupelnij: 'Die Studenten, ___ ich die Hausaufgaben erklärt habe, haben die Prüfung bestanden.'",
+      "options": [
+        "die",
+        "denen",
+        "deren",
+        "den"
+      ],
+      "answer": 1,
+      "explanation": "erklären + Dativ (komu wyjasnilem?). Studenten = Plural, Dativ Plural: denen."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Wybierz poprawna forme: 'Das ist die Stadt, ___ ich geboren bin.' (Stadt = f, in + Dativ)",
+      "options": [
+        "die",
+        "der",
+        "das",
+        "dem"
+      ],
+      "answer": 1,
+      "explanation": "Stadt = Femininum. in + Dativ -> der. 'in der ich geboren bin' = w której sie urodzilam."
+    },
+    {
+      "type": "transform",
+      "explanation": "Hund = Maskulinum. Zaimek jest podmiotem w zdaniu wzglednym -> Nominativ: der. Czasownik heißt idzie na koniec.",
+      "instruction": "Polacz dwa zdania w jedno ze zdaniem wzglednym",
+      "source": "Ich habe einen Hund.",
+      "answers": [
+        "Ich habe einen Hund, der Bello heißt."
+      ]
+    },
+    {
+      "type": "transform",
+      "explanation": "Film = Maskulinum. empfehlen wymaga Akkusativ -> den. Czasownik empfehle stoi na koncu.",
+      "instruction": "Polacz ze zdaniem wzglednym",
+      "source": "Das ist ein Film.",
+      "answers": [
+        "Das ist ein Film, den ich sehr empfehle."
+      ]
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Das ist die Stadt, in der ich geboren bin.",
+        "Das ist die Stadt, in der ich geboren wurde."
+      ],
+      "explanation": "Stadt = Femininum. in + Dativ -> der. Czasownik bin/wurde stoi na koncu zdania wzglednego.",
+      "from": "pl",
+      "to": "de",
+      "source": "To jest miasto, w którym sie urodzilam.' (die Stadt = f, in + Dativ, geboren sein)"
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Ich kenne den Mann, der diese Bücher verkauft."
+      ],
+      "explanation": "Mann = Maskulinum. Zaimek jest podmiotem zdania wzglednego -> Nominativ: der. kennen + Akkusativ: den Mann.",
+      "from": "pl",
+      "to": "de",
+      "source": "Znam mezczyzne, który sprzedaje te ksiazki.' (der Mann = m, verkaufen, diese Bücher)"
+    },
+    {
+      "type": "errorFix",
+      "explanation": "sehen wymaga Akkusativ. Kind = Neutrum, Akkusativ: das (nie dem — to jest Dativ).",
+      "sentence": "Das ist das Kind, dem ich auf der Straße gesehen habe.",
+      "answers": [
+        "Das ist das Kind, das ich auf der Straße gesehen habe."
+      ]
+    }
+  ]
+}
