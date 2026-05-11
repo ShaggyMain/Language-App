@@ -1,6 +1,13 @@
-import { Text, View } from "react-native";
+import { View, Text } from "react-native";
 import type { GradeResult } from "../../lib/grading";
 import { TextAnswerExercise } from "./TextAnswerExercise";
+
+const C = {
+  surface: "#111a2e",
+  border: "#1f2a44",
+  text: "#e6ecf5",
+  muted: "#8aa0c2",
+} as const;
 
 type Props = {
   instruction: string;
@@ -15,9 +22,21 @@ export function TransformExercise({ instruction, source, answers, result, onSubm
     <TextAnswerExercise
       header={
         <>
-          <Text className="text-muted text-xs uppercase tracking-wide mb-2">{instruction}</Text>
-          <View className="bg-surface border border-border rounded-xl px-4 py-3 mb-6">
-            <Text className="text-text text-lg">{source}</Text>
+          <Text style={{ color: C.muted, fontSize: 11, fontWeight: "600", letterSpacing: 1, textTransform: "uppercase", marginBottom: 8 }}>
+            {instruction}
+          </Text>
+          <View
+            style={{
+              backgroundColor: C.surface,
+              borderWidth: 1,
+              borderColor: C.border,
+              borderRadius: 12,
+              paddingHorizontal: 16,
+              paddingVertical: 14,
+              marginBottom: 20,
+            }}
+          >
+            <Text style={{ color: C.text, fontSize: 17, lineHeight: 26 }}>{source}</Text>
           </View>
         </>
       }

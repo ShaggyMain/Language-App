@@ -1,6 +1,12 @@
-import { Text, View } from "react-native";
+import { View, Text } from "react-native";
 import type { GradeResult } from "../../lib/grading";
 import { TextAnswerExercise } from "./TextAnswerExercise";
+
+const C = {
+  text: "#e6ecf5",
+  muted: "#8aa0c2",
+  error: "#f43f5e",
+} as const;
 
 type Props = {
   sentence: string;
@@ -14,9 +20,21 @@ export function ErrorFixExercise({ sentence, answers, result, onSubmit }: Props)
     <TextAnswerExercise
       header={
         <>
-          <Text className="text-muted text-xs uppercase tracking-wide mb-2">Find and fix the error</Text>
-          <View className="bg-error/10 border border-error/40 rounded-xl px-4 py-3 mb-6">
-            <Text className="text-text text-lg italic">{sentence}</Text>
+          <Text style={{ color: C.muted, fontSize: 11, fontWeight: "600", letterSpacing: 1, textTransform: "uppercase", marginBottom: 8 }}>
+            Find and fix the error
+          </Text>
+          <View
+            style={{
+              backgroundColor: "#f43f5e14",
+              borderWidth: 1,
+              borderColor: "#f43f5e55",
+              borderRadius: 12,
+              paddingHorizontal: 16,
+              paddingVertical: 14,
+              marginBottom: 20,
+            }}
+          >
+            <Text style={{ color: C.text, fontSize: 17, lineHeight: 26, fontStyle: "italic" }}>{sentence}</Text>
           </View>
         </>
       }

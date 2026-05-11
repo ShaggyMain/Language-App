@@ -84,6 +84,8 @@ export type Repos = {
   log: SessionLogRepo;
   /** Wipe all stored data for this user (used by "Reset course"). */
   resetUser(userId: string): Promise<void>;
+  /** Wipe data for a specific set of topic IDs only (used by per-language reset). */
+  resetUserTopics(userId: string, topicIds: string[]): Promise<void>;
 };
 
 /* ───────────────────────── in-memory impl ───────────────────────── */
@@ -213,7 +215,25 @@ export function createMemoryRepos(): Repos {
     }
   }
 
-  return { seen, srs, log, resetUser };
+  async function resetUserTopics(userId: string, topicIds: string[]) {
+    const set = new Set(topicIds);
+    seenRows.splice(0, seenRows.length, ...seenRows.filter((r) => !(r.userId === userId && set.has(r.topicId))));
+    for (const k of [...cards.keys()]) {
+      const e = cards.get(k);
+      if (e && e.userId === userId && set.has(e.topicId)) cards.delete(k);
+    }
+    for (const [id, s] of sessions) {
+      if (s.userId === userId && set.has(s.topicId)) sessions.delete(id);
+    }
+    const userPassed = passed.get(userId);
+    if (userPassed) for (const id of topicIds) userPassed.delete(id);
+    for (const k of [...typeStats.keys()]) {
+      const [uid, tid] = k.split("|");
+      if (uid === userId && set.has(tid)) typeStats.delete(k);
+    }
+  }
+
+  return { seen, srs, log, resetUser, resetUserTopics };
 }
 
 /* ───────────────────────── runtime selection ─────────────────────────

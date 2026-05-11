@@ -14,6 +14,9 @@ import { resetXp } from "../lib/xp";
 import { resetStreak } from "../lib/streak";
 import { getRepos } from "../lib/db";
 import { currentUserId } from "../lib/auth";
+import { LANGUAGES } from "../lib/languages";
+import { topicsForLanguage } from "../lib/content";
+import type { Language } from "../lib/types";
 import { supabase, supabaseConfigured } from "../lib/supabase";
 
 const C = {
@@ -76,6 +79,7 @@ function Divider() {
 export default function SettingsScreen() {
   const [prefs, setPrefs] = useState<Preferences | null>(null);
   const [email, setEmail] = useState<string | null>(null);
+  const [resetLang, setResetLang] = useState<Language>("en");
 
   useEffect(() => {
     let cancelled = false;
@@ -142,6 +146,27 @@ export default function SettingsScreen() {
             await repos.resetUser(currentUserId());
             await resetXp();
             await resetStreak();
+          },
+        },
+      ],
+    );
+  }
+
+  function handleResetLanguage() {
+    const meta = LANGUAGES.find((l) => l.code === resetLang);
+    const name = meta ? `${meta.flag} ${meta.name}` : resetLang.toUpperCase();
+    Alert.alert(
+      `Reset ${name} course?`,
+      "All completed lessons for this language will be deleted. XP and streak from other languages are kept.",
+      [
+        { text: "Cancel", style: "cancel" },
+        {
+          text: "Reset",
+          style: "destructive",
+          onPress: async () => {
+            const repos = await getRepos();
+            const topicIds = topicsForLanguage(resetLang).map((t) => t.id);
+            await repos.resetUserTopics(currentUserId(), topicIds);
           },
         },
       ],
@@ -346,6 +371,65 @@ export default function SettingsScreen() {
             Clear onboarding + audio settings.
           </Text>
         </Pressable>
+        {/* Per-language reset */}
+        <View
+          style={{
+            backgroundColor: "#f43f5e18",
+            borderWidth: 1.5,
+            borderColor: C.error,
+            borderRadius: 16,
+            padding: 18,
+            marginBottom: 12,
+          }}
+        >
+          <Text style={{ color: C.error, fontSize: 15, fontWeight: "700", marginBottom: 4 }}>
+            Reset language course
+          </Text>
+          <Text style={{ color: C.muted, fontSize: 13, marginBottom: 14 }}>
+            Delete completed lessons for one language only.
+          </Text>
+          <View style={{ flexDirection: "row", gap: 8, flexWrap: "wrap", marginBottom: 14 }}>
+            {LANGUAGES.map((l) => {
+              const selected = resetLang === l.code;
+              return (
+                <Pressable
+                  key={l.code}
+                  onPress={() => setResetLang(l.code)}
+                  style={{
+                    borderRadius: 10,
+                    borderWidth: 1.5,
+                    paddingHorizontal: 14,
+                    paddingVertical: 8,
+                    backgroundColor: selected ? "#f43f5e22" : C.bg,
+                    borderColor: selected ? C.error : C.border,
+                  }}
+                >
+                  <Text style={{ color: selected ? C.error : C.text, fontWeight: selected ? "700" : "400" }}>
+                    {l.flag} {l.name}
+                  </Text>
+                </Pressable>
+              );
+            })}
+          </View>
+          <Pressable
+            onPress={handleResetLanguage}
+            style={{
+              borderRadius: 10,
+              borderWidth: 1.5,
+              borderColor: C.error,
+              backgroundColor: C.bg,
+              paddingHorizontal: 16,
+              paddingVertical: 9,
+              alignSelf: "flex-start",
+            }}
+          >
+            <Text style={{ color: C.error, fontWeight: "700" }}>
+              Reset {LANGUAGES.find((l) => l.code === resetLang)?.flag}{" "}
+              {LANGUAGES.find((l) => l.code === resetLang)?.name}
+            </Text>
+          </Pressable>
+        </View>
+
         <Pressable
           onPress={handleResetCourse}
           style={{
