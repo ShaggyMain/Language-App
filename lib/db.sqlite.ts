@@ -271,5 +271,13 @@ export async function createSqliteRepos(): Promise<Repos> {
     },
   };
 
-  return { seen, srs, log };
+  async function resetUser(userId: string) {
+    await db.runAsync(`DELETE FROM seen_instances WHERE user_id = ?`, [userId]);
+    await db.runAsync(`DELETE FROM srs_cards WHERE user_id = ?`, [userId]);
+    await db.runAsync(`DELETE FROM session_log WHERE user_id = ?`, [userId]);
+    await db.runAsync(`DELETE FROM passed_lessons WHERE user_id = ?`, [userId]);
+    await db.runAsync(`DELETE FROM type_stats WHERE user_id = ?`, [userId]);
+  }
+
+  return { seen, srs, log, resetUser };
 }

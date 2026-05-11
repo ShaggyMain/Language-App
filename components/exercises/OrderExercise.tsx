@@ -2,6 +2,18 @@ import { useState } from "react";
 import { Pressable, Text, View } from "react-native";
 import { grade, type GradeResult } from "../../lib/grading";
 
+const C = {
+  surface: "#111a2e",
+  surfaceAlt: "#1a2540",
+  border: "#1f2a44",
+  bg: "#0b1220",
+  text: "#e6ecf5",
+  muted: "#8aa0c2",
+  en: "#3b82f6",
+  success: "#22c55e",
+  error: "#f43f5e",
+} as const;
+
 type Props = {
   prompt?: string;
   tokens: string[];
@@ -10,21 +22,13 @@ type Props = {
   onSubmit: (raw: string, result: GradeResult) => void;
 };
 
-/**
- * Tap-based sentence builder. Tokens are pulled from a "bank" pool by
- * tapping them, and tapped again in the sentence area to send back to
- * the bank. We deliberately use tap rather than drag-and-drop: it's
- * faster, more accessible, and significantly more reliable on mobile
- * than gesture-based reordering.
- */
 export function OrderExercise({ prompt, tokens, answer, result, onSubmit }: Props) {
   const locked = !!result;
   const initial: number[] = result?.userInput ? JSON.parse(result.userInput) : [];
   const [placed, setPlaced] = useState<number[]>(initial);
 
   function add(idx: number) {
-    if (locked) return;
-    if (placed.includes(idx)) return;
+    if (locked || placed.includes(idx)) return;
     setPlaced((p) => [...p, idx]);
   }
 
@@ -34,60 +38,110 @@ export function OrderExercise({ prompt, tokens, answer, result, onSubmit }: Prop
   }
 
   function handle() {
-    if (locked) return;
-    if (placed.length !== answer.length) return;
+    if (locked || placed.length !== answer.length) return;
     const built = placed.map((i) => tokens[i]).join(" ");
-    const target = answer.join(" ");
-    const r = grade(built, [target]);
+    const r = grade(built, [answer.join(" ")]);
     onSubmit(JSON.stringify(placed), r);
   }
 
   const ready = !locked && placed.length === answer.length;
   const bankIdxs = tokens.map((_, i) => i).filter((i) => !placed.includes(i));
 
+  const isCorrect = locked
+    ? grade(placed.map((i) => tokens[i]).join(" "), [answer.join(" ")]).correct
+    : false;
+
   return (
     <View>
-      {prompt ? <Text className="text-text text-lg mb-4">{prompt}</Text> : null}
+      {prompt ? (
+        <Text style={{ color: C.text, fontSize: 16, marginBottom: 16, lineHeight: 24 }}>
+          {prompt}
+        </Text>
+      ) : null}
 
-      <Text className="text-muted text-xs uppercase tracking-wide mb-2">Your sentence</Text>
-      <View className="min-h-16 rounded-xl border border-border bg-surface px-3 py-3 flex-row flex-wrap gap-2 mb-2">
+      <Text style={{ color: C.muted, fontSize: 11, fontWeight: "600", letterSpacing: 1, textTransform: "uppercase", marginBottom: 8 }}>
+        Your sentence
+      </Text>
+      <View
+        style={{
+          minHeight: 60,
+          borderRadius: 12,
+          borderWidth: 1.5,
+          borderColor: locked ? (isCorrect ? C.success : C.error) : C.border,
+          backgroundColor: C.surface,
+          paddingHorizontal: 12,
+          paddingVertical: 12,
+          flexDirection: "row",
+          flexWrap: "wrap",
+          gap: 8,
+          marginBottom: 8,
+        }}
+      >
         {placed.length === 0 ? (
-          <Text className="text-muted self-center">Tap words below to build a sentence</Text>
+          <Text style={{ color: C.muted, alignSelf: "center" }}>Tap words below to build a sentence</Text>
         ) : (
           placed.map((tIdx, slot) => {
-            let bg = "bg-en/20 border-en";
-            if (locked) {
-              const built = placed.map((i) => tokens[i]).join(" ");
-              const ok = grade(built, [answer.join(" ")]).correct;
-              bg = ok ? "bg-success/20 border-success" : "bg-error/20 border-error";
-            }
+            const chipBg = locked
+              ? isCorrect ? "#22c55e22" : "#f43f5e22"
+              : "#3b82f622";
+            const chipBorder = locked
+              ? isCorrect ? C.success : C.error
+              : C.en;
             return (
               <Pressable
                 key={`${tIdx}-${slot}`}
                 onPress={() => remove(slot)}
                 disabled={locked}
-                className={`rounded-lg border px-3 py-2 ${bg}`}
+                style={{
+                  borderRadius: 10,
+                  borderWidth: 1.5,
+                  borderColor: chipBorder,
+                  backgroundColor: chipBg,
+                  paddingHorizontal: 12,
+                  paddingVertical: 7,
+                }}
               >
-                <Text className="text-text">{tokens[tIdx]}</Text>
+                <Text style={{ color: C.text, fontSize: 15 }}>{tokens[tIdx]}</Text>
               </Pressable>
             );
           })
         )}
       </View>
 
-      <Text className="text-muted text-xs uppercase tracking-wide mb-2 mt-4">Word bank</Text>
-      <View className="rounded-xl bg-bg px-1 py-1 flex-row flex-wrap gap-2">
+      <Text style={{ color: C.muted, fontSize: 11, fontWeight: "600", letterSpacing: 1, textTransform: "uppercase", marginBottom: 8, marginTop: 16 }}>
+        Word bank
+      </Text>
+      <View
+        style={{
+          borderRadius: 12,
+          backgroundColor: C.bg,
+          borderWidth: 1,
+          borderColor: C.border,
+          paddingHorizontal: 10,
+          paddingVertical: 10,
+          flexDirection: "row",
+          flexWrap: "wrap",
+          gap: 8,
+        }}
+      >
         {bankIdxs.length === 0 ? (
-          <Text className="text-muted px-3 py-2">All used.</Text>
+          <Text style={{ color: C.muted, paddingHorizontal: 8, paddingVertical: 6 }}>All used.</Text>
         ) : (
           bankIdxs.map((i) => (
             <Pressable
               key={i}
               onPress={() => add(i)}
               disabled={locked}
-              className="rounded-lg border border-border bg-surface px-3 py-2"
+              style={{
+                borderRadius: 10,
+                borderWidth: 1.5,
+                borderColor: C.border,
+                backgroundColor: C.surface,
+                paddingHorizontal: 12,
+                paddingVertical: 7,
+              }}
             >
-              <Text className="text-text">{tokens[i]}</Text>
+              <Text style={{ color: C.text, fontSize: 15 }}>{tokens[i]}</Text>
             </Pressable>
           ))
         )}
@@ -97,18 +151,38 @@ export function OrderExercise({ prompt, tokens, answer, result, onSubmit }: Prop
         <Pressable
           onPress={handle}
           disabled={!ready}
-          className={`mt-6 rounded-xl px-4 py-4 items-center ${ready ? "bg-en" : "bg-surface border border-border"}`}
+          style={{
+            marginTop: 24,
+            borderRadius: 14,
+            paddingVertical: 16,
+            alignItems: "center",
+            backgroundColor: ready ? C.en : C.surface,
+            borderWidth: ready ? 0 : 1,
+            borderColor: C.border,
+          }}
         >
-          <Text className={`${ready ? "text-white" : "text-muted"} text-base font-semibold`}>
+          <Text style={{ color: ready ? "white" : C.muted, fontSize: 16, fontWeight: "700" }}>
             Check
           </Text>
         </Pressable>
       ) : null}
 
       {locked ? (
-        <View className="mt-3 rounded-xl bg-surface border border-border px-3 py-2">
-          <Text className="text-muted text-xs uppercase mb-1">Correct order</Text>
-          <Text className="text-text">{answer.join(" ")}</Text>
+        <View
+          style={{
+            marginTop: 12,
+            borderRadius: 12,
+            backgroundColor: C.surface,
+            borderWidth: 1,
+            borderColor: C.border,
+            paddingHorizontal: 14,
+            paddingVertical: 10,
+          }}
+        >
+          <Text style={{ color: C.muted, fontSize: 11, fontWeight: "600", letterSpacing: 1, textTransform: "uppercase", marginBottom: 4 }}>
+            Correct order
+          </Text>
+          <Text style={{ color: C.text, fontSize: 15 }}>{answer.join(" ")}</Text>
         </View>
       ) : null}
     </View>
