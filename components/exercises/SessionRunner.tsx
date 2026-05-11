@@ -203,7 +203,7 @@ export function SessionRunner({ language, topic, mode, count = 10 }: Props) {
         <ProgressBar current={state.cursor + 1} total={state.items.length} />
         <Animated.View
           key={state.cursor}
-          entering={SlideInRight.duration(200).springify().damping(28)}
+          entering={SlideInRight.duration(220)}
         >
           <ExerciseTypeHint type={cur.exercise.type} />
           <ExerciseRenderer
