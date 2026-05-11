@@ -6,7 +6,7 @@
     "produces": "fill",
     "slots": [
       { "name": "subject", "pos": "person", "filter": { "cefrMax": "A2" } },
-      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2", "tags": ["transitive"] } },
       { "name": "obj", "pos": "noun", "filter": { "cefrMax": "A2" } }
     ],
     "pattern": "{subject} ___ ({verb}) {obj}.",
@@ -22,7 +22,7 @@
     "produces": "mcq",
     "slots": [
       { "name": "subject", "pos": "person", "filter": { "agreement": "3sg", "cefrMax": "A2" } },
-      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2", "tags": ["transitive"] } },
       { "name": "obj", "pos": "noun", "filter": { "cefrMax": "A2" } }
     ],
     "pattern": "{subject} ___ {obj} every day.",
@@ -58,7 +58,7 @@
     "produces": "mcq",
     "slots": [
       { "name": "subject", "pos": "person", "filter": { "cefrMax": "A2" } },
-      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2" } },
+      { "name": "verb", "pos": "verb", "filter": { "cefrMax": "A2", "tags": ["transitive"] } },
       { "name": "obj", "pos": "noun", "filter": { "cefrMax": "A2" } }
     ],
     "pattern": "{subject} ___ {obj}.",

@@ -4,15 +4,14 @@ import type { GradeResult } from "../../lib/grading";
 import { getCachedPreferences } from "../../lib/preferences";
 import { TextAnswerExercise } from "./TextAnswerExercise";
 
+const C = {
+  en: "#3b82f6",
+  muted: "#8aa0c2",
+} as const;
+
 type Props = {
   audioText: string;
-  /**
-   * Optional pre-recorded audio. When present, we'd ideally fetch and play
-   * via expo-audio. Left as a passthrough for now — TTS still works and
-   * authoring content tags can declare the URL ahead of recording.
-   */
   audioUrl?: string;
-  /** BCP-47 language tag for the TTS voice ("en-US", "de-DE", "es-ES"). */
   ttsLanguage?: string;
   answers: string[];
   result?: { correct: boolean; userInput?: string };
@@ -23,28 +22,41 @@ export function DictationExercise({ audioText, audioUrl, ttsLanguage, answers, r
   function play() {
     try {
       Speech.stop();
-      // Future: when an audioUrl is provided, prefer expo-audio playback
-      // over TTS. For now we always TTS — the field is reserved infra.
       void audioUrl;
       Speech.speak(audioText, { language: ttsLanguage, rate: getCachedPreferences().ttsRate });
     } catch {
-      // expo-speech is unavailable on web preview; degrade gracefully
+      // expo-speech unavailable on web preview
     }
   }
 
   return (
     <TextAnswerExercise
       header={
-        <View className="mb-6">
-          <Text className="text-muted text-xs uppercase tracking-wide mb-3">Listen and type</Text>
+        <View style={{ marginBottom: 20 }}>
+          <Text style={{ color: C.muted, fontSize: 11, fontWeight: "600", letterSpacing: 1, textTransform: "uppercase", marginBottom: 12 }}>
+            Listen and type
+          </Text>
           <Pressable
             onPress={play}
-            className="bg-en/20 border border-en rounded-xl px-4 py-5 items-center flex-row justify-center gap-2"
+            style={{
+              backgroundColor: "#3b82f618",
+              borderWidth: 1.5,
+              borderColor: "#3b82f655",
+              borderRadius: 14,
+              paddingHorizontal: 16,
+              paddingVertical: 18,
+              alignItems: "center",
+              flexDirection: "row",
+              justifyContent: "center",
+              gap: 10,
+            }}
           >
-            <Text className="text-en text-2xl">▶</Text>
-            <Text className="text-en text-base font-semibold">Play audio</Text>
+            <Text style={{ color: C.en, fontSize: 22 }}>▶</Text>
+            <Text style={{ color: C.en, fontSize: 16, fontWeight: "700" }}>Play audio</Text>
           </Pressable>
-          <Text className="text-muted text-xs mt-2 text-center">Tap to replay anytime</Text>
+          <Text style={{ color: C.muted, fontSize: 12, marginTop: 8, textAlign: "center" }}>
+            Tap to replay anytime
+          </Text>
         </View>
       }
       answers={answers}

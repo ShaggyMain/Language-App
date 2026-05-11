@@ -102,9 +102,9 @@
     },
     {
       "type": "errorFix",
-      "sentence": "They can't have understood the instructions. They did it wrong.",
-      "answers": ["They can't have understood the instructions. They did it wrong."],
-      "explanation": "This sentence is already correct — can't have + past participle for near-certain negative past deduction."
+      "sentence": "They can't understood the instructions — they did it all wrong.",
+      "answers": ["They can't have understood the instructions — they did it all wrong."],
+      "explanation": "Past deduction: can't + HAVE + past participle. 'have' is required between the modal and the past participle."
     },
     {
       "type": "fill",
