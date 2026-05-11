@@ -279,5 +279,16 @@ export async function createSqliteRepos(): Promise<Repos> {
     await db.runAsync(`DELETE FROM type_stats WHERE user_id = ?`, [userId]);
   }
 
-  return { seen, srs, log, resetUser };
+  async function resetUserTopics(userId: string, topicIds: string[]) {
+    if (topicIds.length === 0) return;
+    const placeholders = topicIds.map(() => "?").join(",");
+    const args = (params: string[]) => [userId, ...params];
+    await db.runAsync(`DELETE FROM seen_instances WHERE user_id = ? AND topic_id IN (${placeholders})`, args(topicIds));
+    await db.runAsync(`DELETE FROM srs_cards WHERE user_id = ? AND topic_id IN (${placeholders})`, args(topicIds));
+    await db.runAsync(`DELETE FROM session_log WHERE user_id = ? AND topic_id IN (${placeholders})`, args(topicIds));
+    await db.runAsync(`DELETE FROM passed_lessons WHERE user_id = ? AND topic_id IN (${placeholders})`, args(topicIds));
+    await db.runAsync(`DELETE FROM type_stats WHERE user_id = ? AND topic_id IN (${placeholders})`, args(topicIds));
+  }
+
+  return { seen, srs, log, resetUser, resetUserTopics };
 }
