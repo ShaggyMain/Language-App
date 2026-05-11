@@ -1,0 +1,134 @@
+{
+  "id": "en.syntax.causative",
+  "language": "en",
+  "category": "voice",
+  "title": "Causative: have / get something done",
+  "summary": "Use 'have/get + object + past participle' when you arrange for someone else to do something for you.",
+  "cefrLevel": "B2",
+  "prerequisites": ["en.verbs.passive-voice"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "The **causative** structure is used when you **arrange** for someone else to do something for you.\n\n**have + object + past participle**: (more common, neutral)\n*I had my hair cut.* (a hairdresser cut it)\n*She has her nails done every week.*\n\n**get + object + past participle**: (slightly more informal)\n*He got his car repaired.* (a mechanic repaired it)\n\n**Compare:**\n- *I cut my hair.* (I did it myself)\n- *I had my hair cut.* (someone cut it for me)\n\n**All tenses work with have/get:**\n*I'm having my house painted.* (currently arranged)\n*She had her computer fixed.* (past)\n*We will have the roof replaced.* (future)"
+    },
+    {
+      "kind": "table",
+      "title": "Causative forms",
+      "headers": ["Tense", "Have + obj + pp", "Get + obj + pp"],
+      "rows": [
+        ["Present", "I have my car serviced.", "I get my car serviced."],
+        ["Past", "She had her photo taken.", "She got her photo taken."],
+        ["Future", "They will have the room decorated.", "They'll get the room painted."],
+        ["Present perfect", "He has had his bike repaired.", "He has got his bike fixed."],
+        ["Negative", "I didn't have my hair cut.", "She didn't get it done."],
+        ["Question", "Did you have your eyes tested?", "Did you get it checked?"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "We're having the kitchen renovated next month.", "translation": "W przyszlym miesiacu remontujemy kuchnie (zlecamy remont)." },
+        { "source": "She needs to get her eyes tested.", "translation": "Musi zbadac wzrok (u lekarza)." },
+        { "source": "I had my wallet stolen on the tube.", "translation": "Ukradli mi portfel w metrze." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "transform",
+      "instruction": "Rewrite using the causative with 'have'.",
+      "source": "A mechanic repaired her car.",
+      "answers": ["She had her car repaired."]
+    },
+    {
+      "type": "fill",
+      "prompt": "I ___ my teeth ___ (check) at the dentist last week. (had)",
+      "answers": ["had my teeth checked"],
+      "hint": "have + object + past participle"
+    },
+    {
+      "type": "mcq",
+      "prompt": "She ___ her portrait painted by a famous artist.",
+      "options": ["had", "got", "both are correct", "made"],
+      "answer": 2,
+      "explanation": "Both 'had' and 'got' are correct in the causative."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Czy zrobilas juz zdjecia? (zleciliscie komus?)",
+      "answers": ["Have you had your photos taken?", "Have you got your photos taken?"]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "She had cut her hair by a hairdresser.",
+      "answers": ["She had her hair cut by a hairdresser."],
+      "explanation": "Causative structure: have + OBJECT first, then past participle."
+    },
+    {
+      "type": "fill",
+      "prompt": "They ___ their house ___ (paint) this summer. (will / get)",
+      "answers": ["will get their house painted"],
+      "hint": "Future causative with 'get'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "He ___ his watch ___ last year. It was very expensive.",
+      "options": ["had / repaired", "got / repair", "made / repaired", "did / fix"],
+      "answer": 0,
+      "explanation": "Causative: had + object + past participle."
+    },
+    {
+      "type": "fill",
+      "prompt": "She ___ her nails ___ (do) every two weeks at a salon.",
+      "answers": ["has her nails done", "gets her nails done"],
+      "hint": "Present causative: has/gets + object + past participle."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "I'm going to have cleaned my house before the guests arrive.",
+      "answers": ["I'm going to have my house cleaned before the guests arrive."],
+      "explanation": "Causative: have + OBJECT (house) + past participle (cleaned)."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Oddal samochod do naprawy.",
+      "answers": ["He had his car repaired.", "He got his car repaired."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Are you ___ your house ___ before you sell it?",
+      "options": ["having / painted", "doing / painting", "making / painted", "getting / paint"],
+      "answer": 0,
+      "explanation": "Causative: having + object + past participle."
+    },
+    {
+      "type": "fill",
+      "prompt": "You should ___ your eyes ___ (test) by an optician.",
+      "answers": ["have your eyes tested", "get your eyes tested"],
+      "hint": "Modal + causative: should + have/get + object + pp."
+    },
+    {
+      "type": "transform",
+      "instruction": "Rewrite using the causative with 'get'.",
+      "source": "A plumber fixed the pipes.",
+      "answers": ["They got the pipes fixed.", "We got the pipes fixed.", "She got the pipes fixed."]
+    },
+    {
+      "type": "order",
+      "prompt": "Build a causative sentence.",
+      "tokens": ["her", "is", "having", "She", "redecorated", "room"],
+      "answer": ["She", "is", "having", "her", "room", "redecorated"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Musimy dac do czyszczenia te dywan.",
+      "answers": ["We need to have this carpet cleaned.", "We need to get this carpet cleaned."]
+    }
+  ]
+}

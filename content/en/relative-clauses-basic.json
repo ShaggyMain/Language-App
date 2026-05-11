@@ -1,0 +1,135 @@
+{
+  "id": "en.syntax.relative-clauses-basic",
+  "language": "en",
+  "category": "syntax",
+  "title": "Relative Clauses: who, which, that",
+  "summary": "Relative clauses add information about a noun using who (people), which (things), or that.",
+  "cefrLevel": "A2",
+  "prerequisites": ["en.tenses.present-simple"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "A **relative clause** gives more information about a noun. It starts with a **relative pronoun** and comes directly after the noun it describes.\n\n- **who** -> for people: *The woman **who** lives next door is a doctor.*\n- **which** -> for things and animals: *The book **which** I read was amazing.*\n- **that** -> for people OR things (informal): *The man **that** called me was a journalist.*\n\nThe relative pronoun comes **immediately after** the noun:\n*I met a man who speaks six languages.* (NOT: I met a man he speaks six languages.)"
+    },
+    {
+      "kind": "table",
+      "title": "Which relative pronoun to use?",
+      "headers": ["Relative pronoun", "Refers to", "Example"],
+      "rows": [
+        ["who", "people", "The teacher who helped me was very kind."],
+        ["which", "things, animals", "The film which we watched was funny."],
+        ["that", "people or things (informal)", "The car that I bought is electric."],
+        ["whose", "possession", "The girl whose bag was stolen called the police."]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "She's the girl who won the competition.", "translation": "To jest dziewczyna, ktora wygrala konkurs." },
+        { "source": "This is the laptop which I use for work.", "translation": "To jest laptop, ktorego uzywam do pracy." },
+        { "source": "I have a friend whose father is an actor.", "translation": "Mam przyjaciela, ktorego ojciec jest aktorem." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "I know a boy ___ speaks five languages.",
+      "answers": ["who", "that"],
+      "hint": "Referring to a person."
+    },
+    {
+      "type": "mcq",
+      "prompt": "She found the keys ___ were under the sofa.",
+      "options": ["who", "which", "whose", "when"],
+      "answer": 1,
+      "explanation": "'Which' is used for things."
+    },
+    {
+      "type": "match",
+      "pairs": [
+        { "left": "The woman ___ helped me", "right": "who" },
+        { "left": "The bag ___ I bought", "right": "which" },
+        { "left": "The student ___ passed", "right": "who / that" },
+        { "left": "The house ___ we rented", "right": "which / that" }
+      ]
+    },
+    {
+      "type": "order",
+      "prompt": "Combine into one sentence with a relative clause.",
+      "tokens": ["The", "man", "who", "called", "was", "my", "boss"],
+      "answer": ["The", "man", "who", "called", "was", "my", "boss"]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "I spoke to the woman. She works in the library.",
+      "answers": ["I spoke to the woman who works in the library."],
+      "explanation": "Combine with 'who' — referring to a person."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "To jest film, ktory chcialam obejrzec.",
+      "answers": ["This is the film which I wanted to watch.", "This is the film that I wanted to watch.", "This is the film I wanted to watch."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "That is the doctor ___ saved my life.",
+      "options": ["which", "whose", "who", "whom"],
+      "answer": 2,
+      "explanation": "'Who' is used for people."
+    },
+    {
+      "type": "fill",
+      "prompt": "The book ___ she recommended was fascinating.",
+      "answers": ["which", "that"],
+      "hint": "A book is a thing — use 'which' or 'that'."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "The man which sold me the car was very helpful.",
+      "answers": ["The man who sold me the car was very helpful."],
+      "explanation": "'Who' is used for people, not 'which'."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Znam kogoś, kto mowi po japonsku.",
+      "answers": ["I know someone who speaks Japanese.", "I know a person who speaks Japanese."]
+    },
+    {
+      "type": "fill",
+      "prompt": "He is the student ___ parents are both doctors.",
+      "answers": ["whose"],
+      "hint": "Possession — whose parents."
+    },
+    {
+      "type": "order",
+      "prompt": "Build a sentence with a relative clause.",
+      "tokens": ["I", "bought", "is", "The", "that", "new", "car", "red"],
+      "answer": ["The", "car", "that", "I", "bought", "is", "red"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "She works for a company ___ makes software.",
+      "options": ["who", "whom", "which", "whose"],
+      "answer": 2,
+      "explanation": "'Which' is used for things and organisations."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "This is the restaurant who we visited last summer.",
+      "answers": ["This is the restaurant which we visited last summer.", "This is the restaurant that we visited last summer."],
+      "explanation": "A restaurant is a thing — use 'which' or 'that', not 'who'."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Chlopiec, ktory siada obok mnie w klasie, jest bardzo zabawny.",
+      "answers": ["The boy who sits next to me in class is very funny.", "The boy that sits next to me in class is very funny."]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "id": "en.tenses.present-perfect-continuous",
+  "language": "en",
+  "category": "tenses",
+  "title": "Present Perfect Continuous",
+  "summary": "Use 'have been doing' for an action that started in the past and continues or just stopped.",
+  "cefrLevel": "B1",
+  "prerequisites": ["en.tenses.present-perfect", "en.tenses.present-continuous"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Present Perfect Continuous** = **have/has been + verb-ing**\n\nUse it for:\n1. An action that **started in the past and is still continuing**: *I've been waiting for an hour.* (still waiting)\n2. An action that **recently stopped** and whose result is visible: *She looks tired — she's been working all day.*\n\n**Keywords**: *for, since, how long, all day/week/morning*\n\n**Compare with Present Perfect Simple:**\n- *I've read the book.* (completed action)\n- *I've been reading the book.* (ongoing activity — emphasis on duration)"
+    },
+    {
+      "kind": "table",
+      "title": "Present Perfect vs Present Perfect Continuous",
+      "headers": ["Present Perfect Simple", "Present Perfect Continuous"],
+      "rows": [
+        ["I've written three emails.", "I've been writing emails all morning."],
+        ["She has cleaned the house.", "She has been cleaning the house."],
+        ["He's run 10 km today.", "He's been running for two hours."]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "How long have you been learning English?", "translation": "Jak dlugo uczysz sie angielskiego?" },
+        { "source": "We've been waiting here since 9 o'clock.", "translation": "Czekamy tutaj od dziewiatej." },
+        { "source": "Your hands are dirty! What have you been doing?", "translation": "Masz brudne rece! Co robiles?" }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "He ___ (work) in that company for fifteen years.",
+      "answers": ["has been working"],
+      "hint": "Still working -> Present Perfect Continuous."
+    },
+    {
+      "type": "mcq",
+      "prompt": "She looks exhausted. She ___ all day.",
+      "options": ["has studied", "was studying", "has been studying", "is studying"],
+      "answer": 2,
+      "explanation": "Recent activity whose effect is visible now -> Present Perfect Continuous."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Pada deszcz od rana.",
+      "answers": ["It has been raining since morning.", "It's been raining since morning."]
+    },
+    {
+      "type": "transform",
+      "instruction": "Make a question with 'How long'.",
+      "source": "They have been living here.",
+      "answers": ["How long have they been living here?"]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "I am waiting for you since two hours.",
+      "answers": ["I have been waiting for you for two hours."],
+      "explanation": "Duration from past to now -> Present Perfect Continuous; use 'for' with a period of time."
+    },
+    {
+      "type": "mcq",
+      "prompt": "I ___ three cups of coffee today — and it's only 10 am!",
+      "options": ["was drinking", "have drunk", "have been drinking", "am drinking"],
+      "answer": 1,
+      "explanation": "A completed, countable number of actions -> Present Perfect Simple."
+    },
+    {
+      "type": "fill",
+      "prompt": "She ___ (study) for her exam since this morning.",
+      "answers": ["has been studying"],
+      "hint": "Action still in progress -> Present Perfect Continuous + since."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Your eyes are red. ___ you ___?",
+      "options": ["Have / been crying", "Are / crying", "Did / cry", "Have / cried"],
+      "answer": 0,
+      "explanation": "Visible result of recent activity -> Have you been crying?"
+    },
+    {
+      "type": "errorFix",
+      "sentence": "How long are you learning English?",
+      "answers": ["How long have you been learning English?"],
+      "explanation": "For duration from past to now, use Present Perfect Continuous."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Pisza ta ksiazke od dwoch lat.",
+      "answers": ["They have been writing this book for two years.", "They've been writing this book for two years."]
+    },
+    {
+      "type": "fill",
+      "prompt": "I ___ (not / sleep) well lately. I feel terrible.",
+      "answers": ["haven't been sleeping"],
+      "hint": "Negative form of Present Perfect Continuous."
+    },
+    {
+      "type": "mcq",
+      "prompt": "He ___ English since he was five.",
+      "options": ["has been learning", "is learning", "learns", "was learning"],
+      "answer": 0,
+      "explanation": "Started in the past and still continuing -> Present Perfect Continuous + since."
+    },
+    {
+      "type": "transform",
+      "instruction": "Turn into a negative sentence.",
+      "source": "They have been arguing all evening.",
+      "answers": ["They haven't been arguing all evening.", "They have not been arguing all evening."]
+    },
+    {
+      "type": "order",
+      "prompt": "Build a question.",
+      "tokens": ["long", "How", "been", "you", "have", "here", "waiting", "?"],
+      "answer": ["How", "long", "have", "you", "been", "waiting", "here", "?"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Jestem bardzo zmeczony. Pracowalem caly dzien.",
+      "answers": ["I'm very tired. I've been working all day.", "I am very tired. I have been working all day."]
+    }
+  ]
+}

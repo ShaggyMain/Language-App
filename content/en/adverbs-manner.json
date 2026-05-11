@@ -1,0 +1,132 @@
+{
+  "id": "en.adverbs.manner",
+  "language": "en",
+  "category": "other",
+  "title": "Adverbs of Manner",
+  "summary": "Adverbs of manner describe how something is done. Most are formed by adding -ly to an adjective.",
+  "cefrLevel": "A2",
+  "prerequisites": ["en.adjectives.basic"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Adverbs of manner** answer the question *How?*\n\n**Formation**: adjective + **-ly**\n*quick -> quickly / careful -> carefully / loud -> loudly*\n\n**Spelling changes:**\n- adjective ending in **-y** -> remove -y, add **-ily**: *happy -> happily / easy -> easily*\n- adjective ending in **-le** -> remove -e, add **-y**: *gentle -> gently / simple -> simply*\n\n**Irregular adverbs** (no -ly):\n- *good -> **well*** (NOT goodly)\n- *fast -> **fast*** (NOT fastly)\n- *hard -> **hard*** (NOT hardly — 'hardly' means 'almost not'!)\n- *late -> **late*** (NOT lately — 'lately' means 'recently')\n\n**Position**: usually **after** the verb or after the object.\n*She speaks clearly.* / *He drove the car carefully.*"
+    },
+    {
+      "kind": "table",
+      "title": "Adjective -> Adverb of manner",
+      "headers": ["Adjective", "Adverb", "Example sentence"],
+      "rows": [
+        ["quick", "quickly", "She finished the test quickly."],
+        ["careful", "carefully", "He opened the box carefully."],
+        ["good", "well", "She sings well."],
+        ["hard", "hard", "They worked hard."],
+        ["loud", "loudly", "Don't speak so loudly!"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Please speak slowly — I don't understand.", "translation": "Prosze, mow wolno — nie rozumiem." },
+        { "source": "He plays the guitar beautifully.", "translation": "On pieknie gra na gitarze." },
+        { "source": "She did well on the exam.", "translation": "Dobrze napisala egzamin." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "transform",
+      "instruction": "Rewrite using an adverb instead of the adjective.",
+      "source": "She is a careful driver. (She drives ___)",
+      "answers": ["She drives carefully."]
+    },
+    {
+      "type": "fill",
+      "prompt": "He speaks English very ___ (good/well).",
+      "answers": ["well"],
+      "hint": "The adverb of 'good' is irregular."
+    },
+    {
+      "type": "mcq",
+      "prompt": "She ran ___ to catch the bus.",
+      "options": ["fastly", "fast", "fasting", "fastest"],
+      "answer": 1,
+      "explanation": "'Fast' is both adjective and adverb — no -ly needed."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "He sings very good.",
+      "answers": ["He sings very well."],
+      "explanation": "After a verb, use the adverb 'well', not the adjective 'good'."
+    },
+    {
+      "type": "fill",
+      "prompt": "The baby sleeps ___ (quiet -> adverb) during the day.",
+      "answers": ["quietly"],
+      "hint": "quiet + -ly"
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Prosze, jedz ostrozenie.",
+      "answers": ["Please drive carefully.", "Drive carefully, please."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "She studied ___ for the exam.",
+      "options": ["hardly", "hard", "harder", "hardness"],
+      "answer": 1,
+      "explanation": "'Hard' as an adverb means 'with great effort'. 'Hardly' means 'almost not'."
+    },
+    {
+      "type": "fill",
+      "prompt": "He answered the question ___ (easy -> adverb).",
+      "answers": ["easily"],
+      "hint": "easy -> remove y, add -ily: easi___"
+    },
+    {
+      "type": "transform",
+      "instruction": "Rewrite using an adverb.",
+      "source": "She is a slow reader. (She reads ___)",
+      "answers": ["She reads slowly."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Please walk quiet in the hospital.",
+      "answers": ["Please walk quietly in the hospital."],
+      "explanation": "After a verb, use an adverb: quiet -> quietly."
+    },
+    {
+      "type": "mcq",
+      "prompt": "The children were playing ___ in the garden.",
+      "options": ["happy", "happyly", "happily", "happiness"],
+      "answer": 2,
+      "explanation": "happy -> remove y, add -ily: happily."
+    },
+    {
+      "type": "fill",
+      "prompt": "She whispered ___ (gentle -> adverb) so as not to wake the baby.",
+      "answers": ["gently"],
+      "hint": "gentle -> remove -le, add -ly: gent___"
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "On mowi bardzo glosno.",
+      "answers": ["He speaks very loudly.", "He talks very loudly."]
+    },
+    {
+      "type": "order",
+      "prompt": "Build a sentence with an adverb of manner.",
+      "tokens": ["piano", "beautifully", "She", "the", "plays"],
+      "answer": ["She", "plays", "the", "piano", "beautifully"]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "He worked very hardly to finish the project.",
+      "answers": ["He worked very hard to finish the project."],
+      "explanation": "'Hardly' means 'almost not'. The correct adverb for effort is 'hard'."
+    }
+  ]
+}

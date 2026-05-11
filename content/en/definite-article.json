@@ -1,0 +1,134 @@
+{
+  "id": "en.articles.definite",
+  "language": "en",
+  "category": "articles",
+  "title": "The — Definite Article",
+  "summary": "Use 'the' when both speaker and listener know which specific thing is meant.",
+  "cefrLevel": "A1",
+  "prerequisites": ["en.articles.indefinite"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "Use **the** before a noun when:\n- It is **already known** or was mentioned before: *I saw a dog. The dog was big.*\n- There is **only one** of it: *the Sun, the Moon, the Internet*\n- With **superlatives**: *She is the best student.*\n- With **ordinal numbers**: *the first time, the second floor*\n\nDo **not** use *the* with:\n- Uncountable nouns used in general: *Water is important.* (not ~~The water~~)\n- Plural nouns in general: *I like cats.* (not ~~The cats~~)\n- Most names of people, cities, and countries: *Paris, Poland, Anna*"
+    },
+    {
+      "kind": "table",
+      "title": "a / an vs the — when to use each",
+      "headers": ["Article", "Use", "Example"],
+      "rows": [
+        ["a / an", "first mention, any one of many", "I bought a book."],
+        ["the", "second mention or specific/known", "The book was great."],
+        ["the", "only one exists", "The Earth orbits the Sun."],
+        ["— (none)", "general plural or uncountable", "I love music. Cats are cute."]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Can you close the door?", "translation": "Czy możesz zamknąć drzwi?" },
+        { "source": "I am the tallest in my class.", "translation": "Jestem najwyższy/a w mojej klasie." },
+        { "source": "She plays the piano every evening.", "translation": "Ona gra na pianinie każdego wieczoru." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "I have a cat. ___ cat is very playful.",
+      "options": ["A", "An", "The", "—"],
+      "answer": 2,
+      "explanation": "Second mention — we already know which cat is being talked about."
+    },
+    {
+      "type": "fill",
+      "prompt": "___ Sun rises in the east.",
+      "answers": ["The"],
+      "hint": "There is only one Sun — unique noun."
+    },
+    {
+      "type": "mcq",
+      "prompt": "She is ___ best player on the team.",
+      "options": ["a", "an", "the", "—"],
+      "answer": 2,
+      "explanation": "Use 'the' with superlatives."
+    },
+    {
+      "type": "mcq",
+      "prompt": "In general, I love ___ music.",
+      "options": ["a", "an", "the", "— (no article)"],
+      "answer": 3,
+      "explanation": "General meaning with an uncountable noun — no article needed."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Can you pass me a salt, please?",
+      "answers": ["Can you pass me the salt, please?"],
+      "explanation": "The salt on the table is specific — use 'the'."
+    },
+    {
+      "type": "fill",
+      "prompt": "He opened ___ window because it was hot.",
+      "answers": ["the"],
+      "hint": "A specific, known window in context."
+    },
+    {
+      "type": "mcq",
+      "prompt": "I bought a jacket yesterday. ___ jacket is blue.",
+      "options": ["A", "An", "The", "—"],
+      "answer": 2,
+      "explanation": "Second mention of a specific jacket — use 'the'."
+    },
+    {
+      "type": "fill",
+      "prompt": "___ Moon orbits ___ Earth.",
+      "answers": ["The, the"],
+      "hint": "Both are unique celestial bodies."
+    },
+    {
+      "type": "mcq",
+      "prompt": "___ dogs make great pets. (general statement)",
+      "options": ["A", "The", "An", "— (no article)"],
+      "answer": 3,
+      "explanation": "General plural statement — no article."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "To jest najlepszy film, jaki kiedykolwiek widziałem.",
+      "answers": ["It is the best film I have ever seen.", "It's the best film I've ever seen.", "That is the best film I have ever seen."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "She plays a piano every morning.",
+      "answers": ["She plays the piano every morning."],
+      "explanation": "Musical instruments take 'the': play the piano, the guitar."
+    },
+    {
+      "type": "fill",
+      "prompt": "Who is ___ president of ___ United States?",
+      "answers": ["the, the"],
+      "hint": "Unique position and country name with 'United'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "I go to ___ work by bus every day.",
+      "options": ["a", "the", "an", "— (no article)"],
+      "answer": 3,
+      "explanation": "Fixed expressions without article: go to work, go to school, go home."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "The life is short, so enjoy it.",
+      "answers": ["Life is short, so enjoy it."],
+      "explanation": "Abstract nouns used in general do not take 'the'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "This is ___ first time I have visited Rome.",
+      "options": ["a", "an", "the", "—"],
+      "answer": 2,
+      "explanation": "Ordinal numbers (first, second…) take 'the'."
+    }
+  ]
+}

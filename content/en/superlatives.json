@@ -1,0 +1,134 @@
+{
+  "id": "en.adjectives.superlatives",
+  "language": "en",
+  "category": "adjectives",
+  "title": "Superlatives",
+  "summary": "Superlatives compare one thing to all others in a group: the biggest, the most interesting.",
+  "cefrLevel": "A2",
+  "prerequisites": ["en.adjectives.comparatives"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Superlatives** express the highest degree in a group. Always use **the** before a superlative.\n\n**Short adjectives** (1-2 syllables): add **-est**\n*tall -> the tallest / big -> the biggest / easy -> the easiest*\n\n**Long adjectives** (2+ syllables): use **the most**\n*interesting -> the most interesting / expensive -> the most expensive*\n\n**Spelling rules** (same as comparatives):\n- CVC -> double consonant: *big -> the biggest*\n- consonant + y -> -iest: *happy -> the happiest*\n\n**Irregular forms:**\n*good -> the best / bad -> the worst / far -> the furthest / little -> the least*"
+    },
+    {
+      "kind": "table",
+      "title": "Adjective -> Comparative -> Superlative",
+      "headers": ["Adjective", "Comparative", "Superlative"],
+      "rows": [
+        ["tall", "taller", "the tallest"],
+        ["big", "bigger", "the biggest"],
+        ["happy", "happier", "the happiest"],
+        ["expensive", "more expensive", "the most expensive"],
+        ["good", "better", "the best"],
+        ["bad", "worse", "the worst"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "This is the longest river in the world.", "translation": "To jest najdluzsza rzeka na swiecie." },
+        { "source": "She is the most intelligent person I know.", "translation": "Ona jest najinteligentniejsza osoba, jaka znam." },
+        { "source": "That was the worst film I've ever seen.", "translation": "To byl najgorszy film, jaki kiedykolwiek widzialem." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "This is ___ (tall) building in the city.",
+      "answers": ["the tallest"],
+      "hint": "Short adjective + -est, with 'the'."
+    },
+    {
+      "type": "fill",
+      "prompt": "It was ___ (bad) day of my life.",
+      "answers": ["the worst"],
+      "hint": "Irregular superlative of 'bad'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "She is ___ student in the class.",
+      "options": ["the most good", "the goodest", "the best", "the more good"],
+      "answer": 2,
+      "explanation": "Irregular superlative of 'good' is 'the best'."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Mount Everest is most high mountain in the world.",
+      "answers": ["Mount Everest is the highest mountain in the world."],
+      "explanation": "Short adjective 'high' -> the highest. Don't forget 'the'."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "To jest najdrozszy hotel w miescie.",
+      "answers": ["This is the most expensive hotel in the city.", "That is the most expensive hotel in the city."]
+    },
+    {
+      "type": "fill",
+      "prompt": "January is ___ (cold) month of the year here.",
+      "answers": ["the coldest"],
+      "hint": "Short adjective cold -> the cold___"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Amazon is ___ river in the world by volume.",
+      "options": ["the most large", "the larger", "the largest", "the most largest"],
+      "answer": 2,
+      "explanation": "Short adjective 'large' -> the largest (drop -e, add -st)."
+    },
+    {
+      "type": "fill",
+      "prompt": "He is ___ (happy) person I've ever met.",
+      "answers": ["the happiest"],
+      "hint": "consonant + y -> -iest: happy -> happi___"
+    },
+    {
+      "type": "errorFix",
+      "sentence": "This is the more expensive watch in the shop.",
+      "answers": ["This is the most expensive watch in the shop."],
+      "explanation": "Long adjective 'expensive' -> the most expensive (not 'the more')."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "To jest najlepszy dzien w moim zyciu!",
+      "answers": ["This is the best day of my life!", "That is the best day of my life!"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Which sentence is correct?",
+      "options": ["She is the most young in the family.", "She is the youngest in the family.", "She is youngest in the family.", "She is the more young in the family."],
+      "answer": 1,
+      "explanation": "Short adjective 'young' -> the youngest. Always use 'the'."
+    },
+    {
+      "type": "fill",
+      "prompt": "This is ___ (interesting) book I have ever read.",
+      "answers": ["the most interesting"],
+      "hint": "Long adjective -> the most + adjective."
+    },
+    {
+      "type": "order",
+      "prompt": "Build a superlative sentence.",
+      "tokens": ["the", "is", "This", "restaurant", "city", "in", "best", "the"],
+      "answer": ["This", "is", "the", "best", "restaurant", "in", "the", "city"]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "He ran the most fast of all the runners.",
+      "answers": ["He ran the fastest of all the runners."],
+      "explanation": "'Fast' is a short adjective -> the fastest (not 'the most fast')."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "To jest najkrotsza droga do stacji.",
+      "answers": ["This is the shortest way to the station.", "This is the shortest route to the station.", "That is the shortest way to the station."]
+    }
+  ]
+}

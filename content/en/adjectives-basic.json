@@ -1,0 +1,133 @@
+{
+  "id": "en.adjectives.basic",
+  "language": "en",
+  "category": "adjectives",
+  "title": "Adjectives: Position & Use",
+  "summary": "Adjectives describe nouns. In English they come before the noun and never change form.",
+  "cefrLevel": "A1",
+  "prerequisites": [],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Adjectives** describe or modify nouns. Key rules in English:\n\n1. Adjectives go **before** the noun: *a big house*, *an old car*, *a beautiful day*\n2. Adjectives do **not** change for plural: *a tall man* → *tall men* (NOT ~~talls men~~)\n3. Adjectives can follow **be / seem / look / feel / smell / taste**: *She is happy.* / *The soup smells good.*\n\n**Order of multiple adjectives**: Opinion → Size → Age → Colour → Origin → Material\n*a lovely big old brown Italian leather bag*"
+    },
+    {
+      "kind": "table",
+      "title": "Adjective position — before noun or after 'be'",
+      "headers": ["Before noun", "After 'be'"],
+      "rows": [
+        ["a big house", "The house is big."],
+        ["a beautiful day", "The day was beautiful."],
+        ["clever students", "The students are clever."],
+        ["hot coffee", "The coffee is hot."]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "She has long, dark hair.", "translation": "Ona ma długie, ciemne włosy." },
+        { "source": "It was a cold, horrible day.", "translation": "To był zimny, okropny dzień." },
+        { "source": "This is a small, cosy apartment.", "translation": "To jest małe, przytulne mieszkanie." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "Which sentence is correct?",
+      "options": ["I have a car red.", "I have a red car.", "I have car a red.", "I have red a car."],
+      "answer": 1,
+      "explanation": "Adjectives come before the noun in English."
+    },
+    {
+      "type": "order",
+      "prompt": "Put the words in the correct order.",
+      "tokens": ["a", "She", "bought", "Italian", "beautiful", "bag"],
+      "answer": ["She", "bought", "a", "beautiful", "Italian", "bag"]
+    },
+    {
+      "type": "fill",
+      "prompt": "Those are ___ (big / bigs) dogs.",
+      "answers": ["big"],
+      "hint": "Adjectives never have a plural form."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "I live in a house white and big.",
+      "answers": ["I live in a big white house."],
+      "explanation": "In English, adjectives go before the noun."
+    },
+    {
+      "type": "mcq",
+      "prompt": "The soup ___. I can't eat it.",
+      "options": ["is cold", "is colds", "cold is", "are cold"],
+      "answer": 0,
+      "explanation": "Adjective after 'be': subject + is/are + adjective."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "To jest stary, czarny samochód.",
+      "answers": ["It is an old black car.", "That is an old black car.", "It's an old black car.", "That's an old black car."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "He is a ___ man. (tall)",
+      "options": ["tall and rich", "talls", "tall", "talling"],
+      "answer": 0,
+      "explanation": "Adjectives before a noun describe the noun — multiple adjectives are fine."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "She wore a dress red beautiful.",
+      "answers": ["She wore a beautiful red dress."],
+      "explanation": "Adjectives go before the noun; opinion (beautiful) before colour (red)."
+    },
+    {
+      "type": "fill",
+      "prompt": "The children look ___. Let them sleep. (tired)",
+      "answers": ["tired"],
+      "hint": "Adjective after 'look' — describes the subject."
+    },
+    {
+      "type": "order",
+      "prompt": "Build a descriptive sentence.",
+      "tokens": ["a", "He", "drives", "German", "fast", "car"],
+      "answer": ["He", "drives", "a", "fast", "German", "car"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Which word is the adjective? 'She has a wonderful voice.'",
+      "options": ["has", "voice", "wonderful", "she"],
+      "answer": 2,
+      "explanation": "'Wonderful' describes 'voice' — it is the adjective."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "To jest maly, zielony dom.",
+      "answers": ["It is a small green house.", "That is a small green house.", "It's a small green house."]
+    },
+    {
+      "type": "fill",
+      "prompt": "The weather today is ___. We can't go out. (terrible)",
+      "answers": ["terrible"],
+      "hint": "After 'is' — adjective predicative position."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "I want a blacks and bigs jacket.",
+      "answers": ["I want a black and big jacket.", "I want a big black jacket."],
+      "explanation": "Adjectives have no plural form in English."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Ona ma niebieskia, krotkie wlosy.",
+      "answers": ["She has short blue hair.", "She has blue short hair."]
+    }
+  ]
+}

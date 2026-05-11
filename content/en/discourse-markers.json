@@ -1,0 +1,137 @@
+{
+  "id": "en.syntax.discourse-markers",
+  "language": "en",
+  "category": "syntax",
+  "title": "Discourse Markers",
+  "summary": "Discourse markers signal how ideas connect — adding, contrasting, explaining cause, or concluding.",
+  "cefrLevel": "C1",
+  "prerequisites": ["en.syntax.conjunctions-advanced"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Discourse markers** are words or phrases that organise speech and writing by showing how ideas relate to each other.\n\nMost discourse markers stand at the **start of a sentence** (or clause), followed by a comma."
+    },
+    {
+      "kind": "table",
+      "title": "Discourse markers by function",
+      "headers": ["Function", "Discourse markers"],
+      "rows": [
+        ["Addition", "Moreover, Furthermore, In addition, Besides, What is more"],
+        ["Contrast", "However, Nevertheless, On the other hand, In spite of this, Despite this, That said"],
+        ["Cause / Reason", "As a result, Therefore, Consequently, Hence, For this reason"],
+        ["Concession", "Admittedly, Even so, All the same, Granted"],
+        ["Illustration", "For example, For instance, Such as, In particular, Namely"],
+        ["Summary / Conclusion", "In conclusion, To sum up, In short, Overall, In other words"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "The hotel was expensive. Moreover, the service was poor.", "translation": "Hotel byl drogi. Co wiecej, obsluga byla kiepska." },
+        { "source": "She studied hard. Nevertheless, she failed the exam.", "translation": "Ciezko sie uczyla. Mimo to nie zdala egzaminu." },
+        { "source": "He missed several deadlines. As a result, he lost the contract.", "translation": "Przekroczyl kilka terminow. W zwiazku z tym stracil kontrakt." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "The project was late. ___, it was over budget. (addition)",
+      "answers": ["Moreover", "Furthermore", "In addition", "What is more"],
+      "hint": "Adding another negative point."
+    },
+    {
+      "type": "mcq",
+      "prompt": "He trained every day. ___, he didn't make the final team.",
+      "options": ["Therefore", "Moreover", "Nevertheless", "For instance"],
+      "answer": 2,
+      "explanation": "'Nevertheless' introduces a surprising contrast (he trained hard, yet didn't make the team)."
+    },
+    {
+      "type": "transform",
+      "instruction": "Rewrite using the discourse marker 'As a result'.",
+      "source": "It rained all day, so the picnic was cancelled.",
+      "answers": ["It rained all day. As a result, the picnic was cancelled.", "It rained all day. As a result the picnic was cancelled."]
+    },
+    {
+      "type": "match",
+      "pairs": [
+        { "left": "Moreover", "right": "addition" },
+        { "left": "However", "right": "contrast" },
+        { "left": "Consequently", "right": "result / cause" },
+        { "left": "In conclusion", "right": "summary" }
+      ]
+    },
+    {
+      "type": "fill",
+      "prompt": "___ (conclusion), renewable energy is both practical and essential for our future.",
+      "answers": ["In conclusion", "To sum up", "Overall", "In short"],
+      "hint": "Ending an essay or argument."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "The results were disappointing. For example, sales fell across all regions.",
+      "answers": ["The results were disappointing. For instance, sales fell in Europe and fell by 15% in Asia."],
+      "explanation": "'For example/instance' should introduce a specific example, not just repeat the same idea."
+    },
+    {
+      "type": "mcq",
+      "prompt": "The candidate was well qualified. ___, she had no relevant experience.",
+      "options": ["Moreover", "Therefore", "However", "Consequently"],
+      "answer": 2,
+      "explanation": "'However' introduces a contrast with what was just said."
+    },
+    {
+      "type": "fill",
+      "prompt": "She didn't study at all. ___, she still managed to pass.",
+      "answers": ["Nevertheless", "Even so", "All the same", "That said"],
+      "hint": "Surprising result despite the circumstances."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Firma zanotowala straty. W zwiazku z tym musi zwolnic pracownikow.",
+      "answers": ["The company made losses. As a result, it must lay off workers.", "The company made losses. Therefore, it must make redundancies.", "The company made losses. Consequently, it must cut staff."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "The plan was risky. ___, the team decided to go ahead.",
+      "options": ["Consequently", "Admittedly", "Furthermore", "Namely"],
+      "answer": 1,
+      "explanation": "'Admittedly' concedes a point before moving forward — acknowledging risk while still proceeding."
+    },
+    {
+      "type": "fill",
+      "prompt": "Many students struggle with essay writing. ___, they often use too much informal language.",
+      "answers": ["For example", "For instance", "In particular"],
+      "hint": "Giving a specific example of a general problem."
+    },
+    {
+      "type": "transform",
+      "instruction": "Rewrite using the discourse marker 'Furthermore'.",
+      "source": "The new policy is expensive and it is also difficult to implement.",
+      "answers": ["The new policy is expensive. Furthermore, it is difficult to implement.", "The new policy is expensive. Furthermore, it's difficult to implement."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Prices have risen sharply. ___, many families can no longer afford basic goods.",
+      "options": ["However", "Nevertheless", "Consequently", "Moreover"],
+      "answer": 2,
+      "explanation": "'Consequently' shows the result that follows from rising prices."
+    },
+    {
+      "type": "order",
+      "prompt": "Reorder to make a logical discourse-marked sentence pair.",
+      "tokens": ["hard.", "she", "Nevertheless,", "didn't", "pass.", "She", "studied"],
+      "answer": ["She", "studied", "hard.", "Nevertheless,", "she", "didn't", "pass."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Proponowane rozwiazanie ma wiele zalet. Co wiecej, jest relatywnie tanię we wdrozeniu.",
+      "answers": ["The proposed solution has many advantages. Moreover, it is relatively inexpensive to implement.", "The proposed solution has many benefits. Furthermore, it is relatively cheap to implement."]
+    }
+  ]
+}

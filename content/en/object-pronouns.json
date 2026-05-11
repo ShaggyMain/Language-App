@@ -1,0 +1,137 @@
+{
+  "id": "en.pronouns.object",
+  "language": "en",
+  "category": "pronouns",
+  "title": "Object Pronouns",
+  "summary": "Use object pronouns (me, him, her, us, them) after verbs and prepositions.",
+  "cefrLevel": "A1",
+  "prerequisites": ["en.pronouns.possessives"],
+  "theory": [
+    {
+      "kind": "table",
+      "title": "Subject vs Object Pronouns",
+      "headers": ["Subject pronoun", "Object pronoun", "Example"],
+      "rows": [
+        ["I", "me", "She called me."],
+        ["you", "you", "I'll help you."],
+        ["he", "him", "I saw him yesterday."],
+        ["she", "her", "Tell her the news."],
+        ["it", "it", "I like it a lot."],
+        ["we", "us", "Join us for dinner!"],
+        ["they", "them", "I know them well."]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "Use **object pronouns** after:\n- **Verbs**: *She loves him.* / *I can see them.*\n- **Prepositions**: *Give it to me.* / *He is talking about her.*\n\n⚠️ Common mistake:\n~~Me and Tom went.~~ → correct: **Tom and I went.** (subject position)"
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Can you help me?", "translation": "Czy możesz mi pomóc?" },
+        { "source": "I don't know him.", "translation": "Nie znam go." },
+        { "source": "She told us the whole story.", "translation": "Opowiedziała nam całą historię." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "The teacher told ___ (us/we) to study harder.",
+      "answers": ["us"],
+      "hint": "After the verb 'told' — use the object pronoun."
+    },
+    {
+      "type": "mcq",
+      "prompt": "This gift is for ___. I bought it yesterday.",
+      "options": ["she", "he", "them", "they"],
+      "answer": 2,
+      "explanation": "After the preposition 'for' — use the object pronoun 'them'."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Me and my brother love football.",
+      "answers": ["My brother and I love football."],
+      "explanation": "'I' is the subject pronoun, not 'me'. Put 'I' after the other person."
+    },
+    {
+      "type": "fill",
+      "prompt": "I saw Tom at the park. Do you know ___?",
+      "answers": ["him"],
+      "hint": "Tom = he → object pronoun = him"
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Czy możesz nam pomóc?",
+      "answers": ["Can you help us?"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "I called Anna but ___ didn't answer.",
+      "options": ["her", "she", "hers", "him"],
+      "answer": 1,
+      "explanation": "Subject of the clause — use subject pronoun 'she', not object 'her'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "My mum bought a present for ___ sister and ___.",
+      "options": ["me / her", "I / she", "my / her", "me / I"],
+      "answer": 0,
+      "explanation": "After 'for' use object pronouns: for me, for her."
+    },
+    {
+      "type": "fill",
+      "prompt": "Could you drive ___ to the station? I'll miss the train.",
+      "answers": ["me"],
+      "hint": "I → me (object after verb 'drive')"
+    },
+    {
+      "type": "errorFix",
+      "sentence": "She gave the keys to he.",
+      "answers": ["She gave the keys to him."],
+      "explanation": "After a preposition, use the object pronoun: to him."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Look at that dog! ___ is so cute.",
+      "options": ["Him", "It", "Its", "Them"],
+      "answer": 1,
+      "explanation": "Subject pronoun for a thing/animal = it."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Znam ją bardzo dobrze.",
+      "answers": ["I know her very well."]
+    },
+    {
+      "type": "fill",
+      "prompt": "My parents came to visit ___ at university.",
+      "answers": ["me"],
+      "hint": "I (subject) → me (object)"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Between you and ___, I think he's wrong.",
+      "options": ["I", "me", "my", "mine"],
+      "answer": 1,
+      "explanation": "After preposition 'between' — object pronoun: between you and me."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Him and his friend went to the concert.",
+      "answers": ["He and his friend went to the concert."],
+      "explanation": "Subject position requires subject pronoun 'he', not object 'him'."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Widziałem ich wczoraj w parku.",
+      "answers": ["I saw them in the park yesterday.", "I saw them yesterday in the park."]
+    }
+  ]
+}

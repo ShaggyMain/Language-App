@@ -1,0 +1,134 @@
+{
+  "id": "en.verbs.gerunds-infinitives",
+  "language": "en",
+  "category": "verbs",
+  "title": "Gerunds & Infinitives",
+  "summary": "Some verbs are followed by gerunds (-ing), others by infinitives (to + verb), and some by both.",
+  "cefrLevel": "B1",
+  "prerequisites": ["en.tenses.present-continuous"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "After some verbs, use a **gerund** (verb + **-ing**).\nAfter others, use a **to-infinitive** (to + base verb).\n\n**Verbs + gerund**: enjoy, finish, avoid, keep, suggest, practise, consider, mind, miss, admit, deny\n*I enjoy **cooking**. / She finished **reading**.*\n\n**Verbs + infinitive**: want, need, decide, hope, plan, promise, agree, refuse, manage, offer, forget\n*I want **to eat**. / She decided **to leave**.*\n\n**Verbs + either** (no change in meaning): like, love, hate, prefer, begin, start, continue\n*I like **swimming**. / I like **to swim**.*\n\n**Verbs + either** (change in meaning):\n- *I **remember locking** the door.* (I have a memory of doing it)\n- *I **remembered to lock** the door.* (I didn't forget to do it)"
+    },
+    {
+      "kind": "table",
+      "title": "Gerund vs Infinitive — common verbs",
+      "headers": ["Gerund (-ing)", "Infinitive (to + verb)", "Both"],
+      "rows": [
+        ["enjoy, finish, avoid", "want, need, decide", "like, love, hate"],
+        ["keep, suggest, practise", "hope, plan, promise", "prefer, begin, start"],
+        ["mind, miss, admit", "agree, refuse, manage", "continue, intend"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "She avoided making eye contact.", "translation": "Unikala kontaktu wzrokowego." },
+        { "source": "He decided to change his job.", "translation": "Postanowil zmienic prace." },
+        { "source": "I don't mind waiting — take your time.", "translation": "Nie przeszkadza mi czekanie — nie spiesz sie." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "She enjoys ___ (cook) Italian food.",
+      "answers": ["cooking"],
+      "hint": "enjoy -> gerund (-ing)"
+    },
+    {
+      "type": "fill",
+      "prompt": "They decided ___ (move) to a bigger flat.",
+      "answers": ["to move"],
+      "hint": "decide -> infinitive (to + verb)"
+    },
+    {
+      "type": "mcq",
+      "prompt": "I finished ___ the report an hour ago.",
+      "options": ["to write", "writing", "write", "wrote"],
+      "answer": 1,
+      "explanation": "finish -> gerund (-ing)"
+    },
+    {
+      "type": "match",
+      "pairs": [
+        { "left": "enjoy", "right": "-ing (gerund)" },
+        { "left": "want", "right": "to + verb (infinitive)" },
+        { "left": "keep", "right": "-ing (gerund)" },
+        { "left": "refuse", "right": "to + verb (infinitive)" }
+      ]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "He suggested to go to the cinema.",
+      "answers": ["He suggested going to the cinema."],
+      "explanation": "suggest -> gerund, not infinitive."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Odmowila wziecia udzialu w spotkaniu.",
+      "answers": ["She refused to take part in the meeting.", "She refused to attend the meeting."]
+    },
+    {
+      "type": "fill",
+      "prompt": "He keeps ___ (interrupt) me when I'm talking.",
+      "answers": ["interrupting"],
+      "hint": "keep -> gerund."
+    },
+    {
+      "type": "mcq",
+      "prompt": "She managed ___ the exam on her first attempt.",
+      "options": ["passing", "to pass", "pass", "in passing"],
+      "answer": 1,
+      "explanation": "manage -> infinitive (to + verb)."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "I hope seeing you at the party.",
+      "answers": ["I hope to see you at the party."],
+      "explanation": "hope -> infinitive (to + verb), not gerund."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Zapomnialem zarezerwowac stolik.",
+      "answers": ["I forgot to book a table.", "I forgot to reserve a table."]
+    },
+    {
+      "type": "fill",
+      "prompt": "Would you mind ___ (open) the window?",
+      "answers": ["opening"],
+      "hint": "mind -> gerund."
+    },
+    {
+      "type": "mcq",
+      "prompt": "She admitted ___ the mistake.",
+      "options": ["to make", "making", "to making", "make"],
+      "answer": 1,
+      "explanation": "admit -> gerund (-ing)."
+    },
+    {
+      "type": "order",
+      "prompt": "Build a correct sentence.",
+      "tokens": ["avoid", "She", "always", "speaking", "public", "tries", "to", "in"],
+      "answer": ["She", "always", "tries", "to", "avoid", "speaking", "in", "public"]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "I enjoy to watch old films at the weekend.",
+      "answers": ["I enjoy watching old films at the weekend."],
+      "explanation": "enjoy -> gerund (-ing), not infinitive."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Planuja kupic nowy dom w przyszlym roku.",
+      "answers": ["They plan to buy a new house next year.", "They are planning to buy a new house next year."]
+    }
+  ]
+}

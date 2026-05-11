@@ -1,0 +1,132 @@
+{
+  "id": "en.syntax.there-is-are",
+  "language": "en",
+  "category": "syntax",
+  "title": "There is / There are",
+  "summary": "Use 'there is/are' to say that something exists or is located somewhere.",
+  "cefrLevel": "A1",
+  "prerequisites": ["en.articles.indefinite"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "Use **there is / there are** to say something **exists** or is **present** in a place.\n\n- **There is** → singular noun or uncountable noun\n- **There are** → plural noun\n\n**Contraction**: *There is* → *There's*\n\n**Negative**:\n- *There isn't a…* / *There isn't any…*\n- *There aren't any…*\n\n**Question**:\n- *Is there a…?* / *Is there any…?*\n- *Are there any…?*"
+    },
+    {
+      "kind": "table",
+      "title": "There is / There are — full forms",
+      "headers": ["Form", "Singular / Uncountable", "Plural"],
+      "rows": [
+        ["Affirmative", "There is a park.", "There are two parks."],
+        ["Contraction", "There's a park.", "—"],
+        ["Negative", "There isn't a bus stop.", "There aren't any shops."],
+        ["Question", "Is there a hotel?", "Are there any taxis?"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "There's a park near my house.", "translation": "Niedaleko mojego domu jest park." },
+        { "source": "There are three windows in this room.", "translation": "W tym pokoju sa trzy okna." },
+        { "source": "Is there a supermarket nearby?", "translation": "Czy jest tu gdzies supermarket?" }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "___ a big lake near the city.",
+      "options": ["There are", "There is", "There be", "Is there"],
+      "answer": 1,
+      "explanation": "Singular noun 'a big lake' -> There is."
+    },
+    {
+      "type": "fill",
+      "prompt": "___ many students in the library today.",
+      "answers": ["There are"],
+      "hint": "Plural noun 'many students' -> There are."
+    },
+    {
+      "type": "transform",
+      "instruction": "Make the sentence negative.",
+      "source": "There is a bus stop here.",
+      "answers": ["There isn't a bus stop here.", "There is not a bus stop here."]
+    },
+    {
+      "type": "order",
+      "prompt": "Build a question.",
+      "tokens": ["hotel", "a", "there", "Is", "nearby", "?"],
+      "answer": ["Is", "there", "a", "hotel", "nearby", "?"]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "There are a big problem.",
+      "answers": ["There is a big problem."],
+      "explanation": "Singular noun 'a big problem' -> use 'There is'."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Czy w tym miescie jest zoo?",
+      "answers": ["Is there a zoo in this city?", "Is there a zoo in the city?"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "___ some milk in the fridge.",
+      "options": ["There are", "There is", "Is there", "There be"],
+      "answer": 1,
+      "explanation": "Uncountable noun 'milk' -> There is."
+    },
+    {
+      "type": "fill",
+      "prompt": "___ any chairs in the room? — No, there aren't.",
+      "answers": ["Are there"],
+      "hint": "Plural question form."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Is there any books on the shelf?",
+      "answers": ["Are there any books on the shelf?"],
+      "explanation": "Plural noun 'books' -> Are there."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "W parku jest wiele drzew.",
+      "answers": ["There are many trees in the park.", "There are a lot of trees in the park."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "___ any water left in the bottle?",
+      "options": ["Are there", "Is there", "There is", "There are"],
+      "answer": 1,
+      "explanation": "Uncountable 'water' -> Is there."
+    },
+    {
+      "type": "transform",
+      "instruction": "Make the sentence negative.",
+      "source": "There are any taxis here.",
+      "answers": ["There aren't any taxis here.", "There are no taxis here."]
+    },
+    {
+      "type": "fill",
+      "prompt": "Look! ___ a rainbow in the sky!",
+      "answers": ["There's", "There is"],
+      "hint": "Singular noun, affirmative — use contraction or full form."
+    },
+    {
+      "type": "order",
+      "prompt": "Build a sentence.",
+      "tokens": ["the", "are", "There", "in", "eggs", "five", "fridge"],
+      "answer": ["There", "are", "five", "eggs", "in", "the", "fridge"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "W tym budynku nie ma windy.",
+      "answers": ["There isn't a lift in this building.", "There is no lift in this building.", "There isn't an elevator in this building."]
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "id": "en.syntax.conjunctions-basic",
+  "language": "en",
+  "category": "syntax",
+  "title": "Conjunctions: and, but, or, so",
+  "summary": "Connect words and ideas using the conjunctions and, but, or, so, and because.",
+  "cefrLevel": "A1",
+  "prerequisites": [],
+  "theory": [
+    {
+      "kind": "table",
+      "title": "Basic conjunctions and their meanings",
+      "headers": ["Conjunction", "Use", "Example"],
+      "rows": [
+        ["and", "addition — joins two similar ideas", "I like tea and coffee."],
+        ["but", "contrast — shows a difference", "I like tea but not coffee."],
+        ["or", "alternative — gives a choice", "Do you want tea or coffee?"],
+        ["so", "result — shows a consequence", "It was cold, so I wore a jacket."],
+        ["because", "reason — explains why", "I stayed home because it rained."]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "Conjunctions **connect** two words, phrases, or clauses.\n\n- **and**: *She sings and dances beautifully.*\n- **but**: *He is rich but unhappy.*\n- **or**: *You can walk or take the bus.*\n- **so**: *I was tired, so I went to bed.*\n- **because**: *I'm late because the bus was slow.*\n\nTip: *So* and *because* are opposites — *because* gives the **reason**, *so* gives the **result**:\n*I was cold **because** it was snowing. -> It was snowing, **so** I was cold.*"
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "I work hard, but I enjoy my job.", "translation": "Ciezko pracuje, ale lubie swoja prace." },
+        { "source": "He was hungry, so he made a sandwich.", "translation": "Byl glodny, wiec zrobil kanapke." },
+        { "source": "Do you prefer cats or dogs?", "translation": "Wolisz koty czy psy?" }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "I wanted to go outside ___ it was raining heavily.",
+      "answers": ["but"],
+      "hint": "Contrast — wanting to go out vs. the rain."
+    },
+    {
+      "type": "mcq",
+      "prompt": "We can take the train ___ the bus. Which do you prefer?",
+      "options": ["and", "but", "or", "so"],
+      "answer": 2,
+      "explanation": "'Or' offers two alternatives."
+    },
+    {
+      "type": "fill",
+      "prompt": "She was very tired, ___ she went to bed early.",
+      "answers": ["so"],
+      "hint": "Being tired is the reason; going to bed is the result."
+    },
+    {
+      "type": "mcq",
+      "prompt": "He missed the bus ___ he was late for work.",
+      "options": ["or", "but", "because", "and"],
+      "answer": 2,
+      "explanation": "Missing the bus is the reason he was late."
+    },
+    {
+      "type": "order",
+      "prompt": "Build a sentence using a conjunction.",
+      "tokens": ["I", "like", "but", "not", "cats", "dogs"],
+      "answer": ["I", "like", "cats", "but", "not", "dogs"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Nie lubie plywac, ale uwielbiam chodzic na silownie.",
+      "answers": ["I don't like swimming, but I love going to the gym.", "I don't like swimming but I love going to the gym."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "I bought apples ___ oranges at the market.",
+      "options": ["or", "so", "but", "and"],
+      "answer": 3,
+      "explanation": "'And' joins two things that were both bought — addition."
+    },
+    {
+      "type": "fill",
+      "prompt": "She studied hard ___ she passed the exam.",
+      "answers": ["so", "and"],
+      "hint": "Her studying led to passing — a result."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "He is young but he is very smart. So he makes mistakes.",
+      "answers": ["He is young but he is very smart, so he makes mistakes.", "He is young, so he makes mistakes, but he is very smart."],
+      "explanation": "'So' shows result — the sentence logic needs to connect cause to effect."
+    },
+    {
+      "type": "mcq",
+      "prompt": "I can't come to the party ___ I have to work.",
+      "options": ["or", "and", "but", "because"],
+      "answer": 3,
+      "explanation": "Working is the reason for not coming — use 'because'."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Chce herbate albo kawe, prosze.",
+      "answers": ["I want tea or coffee, please.", "Tea or coffee, please."]
+    },
+    {
+      "type": "order",
+      "prompt": "Build a cause-and-effect sentence.",
+      "tokens": ["was", "late", "so", "I", "ran", "I"],
+      "answer": ["I", "was", "late", "so", "I", "ran"]
+    },
+    {
+      "type": "fill",
+      "prompt": "The film was long ___ very entertaining.",
+      "answers": ["but"],
+      "hint": "Length and entertainment are contrasted here."
+    },
+    {
+      "type": "mcq",
+      "prompt": "She didn't eat dinner ___ she wasn't hungry.",
+      "options": ["so", "and", "because", "or"],
+      "answer": 2,
+      "explanation": "Not being hungry is the reason she didn't eat."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Chcialbym zjesc pizze albo makaron na kolacje.",
+      "answers": ["I would like to have pizza or pasta for dinner.", "I'd like pizza or pasta for dinner."]
+    }
+  ]
+}

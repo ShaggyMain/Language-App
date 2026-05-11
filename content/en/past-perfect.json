@@ -1,0 +1,131 @@
+{
+  "id": "en.tenses.past-perfect",
+  "language": "en",
+  "category": "tenses",
+  "title": "Past Perfect",
+  "summary": "Use the past perfect (had done) to describe an action that happened before another past action.",
+  "cefrLevel": "B1",
+  "prerequisites": ["en.tenses.past-simple", "en.tenses.present-perfect"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Past Perfect** = **had + past participle**\n\nUse it when you talk about two past actions and need to show which one happened **first**.\n\n*When I arrived at the cinema, the film **had already started**.* (starting = first; arriving = second)\n\n**Keywords**: *before, after, when, already, by the time, by [time], just, never*\n\n**Form:**\n- Affirmative: *I/you/he/she/we/they **had** + past participle*\n- Negative: ***hadn't** + past participle*\n- Question: ***Had** you + past participle?*"
+    },
+    {
+      "kind": "table",
+      "title": "Timeline of actions",
+      "headers": ["First (Past Perfect)", "Second (Past Simple)", "Full sentence"],
+      "rows": [
+        ["She had eaten", "she went to bed.", "She had eaten before she went to bed."],
+        ["He had never seen snow", "he visited Norway.", "He had never seen snow until he visited Norway."],
+        ["They had left", "I arrived.", "They had already left when I arrived."]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "By the time we arrived, they had already left.", "translation": "Zanim przyblismy, oni juz wyszli." },
+        { "source": "She felt ill because she had eaten too much.", "translation": "Zle sie czula, bo zjadla za duzo." },
+        { "source": "I had never tried sushi before that evening.", "translation": "Przed tamtym wieczorem nigdy nie probowalem sushi." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "When I got to the party, most people ___ (already / leave).",
+      "answers": ["had already left"],
+      "hint": "The leaving happened before arriving -> Past Perfect."
+    },
+    {
+      "type": "mcq",
+      "prompt": "She ___ the book before the film came out.",
+      "options": ["read", "had read", "was reading", "has read"],
+      "answer": 1,
+      "explanation": "Reading happened before another past event -> Past Perfect."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Kiedy wrocilem do domu, obiad byl juz gotowy.",
+      "answers": ["When I got home, dinner had already been made.", "When I came home, the dinner had already been cooked.", "When I got home, someone had already made dinner."]
+    },
+    {
+      "type": "transform",
+      "instruction": "Make the sentence negative.",
+      "source": "He had finished his work by 6 pm.",
+      "answers": ["He hadn't finished his work by 6 pm.", "He had not finished his work by 6 pm."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "She didn't know him because they never met before.",
+      "answers": ["She didn't know him because they had never met before."],
+      "explanation": "'Met' happened before 'didn't know' — use Past Perfect."
+    },
+    {
+      "type": "order",
+      "prompt": "Put the sentence in the correct order.",
+      "tokens": ["had", "She", "never", "before", "flown", "that"],
+      "answer": ["She", "had", "never", "flown", "before", "that"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "By the time the ambulance arrived, the patient ___.",
+      "options": ["already died", "had already died", "has already died", "already had died"],
+      "answer": 1,
+      "explanation": "By the time signals that one action was completed before another -> Past Perfect."
+    },
+    {
+      "type": "fill",
+      "prompt": "He was nervous because he ___ (never / speak) in public before.",
+      "answers": ["had never spoken"],
+      "hint": "First time doing something (before another past event) -> Past Perfect."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "After she has eaten dinner, she went for a walk.",
+      "answers": ["After she had eaten dinner, she went for a walk."],
+      "explanation": "Eating happened before walking — both past, so use Past Perfect for the earlier action."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Nie moglem uwierzyc, ze nigdy nie byl za granica.",
+      "answers": ["I couldn't believe he had never been abroad.", "I couldn't believe that he had never been abroad."]
+    },
+    {
+      "type": "fill",
+      "prompt": "She was upset because she ___ (lose) her phone.",
+      "answers": ["had lost"],
+      "hint": "Losing happened before feeling upset."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Which sentence is correct?",
+      "options": ["When he arrived, she left already.", "When he arrived, she has already left.", "When he arrived, she had already left.", "When he arrived, she already left."],
+      "answer": 2,
+      "explanation": "For an action that happened before another past action, use had + past participle."
+    },
+    {
+      "type": "transform",
+      "instruction": "Turn into a question.",
+      "source": "They had met before the conference.",
+      "answers": ["Had they met before the conference?"]
+    },
+    {
+      "type": "order",
+      "prompt": "Build a sentence using Past Perfect.",
+      "tokens": ["he", "By", "had", "the", "time", "finished", "we", "arrived"],
+      "answer": ["By", "the", "time", "we", "arrived", "he", "had", "finished"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Powiedzial, ze juz to widzial.",
+      "answers": ["He said he had already seen it.", "He said that he had already seen it."]
+    }
+  ]
+}
