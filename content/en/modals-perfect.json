@@ -97,9 +97,9 @@
     },
     {
       "type": "errorFix",
-      "sentence": "I should not have been so rude, I know. I regret it.",
-      "answers": ["I shouldn't have been so rude, I know. I regret it."],
-      "explanation": "This sentence is already correct, just using the full form of 'shouldn't'."
+      "sentence": "I should not have went there — it was a terrible idea.",
+      "answers": ["I should not have gone there — it was a terrible idea.", "I shouldn't have gone there — it was a terrible idea."],
+      "explanation": "Perfect modal: modal + have + PAST PARTICIPLE. 'go' -> 'gone', not 'went'."
     },
     {
       "type": "mcq",
