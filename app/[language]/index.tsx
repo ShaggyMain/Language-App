@@ -149,7 +149,7 @@ export default function ModePicker() {
             {stats.passed} / {stats.total} lessons passed
           </Text>
 
-          <Animated.View entering={ZoomIn.delay(200).springify().damping(14)}>
+          <Animated.View entering={ZoomIn.delay(200).duration(400)}>
             <ProgressRing
               progress={stats.overall}
               size={164}

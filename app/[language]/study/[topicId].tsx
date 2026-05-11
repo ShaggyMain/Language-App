@@ -1,6 +1,7 @@
-import { Text, View } from "react-native";
-import { useLocalSearchParams } from "expo-router";
+import { ScrollView, Text, View } from "react-native";
+import { router, useLocalSearchParams } from "expo-router";
 import { Screen } from "../../../components/ui/Screen";
+import { PressableScale } from "../../../components/ui/PressableScale";
 import { topicById } from "../../../lib/content";
 
 const C = {
@@ -9,10 +10,11 @@ const C = {
   text: "#e6ecf5",
   muted: "#8aa0c2",
   bg: "#0b1220",
+  en: "#3b82f6",
 } as const;
 
 export default function StudyTopicScreen() {
-  const { topicId } = useLocalSearchParams<{ topicId: string }>();
+  const { topicId, language } = useLocalSearchParams<{ topicId: string; language: string }>();
   const topic = topicId ? topicById(decodeURIComponent(topicId)) : undefined;
 
   if (!topic) {
@@ -21,6 +23,10 @@ export default function StudyTopicScreen() {
         <Text style={{ color: C.muted }}>Topic not found.</Text>
       </Screen>
     );
+  }
+
+  function goToPractice() {
+    router.push(`/${language}/practice/${encodeURIComponent(decodeURIComponent(topicId!))}`);
   }
 
   return (
@@ -91,6 +97,26 @@ export default function StudyTopicScreen() {
           )}
         </View>
       ))}
+
+      {/* Practice shortcut */}
+      <PressableScale
+        onPress={goToPractice}
+        style={{
+          marginTop: 8,
+          marginBottom: 16,
+          borderRadius: 16,
+          paddingVertical: 18,
+          paddingHorizontal: 24,
+          backgroundColor: C.en,
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: "row",
+          gap: 10,
+        }}
+      >
+        <Text style={{ color: "white", fontSize: 17, fontWeight: "700" }}>Practice this topic</Text>
+        <Text style={{ color: "white", fontSize: 18 }}>▸</Text>
+      </PressableScale>
     </Screen>
   );
 }
