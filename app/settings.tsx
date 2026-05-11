@@ -10,6 +10,10 @@ import {
   subscribePreferences,
   type Preferences,
 } from "../lib/preferences";
+import { resetXp } from "../lib/xp";
+import { resetStreak } from "../lib/streak";
+import { getRepos } from "../lib/db";
+import { currentUserId } from "../lib/auth";
 import { supabase, supabaseConfigured } from "../lib/supabase";
 
 const C = {
@@ -108,8 +112,8 @@ export default function SettingsScreen() {
 
   function handleReset() {
     Alert.alert(
-      "Reset progress?",
-      "This wipes onboarding state and preferences. Lesson history is kept.",
+      "Reset preferences?",
+      "Clears onboarding state and audio settings. Lesson history and XP are kept.",
       [
         { text: "Cancel", style: "cancel" },
         {
@@ -118,6 +122,26 @@ export default function SettingsScreen() {
           onPress: async () => {
             await resetPreferences();
             router.replace("/onboarding");
+          },
+        },
+      ],
+    );
+  }
+
+  function handleResetCourse() {
+    Alert.alert(
+      "Reset all progress?",
+      "This permanently deletes all completed lessons, XP, and streak. Preferences are kept. This cannot be undone.",
+      [
+        { text: "Cancel", style: "cancel" },
+        {
+          text: "Reset everything",
+          style: "destructive",
+          onPress: async () => {
+            const repos = await getRepos();
+            await repos.resetUser(currentUserId());
+            await resetXp();
+            await resetStreak();
           },
         },
       ],
@@ -314,11 +338,27 @@ export default function SettingsScreen() {
             borderColor: C.error,
             borderRadius: 16,
             padding: 18,
+            marginBottom: 12,
           }}
         >
           <Text style={{ color: C.error, fontSize: 15, fontWeight: "700" }}>Reset preferences</Text>
           <Text style={{ color: C.muted, fontSize: 13, marginTop: 4 }}>
             Clear onboarding + audio settings.
+          </Text>
+        </Pressable>
+        <Pressable
+          onPress={handleResetCourse}
+          style={{
+            backgroundColor: "#f43f5e18",
+            borderWidth: 1.5,
+            borderColor: C.error,
+            borderRadius: 16,
+            padding: 18,
+          }}
+        >
+          <Text style={{ color: C.error, fontSize: 15, fontWeight: "700" }}>Reset all progress</Text>
+          <Text style={{ color: C.muted, fontSize: 13, marginTop: 4 }}>
+            Delete all lessons, XP, and streak. Start from scratch.
           </Text>
         </Pressable>
       </ScrollView>

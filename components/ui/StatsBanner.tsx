@@ -1,14 +1,12 @@
 import { useEffect, useState } from "react";
 import { Text, View } from "react-native";
 import Animated, { FadeIn, FadeOut } from "react-native-reanimated";
-import { getCachedStreak, loadStreak, subscribeStreak, todaysCount, type Streak } from "../../lib/streak";
-import {
-  getCachedPreferences,
-  loadPreferences,
-  subscribePreferences,
-  type Preferences,
-} from "../../lib/preferences";
+import { getCachedPreferences, loadPreferences, subscribePreferences, type Preferences } from "../../lib/preferences";
 import { getCachedXp, levelForXp, loadXp, subscribeXp, type XpState } from "../../lib/xp";
+import { getCachedStreak, loadStreak, subscribeStreak, todaysCount, type Streak } from "../../lib/streak";
+import { getRepos } from "../../lib/db";
+import { currentUserId, subscribeAuthState } from "../../lib/auth";
+import { topicsForLanguage } from "../../lib/content";
 
 const C = {
   surface: "#111a2e",
@@ -21,19 +19,34 @@ const C = {
 } as const;
 
 export function StatsBanner() {
-  const [streak, setStreak] = useState<Streak>(getCachedStreak());
   const [prefs, setPrefs] = useState<Preferences>(getCachedPreferences());
   const [xp, setXp] = useState<XpState>(getCachedXp());
+  const [streak, setStreak] = useState<Streak>(getCachedStreak());
+  const [topicsState, setTopicsState] = useState<{ passed: number; total: number }>({ passed: 0, total: 0 });
 
   useEffect(() => {
-    void loadStreak().then(setStreak);
     void loadPreferences().then(setPrefs);
     void loadXp().then(setXp);
-    const u1 = subscribeStreak(setStreak);
-    const u2 = subscribePreferences(setPrefs);
-    const u3 = subscribeXp(setXp);
+    void loadStreak().then(setStreak);
+    const u1 = subscribePreferences(setPrefs);
+    const u2 = subscribeXp(setXp);
+    const u3 = subscribeStreak(setStreak);
     return () => { u1(); u2(); u3(); };
   }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+    async function refresh() {
+      const lang = prefs.defaultLanguage ?? "en";
+      const repos = await getRepos();
+      const total = topicsForLanguage(lang).length;
+      const passedSet = await repos.log.passedTopicIds(currentUserId());
+      if (!cancelled) setTopicsState({ passed: passedSet.size, total });
+    }
+    void refresh();
+    const unsub = subscribeAuthState(() => void refresh());
+    return () => { cancelled = true; unsub(); };
+  }, [prefs.defaultLanguage]);
 
   const today = todaysCount(streak);
   const goalMet = today >= prefs.dailyGoal;
@@ -43,7 +56,7 @@ export function StatsBanner() {
   return (
     <View style={{ marginBottom: 24 }}>
       <View style={{ flexDirection: "row", gap: 10, marginBottom: 10 }}>
-        {/* Streak */}
+        {/* Completed topics */}
         <View
           style={{
             flex: 1,
@@ -58,10 +71,10 @@ export function StatsBanner() {
           }}
         >
           <Text style={{ color: C.muted, fontSize: 10, fontWeight: "600", letterSpacing: 1, textTransform: "uppercase" }}>
-            Streak
+            Topics
           </Text>
           <Text style={{ color: C.text, fontSize: 18, fontWeight: "700", marginTop: 4 }}>
-            🔥 {streak.streak} {streak.streak === 1 ? "day" : "days"}
+            📚 {topicsState.passed} / {topicsState.total}
           </Text>
         </View>
 
@@ -83,7 +96,7 @@ export function StatsBanner() {
             Today
           </Text>
           <Text style={{ color: C.text, fontSize: 18, fontWeight: "700", marginTop: 4 }}>
-            📅 {today} / {prefs.dailyGoal} {goalMet ? "✓" : ""}
+            🔥 {today} / {prefs.dailyGoal} {goalMet ? "✓" : ""}
           </Text>
         </View>
       </View>

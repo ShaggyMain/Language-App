@@ -82,6 +82,8 @@ export type Repos = {
   seen: SeenRepo;
   srs: SrsRepo;
   log: SessionLogRepo;
+  /** Wipe all stored data for this user (used by "Reset course"). */
+  resetUser(userId: string): Promise<void>;
 };
 
 /* ───────────────────────── in-memory impl ───────────────────────── */
@@ -197,7 +199,21 @@ export function createMemoryRepos(): Repos {
     },
   };
 
-  return { seen, srs, log };
+  async function resetUser(userId: string) {
+    seenRows.splice(0, seenRows.length, ...seenRows.filter((r) => r.userId !== userId));
+    for (const k of [...cards.keys()]) {
+      if (cards.get(k)?.userId === userId) cards.delete(k);
+    }
+    for (const [id, s] of sessions) {
+      if (s.userId === userId) sessions.delete(id);
+    }
+    passed.delete(userId);
+    for (const k of [...typeStats.keys()]) {
+      if (k.startsWith(`${userId}|`)) typeStats.delete(k);
+    }
+  }
+
+  return { seen, srs, log, resetUser };
 }
 
 /* ───────────────────────── runtime selection ─────────────────────────
