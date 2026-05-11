@@ -9,7 +9,7 @@
   "theory": [
     {
       "kind": "text",
-      "markdown": "**Used to + base verb** describes:\n- A **past habit** that no longer happens: *I used to play tennis every week.* (but I don't now)\n- A **past state** that is no longer true: *She used to be very shy.*\n\n**Form:**\n- Affirmative: *I/you/he/she/we/they **used to** + base verb*\n- Negative: ***didn't use to** + base verb* (NOT ~~didn't used to~~)\n- Question: ***Did** you **use to** + base verb?*\n\n⚠️ 'Used to' is only for the **past**. There is no present form. For present habits, use the Present Simple:\n*I used to drink coffee.* (past habit) → *I don't drink coffee anymore.*"
+      "markdown": "**Used to + base verb** describes:\n- A **past habit** that no longer happens: *I used to play tennis every week.* (but I don't now)\n- A **past state** that is no longer true: *She used to be very shy.*\n\n**Form:**\n- Affirmative: *I/you/he/she/we/they **used to** + base verb*\n- Negative: ***didn't use to** + base verb* (NOT didn't used to)\n- Question: ***Did** you **use to** + base verb?*\n\n'Used to' is only for the **past**. There is no present form. For present habits, use the Present Simple:\n*I used to drink coffee.* (past habit) -> *I don't drink coffee anymore.*"
     },
     {
       "kind": "table",
@@ -25,9 +25,9 @@
     {
       "kind": "examples",
       "items": [
-        { "source": "I used to have long hair when I was a teenager.", "translation": "Miałem/am długie włosy, kiedy byłem/am nastolatkiem/ą." },
-        { "source": "We didn't use to have a car.", "translation": "Nie mieliśmy samochodu (kiedyś)." },
-        { "source": "Did you use to watch cartoons as a child?", "translation": "Czy oglądałeś/aś bajki jako dziecko?" }
+        { "source": "I used to have long hair when I was a teenager.", "translation": "Mialem dlugie wlosy, kiedy bylem nastolatkiem." },
+        { "source": "We didn't use to have a car.", "translation": "Nie mielismy samochodu (kiedys)." },
+        { "source": "Did you use to watch cartoons as a child?", "translation": "Czy ogladales bajki jako dziecko?" }
       ]
     }
   ],
@@ -49,7 +49,7 @@
       "type": "translate",
       "from": "pl",
       "to": "en",
-      "source": "Czy chodziłeś/aś do szkoły tu w pobliżu?",
+      "source": "Czy chodziles do szkoly tu w poblizu?",
       "answers": ["Did you use to go to school near here?", "Did you use to go to a school near here?"]
     },
     {
@@ -70,6 +70,64 @@
       "options": ["was used to", "used to", "use to", "is used to"],
       "answer": 1,
       "explanation": "'Used to' for a past habit (no longer happening)."
+    },
+    {
+      "type": "fill",
+      "prompt": "I ___ (use to / be) afraid of dogs, but I'm fine with them now.",
+      "answers": ["used to be"],
+      "hint": "Past state no longer true."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Which sentence is correct?",
+      "options": ["She used to lived here.", "She used live here.", "She used to live here.", "She uses to live here."],
+      "answer": 2,
+      "explanation": "used to + base verb: 'used to live'."
+    },
+    {
+      "type": "order",
+      "prompt": "Build a question with 'used to'.",
+      "tokens": ["you", "Did", "sports", "play", "use", "to", "?"],
+      "answer": ["Did", "you", "use", "to", "play", "sports", "?"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Kiedys mieszkalem w malym miescie.",
+      "answers": ["I used to live in a small town.", "I used to live in a small city."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Did they used to live in Paris?",
+      "answers": ["Did they use to live in Paris?"],
+      "explanation": "In questions with 'did', use 'use to' (not 'used to')."
+    },
+    {
+      "type": "fill",
+      "prompt": "We ___ (use to / have) a dog, but he died last year.",
+      "answers": ["used to have"],
+      "hint": "Past state no longer true — the dog is gone."
+    },
+    {
+      "type": "mcq",
+      "prompt": "He ___ work late every night, but his new job has better hours.",
+      "options": ["used to", "is used to", "use to", "uses to"],
+      "answer": 0,
+      "explanation": "'Used to' describes a past habit that has now changed."
+    },
+    {
+      "type": "transform",
+      "instruction": "Turn into a question.",
+      "source": "She used to play the piano.",
+      "answers": ["Did she use to play the piano?"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Kiedys nie lubilam warzyw, ale teraz je lubie.",
+      "answers": ["I didn't use to like vegetables, but I like them now.", "I used not to like vegetables, but I like them now."]
     }
   ]
 }

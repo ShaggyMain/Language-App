@@ -70,6 +70,65 @@
       "prompt": "He opened ___ window because it was hot.",
       "answers": ["the"],
       "hint": "A specific, known window in context."
+    },
+    {
+      "type": "mcq",
+      "prompt": "I bought a jacket yesterday. ___ jacket is blue.",
+      "options": ["A", "An", "The", "—"],
+      "answer": 2,
+      "explanation": "Second mention of a specific jacket — use 'the'."
+    },
+    {
+      "type": "fill",
+      "prompt": "___ Moon orbits ___ Earth.",
+      "answers": ["The, the"],
+      "hint": "Both are unique celestial bodies."
+    },
+    {
+      "type": "mcq",
+      "prompt": "___ dogs make great pets. (general statement)",
+      "options": ["A", "The", "An", "— (no article)"],
+      "answer": 3,
+      "explanation": "General plural statement — no article."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "To jest najlepszy film, jaki kiedykolwiek widziałem.",
+      "answers": ["It is the best film I have ever seen.", "It's the best film I've ever seen.", "That is the best film I have ever seen."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "She plays a piano every morning.",
+      "answers": ["She plays the piano every morning."],
+      "explanation": "Musical instruments take 'the': play the piano, the guitar."
+    },
+    {
+      "type": "fill",
+      "prompt": "Who is ___ president of ___ United States?",
+      "answers": ["the, the"],
+      "hint": "Unique position and country name with 'United'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "I go to ___ work by bus every day.",
+      "options": ["a", "the", "an", "— (no article)"],
+      "answer": 3,
+      "explanation": "Fixed expressions without article: go to work, go to school, go home."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "The life is short, so enjoy it.",
+      "answers": ["Life is short, so enjoy it."],
+      "explanation": "Abstract nouns used in general do not take 'the'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "This is ___ first time I have visited Rome.",
+      "options": ["a", "an", "the", "—"],
+      "answer": 2,
+      "explanation": "Ordinal numbers (first, second…) take 'the'."
     }
   ]
 }

@@ -9,7 +9,7 @@
   "theory": [
     {
       "kind": "text",
-      "markdown": "**Yes/No Questions** — use **Do/Does** (present) or **Did** (past) + subject + base verb.\n\n*Do you like coffee?* → Yes, I do. / No, I don't.\n*Does she work here?* → Yes, she does. / No, she doesn't.\n*Did they arrive?* → Yes, they did. / No, they didn't.\n\n**Wh- Questions** — add a question word at the start:\n*What do you do?* / *Where does she live?* / *When did he arrive?*\n\nQuestion words: **What, Where, When, Who, Why, How, Which, How much, How many**"
+      "markdown": "**Yes/No Questions** — use **Do/Does** (present) or **Did** (past) + subject + base verb.\n\n*Do you like coffee?* -> Yes, I do. / No, I don't.\n*Does she work here?* -> Yes, she does. / No, she doesn't.\n*Did they arrive?* -> Yes, they did. / No, they didn't.\n\n**Wh- Questions** — add a question word at the start:\n*What do you do?* / *Where does she live?* / *When did he arrive?*\n\nQuestion words: **What, Where, When, Who, Why, How, Which, How much, How many**"
     },
     {
       "kind": "table",
@@ -20,15 +20,15 @@
         ["Yes/No (past)", "Did + subject + base verb?", "Did she call you?"],
         ["Wh- (present)", "Wh- + do/does + subject + base verb?", "What do you eat?"],
         ["Wh- (past)", "Wh- + did + subject + base verb?", "Where did they go?"],
-        ["With 'be'", "Be + subject + …?", "Are you tired?"]
+        ["With 'be'", "Be + subject + ...?", "Are you tired?"]
       ]
     },
     {
       "kind": "examples",
       "items": [
         { "source": "Does your sister study at university?", "translation": "Czy twoja siostra studiuje na uczelni?" },
-        { "source": "What time do you wake up?", "translation": "O której godzinie wstajesz?" },
-        { "source": "Why did they leave so early?", "translation": "Dlaczego wyszli tak wcześnie?" }
+        { "source": "What time do you wake up?", "translation": "O ktorej godzinie wstajesz?" },
+        { "source": "Why did they leave so early?", "translation": "Dlaczego wyszli tak wczesnie?" }
       ]
     }
   ],
@@ -43,7 +43,7 @@
       "type": "fill",
       "prompt": "___ she work on Saturdays?",
       "answers": ["Does"],
-      "hint": "3rd person singular (she) → Does."
+      "hint": "3rd person singular (she) -> Does."
     },
     {
       "type": "transform",
@@ -56,7 +56,7 @@
       "prompt": "___ you go to school yesterday?",
       "options": ["Do", "Does", "Did", "Are"],
       "answer": 2,
-      "explanation": "Past tense question → Did (for all persons)."
+      "explanation": "Past tense question -> Did (for all persons)."
     },
     {
       "type": "fill",
@@ -69,6 +69,64 @@
       "sentence": "Where does she lives?",
       "answers": ["Where does she live?"],
       "explanation": "After 'does', use the base verb without -s."
+    },
+    {
+      "type": "order",
+      "prompt": "Build a wh- question.",
+      "tokens": ["live", "Where", "you", "do", "?"],
+      "answer": ["Where", "do", "you", "live", "?"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "___ does the film start?",
+      "options": ["Where", "What", "When", "Who"],
+      "answer": 2,
+      "explanation": "'When' asks about time."
+    },
+    {
+      "type": "transform",
+      "instruction": "Turn this statement into a yes/no question.",
+      "source": "She likes pizza.",
+      "answers": ["Does she like pizza?"]
+    },
+    {
+      "type": "fill",
+      "prompt": "___ did you go on holiday last summer?",
+      "answers": ["Where"],
+      "hint": "Asking about a place in the past."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Do she play the piano?",
+      "answers": ["Does she play the piano?"],
+      "explanation": "3rd person singular (she) requires 'Does', not 'Do'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "___ called you last night?",
+      "options": ["Who", "What", "Why", "How"],
+      "answer": 0,
+      "explanation": "'Who' asks about a person as the subject."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Dlaczego ona nie przyszla na lekcje?",
+      "answers": ["Why didn't she come to the lesson?", "Why did she not come to the lesson?", "Why didn't she come to class?"]
+    },
+    {
+      "type": "order",
+      "prompt": "Build a past question.",
+      "tokens": ["meet", "you", "Where", "did", "him", "?"],
+      "answer": ["Where", "did", "you", "meet", "him", "?"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Ile masz lat?",
+      "answers": ["How old are you?"]
     }
   ]
 }

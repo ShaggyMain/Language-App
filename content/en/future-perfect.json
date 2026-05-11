@@ -9,7 +9,7 @@
   "theory": [
     {
       "kind": "text",
-      "markdown": "**Future Perfect** = **will have + past participle**\n\nUse it when you want to say that an action will be **completed before a specific point in the future**.\n\n**Key time expressions**: *by (the time), by then, by tomorrow, by next week, before*\n\n*By 10 pm, I will have finished my homework.* (finish → completed before 10 pm)\n*She will have graduated by next June.*\n\n**Compare:**\n- *I will finish the report.* (simple future — just a future event)\n- *I will have finished the report by Friday.* (emphasis on completion before a deadline)\n\n**Negative**: *won't have + past participle*\n*He won't have arrived by the time the party starts.*\n\n**Question**: *Will + subject + have + past participle?*\n*Will she have left by the time we get there?*"
+      "markdown": "**Future Perfect** = **will have + past participle**\n\nUse it when you want to say that an action will be **completed before a specific point in the future**.\n\n**Key time expressions**: *by (the time), by then, by tomorrow, by next week, before*\n\n*By 10 pm, I will have finished my homework.* (finish -> completed before 10 pm)\n*She will have graduated by next June.*\n\n**Compare:**\n- *I will finish the report.* (simple future — just a future event)\n- *I will have finished the report by Friday.* (emphasis on completion before a deadline)\n\n**Negative**: *won't have + past participle*\n**Question**: *Will + subject + have + past participle?*"
     },
     {
       "kind": "table",
@@ -25,9 +25,9 @@
     {
       "kind": "examples",
       "items": [
-        { "source": "By the time you arrive, I will have cooked dinner.", "translation": "Zanim przyjedziesz, ugotuję obiad (będzie już ugotowany)." },
-        { "source": "She won't have finished the project by Friday.", "translation": "Nie skończy projektu do piątku." },
-        { "source": "How many books will you have read by the end of the year?", "translation": "Ile książek przeczytasz do końca roku?" }
+        { "source": "By the time you arrive, I will have cooked dinner.", "translation": "Zanim przyjedziesz, ugotuje obiad." },
+        { "source": "She won't have finished the project by Friday.", "translation": "Nie skonczy projektu do piatku." },
+        { "source": "How many books will you have read by the end of the year?", "translation": "Ile ksiazek przeczytasz do konca roku?" }
       ]
     }
   ],
@@ -36,20 +36,20 @@
       "type": "fill",
       "prompt": "By the time she arrives, we ___ (eat) dinner already.",
       "answers": ["will have eaten", "will've eaten"],
-      "hint": "Completed before a future moment → Future Perfect."
+      "hint": "Completed before a future moment -> Future Perfect."
     },
     {
       "type": "mcq",
       "prompt": "The builders ___ the house by December.",
       "options": ["will finish", "will have finished", "are finishing", "finish"],
       "answer": 1,
-      "explanation": "'By December' signals completion before a future deadline → Future Perfect."
+      "explanation": "'By December' signals completion before a future deadline -> Future Perfect."
     },
     {
       "type": "translate",
       "from": "pl",
       "to": "en",
-      "source": "Do przyszłego roku będę tu mieszkać przez dziesięć lat.",
+      "source": "Do przyszlego roku bede tu mieszkac przez dziesiec lat.",
       "answers": ["By next year I will have lived here for ten years.", "By next year, I'll have lived here for ten years."]
     },
     {
@@ -69,6 +69,64 @@
       "prompt": "___ (Will) you ___ (save) enough money by then?",
       "answers": ["Will you have saved"],
       "hint": "Question form: Will + subject + have + past participle."
+    },
+    {
+      "type": "mcq",
+      "prompt": "By this time next year, she ___ from university.",
+      "options": ["will graduate", "graduates", "will have graduated", "had graduated"],
+      "answer": 2,
+      "explanation": "'By this time next year' -> action completed before that future point -> Future Perfect."
+    },
+    {
+      "type": "fill",
+      "prompt": "He ___ (not / return) from his trip by the time you need him.",
+      "answers": ["won't have returned", "will not have returned"],
+      "hint": "Negative Future Perfect."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "By the time we arrive, they will already leave.",
+      "answers": ["By the time we arrive, they will already have left."],
+      "explanation": "Completed before another future point -> will have + past participle."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Zanim skonczysz szkole, zdaze sie wiele rzeczy.",
+      "answers": ["By the time you finish school, a lot will have happened.", "Before you finish school, many things will have happened."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Which sentence is correct?",
+      "options": ["I will finish reading by noon.", "I will have finished reading by noon.", "I had finished reading by noon.", "I will have finish reading by noon."],
+      "answer": 1,
+      "explanation": "'By noon' + emphasis on completion before that time -> Future Perfect."
+    },
+    {
+      "type": "fill",
+      "prompt": "They ___ (travel) to more than 50 countries by the time they retire.",
+      "answers": ["will have travelled", "will have traveled"],
+      "hint": "Completed before a future point (retirement)."
+    },
+    {
+      "type": "transform",
+      "instruction": "Turn into a question.",
+      "source": "They will have finished building the bridge by 2027.",
+      "answers": ["Will they have finished building the bridge by 2027?"]
+    },
+    {
+      "type": "order",
+      "prompt": "Build a future perfect sentence.",
+      "tokens": ["have", "will", "By", "we", "arrived", "six", "pm"],
+      "answer": ["By", "six", "pm", "we", "will", "have", "arrived"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Czy skonczy projekt przed piatkiem?",
+      "answers": ["Will she have finished the project by Friday?", "Will he have finished the project by Friday?"]
     }
   ]
 }

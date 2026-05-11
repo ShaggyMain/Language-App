@@ -24,9 +24,9 @@
     {
       "kind": "examples",
       "items": [
-        { "source": "By the time we arrived, they had already left.", "translation": "Zanim przybyliśmy, oni już wyszli." },
-        { "source": "She felt ill because she had eaten too much.", "translation": "Źle się czuła, bo zjadła za dużo." },
-        { "source": "I had never tried sushi before that evening.", "translation": "Przed tamtym wieczorem nigdy nie próbowałem/am sushi." }
+        { "source": "By the time we arrived, they had already left.", "translation": "Zanim przyblismy, oni juz wyszli." },
+        { "source": "She felt ill because she had eaten too much.", "translation": "Zle sie czula, bo zjadla za duzo." },
+        { "source": "I had never tried sushi before that evening.", "translation": "Przed tamtym wieczorem nigdy nie probowalem sushi." }
       ]
     }
   ],
@@ -35,20 +35,20 @@
       "type": "fill",
       "prompt": "When I got to the party, most people ___ (already / leave).",
       "answers": ["had already left"],
-      "hint": "The leaving happened before arriving → Past Perfect."
+      "hint": "The leaving happened before arriving -> Past Perfect."
     },
     {
       "type": "mcq",
       "prompt": "She ___ the book before the film came out.",
       "options": ["read", "had read", "was reading", "has read"],
       "answer": 1,
-      "explanation": "Reading happened before another past event → Past Perfect."
+      "explanation": "Reading happened before another past event -> Past Perfect."
     },
     {
       "type": "translate",
       "from": "pl",
       "to": "en",
-      "source": "Kiedy wróciłem do domu, obiad był już gotowy.",
+      "source": "Kiedy wrocilem do domu, obiad byl juz gotowy.",
       "answers": ["When I got home, dinner had already been made.", "When I came home, the dinner had already been cooked.", "When I got home, someone had already made dinner."]
     },
     {
@@ -68,6 +68,64 @@
       "prompt": "Put the sentence in the correct order.",
       "tokens": ["had", "She", "never", "before", "flown", "that"],
       "answer": ["She", "had", "never", "flown", "before", "that"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "By the time the ambulance arrived, the patient ___.",
+      "options": ["already died", "had already died", "has already died", "already had died"],
+      "answer": 1,
+      "explanation": "By the time signals that one action was completed before another -> Past Perfect."
+    },
+    {
+      "type": "fill",
+      "prompt": "He was nervous because he ___ (never / speak) in public before.",
+      "answers": ["had never spoken"],
+      "hint": "First time doing something (before another past event) -> Past Perfect."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "After she has eaten dinner, she went for a walk.",
+      "answers": ["After she had eaten dinner, she went for a walk."],
+      "explanation": "Eating happened before walking — both past, so use Past Perfect for the earlier action."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Nie moglem uwierzyc, ze nigdy nie byl za granica.",
+      "answers": ["I couldn't believe he had never been abroad.", "I couldn't believe that he had never been abroad."]
+    },
+    {
+      "type": "fill",
+      "prompt": "She was upset because she ___ (lose) her phone.",
+      "answers": ["had lost"],
+      "hint": "Losing happened before feeling upset."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Which sentence is correct?",
+      "options": ["When he arrived, she left already.", "When he arrived, she has already left.", "When he arrived, she had already left.", "When he arrived, she already left."],
+      "answer": 2,
+      "explanation": "For an action that happened before another past action, use had + past participle."
+    },
+    {
+      "type": "transform",
+      "instruction": "Turn into a question.",
+      "source": "They had met before the conference.",
+      "answers": ["Had they met before the conference?"]
+    },
+    {
+      "type": "order",
+      "prompt": "Build a sentence using Past Perfect.",
+      "tokens": ["he", "By", "had", "the", "time", "finished", "we", "arrived"],
+      "answer": ["By", "the", "time", "we", "arrived", "he", "had", "finished"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Powiedzial, ze juz to widzial.",
+      "answers": ["He said he had already seen it.", "He said that he had already seen it."]
     }
   ]
 }

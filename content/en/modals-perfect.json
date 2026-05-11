@@ -9,7 +9,7 @@
   "theory": [
     {
       "kind": "text",
-      "markdown": "**Perfect modals** = **modal + have + past participle**\n\nThey refer to **past** situations that are now over.\n\n**should have done** — criticism or regret (you didn't, but it would have been better)\n*You should have told me earlier.* (you didn't — I'm criticising)\n*I shouldn't have eaten so much.* (I regret it)\n\n**must have done** — past deduction (near-certain it happened)\n*She must have left — her coat is gone.*\n\n**can't have done** — past deduction (near-certain it didn't happen)\n*He can't have stolen it — he wasn't even there.*\n\n**might / could have done** — past possibility (it was possible but uncertain)\n*They might have missed the train.* / *I could have made a mistake.*\n\n**would have done** — hypothetical past result (in conditionals)\n*I would have helped if you had asked.*\n\n**needn't have done** — something was done but was unnecessary\n*You needn't have worried — everything was fine.*"
+      "markdown": "**Perfect modals** = **modal + have + past participle**\n\nThey refer to **past** situations that are now over.\n\n**should have done** — criticism or regret (you didn't, but it would have been better)\n*You should have told me earlier.* (you didn't — I'm criticising)\n*I shouldn't have eaten so much.* (I regret it)\n\n**must have done** — past deduction (near-certain it happened)\n*She must have left — her coat is gone.*\n\n**can't have done** — past deduction (near-certain it didn't happen)\n*He can't have stolen it — he wasn't even there.*\n\n**might / could have done** — past possibility (it was possible but uncertain)\n*They might have missed the train.*\n\n**would have done** — hypothetical past result (in conditionals)\n*I would have helped if you had asked.*\n\n**needn't have done** — something was done but was unnecessary\n*You needn't have worried — everything was fine.*"
     },
     {
       "kind": "table",
@@ -27,9 +27,9 @@
     {
       "kind": "examples",
       "items": [
-        { "source": "You shouldn't have spent so much money on that.", "translation": "Nie powinieneś/powinnaś był/a wydawać tyle pieniędzy na to." },
-        { "source": "She must have worked very hard to achieve all this.", "translation": "Musiała bardzo ciężko pracować, żeby to wszystko osiągnąć." },
-        { "source": "I could have done better on the exam if I'd slept more.", "translation": "Mógłbym/Mogłabym lepiej napisać egzamin, gdybym więcej spał/a." }
+        { "source": "You shouldn't have spent so much money on that.", "translation": "Nie powinienes byl wydawac tyle pieniedzy na to." },
+        { "source": "She must have worked very hard to achieve all this.", "translation": "Musiala bardzo ciezko pracowac, zeby to wszystko osiagnac." },
+        { "source": "I could have done better on the exam if I'd slept more.", "translation": "Moglbym lepiej napisac egzamin, gdybym wiecej spal." }
       ]
     }
   ],
@@ -60,20 +60,79 @@
       "type": "translate",
       "from": "pl",
       "to": "en",
-      "source": "Nie powinienem/powinnam był/a tego mówić.",
+      "source": "Nie powinienem byl tego mowic.",
       "answers": ["I shouldn't have said that.", "I should not have said that."]
     },
     {
       "type": "fill",
       "prompt": "I ___ (needn't / buy) so much food — half of it went to waste.",
       "answers": ["needn't have bought"],
-      "hint": "The buying was unnecessary → needn't have + past participle."
+      "hint": "The buying was unnecessary -> needn't have + past participle."
     },
     {
       "type": "errorFix",
       "sentence": "He could has finished earlier if he had focused.",
       "answers": ["He could have finished earlier if he had focused."],
       "explanation": "Perfect modal: modal + HAVE + past participle (not 'has')."
+    },
+    {
+      "type": "mcq",
+      "prompt": "The window is broken. The children ___ a ball through it.",
+      "options": ["should have thrown", "must have thrown", "needn't have thrown", "can't have thrown"],
+      "answer": 1,
+      "explanation": "Past deduction with near-certain positive evidence -> must have."
+    },
+    {
+      "type": "fill",
+      "prompt": "You ___ (should / tell) her the truth. Now she's very upset.",
+      "answers": ["should have told"],
+      "hint": "Criticism of a past failure to act."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Moze ona zapomnila o naszym spotkaniu.",
+      "answers": ["She might have forgotten about our meeting.", "She could have forgotten about our meeting."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "I should not have been so rude, I know. I regret it.",
+      "answers": ["I shouldn't have been so rude, I know. I regret it."],
+      "explanation": "This sentence is already correct, just using the full form of 'shouldn't'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "She ___ the exam — she studied for months!",
+      "options": ["should have passed", "must have passed", "might have passed", "needn't have passed"],
+      "answer": 1,
+      "explanation": "Evidence strongly suggests success -> must have passed."
+    },
+    {
+      "type": "fill",
+      "prompt": "You ___ (needn't / wait) for me — I took a taxi.",
+      "answers": ["needn't have waited"],
+      "hint": "Waiting was unnecessary in retrospect."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "On nie mogl polac na lotere — kupil bilet.",
+      "answers": ["He can't have won the lottery — he bought a ticket.", "He couldn't have won the lottery — he bought a ticket."]
+    },
+    {
+      "type": "order",
+      "prompt": "Build a criticism sentence.",
+      "tokens": ["have", "should", "You", "earlier", "called", "me"],
+      "answer": ["You", "should", "have", "called", "me", "earlier"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Moglbym pomoc ci, gdybys mnie poprosil.",
+      "answers": ["I could have helped you if you had asked me.", "I could have helped if you'd asked."]
     }
   ]
 }

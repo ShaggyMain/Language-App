@@ -73,6 +73,65 @@
       "options": ["her", "she", "hers", "him"],
       "answer": 1,
       "explanation": "Subject of the clause — use subject pronoun 'she', not object 'her'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "My mum bought a present for ___ sister and ___.",
+      "options": ["me / her", "I / she", "my / her", "me / I"],
+      "answer": 0,
+      "explanation": "After 'for' use object pronouns: for me, for her."
+    },
+    {
+      "type": "fill",
+      "prompt": "Could you drive ___ to the station? I'll miss the train.",
+      "answers": ["me"],
+      "hint": "I → me (object after verb 'drive')"
+    },
+    {
+      "type": "errorFix",
+      "sentence": "She gave the keys to he.",
+      "answers": ["She gave the keys to him."],
+      "explanation": "After a preposition, use the object pronoun: to him."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Look at that dog! ___ is so cute.",
+      "options": ["Him", "It", "Its", "Them"],
+      "answer": 1,
+      "explanation": "Subject pronoun for a thing/animal = it."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Znam ją bardzo dobrze.",
+      "answers": ["I know her very well."]
+    },
+    {
+      "type": "fill",
+      "prompt": "My parents came to visit ___ at university.",
+      "answers": ["me"],
+      "hint": "I (subject) → me (object)"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Between you and ___, I think he's wrong.",
+      "options": ["I", "me", "my", "mine"],
+      "answer": 1,
+      "explanation": "After preposition 'between' — object pronoun: between you and me."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Him and his friend went to the concert.",
+      "answers": ["He and his friend went to the concert."],
+      "explanation": "Subject position requires subject pronoun 'he', not object 'him'."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Widziałem ich wczoraj w parku.",
+      "answers": ["I saw them in the park yesterday.", "I saw them yesterday in the park."]
     }
   ]
 }

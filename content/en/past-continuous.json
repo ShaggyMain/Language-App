@@ -25,9 +25,9 @@
     {
       "kind": "examples",
       "items": [
-        { "source": "It was raining when I left the house.", "translation": "Kiedy wychodziłem z domu, padał deszcz." },
-        { "source": "What were you doing at midnight?", "translation": "Co robiłeś o północy?" },
-        { "source": "She was studying while her brother was playing games.", "translation": "Ona uczyła się, podczas gdy jej brat grał w gry." }
+        { "source": "It was raining when I left the house.", "translation": "Kiedy wychodzilam z domu, padal deszcz." },
+        { "source": "What were you doing at midnight?", "translation": "Co robiles o polnocy?" },
+        { "source": "She was studying while her brother was playing games.", "translation": "Ona uczyla sie, podczas gdy jej brat gral w gry." }
       ]
     }
   ],
@@ -43,13 +43,13 @@
       "prompt": "I ___ my homework when mum called.",
       "options": ["did", "was doing", "am doing", "had done"],
       "answer": 1,
-      "explanation": "Background action (in progress) interrupted by a short event → Past Continuous."
+      "explanation": "Background action interrupted by a short event -> Past Continuous."
     },
     {
       "type": "translate",
       "from": "pl",
       "to": "en",
-      "source": "Co robiłaś wczoraj wieczorem o ósmej?",
+      "source": "Co robilas wczoraj wieczorem o osmej?",
       "answers": ["What were you doing yesterday evening at eight?", "What were you doing at eight yesterday evening?", "What were you doing at 8 pm yesterday?"]
     },
     {
@@ -62,13 +62,71 @@
       "type": "errorFix",
       "sentence": "She were cooking when I arrived.",
       "answers": ["She was cooking when I arrived."],
-      "explanation": "She (3rd person singular) → was, not were."
+      "explanation": "She (3rd person singular) -> was, not were."
     },
     {
       "type": "fill",
       "prompt": "While I ___ (sleep), someone stole my bag.",
       "answers": ["was sleeping"],
-      "hint": "Longer background action → Past Continuous."
+      "hint": "Longer background action -> Past Continuous."
+    },
+    {
+      "type": "mcq",
+      "prompt": "The sun ___ when we left the hotel.",
+      "options": ["shone", "was shining", "shined", "shine"],
+      "answer": 1,
+      "explanation": "Action in progress at a specific past moment -> Past Continuous."
+    },
+    {
+      "type": "fill",
+      "prompt": "We ___ (have) dinner when the lights went out.",
+      "answers": ["were having"],
+      "hint": "Background action (longer) + short interruption."
+    },
+    {
+      "type": "order",
+      "prompt": "Build a past continuous question.",
+      "tokens": ["you", "Were", "at", "pm", "working", "six", "?"],
+      "answer": ["Were", "you", "working", "at", "six", "pm", "?"]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "He was drove when it started to rain.",
+      "answers": ["He was driving when it started to rain."],
+      "explanation": "Past Continuous = was/were + -ing form (driving, not drove)."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Ona rozmawiala przez telefon, kiedy wszedlem.",
+      "answers": ["She was talking on the phone when I came in.", "She was talking on the phone when I entered."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "While she ___, the children were watching TV.",
+      "options": ["cooked", "was cooking", "is cooking", "cooks"],
+      "answer": 1,
+      "explanation": "Two simultaneous past actions -> both in Past Continuous."
+    },
+    {
+      "type": "fill",
+      "prompt": "___ they ___ (listen) when the teacher explained the rules?",
+      "answers": ["Were they listening"],
+      "hint": "Question form: Were + subject + -ing?"
+    },
+    {
+      "type": "transform",
+      "instruction": "Turn into a question.",
+      "source": "He was sleeping at noon.",
+      "answers": ["Was he sleeping at noon?"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "O polnocy wszyscy jeszcze spali.",
+      "answers": ["At midnight everyone was still sleeping.", "At midnight, everyone was still sleeping."]
     }
   ]
 }

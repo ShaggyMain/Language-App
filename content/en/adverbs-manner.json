@@ -9,11 +9,11 @@
   "theory": [
     {
       "kind": "text",
-      "markdown": "**Adverbs of manner** answer the question *How?*\n\n**Formation**: adjective + **-ly**\n*quick → quickly / careful → carefully / loud → loudly*\n\n**Spelling changes:**\n- adjective ending in **-y** → remove -y, add **-ily**: *happy → happily / easy → easily*\n- adjective ending in **-le** → remove -e, add **-y**: *gentle → gently / simple → simply*\n\n**Irregular adverbs** (no -ly):\n- *good → **well*** (NOT ~~goodly~~)\n- *fast → **fast*** (NOT ~~fastly~~)\n- *hard → **hard*** (NOT ~~hardly~~ — 'hardly' means 'almost not'!)\n- *late → **late*** (NOT ~~lately~~ — 'lately' means 'recently')\n\n**Position**: usually **after** the verb or after the object.\n*She speaks clearly.* / *He drove the car carefully.*"
+      "markdown": "**Adverbs of manner** answer the question *How?*\n\n**Formation**: adjective + **-ly**\n*quick -> quickly / careful -> carefully / loud -> loudly*\n\n**Spelling changes:**\n- adjective ending in **-y** -> remove -y, add **-ily**: *happy -> happily / easy -> easily*\n- adjective ending in **-le** -> remove -e, add **-y**: *gentle -> gently / simple -> simply*\n\n**Irregular adverbs** (no -ly):\n- *good -> **well*** (NOT goodly)\n- *fast -> **fast*** (NOT fastly)\n- *hard -> **hard*** (NOT hardly — 'hardly' means 'almost not'!)\n- *late -> **late*** (NOT lately — 'lately' means 'recently')\n\n**Position**: usually **after** the verb or after the object.\n*She speaks clearly.* / *He drove the car carefully.*"
     },
     {
       "kind": "table",
-      "title": "Adjective → Adverb of manner",
+      "title": "Adjective -> Adverb of manner",
       "headers": ["Adjective", "Adverb", "Example sentence"],
       "rows": [
         ["quick", "quickly", "She finished the test quickly."],
@@ -26,9 +26,9 @@
     {
       "kind": "examples",
       "items": [
-        { "source": "Please speak slowly — I don't understand.", "translation": "Proszę, mów wolno — nie rozumiem." },
-        { "source": "He plays the guitar beautifully.", "translation": "On pięknie gra na gitarze." },
-        { "source": "She did well on the exam.", "translation": "Dobrze napisała egzamin." }
+        { "source": "Please speak slowly — I don't understand.", "translation": "Prosze, mow wolno — nie rozumiem." },
+        { "source": "He plays the guitar beautifully.", "translation": "On pieknie gra na gitarze." },
+        { "source": "She did well on the exam.", "translation": "Dobrze napisala egzamin." }
       ]
     }
   ],
@@ -60,7 +60,7 @@
     },
     {
       "type": "fill",
-      "prompt": "The baby sleeps ___ (quiet → adverb) during the day.",
+      "prompt": "The baby sleeps ___ (quiet -> adverb) during the day.",
       "answers": ["quietly"],
       "hint": "quiet + -ly"
     },
@@ -68,8 +68,65 @@
       "type": "translate",
       "from": "pl",
       "to": "en",
-      "source": "Proszę, jedź ostrożnie.",
+      "source": "Prosze, jedz ostrozenie.",
       "answers": ["Please drive carefully.", "Drive carefully, please."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "She studied ___ for the exam.",
+      "options": ["hardly", "hard", "harder", "hardness"],
+      "answer": 1,
+      "explanation": "'Hard' as an adverb means 'with great effort'. 'Hardly' means 'almost not'."
+    },
+    {
+      "type": "fill",
+      "prompt": "He answered the question ___ (easy -> adverb).",
+      "answers": ["easily"],
+      "hint": "easy -> remove y, add -ily: easi___"
+    },
+    {
+      "type": "transform",
+      "instruction": "Rewrite using an adverb.",
+      "source": "She is a slow reader. (She reads ___)",
+      "answers": ["She reads slowly."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Please walk quiet in the hospital.",
+      "answers": ["Please walk quietly in the hospital."],
+      "explanation": "After a verb, use an adverb: quiet -> quietly."
+    },
+    {
+      "type": "mcq",
+      "prompt": "The children were playing ___ in the garden.",
+      "options": ["happy", "happyly", "happily", "happiness"],
+      "answer": 2,
+      "explanation": "happy -> remove y, add -ily: happily."
+    },
+    {
+      "type": "fill",
+      "prompt": "She whispered ___ (gentle -> adverb) so as not to wake the baby.",
+      "answers": ["gently"],
+      "hint": "gentle -> remove -le, add -ly: gent___"
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "On mowi bardzo glosno.",
+      "answers": ["He speaks very loudly.", "He talks very loudly."]
+    },
+    {
+      "type": "order",
+      "prompt": "Build a sentence with an adverb of manner.",
+      "tokens": ["piano", "beautifully", "She", "the", "plays"],
+      "answer": ["She", "plays", "the", "piano", "beautifully"]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "He worked very hardly to finish the project.",
+      "answers": ["He worked very hard to finish the project."],
+      "explanation": "'Hardly' means 'almost not'. The correct adverb for effort is 'hard'."
     }
   ]
 }

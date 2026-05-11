@@ -9,7 +9,7 @@
   "theory": [
     {
       "kind": "text",
-      "markdown": "A **non-defining relative clause** gives **extra information** about a noun that is already identified. Without it, the sentence is still complete and clear.\n\n**Key features:**\n- Always separated by **commas**\n- Cannot use **'that'** — only who, which, whose, where, when\n- Cannot **omit** the relative pronoun\n\n**Compare:**\n- *The man **who lives next door** is a doctor.* — defining (which man?)\n- *My neighbour, **who lives next door**, is a doctor.* — non-defining (extra info — we already know who)\n\n**Common uses:**\n- About a specific, unique person: *My mother, who is 65, still works.*\n- About a place or thing already named: *London, where I was born, is very expensive.*\n- Adding a comment on the whole sentence: *He passed the exam, which surprised everyone.*"
+      "markdown": "A **non-defining relative clause** gives **extra information** about a noun that is already identified. Without it, the sentence is still complete and clear.\n\n**Key features:**\n- Always separated by **commas**\n- Cannot use **'that'** — only who, which, whose, where, when\n- Cannot **omit** the relative pronoun\n\n**Compare:**\n- *The man **who lives next door** is a doctor.* — defining (which man?)\n- *My neighbour, **who lives next door**, is a doctor.* — non-defining (extra info)\n\n**Common uses:**\n- About a specific, unique person: *My mother, who is 65, still works.*\n- About a place or thing already named: *London, where I was born, is very expensive.*\n- Adding a comment on the whole sentence: *He passed the exam, which surprised everyone.*"
     },
     {
       "kind": "table",
@@ -25,9 +25,9 @@
     {
       "kind": "examples",
       "items": [
-        { "source": "My sister, who lives in Paris, is coming to visit.", "translation": "Moja siostra, która mieszka w Paryżu, przyjeżdża z wizytą." },
-        { "source": "The Eiffel Tower, which was built in 1889, is very tall.", "translation": "Wieża Eiffla, która została zbudowana w 1889 roku, jest bardzo wysoka." },
-        { "source": "He got the promotion, which made his wife very happy.", "translation": "Dostał awans, co bardzo ucieszyło jego żonę." }
+        { "source": "My sister, who lives in Paris, is coming to visit.", "translation": "Moja siostra, ktora mieszka w Paryzu, przyjezdza z wizyta." },
+        { "source": "The Eiffel Tower, which was built in 1889, is very tall.", "translation": "Wieza Eiffla, ktora zostala zbudowana w 1889 roku, jest bardzo wysoka." },
+        { "source": "He got the promotion, which made his wife very happy.", "translation": "Dostal awans, co bardzo ucieszyla jego zone." }
       ]
     }
   ],
@@ -36,20 +36,20 @@
       "type": "errorFix",
       "sentence": "My father who is a doctor works in Warsaw.",
       "answers": ["My father, who is a doctor, works in Warsaw."],
-      "explanation": "Non-defining clause about a specific, identified person → add commas."
+      "explanation": "Non-defining clause about a specific, identified person -> add commas."
     },
     {
       "type": "fill",
       "prompt": "Oxford, ___ I studied for three years, is a beautiful city.",
       "answers": ["where"],
-      "hint": "Referring to a place → where."
+      "hint": "Referring to a place -> where."
     },
     {
       "type": "mcq",
       "prompt": "His first novel, ___ won the Booker Prize, was published in 2005.",
       "options": ["that", "which", "who", "whose"],
       "answer": 1,
-      "explanation": "Non-defining clause → cannot use 'that'; use 'which' for things."
+      "explanation": "Non-defining clause -> cannot use 'that'; use 'which' for things."
     },
     {
       "type": "errorFix",
@@ -67,8 +67,66 @@
       "type": "translate",
       "from": "pl",
       "to": "en",
-      "source": "Mój szef, który mówi czterema językami, jest niesamowity.",
+      "source": "Moj szef, ktory mowi czterema jezykami, jest niesamowity.",
       "answers": ["My boss, who speaks four languages, is amazing.", "My boss, who speaks four languages, is incredible."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "My car, ___ I bought last year, has already broken down.",
+      "options": ["that", "which", "who", "where"],
+      "answer": 1,
+      "explanation": "Non-defining clause for a thing -> which (not 'that')."
+    },
+    {
+      "type": "fill",
+      "prompt": "The Amazon, ___ flows through Brazil, is the largest river in the world by volume.",
+      "answers": ["which"],
+      "hint": "Non-defining clause about a specific named thing."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Professor Smith who taught me chemistry, is retiring next year.",
+      "answers": ["Professor Smith, who taught me chemistry, is retiring next year."],
+      "explanation": "Non-defining clauses need commas on both sides."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Moja babcia, ktora ma osiemdziesiat lat, wciaz jest bardzo aktywna.",
+      "answers": ["My grandmother, who is eighty, is still very active.", "My grandmother, who is eighty years old, is still very active."]
+    },
+    {
+      "type": "fill",
+      "prompt": "2020, ___ the pandemic began, changed everything.",
+      "answers": ["when"],
+      "hint": "Non-defining clause for a year/time -> when."
+    },
+    {
+      "type": "mcq",
+      "prompt": "She donated all her money to charity, ___ was very generous.",
+      "options": ["what", "that", "which", "who"],
+      "answer": 2,
+      "explanation": "'Which' can refer to the whole previous clause in non-defining clauses."
+    },
+    {
+      "type": "transform",
+      "instruction": "Combine into one sentence with a non-defining relative clause.",
+      "source": "Tokyo is the largest city in the world. It has a population of over 13 million.",
+      "answers": ["Tokyo, which has a population of over 13 million, is the largest city in the world.", "Tokyo, which is the largest city in the world, has a population of over 13 million."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "He lied to me which I found very upsetting.",
+      "answers": ["He lied to me, which I found very upsetting."],
+      "explanation": "Non-defining clause commenting on a whole situation needs a comma before 'which'."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Mark Twain, ktory urodzil sie w 1835 roku, jest jednym z najbardziej znanych pisarzy amerykanskich.",
+      "answers": ["Mark Twain, who was born in 1835, is one of the most famous American writers.", "Mark Twain, who was born in 1835, is among the most famous American writers."]
     }
   ]
 }

@@ -9,7 +9,7 @@
   "theory": [
     {
       "kind": "text",
-      "markdown": "A **phrasal verb** = verb + particle (preposition or adverb). The meaning is often different from the individual words.\n\n**Separable** phrasal verbs: the object can go between verb and particle.\n*Turn the TV off.* = *Turn off the TV.* ✓\n*Turn it off.* ✓ (pronoun must go between)\n\n**Inseparable** phrasal verbs: the object must stay after the particle.\n*Look after the children.* ✓ / ~~Look the children after.~~ ✗\n\n**Note**: When the object is a pronoun, it always goes **between** verb and particle for separable verbs:\n*Pick it up.* ✓ / ~~Pick up it.~~ ✗"
+      "markdown": "A **phrasal verb** = verb + particle (preposition or adverb). The meaning is often different from the individual words.\n\n**Separable** phrasal verbs: the object can go between verb and particle.\n*Turn the TV off.* = *Turn off the TV.* OK\n*Turn it off.* OK (pronoun must go between)\n\n**Inseparable** phrasal verbs: the object must stay after the particle.\n*Look after the children.* OK / Look the children after. NOT OK\n\nWhen the object is a pronoun, it always goes **between** verb and particle for separable verbs:\n*Pick it up.* OK / Pick up it. NOT OK"
     },
     {
       "kind": "table",
@@ -31,9 +31,9 @@
     {
       "kind": "examples",
       "items": [
-        { "source": "Can you look up this word for me?", "translation": "Czy możesz sprawdzić to słowo?" },
-        { "source": "She picked up the kids from school.", "translation": "Odebrała dzieci ze szkoły." },
-        { "source": "I found out about the trip by accident.", "translation": "Dowiedziałem/am się o wycieczce przez przypadek." }
+        { "source": "Can you look up this word for me?", "translation": "Czy mozesz sprawdzic to slowo?" },
+        { "source": "She picked up the kids from school.", "translation": "Odebrala dzieci ze szkoly." },
+        { "source": "I found out about the trip by accident.", "translation": "Dowiedzialem sie o wycieczce przez przypadek." }
       ]
     }
   ],
@@ -70,14 +70,75 @@
       "type": "translate",
       "from": "pl",
       "to": "en",
-      "source": "Dowiedziałem/am się, że spotkanie zostało odwołane.",
+      "source": "Dowiedzialem sie, ze spotkanie zostalo odwolane.",
       "answers": ["I found out that the meeting had been cancelled.", "I found out the meeting was cancelled."]
     },
     {
       "type": "fill",
       "prompt": "Could you ___ (give back) the money you borrowed?",
       "answers": ["give back"],
-      "hint": "Return something → phrasal verb with 'give'."
+      "hint": "Return something -> phrasal verb with 'give'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "I need to look ___ the meaning of this word.",
+      "options": ["after", "up", "out", "into"],
+      "answer": 1,
+      "explanation": "'Look up' = search for information (in a dictionary, online)."
+    },
+    {
+      "type": "fill",
+      "prompt": "Please ___ your shoes when you come inside. (take off)",
+      "answers": ["take off your shoes", "take your shoes off"],
+      "hint": "Separable: 'take off' something or 'take' something 'off'."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "She picked up it from the floor.",
+      "answers": ["She picked it up from the floor."],
+      "explanation": "With a pronoun object, it goes between verb and particle: picked it up."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Kiedy on wroci?",
+      "answers": ["When does he come back?", "When will he come back?"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Can you ___ the TV? I want to watch the news.",
+      "options": ["turn on it", "turn it on", "turn on", "turning on"],
+      "answer": 1,
+      "explanation": "Pronoun 'it' goes between verb and particle: 'turn it on'."
+    },
+    {
+      "type": "fill",
+      "prompt": "I usually ___ (get up) at 7 o'clock on weekdays.",
+      "answers": ["get up"],
+      "hint": "Rise from bed -> get ___"
+    },
+    {
+      "type": "match",
+      "pairs": [
+        { "left": "put on", "right": "wear or place on body" },
+        { "left": "take off", "right": "remove clothing / plane departs" },
+        { "left": "pick up", "right": "collect or lift" },
+        { "left": "come back", "right": "return to a place" }
+      ]
+    },
+    {
+      "type": "order",
+      "prompt": "Build a sentence with a phrasal verb.",
+      "tokens": ["up", "the", "looked", "She", "word", "dictionary", "in", "the"],
+      "answer": ["She", "looked", "up", "the", "word", "in", "the", "dictionary"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "On zawsze wstaje o szostej rano.",
+      "answers": ["He always gets up at six in the morning.", "He always gets up at 6 am."]
     }
   ]
 }

@@ -28,7 +28,7 @@
       "kind": "examples",
       "items": [
         { "source": "She said she was tired.", "translation": "Powiedziala, ze jest zmeczona." },
-        { "source": "They said they would call me.", "translation": "Powiedzieli, ze do mnie zadzwonia." },
+        { "source": "They said they would call me.", "translation": "Powiedzieli, ze do mnie zadznonia." },
         { "source": "He told me he had never been to London.", "translation": "Powiedzial mi, ze nigdy nie byl w Londynie." }
       ]
     }
@@ -71,6 +71,64 @@
       "instruction": "Change to reported speech. They said: We have finished the project.",
       "source": "They said: We have finished the project.",
       "answers": ["They said they had finished the project.", "They said that they had finished the project."]
+    },
+    {
+      "type": "fill",
+      "prompt": "She told me she ___ (be) a doctor.",
+      "answers": ["was"],
+      "hint": "Present simple (am/is/are) -> past simple in reported speech."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Direct: 'I worked here last year.' Reported: He said he ___.",
+      "options": ["worked here last year", "had worked there the previous year", "works here last year", "will work there"],
+      "answer": 1,
+      "explanation": "Past simple -> past perfect. 'Last year' -> 'the previous year'."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "He told that he was very busy.",
+      "answers": ["He said that he was very busy.", "He told me that he was very busy."],
+      "explanation": "'Tell' always needs a person after it: told me/him/her. 'Say' does not."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Ona powiedzila, ze jutro przyjdzie.",
+      "answers": ["She said she would come the next day.", "She said that she would come the next day.", "She said she would come tomorrow."]
+    },
+    {
+      "type": "transform",
+      "instruction": "Change to reported speech. He said: I can speak Spanish.",
+      "source": "He said: I can speak Spanish.",
+      "answers": ["He said he could speak Spanish.", "He said that he could speak Spanish."]
+    },
+    {
+      "type": "fill",
+      "prompt": "She said she ___ (be) studying when I called.",
+      "answers": ["had been studying"],
+      "hint": "Past continuous -> past perfect continuous in reported speech."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Which is correct reported speech for: 'I live in London'?",
+      "options": ["She said she lives in London.", "She said she lived in London.", "She said she had lived in London.", "She told she lived in London."],
+      "answer": 1,
+      "explanation": "Present simple -> past simple in reported speech: 'she lived'."
+    },
+    {
+      "type": "order",
+      "prompt": "Build a reported speech sentence.",
+      "tokens": ["told", "he", "me", "was", "He", "tired"],
+      "answer": ["He", "told", "me", "he", "was", "tired"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Powiedzieli, ze nie moga przyjsc na przyjecie.",
+      "answers": ["They said they couldn't come to the party.", "They said that they couldn't come to the party."]
     }
   ]
 }

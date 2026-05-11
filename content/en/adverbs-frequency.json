@@ -22,7 +22,7 @@
     },
     {
       "kind": "text",
-      "markdown": "**Position rules:**\n- **Before the main verb**: *I always eat breakfast.* / *She never smiles.*\n- **After the verb 'be'**: *She is always late.* / *They are never happy.*\n\n⚠️ With other auxiliaries, the adverb goes **between** the auxiliary and the main verb:\n*I have often seen him.* / *She has never been to Rome.*"
+      "markdown": "**Position rules:**\n- **Before the main verb**: *I always eat breakfast.* / *She never smiles.*\n- **After the verb 'be'**: *She is always late.* / *They are never happy.*\n\nWith other auxiliaries, the adverb goes **between** the auxiliary and the main verb:\n*I have often seen him.* / *She has never been to Rome.*"
     },
     {
       "kind": "examples",
@@ -63,7 +63,7 @@
       "type": "translate",
       "from": "pl",
       "to": "en",
-      "source": "Ona rzadko je śniadanie.",
+      "source": "Ona rzadko je sniadanie.",
       "answers": ["She rarely eats breakfast.", "She seldom eats breakfast."]
     },
     {
@@ -72,6 +72,64 @@
       "options": ["are never", "never are", "don't never", "be never"],
       "answer": 0,
       "explanation": "With 'be': subject + be + adverb: 'they are never'."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "I am late never for school.",
+      "answers": ["I am never late for school."],
+      "explanation": "After 'am', the adverb comes next: 'am never'."
+    },
+    {
+      "type": "fill",
+      "prompt": "She ___ forgets her umbrella when it rains. (always)",
+      "answers": ["always forgets", "always"],
+      "hint": "Place 'always' before the main verb."
+    },
+    {
+      "type": "mcq",
+      "prompt": "We ___ go to the cinema on Fridays — it's our tradition.",
+      "options": ["always", "never", "sometimes", "rarely"],
+      "answer": 0,
+      "explanation": "'It's our tradition' suggests 100% frequency — always."
+    },
+    {
+      "type": "order",
+      "prompt": "Build a sentence with a frequency adverb.",
+      "tokens": ["is", "Tom", "late", "never"],
+      "answer": ["Tom", "is", "never", "late"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Ona zwykle chodzi do pracy pieszo.",
+      "answers": ["She usually walks to work.", "She usually goes to work on foot."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "He has ___ visited Paris before. This is his first time.",
+      "options": ["always", "often", "never", "sometimes"],
+      "answer": 2,
+      "explanation": "'This is his first time' means he has never visited before."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "I go often to the park on weekends.",
+      "answers": ["I often go to the park on weekends."],
+      "explanation": "Frequency adverbs come before the main verb 'go'."
+    },
+    {
+      "type": "fill",
+      "prompt": "They are ___ happy when the weather is good. (always)",
+      "answers": ["always happy", "always"],
+      "hint": "After 'are', the adverb comes next."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Czasami ogladam filmy po angielsku.",
+      "answers": ["I sometimes watch films in English.", "I sometimes watch movies in English."]
     }
   ]
 }

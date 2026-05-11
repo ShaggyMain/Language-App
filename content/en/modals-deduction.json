@@ -9,7 +9,7 @@
   "theory": [
     {
       "kind": "text",
-      "markdown": "Use modal verbs to express **how certain** you are about a present or past situation:\n\n**Present deduction:**\n- **must be** → near-certain positive: *She must be tired — she's worked all day.*\n- **can't be** → near-certain negative: *He can't be at home — his car isn't here.*\n- **might / could / may be** → possible (50/50): *She might be in the kitchen.*\n\n**Past deduction:**\n- **must have + past participle**: *They must have left early — the house is empty.*\n- **can't have + past participle**: *She can't have missed the train — she left two hours ago.*\n- **might/could have + past participle**: *He might have forgotten about the meeting.*\n\n**Compare:**\n- *He **must** be ill.* (I'm very sure — near 100%)\n- *He **might** be ill.* (possible — about 50%)\n- *He **can't** be ill.* (I'm very sure it's not true — near 0%)"
+      "markdown": "Use modal verbs to express **how certain** you are about a present or past situation:\n\n**Present deduction:**\n- **must be** -> near-certain positive: *She must be tired — she's worked all day.*\n- **can't be** -> near-certain negative: *He can't be at home — his car isn't here.*\n- **might / could / may be** -> possible (50/50): *She might be in the kitchen.*\n\n**Past deduction:**\n- **must have + past participle**: *They must have left early — the house is empty.*\n- **can't have + past participle**: *She can't have missed the train — she left two hours ago.*\n- **might/could have + past participle**: *He might have forgotten about the meeting.*\n\n**Compare:**\n- *He **must** be ill.* (I'm very sure — near 100%)\n- *He **might** be ill.* (possible — about 50%)\n- *He **can't** be ill.* (I'm very sure it's not true — near 0%)"
     },
     {
       "kind": "table",
@@ -25,9 +25,9 @@
     {
       "kind": "examples",
       "items": [
-        { "source": "He must have missed his flight — he still hasn't arrived.", "translation": "Musiał spóźnić się na lot — wciąż nie przyjechał." },
-        { "source": "She can't have eaten already — she only left five minutes ago.", "translation": "Nie mogła już zjeść — wyszła tylko pięć minut temu." },
-        { "source": "They might be stuck in traffic — let's wait a bit longer.", "translation": "Może utknęli w korku — poczekajmy jeszcze chwilę." }
+        { "source": "He must have missed his flight — he still hasn't arrived.", "translation": "Musiał spoznic sie na lot — wciaz nie przyjechał." },
+        { "source": "She can't have eaten already — she only left five minutes ago.", "translation": "Nie mogla juz zjesc — wyszla tylko piec minut temu." },
+        { "source": "They might be stuck in traffic — let's wait a bit longer.", "translation": "Moze utkneli w korku — poczekajmy jeszcze chwile." }
       ]
     }
   ],
@@ -37,13 +37,13 @@
       "prompt": "Look at her — she ___ be exhausted after that race!",
       "options": ["might", "must", "can't", "should"],
       "answer": 1,
-      "explanation": "Near-certain positive deduction about the present → must."
+      "explanation": "Near-certain positive deduction about the present -> must."
     },
     {
       "type": "fill",
       "prompt": "He ___ have taken the money — he wasn't even here.",
       "answers": ["can't"],
-      "hint": "Near-certain it's NOT true → can't have."
+      "hint": "Near-certain it's NOT true -> can't have."
     },
     {
       "type": "match",
@@ -58,20 +58,79 @@
       "type": "translate",
       "from": "pl",
       "to": "en",
-      "source": "Ona musi być w domu — jej samochód stoi przed drzwiami.",
+      "source": "Ona musi byc w domu — jej samochod stoi przed drzwiami.",
       "answers": ["She must be at home — her car is outside.", "She must be home — her car is outside."]
     },
     {
       "type": "fill",
       "prompt": "He ___ have arrived by now — his flight landed three hours ago.",
       "answers": ["must", "should"],
-      "hint": "Expected or near-certain positive → must / should."
+      "hint": "Expected or near-certain positive -> must / should."
     },
     {
       "type": "errorFix",
       "sentence": "She must to be tired after that long journey.",
       "answers": ["She must be tired after that long journey."],
       "explanation": "Modal verbs are followed by the base verb — no 'to'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "The lights are off. They ___ have gone to bed already.",
+      "options": ["can't", "must", "might", "should"],
+      "answer": 1,
+      "explanation": "Near-certain past deduction (positive evidence) -> must have."
+    },
+    {
+      "type": "fill",
+      "prompt": "She ___ be over 40 — she looks so young!",
+      "answers": ["can't"],
+      "hint": "Near-certain negative present deduction."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Moze on jest w pracy. Nie wiem.",
+      "answers": ["He might be at work. I don't know.", "He could be at work. I don't know.", "He may be at work. I don't know."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "He didn't answer any of my calls. He ___ have left his phone at home.",
+      "options": ["must", "might", "can't", "should"],
+      "answer": 1,
+      "explanation": "Possible (not certain) past explanation -> might have."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "They can't have understood the instructions. They did it wrong.",
+      "answers": ["They can't have understood the instructions. They did it wrong."],
+      "explanation": "This sentence is already correct — can't have + past participle for near-certain negative past deduction."
+    },
+    {
+      "type": "fill",
+      "prompt": "You ___ be joking! That's impossible!",
+      "answers": ["must", "can't"],
+      "hint": "Either near-certain 'you must be joking' (surprise) or 'can't be serious'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "She studied for months. She ___ know this topic very well.",
+      "options": ["might", "must", "can't", "could"],
+      "answer": 1,
+      "explanation": "Near-certain positive present deduction -> must."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "On nie mogl tego powiedziec — nie byl na spotkaniu.",
+      "answers": ["He can't have said that — he wasn't at the meeting.", "He couldn't have said that — he wasn't at the meeting."]
+    },
+    {
+      "type": "order",
+      "prompt": "Build a past deduction sentence.",
+      "tokens": ["have", "must", "She", "the", "key", "lost"],
+      "answer": ["She", "must", "have", "lost", "the", "key"]
     }
   ]
 }

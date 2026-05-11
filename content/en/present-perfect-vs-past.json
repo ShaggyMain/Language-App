@@ -26,9 +26,9 @@
     {
       "kind": "examples",
       "items": [
-        { "source": "I have already eaten. (result: I'm not hungry now)", "translation": "Już jadłem/am. (skutek: nie jestem teraz głodny/a)" },
-        { "source": "I ate at 7 pm. (specific time)", "translation": "Jadłem/am o 19:00. (konkretny czas)" },
-        { "source": "Have you ever been to Japan?", "translation": "Czy byłeś/aś kiedykolwiek w Japonii?" }
+        { "source": "I have already eaten. (result: I'm not hungry now)", "translation": "Juz jadlem. (skutek: nie jestem teraz glodny)" },
+        { "source": "I ate at 7 pm. (specific time)", "translation": "Jadlem o 19:00. (konkretny czas)" },
+        { "source": "Have you ever been to Japan?", "translation": "Czy byles kiedykolwiek w Japonii?" }
       ]
     }
   ],
@@ -38,7 +38,7 @@
       "prompt": "I ___ the film last night. It was great!",
       "options": ["have seen", "saw", "have saw", "seen"],
       "answer": 1,
-      "explanation": "'Last night' is a finished time → Past Simple."
+      "explanation": "'Last night' is a finished time -> Past Simple."
     },
     {
       "type": "fill",
@@ -50,27 +50,85 @@
       "type": "errorFix",
       "sentence": "Did you ever visit Paris?",
       "answers": ["Have you ever visited Paris?"],
-      "explanation": "'Ever' without a specific time → Present Perfect."
+      "explanation": "'Ever' without a specific time -> Present Perfect."
     },
     {
       "type": "mcq",
       "prompt": "They ___ in Berlin for ten years now.",
       "options": ["lived", "have lived", "were living", "are living"],
       "answer": 1,
-      "explanation": "'For ten years' with a state continuing to now → Present Perfect."
+      "explanation": "'For ten years' with a state continuing to now -> Present Perfect."
     },
     {
       "type": "translate",
       "from": "pl",
       "to": "en",
-      "source": "Właśnie skończyłem/am tę książkę.",
+      "source": "Wlasnie skonczylem te ksiazke.",
       "answers": ["I have just finished this book.", "I've just finished this book."]
     },
     {
       "type": "fill",
       "prompt": "When ___ (you / be) born? — I ___ (be) born in 1998.",
       "answers": ["were you born, was born"],
-      "hint": "Specific year in the past → Past Simple."
+      "hint": "Specific year in the past -> Past Simple."
+    },
+    {
+      "type": "mcq",
+      "prompt": "I ___ her three times this week.",
+      "options": ["called", "have called", "was calling", "call"],
+      "answer": 1,
+      "explanation": "'This week' (not finished yet) -> Present Perfect."
+    },
+    {
+      "type": "fill",
+      "prompt": "He ___ (not / eat) breakfast yet. He's still hungry.",
+      "answers": ["hasn't eaten"],
+      "hint": "'Yet' in a negative sentence -> Present Perfect."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "I have seen that film two years ago.",
+      "answers": ["I saw that film two years ago."],
+      "explanation": "'Two years ago' is a specific finished time -> Past Simple."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Poznales kiedys kogos slawnego?",
+      "answers": ["Have you ever met anyone famous?", "Have you ever met a famous person?"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "They ___ married in 2015.",
+      "options": ["have got", "got", "have gotten", "get"],
+      "answer": 1,
+      "explanation": "'In 2015' is a specific finished time -> Past Simple."
+    },
+    {
+      "type": "fill",
+      "prompt": "I ___ (already / read) that article. Don't send it to me.",
+      "answers": ["have already read"],
+      "hint": "'Already' -> Present Perfect."
+    },
+    {
+      "type": "order",
+      "prompt": "Build a Present Perfect sentence.",
+      "tokens": ["been", "never", "I", "have", "to", "Australia"],
+      "answer": ["I", "have", "never", "been", "to", "Australia"]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "She has called me yesterday.",
+      "answers": ["She called me yesterday."],
+      "explanation": "'Yesterday' is a specific time -> Past Simple, not Present Perfect."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Mieszka tu od 2010 roku.",
+      "answers": ["She has lived here since 2010.", "He has lived here since 2010.", "She has been living here since 2010."]
     }
   ]
 }

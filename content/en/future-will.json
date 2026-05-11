@@ -25,9 +25,9 @@
     {
       "kind": "examples",
       "items": [
-        { "source": "I think it will be sunny tomorrow.", "translation": "Myślę, że jutro będzie słonecznie." },
-        { "source": "Don't worry, I'll help you with that.", "translation": "Nie martw się, pomogę ci z tym." },
-        { "source": "Will you come to the party on Saturday?", "translation": "Czy przyjdziesz na imprezę w sobotę?" }
+        { "source": "I think it will be sunny tomorrow.", "translation": "Mysle, ze jutro bedzie slonecznie." },
+        { "source": "Don't worry, I'll help you with that.", "translation": "Nie martw sie, pomoge ci z tym." },
+        { "source": "Will you come to the party on Saturday?", "translation": "Czy przyjdziesz na impreze w sobote?" }
       ]
     }
   ],
@@ -36,14 +36,14 @@
       "type": "fill",
       "prompt": "I'm cold. I think I ___ (close) the window.",
       "answers": ["will close", "'ll close"],
-      "hint": "Spontaneous decision → will."
+      "hint": "Spontaneous decision -> will."
     },
     {
       "type": "mcq",
       "prompt": "She probably ___ late — she always is!",
       "options": ["is going to be", "will be", "is be", "was"],
       "answer": 1,
-      "explanation": "Prediction with 'probably' → will."
+      "explanation": "Prediction with 'probably' -> will."
     },
     {
       "type": "transform",
@@ -55,7 +55,7 @@
       "type": "translate",
       "from": "pl",
       "to": "en",
-      "source": "Obiecuję, że zadzwonię do ciebie jutro.",
+      "source": "Obiecuje, ze zadzwonie do ciebie jutro.",
       "answers": ["I promise I will call you tomorrow.", "I promise I'll call you tomorrow."]
     },
     {
@@ -69,6 +69,64 @@
       "prompt": "Build a question with 'will'.",
       "tokens": ["you", "Will", "me", "help", "?"],
       "answer": ["Will", "you", "help", "me", "?"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "The phone is ringing. — I ___ get it!",
+      "options": ["am going to", "will", "would", "am"],
+      "answer": 1,
+      "explanation": "Spontaneous decision made at the moment of speaking -> will."
+    },
+    {
+      "type": "fill",
+      "prompt": "I think technology ___ (change) a lot in the next ten years.",
+      "answers": ["will change"],
+      "hint": "Prediction about the future -> will + base verb."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "I will to help you with your project.",
+      "answers": ["I will help you with your project."],
+      "explanation": "Will is followed by the base verb directly — no 'to'."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Ona nie przyjdzie na spotkanie.",
+      "answers": ["She won't come to the meeting.", "She will not come to the meeting."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Which sentence uses 'will' correctly?",
+      "options": ["He wills go.", "He will goes.", "He will go.", "He wills goes."],
+      "answer": 2,
+      "explanation": "will + base verb (no -s, no -es): 'he will go'."
+    },
+    {
+      "type": "fill",
+      "prompt": "___ you pass me the salt, please?",
+      "answers": ["Will"],
+      "hint": "Polite request -> Will you...?"
+    },
+    {
+      "type": "transform",
+      "instruction": "Turn into a question.",
+      "source": "She will be home by eight.",
+      "answers": ["Will she be home by eight?"]
+    },
+    {
+      "type": "order",
+      "prompt": "Build a prediction sentence.",
+      "tokens": ["think", "I", "be", "tomorrow", "it", "will", "cold"],
+      "answer": ["I", "think", "it", "will", "be", "cold", "tomorrow"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Czy pomozesz mi posprzatac?",
+      "answers": ["Will you help me clean up?", "Will you help me tidy up?"]
     }
   ]
 }

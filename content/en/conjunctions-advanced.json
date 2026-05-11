@@ -26,9 +26,9 @@
     {
       "kind": "examples",
       "items": [
-        { "source": "Even though she was tired, she finished the report.", "translation": "Chociaż była zmęczona, skończyła raport." },
-        { "source": "Call me as soon as you get home.", "translation": "Zadzwoń do mnie, jak tylko wrócisz do domu." },
-        { "source": "I'll help you unless you don't want me to.", "translation": "Pomogę ci, chyba że tego nie chcesz." }
+        { "source": "Even though she was tired, she finished the report.", "translation": "Chociaz byla zmeczona, skonczyla raport." },
+        { "source": "Call me as soon as you get home.", "translation": "Zadzwon do mnie, jak tylko wrocisz do domu." },
+        { "source": "I'll help you unless you don't want me to.", "translation": "Pomoge ci, chyba ze tego nie chcesz." }
       ]
     }
   ],
@@ -50,7 +50,7 @@
       "type": "translate",
       "from": "pl",
       "to": "en",
-      "source": "Zadzwoń do mnie, gdy dotrzesz na miejsce.",
+      "source": "Zadzwon do mnie, gdy dotrzesz na miejsce.",
       "answers": ["Call me when you arrive.", "Call me when you get there."]
     },
     {
@@ -69,7 +69,65 @@
       "type": "errorFix",
       "sentence": "Although she studied hard, but she failed.",
       "answers": ["Although she studied hard, she failed."],
-      "explanation": "Don't use 'but' after 'although' — they both express contrast, so only one is needed."
+      "explanation": "Don't use 'but' after 'although' — both express contrast, so only one is needed."
+    },
+    {
+      "type": "mcq",
+      "prompt": "I always listen to music ___ I work.",
+      "options": ["although", "unless", "while", "because"],
+      "answer": 2,
+      "explanation": "'While' describes two actions happening at the same time."
+    },
+    {
+      "type": "fill",
+      "prompt": "Finish your homework ___ you watch TV.",
+      "answers": ["before"],
+      "hint": "Sequence: homework first, then TV."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Chociaz bylo zimno, poszlismy na spacer.",
+      "answers": ["Although it was cold, we went for a walk.", "Even though it was cold, we went for a walk."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "I'll come to your party unless you want me.",
+      "answers": ["I'll come to your party if you want me."],
+      "explanation": "'Unless' means 'if not'. 'If you want me' is the correct positive condition here."
+    },
+    {
+      "type": "order",
+      "prompt": "Build a sentence with 'because'.",
+      "tokens": ["I", "couldn't", "sleep", "because", "noisy", "was", "it"],
+      "answer": ["I", "couldn't", "sleep", "because", "it", "was", "noisy"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "She smiled ___ she heard the news.",
+      "options": ["although", "while", "when", "unless"],
+      "answer": 2,
+      "explanation": "'When' connects a time action with the reaction."
+    },
+    {
+      "type": "fill",
+      "prompt": "___ he arrived, everyone started clapping.",
+      "answers": ["When", "As soon as"],
+      "hint": "Time conjunction — the moment he arrived."
+    },
+    {
+      "type": "transform",
+      "instruction": "Rewrite starting with 'Because'.",
+      "source": "The roads were icy, so I stayed at home.",
+      "answers": ["Because the roads were icy, I stayed at home."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Nie moge wyjsc, dopoki nie skonczysz jesc.",
+      "answers": ["I can't go out until you finish eating.", "I won't go out until you finish eating."]
     }
   ]
 }

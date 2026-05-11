@@ -9,7 +9,7 @@
   "theory": [
     {
       "kind": "text",
-      "markdown": "The **subjunctive** is a formal structure used after certain verbs and expressions.\n\n**1. Mandative subjunctive** — after verbs/adjectives of demand, suggestion, recommendation:\n*suggest, recommend, insist, demand, require, request, propose, ask, vital, essential, important, necessary, imperative*\n\nStructure: **verb/adjective + that + subject + base verb** (no -s, no auxiliaries)\n*The doctor suggested that he **eat** less sugar.* (not: ~~eats~~)\n*It is essential that every student **submit** the form.* (not: ~~submits~~)\n*She insisted that the contract **be** signed today.*\n\n**2. Were-subjunctive** — in formal conditional and wish sentences:\n*If I **were** you, I would accept.* / *I wish she **were** here.*\n\n**Note**: In informal American English, 'should + base verb' or indicative is also used instead of subjunctive:\n*The doctor suggested that he should eat less.* / *The doctor suggested that he eats less.*"
+      "markdown": "The **subjunctive** is a formal structure used after certain verbs and expressions.\n\n**1. Mandative subjunctive** — after verbs/adjectives of demand, suggestion, recommendation:\n*suggest, recommend, insist, demand, require, request, propose, ask, vital, essential, important, necessary, imperative*\n\nStructure: **verb/adjective + that + subject + base verb** (no -s, no auxiliaries)\n*The doctor suggested that he **eat** less sugar.* (not: eats)\n*It is essential that every student **submit** the form.* (not: submits)\n*She insisted that the contract **be** signed today.*\n\n**2. Were-subjunctive** — in formal conditional and wish sentences:\n*If I **were** you, I would accept.* / *I wish she **were** here.*\n\nIn informal American English, 'should + base verb' is also used:\n*The doctor suggested that he should eat less.*"
     },
     {
       "kind": "table",
@@ -24,9 +24,9 @@
     {
       "kind": "examples",
       "items": [
-        { "source": "The committee recommended that the report be revised.", "translation": "Komisja zaleciła, aby raport został poprawiony." },
-        { "source": "It is vital that all passengers fasten their seatbelts.", "translation": "Konieczne jest, aby wszyscy pasażerowie zapięli pasy bezpieczeństwa." },
-        { "source": "The judge insisted that the witness tell the truth.", "translation": "Sędzia nalegał, aby świadek mówił prawdę." }
+        { "source": "The committee recommended that the report be revised.", "translation": "Komisja zalecila, aby raport zostal poprawiony." },
+        { "source": "It is vital that all passengers fasten their seatbelts.", "translation": "Konieczne jest, aby wszyscy pasazerowie zapieli pasy bezpieczenstwa." },
+        { "source": "The judge insisted that the witness tell the truth.", "translation": "Sedzia nalegal, aby swiadek mowil prawde." }
       ]
     }
   ],
@@ -35,14 +35,14 @@
       "type": "fill",
       "prompt": "The doctor recommended that she ___ (rest) for a week.",
       "answers": ["rest"],
-      "hint": "Mandative subjunctive → base verb (no -s)."
+      "hint": "Mandative subjunctive -> base verb (no -s)."
     },
     {
       "type": "mcq",
       "prompt": "It is essential that every employee ___ the training.",
       "options": ["completes", "complete", "will complete", "has completed"],
       "answer": 1,
-      "explanation": "'Essential that' → mandative subjunctive → base verb."
+      "explanation": "'Essential that' -> mandative subjunctive -> base verb."
     },
     {
       "type": "errorFix",
@@ -60,7 +60,7 @@
       "type": "translate",
       "from": "pl",
       "to": "en",
-      "source": "Jest konieczne, żeby każdy uczeń zdał egzamin.",
+      "source": "Jest konieczne, zeby kazdy uczen zdal egzamin.",
       "answers": ["It is necessary that every student pass the exam.", "It is necessary that every student passes the exam."]
     },
     {
@@ -68,6 +68,64 @@
       "instruction": "Rewrite using a mandative subjunctive.",
       "source": "I suggest: You should apologise.",
       "answers": ["I suggest that you apologise.", "I suggest that he apologise."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "The court demanded that the defendant ___ before the judge.",
+      "options": ["appears", "appear", "will appear", "appeared"],
+      "answer": 1,
+      "explanation": "After 'demand that', use the subjunctive: base verb."
+    },
+    {
+      "type": "fill",
+      "prompt": "It is vital that the data ___ (be) kept confidential.",
+      "answers": ["be"],
+      "hint": "Passive subjunctive: be + past participle (not 'is' or 'was')."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "The board requires that each member attends the annual meeting.",
+      "answers": ["The board requires that each member attend the annual meeting."],
+      "explanation": "After 'require that', use the subjunctive base verb: 'attend' (no -s)."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Zalecamy, aby wszyscy uczestnicy zarejestrowali sie z wyprzedzeniem.",
+      "answers": ["We recommend that all participants register in advance.", "We recommend that all participants should register in advance."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "It is imperative that the report ___ before the deadline.",
+      "options": ["submits", "is submitted", "be submitted", "was submitted"],
+      "answer": 2,
+      "explanation": "Passive subjunctive after 'imperative that': be + past participle."
+    },
+    {
+      "type": "fill",
+      "prompt": "Her doctor insisted that she ___ (not / eat) fatty food.",
+      "answers": ["not eat"],
+      "hint": "Negative subjunctive: not + base verb (no 'do not')."
+    },
+    {
+      "type": "order",
+      "prompt": "Build a subjunctive sentence.",
+      "tokens": ["that", "crucial", "It", "every", "is", "vote", "citizen"],
+      "answer": ["It", "is", "crucial", "that", "every", "citizen", "vote"]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "I propose that the committee will review the budget.",
+      "answers": ["I propose that the committee review the budget."],
+      "explanation": "After 'propose that', use the subjunctive base verb — no 'will'."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Sedzia zazadal, aby prawnik przedstawil dowody.",
+      "answers": ["The judge demanded that the lawyer present the evidence.", "The judge demanded that the lawyer submit the evidence."]
     }
   ]
 }

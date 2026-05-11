@@ -9,27 +9,27 @@
   "theory": [
     {
       "kind": "text",
-      "markdown": "A **question tag** is a short question added at the end of a statement.\n\n**Rule:**\n- Positive statement → **negative tag**: *It's cold, **isn't it?***\n- Negative statement → **positive tag**: *She doesn't work here, **does she?***\n\nThe tag uses the **same auxiliary verb** as the main clause:\n*They have arrived, **haven't they?*** / *You can swim, **can't you?***\n\nFor the verb **be** without auxiliary:\n*She is a teacher, **isn't she?***\n\nFor simple present/past (no auxiliary):\n*He likes coffee, **doesn't he?*** (present) / *She came, **didn't she?*** (past)\n\nWith **I am**: tag = **aren't I?**\n*I'm late, **aren't I?***"
+      "markdown": "A **question tag** is a short question added at the end of a statement.\n\n**Rule:**\n- Positive statement -> **negative tag**: *It's cold, **isn't it?***\n- Negative statement -> **positive tag**: *She doesn't work here, **does she?***\n\nThe tag uses the **same auxiliary verb** as the main clause:\n*They have arrived, **haven't they?*** / *You can swim, **can't you?***\n\nFor the verb **be** without auxiliary:\n*She is a teacher, **isn't she?***\n\nFor simple present/past (no auxiliary):\n*He likes coffee, **doesn't he?*** (present) / *She came, **didn't she?*** (past)\n\nWith **I am**: tag = **aren't I?**\n*I'm late, **aren't I?***"
     },
     {
       "kind": "table",
       "title": "Question tag patterns",
       "headers": ["Main clause", "Tag", "Full example"],
       "rows": [
-        ["It is + …", "isn't it?", "It's warm, isn't it?"],
-        ["They are + …", "aren't they?", "They're late, aren't they?"],
-        ["She can + …", "can't she?", "She can drive, can't she?"],
-        ["He doesn't + …", "does he?", "He doesn't smoke, does he?"],
-        ["They didn't + …", "did they?", "They didn't come, did they?"],
-        ["You have + …", "haven't you?", "You've met him, haven't you?"]
+        ["It is + ...", "isn't it?", "It's warm, isn't it?"],
+        ["They are + ...", "aren't they?", "They're late, aren't they?"],
+        ["She can + ...", "can't she?", "She can drive, can't she?"],
+        ["He doesn't + ...", "does he?", "He doesn't smoke, does he?"],
+        ["They didn't + ...", "did they?", "They didn't come, did they?"],
+        ["You have + ...", "haven't you?", "You've met him, haven't you?"]
       ]
     },
     {
       "kind": "examples",
       "items": [
-        { "source": "You live in Kraków, don't you?", "translation": "Mieszkasz w Krakowie, prawda?" },
-        { "source": "She hasn't called yet, has she?", "translation": "Jeszcze nie zadzwoniła, prawda?" },
-        { "source": "It was a great party, wasn't it?", "translation": "To była świetna impreza, prawda?" }
+        { "source": "You live in Krakow, don't you?", "translation": "Mieszkasz w Krakowie, prawda?" },
+        { "source": "She hasn't called yet, has she?", "translation": "Jeszcze nie zadzwonila, prawda?" },
+        { "source": "It was a great party, wasn't it?", "translation": "To byla swietna impreza, prawda?" }
       ]
     }
   ],
@@ -38,26 +38,26 @@
       "type": "fill",
       "prompt": "She works at the hospital, ___ she?",
       "answers": ["doesn't"],
-      "hint": "Positive main clause → negative tag. She works (present) → doesn't."
+      "hint": "Positive main clause -> negative tag. She works (present) -> doesn't."
     },
     {
       "type": "mcq",
       "prompt": "They didn't enjoy the film, ___ they?",
       "options": ["didn't", "did", "don't", "weren't"],
       "answer": 1,
-      "explanation": "Negative main clause (didn't) → positive tag (did)."
+      "explanation": "Negative main clause (didn't) -> positive tag (did)."
     },
     {
       "type": "fill",
       "prompt": "You can speak French, ___ you?",
       "answers": ["can't"],
-      "hint": "Positive 'can' → tag uses 'can't'."
+      "hint": "Positive 'can' -> tag uses 'can't'."
     },
     {
       "type": "errorFix",
       "sentence": "It's a beautiful day, is it?",
       "answers": ["It's a beautiful day, isn't it?"],
-      "explanation": "Positive main clause → negative question tag."
+      "explanation": "Positive main clause -> negative question tag."
     },
     {
       "type": "transform",
@@ -69,8 +69,66 @@
       "type": "translate",
       "from": "pl",
       "to": "en",
-      "source": "To było pyszne, prawda?",
+      "source": "To bylo pyszne, prawda?",
       "answers": ["It was delicious, wasn't it?", "That was delicious, wasn't it?"]
+    },
+    {
+      "type": "fill",
+      "prompt": "They are coming to the party, ___ they?",
+      "answers": ["aren't"],
+      "hint": "Positive 'are' -> tag uses 'aren't'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "She hasn't finished the report, ___ she?",
+      "options": ["has", "hasn't", "does", "is"],
+      "answer": 0,
+      "explanation": "Negative main clause (hasn't) -> positive tag (has)."
+    },
+    {
+      "type": "transform",
+      "instruction": "Add the correct question tag.",
+      "source": "You don't like spicy food.",
+      "answers": ["You don't like spicy food, do you?"]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "He can play the guitar, can he?",
+      "answers": ["He can play the guitar, can't he?"],
+      "explanation": "Positive main clause -> negative tag: 'can't he?'"
+    },
+    {
+      "type": "fill",
+      "prompt": "I'm next in line, ___ I?",
+      "answers": ["aren't"],
+      "hint": "Special case: 'I am' -> tag is 'aren't I?'"
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Ona nie pali, prawda?",
+      "answers": ["She doesn't smoke, does she?"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "You went to school yesterday, ___ you?",
+      "options": ["went", "didn't", "don't", "weren't"],
+      "answer": 1,
+      "explanation": "Positive past simple -> tag uses 'didn't'."
+    },
+    {
+      "type": "transform",
+      "instruction": "Add the correct question tag.",
+      "source": "They were late.",
+      "answers": ["They were late, weren't they?"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Znasz go, prawda?",
+      "answers": ["You know him, don't you?"]
     }
   ]
 }

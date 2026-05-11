@@ -70,6 +70,64 @@
       "to": "en",
       "source": "To jest stary, czarny samochód.",
       "answers": ["It is an old black car.", "That is an old black car.", "It's an old black car.", "That's an old black car."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "He is a ___ man. (tall)",
+      "options": ["tall and rich", "talls", "tall", "talling"],
+      "answer": 0,
+      "explanation": "Adjectives before a noun describe the noun — multiple adjectives are fine."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "She wore a dress red beautiful.",
+      "answers": ["She wore a beautiful red dress."],
+      "explanation": "Adjectives go before the noun; opinion (beautiful) before colour (red)."
+    },
+    {
+      "type": "fill",
+      "prompt": "The children look ___. Let them sleep. (tired)",
+      "answers": ["tired"],
+      "hint": "Adjective after 'look' — describes the subject."
+    },
+    {
+      "type": "order",
+      "prompt": "Build a descriptive sentence.",
+      "tokens": ["a", "He", "drives", "German", "fast", "car"],
+      "answer": ["He", "drives", "a", "fast", "German", "car"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Which word is the adjective? 'She has a wonderful voice.'",
+      "options": ["has", "voice", "wonderful", "she"],
+      "answer": 2,
+      "explanation": "'Wonderful' describes 'voice' — it is the adjective."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "To jest maly, zielony dom.",
+      "answers": ["It is a small green house.", "That is a small green house.", "It's a small green house."]
+    },
+    {
+      "type": "fill",
+      "prompt": "The weather today is ___. We can't go out. (terrible)",
+      "answers": ["terrible"],
+      "hint": "After 'is' — adjective predicative position."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "I want a blacks and bigs jacket.",
+      "answers": ["I want a black and big jacket.", "I want a big black jacket."],
+      "explanation": "Adjectives have no plural form in English."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Ona ma niebieskia, krotkie wlosy.",
+      "answers": ["She has short blue hair.", "She has blue short hair."]
     }
   ]
 }

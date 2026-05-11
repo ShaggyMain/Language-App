@@ -9,7 +9,7 @@
   "theory": [
     {
       "kind": "text",
-      "markdown": "**Wish / If only** express that we want reality to be different.\n\n**1. Unreal present or future** → **wish + Past Simple**\n*I wish I had a bigger flat.* (I don't have one — I want it to be different)\n*If only she were here now.* (She isn't here)\n\n**2. Regret about the past** → **wish + Past Perfect**\n*I wish I hadn't said that.* (I said it and I regret it)\n*If only I had listened to her.*\n\n**3. Annoyance about present/future (other person's behaviour)** → **wish + would**\n*I wish he would stop making noise.* (annoyed at his current behaviour)\n*If only it would stop raining.*\n\n⚠️ Don't confuse:\n- *I wish I **were** rich.* (unreal present) ← 'were' not 'was' in formal use\n- *I wish I **had been** there.* (past regret)"
+      "markdown": "**Wish / If only** express that we want reality to be different.\n\n**1. Unreal present or future** -> **wish + Past Simple**\n*I wish I had a bigger flat.* (I don't have one — I want it to be different)\n*If only she were here now.* (She isn't here)\n\n**2. Regret about the past** -> **wish + Past Perfect**\n*I wish I hadn't said that.* (I said it and I regret it)\n*If only I had listened to her.*\n\n**3. Annoyance about present/future (other person's behaviour)** -> **wish + would**\n*I wish he would stop making noise.* (annoyed at his current behaviour)\n*If only it would stop raining.*\n\nDon't confuse:\n- *I wish I **were** rich.* (unreal present) <- 'were' not 'was' in formal use\n- *I wish I **had been** there.* (past regret)"
     },
     {
       "kind": "table",
@@ -24,9 +24,9 @@
     {
       "kind": "examples",
       "items": [
-        { "source": "If only we had left earlier — we wouldn't be stuck in traffic.", "translation": "Gdybyśmy tylko wyszli wcześniej — nie utknęlibyśmy w korku." },
-        { "source": "I wish the weather would improve.", "translation": "Żałuję, że pogoda się nie poprawi / chciałbym, żeby pogoda się poprawiła." },
-        { "source": "She wishes she hadn't told him the secret.", "translation": "Żałuje, że zdradziła mu sekret." }
+        { "source": "If only we had left earlier — we wouldn't be stuck in traffic.", "translation": "Gdybysmy tylko wyszli wczesniej — nie utknelibysmy w korku." },
+        { "source": "I wish the weather would improve.", "translation": "Chcialbym, zeby pogoda sie poprawila." },
+        { "source": "She wishes she hadn't told him the secret.", "translation": "Zaluje, ze zdradzia mu sekret." }
       ]
     }
   ],
@@ -35,39 +35,97 @@
       "type": "fill",
       "prompt": "I wish I ___ (know) how to drive.",
       "answers": ["knew"],
-      "hint": "Unreal present situation → wish + Past Simple."
+      "hint": "Unreal present situation -> wish + Past Simple."
     },
     {
       "type": "mcq",
       "prompt": "She wishes she ___ the job offer last year.",
       "options": ["accepted", "had accepted", "would accept", "has accepted"],
       "answer": 1,
-      "explanation": "Regret about past → wish + Past Perfect."
+      "explanation": "Regret about past -> wish + Past Perfect."
     },
     {
       "type": "translate",
       "from": "pl",
       "to": "en",
-      "source": "Żałuję, że nie wzięłam/wzięłem parasola.",
+      "source": "Zaluje, ze nie wzielam parasola.",
       "answers": ["I wish I had taken an umbrella.", "I wish I had brought an umbrella."]
     },
     {
       "type": "fill",
       "prompt": "I wish you ___ (would / stop) interrupting me!",
       "answers": ["would stop"],
-      "hint": "Annoyance about someone's repeated behaviour → wish + would."
+      "hint": "Annoyance about someone's repeated behaviour -> wish + would."
     },
     {
       "type": "errorFix",
       "sentence": "I wish I would have more free time.",
       "answers": ["I wish I had more free time."],
-      "explanation": "Unreal present → wish + Past Simple (not 'would have')."
+      "explanation": "Unreal present -> wish + Past Simple (not 'would have')."
     },
     {
       "type": "transform",
       "instruction": "Rewrite using 'If only'.",
       "source": "I wish I hadn't sent that email.",
       "answers": ["If only I hadn't sent that email."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "I wish it ___ raining! We can't go out.",
+      "options": ["stopped", "had stopped", "would stop", "stops"],
+      "answer": 2,
+      "explanation": "Annoyance about current situation -> wish + would + base verb."
+    },
+    {
+      "type": "fill",
+      "prompt": "If only I ___ (be) taller — I could reach the shelf!",
+      "answers": ["were", "was"],
+      "hint": "Unreal present: wish/if only + Past Simple. 'Were' preferred in formal use."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "I wish I didn't eat all that food last night.",
+      "answers": ["I wish I hadn't eaten all that food last night."],
+      "explanation": "Regret about the past -> wish + Past Perfect (hadn't eaten)."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Chcialbym moc mowic po japonsku.",
+      "answers": ["I wish I could speak Japanese.", "If only I could speak Japanese."]
+    },
+    {
+      "type": "fill",
+      "prompt": "She wishes she ___ (not / say) those hurtful words.",
+      "answers": ["hadn't said", "had not said"],
+      "hint": "Past regret -> wish + Past Perfect negative."
+    },
+    {
+      "type": "mcq",
+      "prompt": "I wish my neighbours ___ loud music so late at night.",
+      "options": ["didn't play", "hadn't played", "wouldn't play", "don't play"],
+      "answer": 2,
+      "explanation": "Annoyance about someone's current/repeated behaviour -> wish + would + negative."
+    },
+    {
+      "type": "order",
+      "prompt": "Build a wish sentence.",
+      "tokens": ["I", "lived", "I", "wish", "in", "the", "city"],
+      "answer": ["I", "wish", "I", "lived", "in", "the", "city"]
+    },
+    {
+      "type": "transform",
+      "instruction": "Rewrite using 'I wish'.",
+      "source": "I regret not studying harder at school.",
+      "answers": ["I wish I had studied harder at school."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Zaluje, ze nie spotkalem go, kiedy mial czas.",
+      "answers": ["I wish I had met him when he had time.", "I wish I had met him when he was free."]
     }
   ]
 }

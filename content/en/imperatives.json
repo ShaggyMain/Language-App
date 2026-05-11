@@ -69,6 +69,64 @@
       "to": "en",
       "source": "Nie dotykaj tego.",
       "answers": ["Don't touch that.", "Don't touch it."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Which is a correct imperative?",
+      "options": ["You sit down please.", "Sit down, please.", "Please to sit down.", "You should sit down."],
+      "answer": 1,
+      "explanation": "Imperative = base verb, no subject. 'Please' adds politeness."
+    },
+    {
+      "type": "transform",
+      "instruction": "Make the imperative negative.",
+      "source": "Speak to me like that.",
+      "answers": ["Don't speak to me like that."]
+    },
+    {
+      "type": "fill",
+      "prompt": "___ the window, please. It's too hot in here. (open)",
+      "answers": ["Open"],
+      "hint": "Affirmative imperative — just the base verb."
+    },
+    {
+      "type": "order",
+      "prompt": "Build a suggestion with Let's.",
+      "tokens": ["dinner", "together", "have", "Let's"],
+      "answer": ["Let's", "have", "dinner", "together"]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Please don't to worry about it.",
+      "answers": ["Please don't worry about it."],
+      "explanation": "Don't is followed by the base verb directly, no 'to'."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Bądz cicho! Inne osoby pracuja.",
+      "answers": ["Be quiet! Other people are working."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "The teacher said: '___ your books to page 42.'",
+      "options": ["Opening", "Opened", "Open", "Opens"],
+      "answer": 2,
+      "explanation": "Instruction/command → imperative = base form."
+    },
+    {
+      "type": "transform",
+      "instruction": "Change to a polite form by adding 'please'.",
+      "source": "Give me that pen.",
+      "answers": ["Please give me that pen.", "Give me that pen, please."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Jedźmy na plaze w ten weekend.",
+      "answers": ["Let's go to the beach this weekend.", "Let's go to the beach at the weekend."]
     }
   ]
 }

@@ -9,7 +9,7 @@
   "theory": [
     {
       "kind": "text",
-      "markdown": "**Cleft sentences** split a sentence into two clauses to **emphasise** one element.\n\n**It-cleft**: *It was + emphasised element + that/who + rest of sentence*\n*Tom broke the window.* → *It was **Tom** who broke the window.* (not someone else)\n*It was **the window** that Tom broke.* (not the door)\n*It was **yesterday** that I saw her.*\n\n**Wh-cleft (pseudo-cleft)**: *What + clause + is/was + emphasised element*\n*I need a holiday.* → ***What I need** is a holiday.*\n*She loves French food.* → ***What she loves** is French food.*\n\n**Why use clefts?**\n- To focus on **new** or **contrasted** information\n- To correct a misunderstanding: *It was John who called — not Peter.*"
+      "markdown": "**Cleft sentences** split a sentence into two clauses to **emphasise** one element.\n\n**It-cleft**: *It was + emphasised element + that/who + rest of sentence*\n*Tom broke the window.* -> *It was **Tom** who broke the window.* (not someone else)\n*It was **the window** that Tom broke.* (not the door)\n*It was **yesterday** that I saw her.*\n\n**Wh-cleft (pseudo-cleft)**: *What + clause + is/was + emphasised element*\n*I need a holiday.* -> ***What I need** is a holiday.*\n*She loves French food.* -> ***What she loves** is French food.*\n\n**Why use clefts?**\n- To focus on **new** or **contrasted** information\n- To correct a misunderstanding: *It was John who called — not Peter.*"
     },
     {
       "kind": "table",
@@ -25,9 +25,9 @@
     {
       "kind": "examples",
       "items": [
-        { "source": "It was the noise that kept me awake all night.", "translation": "To hałas nie pozwalał mi spać całą noc." },
-        { "source": "What I find most difficult is getting up early.", "translation": "To, co jest dla mnie najtrudniejsze, to wstawanie wcześnie." },
-        { "source": "It was my teacher who first encouraged me to write.", "translation": "To mój nauczyciel jako pierwszy zachęcił mnie do pisania." }
+        { "source": "It was the noise that kept me awake all night.", "translation": "To halas nie pozwalal mi spac cala noc." },
+        { "source": "What I find most difficult is getting up early.", "translation": "To, co jest dla mnie najtrudniejsze, to wstawanie wczesnie." },
+        { "source": "It was my teacher who first encouraged me to write.", "translation": "To moj nauczyciel jako pierwszy zachecil mnie do pisania." }
       ]
     }
   ],
@@ -67,8 +67,65 @@
       "type": "translate",
       "from": "pl",
       "to": "en",
-      "source": "To on spowodował wypadek, nie ona.",
+      "source": "To on spowodowal wypadek, nie ona.",
       "answers": ["It was he who caused the accident, not her.", "It was him who caused the accident, not her."]
+    },
+    {
+      "type": "transform",
+      "instruction": "Emphasise the time using an it-cleft.",
+      "source": "I first understood this concept in 2020.",
+      "answers": ["It was in 2020 that I first understood this concept."]
+    },
+    {
+      "type": "fill",
+      "prompt": "It was the constant noise ___ disturbed our sleep.",
+      "answers": ["that"],
+      "hint": "It-cleft for a thing: It was X that..."
+    },
+    {
+      "type": "mcq",
+      "prompt": "What we need ___ more time, not more money.",
+      "options": ["are", "is", "were", "was"],
+      "answer": 1,
+      "explanation": "Wh-cleft: 'What we need' is singular -> is."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "It was in Paris where they first met.",
+      "answers": ["It was in Paris that they first met."],
+      "explanation": "In an it-cleft, always use 'that' after the emphasised element (not 'where')."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "To co mnie najbardziej zaskoczylo to jego spokój.",
+      "answers": ["What surprised me most was his calm.", "What surprised me most was his calmness."]
+    },
+    {
+      "type": "transform",
+      "instruction": "Emphasise the object using an it-cleft.",
+      "source": "She bought the red dress.",
+      "answers": ["It was the red dress that she bought."]
+    },
+    {
+      "type": "fill",
+      "prompt": "It ___ my sister ___ told me the news, not Tom.",
+      "answers": ["was, who"],
+      "hint": "It-cleft structure: It + was + person + who."
+    },
+    {
+      "type": "order",
+      "prompt": "Build an it-cleft sentence.",
+      "tokens": ["the", "was", "It", "money", "mattered", "not", "that"],
+      "answer": ["It", "was", "the", "money", "that", "mattered", "not"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "To co naprawde mnie denerwuje to jego arogancja.",
+      "answers": ["What really annoys me is his arrogance.", "What really bothers me is his arrogance."]
     }
   ]
 }

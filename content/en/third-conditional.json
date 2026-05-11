@@ -9,7 +9,7 @@
   "theory": [
     {
       "kind": "text",
-      "markdown": "**Third Conditional**: **if + Past Perfect, would have + past participle**\n\nUse it to speculate about how things **could have been different** in the past.\nThe situation did NOT happen — it is purely imaginary.\n\n*If I had studied harder, I would have passed the exam.* (I didn't study hard, so I failed.)\n\n**Contractions**: *would have → would've / wouldn't have → wouldn't've (informal)*\n\n**Compare the three conditionals:**\n| Type | If-clause | Main clause | Use |\n|---|---|---|---|\n| 1st | Present Simple | will + base | real future possibility |\n| 2nd | Past Simple | would + base | unreal present/future |\n| 3rd | Past Perfect | would have + pp | unreal past |"
+      "markdown": "**Third Conditional**: **if + Past Perfect, would have + past participle**\n\nUse it to speculate about how things **could have been different** in the past.\nThe situation did NOT happen — it is purely imaginary.\n\n*If I had studied harder, I would have passed the exam.* (I didn't study hard, so I failed.)\n\n**Contractions**: *would have -> would've*\n\n**Compare the three conditionals:**\n- 1st: if + Present Simple, will + base (real future possibility)\n- 2nd: if + Past Simple, would + base (unreal present/future)\n- 3rd: if + Past Perfect, would have + past participle (unreal past)"
     },
     {
       "kind": "table",
@@ -25,9 +25,9 @@
     {
       "kind": "examples",
       "items": [
-        { "source": "If I had known about the meeting, I would have attended.", "translation": "Gdybym wiedział/a o spotkaniu, byłbym/byłabym na nim." },
-        { "source": "She wouldn't have been upset if you had told her the truth.", "translation": "Nie byłaby zdenerwowana, gdybyś powiedział/a jej prawdę." },
-        { "source": "What would you have done if you had been in my place?", "translation": "Co byś zrobił/a, gdybyś był/a na moim miejscu?" }
+        { "source": "If I had known about the meeting, I would have attended.", "translation": "Gdybym wiedzial o spotkaniu, bylbym na nim." },
+        { "source": "She wouldn't have been upset if you had told her the truth.", "translation": "Nie bylaby zdenerwowana, gdybys powiedzial jej prawde." },
+        { "source": "What would you have done if you had been in my place?", "translation": "Co bys zrobil, gdybys byl na moim miejscu?" }
       ]
     }
   ],
@@ -41,12 +41,7 @@
     {
       "type": "mcq",
       "prompt": "If he ___ the instructions, the accident ___ happened.",
-      "options": [
-        "followed / wouldn't have",
-        "had followed / wouldn't have",
-        "would follow / hadn't",
-        "has followed / won't"
-      ],
+      "options": ["followed / wouldn't have", "had followed / wouldn't have", "would follow / hadn't", "has followed / won't"],
       "answer": 1,
       "explanation": "Third conditional: had + past participle, would have + past participle."
     },
@@ -54,11 +49,8 @@
       "type": "translate",
       "from": "pl",
       "to": "en",
-      "source": "Gdybym nie zapomniał/a parasola, nie zmokłbym/zmokłabym.",
-      "answers": [
-        "If I hadn't forgotten my umbrella, I wouldn't have got wet.",
-        "If I had not forgotten my umbrella, I would not have got wet."
-      ]
+      "source": "Gdybym nie zapomnial parasola, nie zmokhlbym.",
+      "answers": ["If I hadn't forgotten my umbrella, I wouldn't have got wet.", "If I had not forgotten my umbrella, I would not have got wet."]
     },
     {
       "type": "transform",
@@ -77,6 +69,64 @@
       "prompt": "We ___ (not / get) lost if we ___ (bring) a map.",
       "answers": ["wouldn't have got lost, had brought"],
       "hint": "Both clauses are past unreal."
+    },
+    {
+      "type": "mcq",
+      "prompt": "She ___ the party if she ___ about it.",
+      "options": ["would have attended / had known", "would attend / knew", "attended / had known", "would have attended / would have known"],
+      "answer": 0,
+      "explanation": "Third conditional: would have + pp in main clause; had + pp in if-clause."
+    },
+    {
+      "type": "fill",
+      "prompt": "If I ___ (not / eat) so much, I ___ (not / feel) so sick.",
+      "answers": ["hadn't eaten, wouldn't have felt"],
+      "hint": "Both clauses negative third conditional."
+    },
+    {
+      "type": "order",
+      "prompt": "Build a third conditional sentence.",
+      "tokens": ["missed", "had", "wouldn't", "not", "She", "have", "the", "train", "she", "hurried"],
+      "answer": ["She", "wouldn't", "have", "missed", "the", "train", "if", "she", "had", "hurried"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Gdybym wiedzial, powiedzialabym ci.",
+      "answers": ["If I had known, I would have told you.", "If I had known, I would've told you."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "If you had told me earlier, I could to help.",
+      "answers": ["If you had told me earlier, I could have helped."],
+      "explanation": "Third conditional: could have + past participle (not 'could to')."
+    },
+    {
+      "type": "mcq",
+      "prompt": "What would you have done if you ___ in my position?",
+      "options": ["are", "were", "had been", "would be"],
+      "answer": 2,
+      "explanation": "Third conditional if-clause: had + been (Past Perfect)."
+    },
+    {
+      "type": "transform",
+      "instruction": "Make a question from this third conditional sentence.",
+      "source": "You would have helped if you had been there.",
+      "answers": ["Would you have helped if you had been there?"]
+    },
+    {
+      "type": "fill",
+      "prompt": "He ___ (could / warn) us if he ___ (know) about the danger.",
+      "answers": ["could have warned, had known"],
+      "hint": "could have + pp for past ability/possibility."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Gdyby nie on, zdarzylby sie wypadek.",
+      "answers": ["If it hadn't been for him, there would have been an accident.", "If he hadn't been there, an accident would have happened."]
     }
   ]
 }

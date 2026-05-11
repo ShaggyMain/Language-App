@@ -9,7 +9,7 @@
   "theory": [
     {
       "kind": "text",
-      "markdown": "A **defining relative clause** tells us exactly **which** person or thing the speaker means. Without it, the sentence would be incomplete or unclear.\n\n*The man **who called you** is outside.* (Without 'who called you', we don't know which man.)\n\n**Relative pronouns in defining clauses:**\n- **who / that** → subject (person): *The student **who passed** was excited.*\n- **that / which** → object (thing): *The book **that I read** was brilliant.*\n- **whose** → possession: *The woman **whose car** was stolen called the police.*\n- **where** → place: *The restaurant **where we met** closed down.*\n- **when** → time: *The day **when I graduated** was unforgettable.*\n\n**Omitting the pronoun**: when the relative pronoun is the **object**, it can be left out:\n*The book (that) I read was brilliant.* ✓\n*The man (who/that) you met is my cousin.* ✓\n\n⚠️ **No commas** in defining relative clauses."
+      "markdown": "A **defining relative clause** tells us exactly **which** person or thing the speaker means. Without it, the sentence would be incomplete or unclear.\n\n*The man **who called you** is outside.* (Without 'who called you', we don't know which man.)\n\n**Relative pronouns in defining clauses:**\n- **who / that** -> subject (person): *The student **who passed** was excited.*\n- **that / which** -> object (thing): *The book **that I read** was brilliant.*\n- **whose** -> possession: *The woman **whose car** was stolen called the police.*\n- **where** -> place: *The restaurant **where we met** closed down.*\n- **when** -> time: *The day **when I graduated** was unforgettable.*\n\n**Omitting the pronoun**: when the relative pronoun is the **object**, it can be left out:\n*The book (that) I read was brilliant.* OK\n\nNo commas in defining relative clauses."
     },
     {
       "kind": "table",
@@ -25,16 +25,16 @@
     {
       "kind": "examples",
       "items": [
-        { "source": "Is this the house where you grew up?", "translation": "Czy to jest dom, w którym dorastałeś/aś?" },
-        { "source": "The person whose wallet I found was very grateful.", "translation": "Osoba, której portfel znalazłem/am, była bardzo wdzięczna." },
-        { "source": "I remember the day when we first met.", "translation": "Pamiętam dzień, gdy po raz pierwszy się spotkaliśmy." }
+        { "source": "Is this the house where you grew up?", "translation": "Czy to jest dom, w ktorym dorastales?" },
+        { "source": "The person whose wallet I found was very grateful.", "translation": "Osoba, ktorej portfel znalazlem, byla bardzo wdzieczna." },
+        { "source": "I remember the day when we first met.", "translation": "Pamietam dzien, gdy po raz pierwszy sie spotkalismo." }
       ]
     }
   ],
   "exercises": [
     {
       "type": "fill",
-      "prompt": "The café ___ we met last year has closed down.",
+      "prompt": "The cafe ___ we met last year has closed down.",
       "answers": ["where", "that"],
       "hint": "Referring to a place."
     },
@@ -67,8 +67,66 @@
       "type": "translate",
       "from": "pl",
       "to": "en",
-      "source": "To jest lekarz, który mnie operował.",
+      "source": "To jest lekarz, ktory mnie operowal.",
       "answers": ["This is the doctor who operated on me.", "That is the doctor who operated on me."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "This is the book ___ I was telling you about.",
+      "options": ["who", "whose", "which", "where"],
+      "answer": 2,
+      "explanation": "'Which' or 'that' for things. Here the pronoun is the object and can also be omitted."
+    },
+    {
+      "type": "fill",
+      "prompt": "That's the man ___ dog bit me.",
+      "answers": ["whose"],
+      "hint": "Possession — the man's dog."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "The city where I was born it is in the south.",
+      "answers": ["The city where I was born is in the south."],
+      "explanation": "Don't add a pronoun ('it') after the relative clause. The relative clause replaces the subject."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Szukam kogos, kto mowi po chonskim.",
+      "answers": ["I'm looking for someone who speaks Chinese.", "I am looking for someone who speaks Chinese."]
+    },
+    {
+      "type": "transform",
+      "instruction": "Combine into one sentence.",
+      "source": "I found a flat. The flat has a garden.",
+      "answers": ["I found a flat that has a garden.", "I found a flat which has a garden."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Can you remember the moment ___ you first realised you loved him?",
+      "options": ["where", "when", "which", "whose"],
+      "answer": 1,
+      "explanation": "'When' is used for time references in relative clauses."
+    },
+    {
+      "type": "fill",
+      "prompt": "The woman ___ called yesterday wants to speak to the manager.",
+      "answers": ["who", "that"],
+      "hint": "Subject relative clause for a person."
+    },
+    {
+      "type": "order",
+      "prompt": "Build a relative clause sentence.",
+      "tokens": ["is", "who", "The", "girl", "my", "won", "cousin", "the", "competition"],
+      "answer": ["The", "girl", "who", "won", "the", "competition", "is", "my", "cousin"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Resteuracja, do ktorej chodzilismy, jest teraz zamknieta.",
+      "answers": ["The restaurant where we used to go is now closed.", "The restaurant that we used to go to is now closed.", "The restaurant which we used to go to is closed now."]
     }
   ]
 }
