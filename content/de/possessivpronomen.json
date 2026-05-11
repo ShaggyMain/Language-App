@@ -1,0 +1,139 @@
+{
+  "id": "de.pronouns.possessivpronomen",
+  "language": "de",
+  "category": "pronouns",
+  "title": "Possessivpronomen",
+  "summary": "Zaimki dzierżawcze (mein, dein, sein, ihr...) i ich odmiana przez rodzaj.",
+  "cefrLevel": "A1",
+  "prerequisites": ["de.pronouns.personalpronomen"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "Zaimki dzierżawcze wskazują, do kogo coś należy. W języku niemieckim zaimek dzierżawczy dopasowuje swą końcówkę do **rodzaju rzeczownika**, który opisuje.\n\nPodstawowe formy (bez końcówki — Nominativ): **mein** (m/n), **meine** (f), **mein** (n).\n\nPodstawowe zaimki:\n- ich → **mein** (mój/moja/moje)\n- du → **dein** (twój)\n- er/es → **sein** (jego)\n- sie (ona) → **ihr** (jej)\n- wir → **unser** (nasz)\n- ihr → **euer** (wasz)\n- sie/Sie → **ihr/Ihr** (ich/Pana/Pani)"
+    },
+    {
+      "kind": "table",
+      "title": "Końcówki w Nominativ",
+      "headers": ["Rodzaj", "Rodzajnik", "Zaimek dzierżawczy", "Przykład"],
+      "rows": [
+        ["męski (m)", "der", "mein (bez końcówki)", "mein Vater"],
+        ["żeński (f)", "die", "meine", "meine Mutter"],
+        ["nijaki (n)", "das", "mein (bez końcówki)", "mein Kind"],
+        ["liczba mnoga", "die", "meine", "meine Eltern"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Das ist mein Bruder.", "translation": "To jest mój brat." },
+        { "source": "Meine Schwester wohnt in Berlin.", "translation": "Moja siostra mieszka w Berlinie." },
+        { "source": "Sein Hund ist sehr groß.", "translation": "Jego pies jest bardzo duży." },
+        { "source": "Ihr Auto ist neu.", "translation": "Jej samochód jest nowy." },
+        { "source": "Unser Haus ist klein.", "translation": "Nasz dom jest mały." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "Das ist ___ Mutter. (ich)",
+      "options": ["mein", "meine", "meinen", "meiner"],
+      "answer": 1,
+      "explanation": "Mutter jest rodzaju żeńskiego (die Mutter), dlatego używamy 'meine'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Das ist ___ Vater. (du)",
+      "options": ["deine", "deinen", "dein", "deiner"],
+      "answer": 2,
+      "explanation": "Vater jest rodzaju męskiego (der Vater), dlatego używamy 'dein' — bez końcówki."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Das ist ___ Buch. (er)",
+      "options": ["sein", "seine", "seinen", "ihrer"],
+      "answer": 0,
+      "explanation": "Buch jest rodzaju nijakiego (das Buch), a zaimek od 'er' to 'sein' — bez końcówki w Nominativ."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Das ist ___ Katze. (sie, ona)",
+      "options": ["sein", "ihre", "ihr", "ihren"],
+      "answer": 1,
+      "explanation": "Katze jest rodzaju żeńskiego (die Katze), a zaimek od 'sie' (ona) to 'ihr' + końcówka -e = 'ihre'."
+    },
+    {
+      "type": "fill",
+      "prompt": "Das ist ___ (mein/meine) Hund. Er heißt Rex.",
+      "answers": ["mein"],
+      "hint": "Hund jest rodzaju męskiego — bez końcówki w Nominativ."
+    },
+    {
+      "type": "fill",
+      "prompt": "___ (unser/unsere) Schule ist sehr groß.",
+      "answers": ["Unsere"],
+      "hint": "Schule jest rodzaju żeńskiego — potrzebna końcówka -e."
+    },
+    {
+      "type": "fill",
+      "prompt": "Das ist ___ (euer/eure) Auto?",
+      "answers": ["euer"],
+      "hint": "Auto jest rodzaju nijakiego — bez końcówki; uwaga: 'euer' traci jedno 'e' przed końcówką."
+    },
+    {
+      "type": "fill",
+      "prompt": "___ (ihr/ihre) Haus ist alt. (Sie, ona)",
+      "answers": ["Ihr"],
+      "hint": "Haus jest rodzaju nijakiego — zaimek 'ihr' bez końcówki."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Mój pies jest mały.",
+      "answers": ["Mein Hund ist klein."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Nasza szkoła jest nowa.",
+      "answers": ["Unsere Schule ist neu."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Jej książka jest na stole.",
+      "answers": ["Ihr Buch ist auf dem Tisch.", "Ihre Buch ist auf dem Tisch."]
+    },
+    {
+      "type": "order",
+      "prompt": "Ułóż zdanie: Jego samochód jest szybki.",
+      "tokens": ["schnell", "ist", "Sein", "Auto"],
+      "answer": ["Sein", "Auto", "ist", "schnell"]
+    },
+    {
+      "type": "match",
+      "pairs": [
+        { "left": "ich", "right": "mein/meine" },
+        { "left": "du", "right": "dein/deine" },
+        { "left": "er / es", "right": "sein/seine" },
+        { "left": "sie (ona)", "right": "ihr/ihre" },
+        { "left": "wir", "right": "unser/unsere" }
+      ]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Das ist meine Bruder.",
+      "answers": ["Das ist mein Bruder."],
+      "explanation": "Bruder jest rodzaju męskiego (der Bruder). W Nominativ zaimek dzierżawczy nie otrzymuje końcówki — poprawna forma to 'mein', nie 'meine'."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Sein Katze schläft.",
+      "answers": ["Seine Katze schläft."],
+      "explanation": "Katze jest rodzaju żeńskiego (die Katze). Zaimek dzierżawczy musi mieć końcówkę -e — poprawna forma to 'seine'."
+    }
+  ]
+}

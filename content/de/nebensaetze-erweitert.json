@@ -1,0 +1,141 @@
+{
+  "id": "de.syntax.nebensaetze-erweitert",
+  "language": "de",
+  "category": "syntax",
+  "title": "Erweiterte Nebensätze",
+  "summary": "Rozszerzone zdania podrzędne — damit, obwohl, während, bevor, nachdem, seitdem, sodass.",
+  "cefrLevel": "B1",
+  "prerequisites": ["de.syntax.konjunktionen"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "W zdaniach podrzędnych (Nebensätze) czasownik odmieniony stoi **zawsze na końcu**. Kiedy zdanie podrzędne poprzedza zdanie główne, w zdaniu głównym następuje **inwersja** (podmiot i orzeczenie zamieniają się miejscami).\n\n**damit** (żeby / po to, aby — inny podmiot):\n*Ich spreche langsam, damit du mich verstehst.* (Mówię wolno, żebyś mnie rozumiał/a.)\nUwaga: gdy podmiot jest ten sam, używamy *um...zu* zamiast *damit*.\n\n**obwohl** (chociaż / mimo że):\n*Obwohl er müde war, arbeitete er weiter.* (Chociaż był zmęczony, pracował dalej.)\n\n**während** (podczas gdy / kiedy — równoczesność):\n*Während ich koche, hört er Musik.* (Podczas gdy gotuję, on słucha muzyki.)\n\n**bevor** (zanim):\n*Bevor du gehst, ruf mich an!* (Zanim wyjdziesz, zadzwoń do mnie!)\n\n**nachdem** (po tym jak — następstwo; często z Plusquamperfekt lub Perfekt w zdaniu podrzędnym):\n*Nachdem sie gegessen hatte, ging sie schlafen.* (Po tym jak zjadła, poszła spać.)\n\n**seitdem** (od kiedy / od czasu gdy):\n*Seitdem er umgezogen ist, sehen wir uns seltener.* (Od kiedy się przeprowadził, widujemy się rzadziej.)\n\n**sodass** (tak że — skutek):\n*Es regnete stark, sodass wir zu Hause blieben.* (Padało tak mocno, że zostaliśmy w domu.)"
+    },
+    {
+      "kind": "table",
+      "title": "Spójniki podrzędne — zestawienie",
+      "headers": ["Spójnik", "Znaczenie", "Przykład"],
+      "rows": [
+        ["damit", "żeby (inny podmiot)", "Ich erkläre es, damit er versteht."],
+        ["obwohl", "chociaż", "Obwohl es kalt ist, geht sie spazieren."],
+        ["während", "podczas gdy", "Während sie lernt, schläft er."],
+        ["bevor", "zanim", "Bevor wir anfangen, trinken wir Kaffee."],
+        ["nachdem", "po tym jak", "Nachdem er geduscht hatte, frühstückte er."],
+        ["seitdem", "od kiedy", "Seitdem sie krank ist, bleibt sie zu Hause."],
+        ["sodass", "tak że (skutek)", "Er sprach laut, sodass alle ihn hörten."]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Ich schreibe alles auf, damit ich es nicht vergesse.", "translation": "Zapisuję wszystko, żeby nie zapomnieć." },
+        { "source": "Obwohl das Wetter schlecht war, machten sie ein Picknick.", "translation": "Mimo że pogoda była zła, zrobili piknik." },
+        { "source": "Bevor ich schlafen gehe, putze ich mir die Zähne.", "translation": "Zanim idę spać, myję zęby." },
+        { "source": "Nachdem der Film geendet hatte, gingen sie nach Hause.", "translation": "Po tym jak film się skończył, poszli do domu." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Ich schalte das Licht aus, ___ ich schlafen gehe.",
+      "answers": ["bevor"],
+      "hint": "Szukamy spójnika oznaczającego 'zanim': bevor."
+    },
+    {
+      "type": "fill",
+      "prompt": "___ er aufgeräumt hatte, rief er seine Freundin an.",
+      "answers": ["Nachdem"],
+      "hint": "Szukamy spójnika 'po tym jak' (z Plusquamperfekt w zdaniu podrzędnym)."
+    },
+    {
+      "type": "fill",
+      "prompt": "Sie trägt einen Mantel, ___ es warm ist.",
+      "answers": ["obwohl"],
+      "hint": "Zdanie wyraża kontrast: 'chociaż jest ciepło, nosi płaszcz'."
+    },
+    {
+      "type": "fill",
+      "prompt": "___ er nach München gezogen ist, arbeitet er bei BMW.",
+      "answers": ["Seitdem"],
+      "hint": "'Od kiedy' przeprowadził się — seitdem."
+    },
+    {
+      "type": "fill",
+      "prompt": "Er erklärte es auf Polnisch, ___ alle ihn verstehen.",
+      "answers": ["damit"],
+      "hint": "'żeby wszyscy go rozumieli' — różny podmiot, więc damit."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Ich mache die Musik leiser, ___ du schlafen kannst.",
+      "options": ["um zu", "damit", "obwohl", "sodass"],
+      "answer": 1,
+      "explanation": "'damit' używamy, gdy podmiot zdania podrzędnego jest inny niż głównego. Tu: ja ściszam muzykę, ty możesz spać."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Es hat so stark geschneit, ___ die Schule geschlossen wurde.",
+      "options": ["während", "bevor", "sodass", "seitdem"],
+      "answer": 2,
+      "explanation": "'sodass' wyraża skutek: śnieg => szkoła zamknięta."
+    },
+    {
+      "type": "mcq",
+      "prompt": "___ sie telefonierte, kochte er das Mittagessen.",
+      "options": ["Obwohl", "Während", "Bevor", "Damit"],
+      "answer": 1,
+      "explanation": "'während' oznacza równoczesność: 'podczas gdy ona rozmawiała przez telefon, on gotował obiad'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Welcher Satz ist grammatisch korrekt?",
+      "options": [
+        "Obwohl er müde ist, er arbeitet weiter.",
+        "Obwohl er müde ist, arbeitet er weiter.",
+        "Obwohl er müde ist, weiter er arbeitet.",
+        "Obwohl er ist müde, arbeitet er weiter."
+      ],
+      "answer": 1,
+      "explanation": "Po zdaniu podrzędnym (obwohl...) następuje inwersja w zdaniu głównym: orzeczenie przed podmiotem. Poprawnie: 'arbeitet er', nie 'er arbeitet'."
+    },
+    {
+      "type": "transform",
+      "instruction": "Połącz dwa zdania za pomocą podanego spójnika: 'nachdem'.",
+      "source": "Er hat das Buch gelesen. Er hat es zurückgegeben.",
+      "answers": ["Nachdem er das Buch gelesen hatte, hat er es zurückgegeben.", "Nachdem er das Buch gelesen hatte, gab er es zurück."]
+    },
+    {
+      "type": "transform",
+      "instruction": "Połącz dwa zdania za pomocą podanego spójnika: 'obwohl'.",
+      "source": "Das Konzert war teuer. Sie haben Karten gekauft.",
+      "answers": ["Obwohl das Konzert teuer war, haben sie Karten gekauft.", "Sie haben Karten gekauft, obwohl das Konzert teuer war."]
+    },
+    {
+      "type": "transform",
+      "instruction": "Połącz dwa zdania za pomocą podanego spójnika: 'damit'.",
+      "source": "Ich erkläre das noch einmal. Die Studenten verstehen den Stoff.",
+      "answers": ["Ich erkläre das noch einmal, damit die Studenten den Stoff verstehen.", "Damit die Studenten den Stoff verstehen, erkläre ich das noch einmal."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Zanim zasnęła, przeczytała jeszcze jeden rozdział.",
+      "answers": ["Bevor sie einschlief, las sie noch ein Kapitel.", "Bevor sie einschlief, hat sie noch ein Kapitel gelesen."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Od kiedy zaczął ćwiczyć, czuje się lepiej.",
+      "answers": ["Seitdem er mit dem Sport angefangen hat, fühlt er sich besser.", "Seitdem er trainiert, fühlt er sich besser.", "Seitdem er Sport macht, fühlt er sich besser."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Obwohl es kalt war, sie ist draußen geblieben.",
+      "answers": ["Obwohl es kalt war, ist sie draußen geblieben."],
+      "explanation": "Gdy zdanie podrzędne stoi na początku, w zdaniu głównym obowiązuje inwersja: orzeczenie ('ist') musi być przed podmiotem ('sie'). Poprawnie: 'ist sie'."
+    }
+  ]
+}

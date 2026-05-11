@@ -1,0 +1,259 @@
+{
+  "id": "de.syntax.wechselpraepositionen",
+  "language": "de",
+  "category": "syntax",
+  "title": "Wechselpräpositionen",
+  "summary": "Przyimki dwojakiego rodzaju: z Akkusativ (ruch, kierunek — Wohin?) lub Dativ (polozenie, stan — Wo?).",
+  "cefrLevel": "A2",
+  "prerequisites": [
+    "de.cases.dativ",
+    "de.cases.articles-akkusativ"
+  ],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Wechselpräpositionen** to 9 przyimków, które laczy sie z **Akkusativ** lub **Dativ** w zaleznosci od znaczenia:\n\n**an, auf, hinter, in, neben, über, unter, vor, zwischen**\n\n- **Akkusativ** odpowiada na pytanie **Wohin?** (Dokad? — ruch, kierunek)\n- **Dativ** odpowiada na pytanie **Wo?** (Gdzie? — polozenie, stan)\n\nSposobem na zapamietanie: jezeli cos sie **porusza w kierunku** jakiegos miejsca -> Akkusativ. Jezeli cos **jest** w jakims miejscu -> Dativ."
+    },
+    {
+      "kind": "table",
+      "title": "Przyimek + rodzajnik (Akkusativ vs Dativ)",
+      "headers": [
+        "Rodzaj",
+        "Nominativ",
+        "Akkusativ (Wohin?)",
+        "Dativ (Wo?)"
+      ],
+      "rows": [
+        [
+          "Maskulinum",
+          "der",
+          "den",
+          "dem"
+        ],
+        [
+          "Femininum",
+          "die",
+          "die",
+          "der"
+        ],
+        [
+          "Neutrum",
+          "das",
+          "das",
+          "dem"
+        ],
+        [
+          "Plural",
+          "die",
+          "die",
+          "den"
+        ]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        {
+          "source": "Ich lege das Buch auf den Tisch.",
+          "translation": "Kladę ksiazke na stól. (Wohin? -> Akkusativ, Tisch = m -> den)"
+        },
+        {
+          "source": "Das Buch liegt auf dem Tisch.",
+          "translation": "Ksiazka lezy na stole. (Wo? -> Dativ, Tisch = m -> dem)"
+        },
+        {
+          "source": "Sie hängt das Bild an die Wand.",
+          "translation": "Ona wiesza obraz na scianie. (Wohin? -> Akkusativ, Wand = f -> die)"
+        },
+        {
+          "source": "Das Bild hängt an der Wand.",
+          "translation": "Obraz wisi na scianie. (Wo? -> Dativ, Wand = f -> der)"
+        },
+        {
+          "source": "Das Kind läuft hinter das Haus.",
+          "translation": "Dziecko biegnie za dom. (Wohin? -> Akkusativ, Haus = n -> das)"
+        },
+        {
+          "source": "Das Kind steht hinter dem Haus.",
+          "translation": "Dziecko stoi za domem. (Wo? -> Dativ, Haus = n -> dem)"
+        }
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "**Sciagniecia (Kontraktionen):**\n\nCzesto stosowane w jezyku potocznym i pisanym:\n\n- **in + dem = im** (Ich bin im Büro.)\n- **in + das = ins** (Ich gehe ins Kino.)\n- **an + dem = am** (Er sitzt am Tisch.)\n- **an + das = ans** (Sie geht ans Fenster.)\n- **auf + das = aufs** (Er legt es aufs Regal.)\n\nUwaga: sciagniecia sa obowiazkowe w wielu utartych zwrotach (*ins Kino gehen, am Morgen*)."
+    },
+    {
+      "kind": "table",
+      "title": "Czasowniki ruchu (Akkusativ) vs. polozenia (Dativ)",
+      "headers": [
+        "Ruch — Akkusativ",
+        "Polozenie — Dativ"
+      ],
+      "rows": [
+        [
+          "legen (kladac)",
+          "liegen (lezec)"
+        ],
+        [
+          "stellen (stawiac)",
+          "stehen (stac)"
+        ],
+        [
+          "hängen (wieszac)",
+          "hängen (wisiec)"
+        ],
+        [
+          "setzen (sadzac)",
+          "sitzen (siedziec)"
+        ],
+        [
+          "gehen / fahren / laufen",
+          "sein / bleiben / wohnen"
+        ]
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "Ich stelle die Flasche ___ den Kühlschrank. (Wohin? — in, Kühlschrank = m)",
+      "options": [
+        "in dem",
+        "im",
+        "in den",
+        "in der"
+      ],
+      "answer": 2,
+      "explanation": "stellen = ruch -> Akkusativ. Kühlschrank jest rodzaju meskiego, Akkusativ: den. in + den (bez sciagniecia)."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Die Flasche steht ___ Kühlschrank. (Wo? — in, Kühlschrank = m)",
+      "options": [
+        "in den",
+        "in dem",
+        "im",
+        "in der"
+      ],
+      "answer": 2,
+      "explanation": "stehen = polozenie -> Dativ. Kühlschrank jest rodzaju meskiego, Dativ: dem. in + dem = im (obowiazkowe sciagniecie)."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Das Kind läuft ___ die Schule. (in, Schule = f, ruch)",
+      "options": [
+        "in der",
+        "in dem",
+        "in die",
+        "ins"
+      ],
+      "answer": 2,
+      "explanation": "laufen = ruch -> Akkusativ. Schule jest rodzaju zenskiego, Akkusativ: die. in + die (bez sciagniecia, bo femininum)."
+    },
+    {
+      "type": "fill",
+      "prompt": "Wir sitzen ___ (an + der/dem?) Tisch und essen. (Tisch = m, Wo?)",
+      "answers": [
+        "am Tisch"
+      ],
+      "explanation": "sitzen = polozenie -> Dativ. Tisch jest rodzaju meskiego, Dativ: dem. an + dem = am."
+    },
+    {
+      "type": "fill",
+      "prompt": "Er hängt das Bild ___ (an + die/der?) Wand. (Wand = f, Wohin?)",
+      "answers": [
+        "an die Wand"
+      ],
+      "explanation": "hängen (transitiv) = ruch -> Akkusativ. Wand jest rodzaju zenskiego, Akkusativ: die."
+    },
+    {
+      "type": "fill",
+      "prompt": "Die Katze schläft ___ (auf + dem/den?) Sofa. (Sofa = n, Wo?)",
+      "answers": [
+        "auf dem Sofa"
+      ],
+      "explanation": "schlafen = polozenie/stan -> Dativ. Sofa jest rodzaju nijakiego, Dativ: dem."
+    },
+    {
+      "type": "fill",
+      "prompt": "Ich lege mein Handy ___ (neben + das/dem?) Buch. (Buch = n, Wohin?)",
+      "answers": [
+        "neben das Buch"
+      ],
+      "explanation": "legen = ruch/umiejscowienie -> Akkusativ. Buch jest rodzaju nijakiego, Akkusativ: das."
+    },
+    {
+      "type": "errorFix",
+      "explanation": "gehen = ruch -> Akkusativ. Park jest rodzaju meskiego, Akkusativ: den. 'in dem' jest forma Dativ (polozenie).",
+      "sentence": "Ich gehe in dem Park.",
+      "answers": [
+        "Ich gehe in den Park."
+      ]
+    },
+    {
+      "type": "errorFix",
+      "explanation": "liegen = polozenie -> Dativ. Tisch jest rodzaju meskiego, Dativ: dem (nie den).",
+      "sentence": "Das Buch liegt auf den Tisch.",
+      "answers": [
+        "Das Buch liegt auf dem Tisch."
+      ]
+    },
+    {
+      "type": "errorFix",
+      "explanation": "fahren = ruch w kierunku -> Akkusativ. Stadt jest rodzaju zenskiego, Akkusativ: die. 'in der' to Dativ (wskazywaloby na polozenie).",
+      "sentence": "Wir fahren in der Stadt.",
+      "answers": [
+        "Wir fahren in die Stadt."
+      ]
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Die Katze sitzt hinter dem Schrank."
+      ],
+      "explanation": "sitzen = polozenie -> Dativ. Schrank jest rodzaju meskiego, Dativ: dem.",
+      "from": "pl",
+      "to": "de",
+      "source": "Kot siedzi za szafa.' (Schrank = m, hinter, sitzen)"
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Ich lege die Schlüssel auf den Tisch."
+      ],
+      "explanation": "legen = ruch -> Akkusativ. Tisch jest rodzaju meskiego, Akkusativ: den. Schlüssel w liczbie mnogiej, Akkusativ: die.",
+      "from": "pl",
+      "to": "de",
+      "source": "Kladę klucze na stól.' (Schlüssel = pl, Tisch = m, legen, auf)"
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Die Kinder spielen vor dem Haus."
+      ],
+      "explanation": "spielen = polozenie/stan -> Dativ. Haus jest rodzaju nijakiego, Dativ: dem.",
+      "from": "pl",
+      "to": "de",
+      "source": "Dzieci bawia sie przed domem.' (Kinder, Haus = n, vor, spielen)"
+    },
+    {
+      "type": "transform",
+      "explanation": "stehen = polozenie -> Dativ. Garage jest rodzaju zenskiego, Dativ: der.",
+      "instruction": "Zmien zdanie ruchu na zdanie polozenia",
+      "source": "Er fährt in die Garage.",
+      "answers": [
+        "Das Auto steht in der Garage."
+      ]
+    },
+    {
+      "type": "transform",
+      "explanation": "hängen (transitiv, wieszac) = ruch -> Akkusativ. Tür jest rodzaju zenskiego, Akkusativ: die.",
+      "instruction": "Zmien zdanie polozenia na zdanie ruchu",
+      "source": "Die Jacke hängt an der Tür.",
+      "answers": [
+        "Er hängt die Jacke an die Tür."
+      ]
+    }
+  ]
+}

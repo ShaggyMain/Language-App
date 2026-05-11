@@ -1,0 +1,136 @@
+{
+  "id": "de.syntax.ja-nein-fragen",
+  "language": "de",
+  "category": "syntax",
+  "title": "Ja-/Nein-Fragen",
+  "summary": "Pytania wymagające odpowiedzi tak lub nie — inwersja podmiotu i czasownika.",
+  "cefrLevel": "A1",
+  "prerequisites": ["de.verbs.sein-haben", "de.verbs.present-regular"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "Pytania wymagające odpowiedzi *tak* lub *nie* (Ja-/Nein-Fragen) tworzymy przez **inwersję** — czasownik przechodzi na **pierwszą pozycję**, podmiot na drugą:\n\n- Zdanie: *Du bist müde.* → Pytanie: **Bist du müde?**\n- Zdanie: *Er spielt Fußball.* → Pytanie: **Spielt er Fußball?**\n- Zdanie: *Sie hat Zeit.* → Pytanie: **Hat sie Zeit?**\n\n**Odpowiedzi:**\n- Twierdząca: *Ja, ich bin müde.* / *Ja, er spielt Fußball.*\n- Przecząca: *Nein, ich bin nicht müde.* / *Nein, er spielt nicht Fußball.*\n\nPrzeczenie **nicht** stoi zazwyczaj na końcu zdania lub bezpośrednio przed przymiotnikiem/przysłówkiem, który neguje."
+    },
+    {
+      "kind": "table",
+      "title": "Budowa pytania Ja/Nein",
+      "headers": ["Zdanie oznajmujące", "Pytanie Ja/Nein"],
+      "rows": [
+        ["Du bist müde.", "Bist du müde?"],
+        ["Er hat ein Auto.", "Hat er ein Auto?"],
+        ["Sie lernt Deutsch.", "Lernt sie Deutsch?"],
+        ["Wir wohnen hier.", "Wohnen wir hier?"],
+        ["Das Kind schläft.", "Schläft das Kind?"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Bist du müde?", "translation": "Czy jesteś zmęczony/a?" },
+        { "source": "Hast du Zeit?", "translation": "Czy masz czas?" },
+        { "source": "Spielt er Fußball?", "translation": "Czy on gra w piłkę nożną?" },
+        { "source": "Ja, ich bin müde.", "translation": "Tak, jestem zmęczony/a." },
+        { "source": "Nein, ich habe keine Zeit.", "translation": "Nie, nie mam czasu." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "Jak zamienić zdanie 'Du bist müde.' w pytanie Ja/Nein?",
+      "options": ["Du bist müde?", "Bist du müde?", "Bist müde du?", "Ob du müde bist?"],
+      "answer": 1,
+      "explanation": "W pytaniu Ja/Nein czasownik 'bist' przechodzi na pierwszą pozycję, podmiot 'du' na drugą."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Która forma pytania jest poprawna?",
+      "options": ["Spielt er Fußball?", "Er spielt Fußball?", "Spielst er Fußball?", "Fußball spielt er?"],
+      "answer": 0,
+      "explanation": "Prawidłowy szyk: czasownik 'spielt' na pierwszym miejscu, podmiot 'er' na drugim."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Jak odpowiedzieć przecząco na 'Bist du müde?'",
+      "options": ["Ja, ich bin müde.", "Nein, ich bin müde.", "Nein, ich bin nicht müde.", "Nein, ich nicht bin müde."],
+      "answer": 2,
+      "explanation": "Przecząca odpowiedź: Nein + podmiot + czasownik + nicht (+ reszta zdania)."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Zamień na pytanie: 'Sie hat einen Hund.'",
+      "options": ["Hat sie einen Hund?", "Hat einen Hund sie?", "Sie hat einen Hund?", "Hast sie einen Hund?"],
+      "answer": 0,
+      "explanation": "Hat (3. os. l.poj.) przechodzi na pierwsze miejsce, podmiot 'sie' na drugie."
+    },
+    {
+      "type": "order",
+      "prompt": "Ułóż pytanie: Czy ty uczysz się niemieckiego?",
+      "tokens": ["du", "Deutsch", "Lernst", "?"],
+      "answer": ["Lernst", "du", "Deutsch", "?"]
+    },
+    {
+      "type": "order",
+      "prompt": "Ułóż pytanie: Czy dziecko śpi?",
+      "tokens": ["das", "Kind", "Schläft", "?"],
+      "answer": ["Schläft", "das", "Kind", "?"]
+    },
+    {
+      "type": "order",
+      "prompt": "Ułóż pytanie: Czy ona mieszka w Berlinie?",
+      "tokens": ["sie", "in", "Wohnt", "Berlin", "?"],
+      "answer": ["Wohnt", "sie", "in", "Berlin", "?"]
+    },
+    {
+      "type": "fill",
+      "prompt": "___ (haben, du) du einen Bruder? — Ja, ich ___ (haben) einen Bruder.",
+      "answers": ["Hast", "habe"],
+      "hint": "Inwersja: Hast du...? Odpowiedź: Ja, ich habe..."
+    },
+    {
+      "type": "fill",
+      "prompt": "Nein, ich ___ (sein, nicht) nicht müde.",
+      "answers": ["bin"],
+      "hint": "1. os. l.poj. od 'sein' to 'bin'."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Czy masz czas?",
+      "answers": ["Hast du Zeit?"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Czy ona mówi po niemiecku?",
+      "answers": ["Spricht sie Deutsch?"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Nie, nie gram w piłkę nożną.",
+      "answers": ["Nein, ich spiele nicht Fußball.", "Nein, ich spiele kein Fußball."]
+    },
+    {
+      "type": "transform",
+      "instruction": "Zamień zdanie oznajmujące w pytanie Ja/Nein.",
+      "source": "Er wohnt in München.",
+      "answers": ["Wohnt er in München?"]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Du hast Zeit?",
+      "answers": ["Hast du Zeit?"],
+      "explanation": "W pytaniu Ja/Nein obowiązkowa jest inwersja: czasownik musi stać na pierwszym miejscu. Poprawnie: Hast du Zeit?"
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Bist du nicht schläfst?",
+      "answers": ["Schläfst du nicht?", "Bist du nicht müde?"],
+      "explanation": "W jednym zdaniu może być tylko jeden czasownik w formie osobowej. 'Bist' i 'schläfst' nie mogą stać razem w zwykłym zdaniu. Poprawnie: Schläfst du nicht?"
+    }
+  ]
+}

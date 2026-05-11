@@ -1,0 +1,307 @@
+{
+  "id": "de.syntax.konjunktionen",
+  "language": "de",
+  "category": "syntax",
+  "title": "Konjunktionen und Subjunktionen",
+  "summary": "Spojniki wspolrzedne (und, aber, oder, denn, sondern) i podrzedne (weil, dass, wenn, obwohl, als, bevor, nachdem) — budowa zdan zlozonych.",
+  "cefrLevel": "A2",
+  "prerequisites": [
+    "de.verbs.present-regular"
+  ],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Konjunktionen (Spojniki wspolrzedne)**\n\nLacza dwa równorzedne zdania glówne. Szyk zdania po spojniku wspolrzednym pozostaje **normalny** (podmiot — orzeczenie — dopelnienie):\n\n- **und** — i\n- **aber** — ale, jednak\n- **oder** — albo, lub\n- **denn** — poniewaz, bo (przyczyna)\n- **sondern** — lecz, ale (po negacji)\n\nPrzykladowe zdania:\n- *Ich lerne Deutsch **und** ich höre Musik.* — Ucze sie niemieckiego i slucham muzyki.\n- *Er ist müde, **aber** er arbeitet weiter.* — Jest zmeczony, ale pracuje dalej.\n- *Sie kommt nicht, **denn** sie ist krank.* — Nie przychodzi, poniewaz jest chora.\n- *Das ist kein Hund, **sondern** eine Katze.* — To nie jest pies, lecz kot."
+    },
+    {
+      "kind": "text",
+      "markdown": "**Subjunktionen (Spojniki podrzedne)**\n\nIntrodukcja zdania podrzednego. **UWAGA: Czasownik idzie na KONIEC zdania podrzednego!**\n\n- **weil** — poniewaz, dlatego ze\n- **dass** — ze (ze zdania zaleznego)\n- **wenn** — kiedy, jezeli (powtarzajace sie zdarzenia lub warunek)\n- **als** — kiedy (jedno zdarzenie w przeszlosci)\n- **obwohl** — chociaz, mimo ze\n- **bevor** — zanim\n- **nachdem** — po tym jak\n- **während** — podczas gdy\n\n*Ich lerne Deutsch, **weil** es interessant **ist**.* — Ucze sie niemieckiego, poniewaz jest interesujace.\n*Er sagt, **dass** er müde **ist**.* — On mówi, ze jest zmeczony."
+    },
+    {
+      "kind": "text",
+      "markdown": "**Szyk w zdaniu podrzednym**\n\nW zdaniu podrzednym (po spojniku podrzednym) obowiazuje zasada: **czasownik odmieniony stoi na samym koncu**.\n\nJezeli zdanie podrzedne stoi na poczatku zdania zlozonego, po nim nastepuje zdanie glówne, w którym czasownik (orzeczenie) zajmuje **drugie miejsce**:\n\n*Ich bleibe zu Hause, **weil** es regnet.* (zdanie podrzedne na koncu)\n***Weil** es regnet, **bleibe** ich zu Hause.* (zdanie podrzedne na poczatku — inwersja w zdaniu glównym)\n\nW zdaniu z **nachdem** lub **bevor** czasy moga sie róznic:\n- *Nachdem er gegessen hatte, las er ein Buch.* (Plusquamperfekt -> Präteritum)"
+    },
+    {
+      "kind": "table",
+      "title": "Przeglad spojników",
+      "headers": [
+        "Spojnik",
+        "Typ",
+        "Szyk",
+        "Tlumaczenie"
+      ],
+      "rows": [
+        [
+          "und",
+          "wspolrzedny",
+          "normalny",
+          "i"
+        ],
+        [
+          "aber",
+          "wspolrzedny",
+          "normalny",
+          "ale"
+        ],
+        [
+          "oder",
+          "wspolrzedny",
+          "normalny",
+          "lub"
+        ],
+        [
+          "denn",
+          "wspolrzedny",
+          "normalny",
+          "poniewaz (bo)"
+        ],
+        [
+          "sondern",
+          "wspolrzedny",
+          "normalny",
+          "lecz (po negacji)"
+        ],
+        [
+          "weil",
+          "podrzedny",
+          "czasownik na koncu",
+          "poniewaz"
+        ],
+        [
+          "dass",
+          "podrzedny",
+          "czasownik na koncu",
+          "ze"
+        ],
+        [
+          "wenn",
+          "podrzedny",
+          "czasownik na koncu",
+          "kiedy / jezeli"
+        ],
+        [
+          "obwohl",
+          "podrzedny",
+          "czasownik na koncu",
+          "chociaz"
+        ],
+        [
+          "als",
+          "podrzedny",
+          "czasownik na koncu",
+          "kiedy (przeszlosc)"
+        ],
+        [
+          "bevor",
+          "podrzedny",
+          "czasownik na koncu",
+          "zanim"
+        ],
+        [
+          "nachdem",
+          "podrzedny",
+          "czasownik na koncu",
+          "po tym jak"
+        ],
+        [
+          "während",
+          "podrzedny",
+          "czasownik na koncu",
+          "podczas gdy"
+        ]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        {
+          "source": "Ich trinke Kaffee, während ich Zeitung lese.",
+          "translation": "Pije kawe, podczas gdy czytam gazete."
+        },
+        {
+          "source": "Bevor er schläft, putzt er die Zähne.",
+          "translation": "Zanim zasnię, myje zeby."
+        },
+        {
+          "source": "Weil sie krank ist, geht sie nicht zur Schule.",
+          "translation": "Poniewaz jest chora, nie idzie do szkoly."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Ich lerne Deutsch, ___ (poniewaz) ich in Deutschland arbeiten möchte.",
+      "answers": [
+        "weil"
+      ],
+      "explanation": "weil = poniewaz (spojnik podrzedny, czasownik na koncu zdania podrzednego)."
+    },
+    {
+      "type": "fill",
+      "prompt": "Er ist müde, ___ (ale) er arbeitet weiter.",
+      "answers": [
+        "aber"
+      ],
+      "explanation": "aber = ale (spojnik wspolrzedny, normalny szyk zdania)."
+    },
+    {
+      "type": "fill",
+      "prompt": "Sie sagt, ___ (ze) sie keine Zeit hat.",
+      "answers": [
+        "dass"
+      ],
+      "explanation": "dass = ze (spojnik podrzedny wprowadzajacy zdanie zalezne, czasownik hat na koncu)."
+    },
+    {
+      "type": "fill",
+      "prompt": "Ich bleibe zu Hause, ___ (chociaz) das Wetter schön ist.",
+      "answers": [
+        "obwohl"
+      ],
+      "explanation": "obwohl = chociaz, mimo ze (spojnik podrzedny)."
+    },
+    {
+      "type": "fill",
+      "prompt": "Das ist kein Tee, ___ (lecz) Kaffee.",
+      "answers": [
+        "sondern"
+      ],
+      "explanation": "sondern = lecz, ale — uzywamy po negacji kein/nicht, gdy korygujemy falszywa informacje."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Wybierz poprawny spojnik: 'Ich esse nichts, ___ ich Hunger habe.' (mimo ze mam glód — logika kontrastu)",
+      "options": [
+        "weil",
+        "dass",
+        "obwohl",
+        "und"
+      ],
+      "answer": 2,
+      "explanation": "obwohl = chociaz (kontrast: nie jem, mimo ze jestem glodny). Czasownik habe stoi na koncu zdania podrzednego."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Wybierz poprawny spojnik: 'Ich rufe dich an, ___ ich zu Hause ankomme.' (kiedy dotre do domu)",
+      "options": [
+        "als",
+        "wenn",
+        "weil",
+        "bevor"
+      ],
+      "answer": 1,
+      "explanation": "wenn = kiedy (zdarzenie przyslosciowe lub powtarzajace sie). als dotyczy tylko jednorazowego zdarzenia w przeszlosci."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Które zdanie jest poprawne?",
+      "options": [
+        "Ich lerne Deutsch, weil es interessant ist.",
+        "Ich lerne Deutsch, weil es ist interessant.",
+        "Ich lerne Deutsch weil ist es interessant.",
+        "Ich lerne Deutsch, weil interessant es ist."
+      ],
+      "answer": 0,
+      "explanation": "Po weil czasownik odmieniony (ist) idzie na sam koniec zdania podrzednego."
+    },
+    {
+      "type": "order",
+      "prompt": "Ulozy zdanie:",
+      "answer": [
+        "Ich",
+        "bleibe",
+        "zu",
+        "Hause",
+        "weil",
+        "es",
+        "regnet."
+      ],
+      "alternatives": [
+        "Weil es regnet, bleibe ich zu Hause."
+      ],
+      "explanation": "Po weil czasownik (regnet) idzie na koniec. Jezeli zdanie podrzedne jest na poczatku, w zdaniu glównym nastepuje inwersja (bleibe — pozycja 2).",
+      "tokens": [
+        "ich",
+        "zu Hause",
+        "weil",
+        "bleibe",
+        "es",
+        "regnet"
+      ]
+    },
+    {
+      "type": "order",
+      "prompt": "Ulozy zdanie podrzedne:",
+      "answer": [
+        "Er",
+        "sagt",
+        "dass",
+        "er",
+        "müde",
+        "ist."
+      ],
+      "explanation": "Po dass czasownik odmieniony (ist) stoi na koncu zdania podrzednego.",
+      "tokens": [
+        "er",
+        "sagt",
+        "ist",
+        "dass",
+        "er",
+        "müde"
+      ]
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Ich gehe in den Laden, weil kein Brot zu Hause ist.",
+        "Ich gehe in den Laden, weil es zu Hause kein Brot gibt.",
+        "Weil kein Brot zu Hause ist, gehe ich in den Laden."
+      ],
+      "explanation": "weil wprowadza zdanie podrzedne, czasownik idzie na koniec.",
+      "from": "pl",
+      "to": "de",
+      "source": "Ide do sklepu, poniewaz nie ma chleba w domu.' (in den Laden gehen, weil, kein Brot, zu Hause)"
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Bevor ich schlafen gehe, lese ich ein Buch.",
+        "Ich lese ein Buch, bevor ich schlafen gehe."
+      ],
+      "explanation": "bevor = zanim (spojnik podrzedny). Po bevor czasownik (gehe) stoi na koncu. Jesli zdanie podrzedne jest pierwsze, inwersja w zdaniu glównym.",
+      "from": "pl",
+      "to": "de",
+      "source": "Zanim pójde spac, poczytam ksiazke.' (bevor, schlafen gehen, ein Buch lesen)"
+    },
+    {
+      "type": "errorFix",
+      "explanation": "Po spojniku podrzednym weil czasownik odmieniony (ist) musi stac na KONCU zdania podrzednego.",
+      "sentence": "Ich lerne Deutsch, weil es ist sehr nützlich.",
+      "answers": [
+        "Ich lerne Deutsch, weil es sehr nützlich ist."
+      ]
+    },
+    {
+      "type": "errorFix",
+      "explanation": "Po negacji kein/nicht, gdy korygujemy (to nie kawa, lecz herbata), uzywamy sondern, nie aber. aber = ale (kontrast), sondern = lecz (korekta).",
+      "sentence": "Sie kommt nicht, denn sie ist nicht hungrig, sondern sie hat keinen Hunger, aber sie ist krank.",
+      "answers": [
+        "Das ist kein Kaffee, sondern Tee."
+      ]
+    },
+    {
+      "type": "transform",
+      "alternatives": [
+        "Obwohl das Wetter schlecht ist, machen wir einen Spaziergang."
+      ],
+      "explanation": "obwohl wprowadza zdanie podrzedne (czasownik na koncu: schlecht ist). Zdanie glówne moze byc przed lub po zdaniu podrzednym.",
+      "instruction": "Polacz dwa zdania spojnikiem",
+      "source": "obwohl",
+      "answers": [
+        "Wir machen einen Spaziergang, obwohl das Wetter schlecht ist."
+      ]
+    }
+  ]
+}

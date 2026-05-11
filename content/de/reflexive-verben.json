@@ -1,0 +1,261 @@
+{
+  "id": "de.verbs.reflexive-verben",
+  "language": "de",
+  "category": "verbs",
+  "title": "Reflexive Verben",
+  "summary": "Czasowniki zwrotne z zaimkiem zwrotnym 'sich' — w bierniku lub celowniku.",
+  "cefrLevel": "A2",
+  "prerequisites": [
+    "de.cases.articles-akkusativ"
+  ],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Czasowniki zwrotne (reflexive Verben)** to czasowniki, przy których podmiot i dopelnienie odnosza sie do tej samej osoby. Towarzysza im **zaimki zwrotne** (Reflexivpronomen).\n\nNajczesciej zaimek zwrotny wystepuje w **bierniku (Akkusativ)**: *Ich wasche **mich**.* (Myje sie.)\n\nJesli w zdaniu jest juz dopelnienie w bierniku, zaimek zwrotny stoi w **celowniku (Dativ)**: *Ich wasche mir die Hande.* (Myje sobie rece.)"
+    },
+    {
+      "kind": "table",
+      "title": "Zaimki zwrotne — Akkusativ i Dativ",
+      "headers": [
+        "Osoba",
+        "Akkusativ",
+        "Dativ"
+      ],
+      "rows": [
+        [
+          "ich",
+          "mich",
+          "mir"
+        ],
+        [
+          "du",
+          "dich",
+          "dir"
+        ],
+        [
+          "er/sie/es",
+          "sich",
+          "sich"
+        ],
+        [
+          "wir",
+          "uns",
+          "uns"
+        ],
+        [
+          "ihr",
+          "euch",
+          "euch"
+        ],
+        [
+          "sie/Sie",
+          "sich",
+          "sich"
+        ]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "**Czeste czasowniki zwrotne z Akkusativ:**\n\n- sich waschen — myc sie\n- sich fuhlen — czuc sie\n- sich freuen (auf/uber) — cieszyc sie (na/z)\n- sich argern (uber) — irytowac sie (na)\n- sich erinnern (an) — przypominac sobie\n- sich interessieren (fur) — interesowac sie (czymis)\n- sich entscheiden — decydowac sie\n- sich befinden — znajdowac sie\n- sich vorstellen — przedstawiac sie"
+    },
+    {
+      "kind": "text",
+      "markdown": "**Czasowniki zwrotne z Dativ** (gdy jest dodatkowe dopelnienie w Akkusativ):\n\n- sich etwas vorstellen — wyobrazac sobie cos: *Ich stelle mir vor, dass...* (Wyobrazam sobie, ze...)\n- sich etwas wunschen — zyczyc sobie czegos: *Ich wunsche mir ein Buch.* (Zycze sobie ksiazke.)\n- sich etwas kaufen — kupowac sobie cos: *Er kauft sich ein Auto.* (Kupuje sobie samochod.)\n- sich etwas merken — zapamietywac cos: *Merk dir das!* (Zapamietaj to!)\n\n**Uwaga:** sich vorstellen ma dwa znaczenia — z Akkusativ: *Ich stelle mich vor.* (Przedstawiam sie.), z Dativ: *Ich stelle mir das vor.* (Wyobrazam sobie to.)"
+    },
+    {
+      "kind": "examples",
+      "items": [
+        {
+          "source": "Ich freue mich auf den Urlaub.",
+          "translation": "Ciesze sie na urlop."
+        },
+        {
+          "source": "Sie argert sich uber das Wetter.",
+          "translation": "Ona irytuje sie na pogode."
+        },
+        {
+          "source": "Wir erinnern uns an den Film.",
+          "translation": "Przypominamy sobie film."
+        },
+        {
+          "source": "Ich wasche mir die Hande.",
+          "translation": "Myje sobie rece."
+        },
+        {
+          "source": "Er kauft sich ein neues Fahrrad.",
+          "translation": "Kupuje sobie nowy rower."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Ich wasche ___ jeden Morgen die Haare.",
+      "answers": [
+        "mir"
+      ],
+      "explanation": "Przy 'die Haare' (Akkusativ) zaimek zwrotny stoi w Dativ: mir."
+    },
+    {
+      "type": "fill",
+      "prompt": "Du musst ___ keine Sorgen machen.",
+      "answers": [
+        "dir"
+      ],
+      "explanation": "Przy dopelnieniu 'keine Sorgen' (Akkusativ) zaimek zwrotny du stoi w Dativ: dir."
+    },
+    {
+      "type": "fill",
+      "prompt": "Er fuhlt ___ heute nicht wohl.",
+      "answers": [
+        "sich"
+      ],
+      "explanation": "sich fuhlen — czasownik zwrotny z Akkusativ. 3. osoba: sich."
+    },
+    {
+      "type": "fill",
+      "prompt": "Wir interessieren ___ sehr fur Musik.",
+      "answers": [
+        "uns"
+      ],
+      "explanation": "sich interessieren fur — 1. osoba l. mn.: uns."
+    },
+    {
+      "type": "fill",
+      "prompt": "Konnt ihr ___ an den Urlaub erinnern?",
+      "answers": [
+        "euch"
+      ],
+      "explanation": "sich erinnern an — 2. osoba l. mn.: euch."
+    },
+    {
+      "type": "fill",
+      "prompt": "Die Kinder waschen ___ vor dem Essen.",
+      "answers": [
+        "sich"
+      ],
+      "explanation": "3. osoba l. mn. (sie) — zaimek zwrotny: sich."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Ktore zdanie jest poprawne?",
+      "options": [
+        "Ich kaufe mich ein neues Buch.",
+        "Ich kaufe mir ein neues Buch.",
+        "Ich kaufe sich ein neues Buch.",
+        "Ich kaufe uns ein neues Buch."
+      ],
+      "answer": 1,
+      "explanation": "Przy dopelnieniu w Akkusativ (ein neues Buch) zaimek zwrotny stoi w Dativ: mir."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Jak przetlumaczymy: 'Ona przedstawia sie'?",
+      "options": [
+        "Sie stellt sich vor.",
+        "Sie stellt mir vor.",
+        "Sie vorstellt sich.",
+        "Sie stellt sich an."
+      ],
+      "answer": 0,
+      "explanation": "sich vorstellen (przedstawiac sie) — czasownik rozdzielnie zlozony: stellt...vor. 3. os.: sich."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Wybierz poprawna forme: 'Ihr ___ uber die Note geargert.'",
+      "options": [
+        "habt sich",
+        "habt euch",
+        "habt uns",
+        "habt mich"
+      ],
+      "answer": 1,
+      "explanation": "sich argern — 2. osoba l. mn. (ihr): euch."
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Ich freue mich auf das Treffen.",
+        "Ich freue mich auf das Meeting."
+      ],
+      "explanation": "sich freuen auf + Akkusativ. 1. osoba: mich. 'das Treffen' / 'das Meeting' = spotkanie.",
+      "from": "pl",
+      "to": "de",
+      "source": "Przetlumacz na jezyk niemiecki: 'Ciesze sie na spotkanie.' (sich freuen auf)"
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Sie entscheiden sich fur die Reise.",
+        "Sie entscheiden sich fur den Ausflug.",
+        "Sie entscheiden sich fur das Reisen."
+      ],
+      "explanation": "sich entscheiden fur + Akkusativ. 3. osoba l. mn.: sich.",
+      "from": "pl",
+      "to": "de",
+      "source": "Przetlumacz na jezyk niemiecki: 'Oni decyduja sie na wyjazd.' (sich entscheiden fur)"
+    },
+    {
+      "type": "errorFix",
+      "explanation": "sich erinnern an — nie ma tu innego dopelnienia w Akkusativ, wiec zaimek zwrotny stoi w Akkusativ: mich (nie mir).",
+      "sentence": "Ich erinnere mir an deinen Geburtstag.",
+      "answers": [
+        "Ich erinnere mich an deinen Geburtstag."
+      ]
+    },
+    {
+      "type": "errorFix",
+      "explanation": "Przy dopelnieniu 'die Hande' (Akkusativ) zaimek zwrotny du stoi w Dativ: dir (nie dich).",
+      "sentence": "Du sollst dich die Hande waschen.",
+      "answers": [
+        "Du sollst dir die Hande waschen."
+      ]
+    },
+    {
+      "type": "order",
+      "prompt": "Uloz zdanie z podanych slow:",
+      "answer": [
+        "Sie",
+        "argert",
+        "sich",
+        "sehr",
+        "uber",
+        "das",
+        "Ergebnis."
+      ],
+      "explanation": "Szyk: podmiot + orzeczenie + sich (Akkusativ) + okolicznik + dopelnienie z przyimkiem.",
+      "tokens": [
+        "sich",
+        "sie",
+        "sehr",
+        "uber",
+        "argert",
+        "das Ergebnis"
+      ]
+    },
+    {
+      "type": "order",
+      "prompt": "Uloz zdanie z podanych slow:",
+      "answer": [
+        "Wir",
+        "freuen",
+        "uns",
+        "morgen",
+        "auf",
+        "den",
+        "Ausflug."
+      ],
+      "explanation": "sich freuen auf + Akkusativ (den Ausflug — maskulinum). Zaimek zwrotny uns zaraz po orzeczeniu.",
+      "tokens": [
+        "wir",
+        "uns",
+        "morgen",
+        "freuen",
+        "auf",
+        "den",
+        "Ausflug"
+      ]
+    }
+  ]
+}

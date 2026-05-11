@@ -1,0 +1,274 @@
+{
+  "id": "de.syntax.modalpartikeln",
+  "language": "de",
+  "category": "syntax",
+  "title": "Modalpartikeln",
+  "summary": "Partykuly modalne (doch, ja, mal, eben, halt, eigentlich, wohl, schon, denn) — wyrazy dodajace niuans emocjonalny lub nastawienie mowiacego do wypowiedzi.",
+  "cefrLevel": "B2",
+  "prerequisites": [
+    "de.syntax.nebensaetze-erweitert"
+  ],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Modalpartikeln** (partykuly modalne) to nieodmienne, nieakcentowane slowa, ktore zabarwiaja wypowiedz emocjonalnie lub nastawieniowo. Sa typowe dla jezyka mowionego i nieformalnego. Nie mozna ich latwo przetlumaczyc doslownie.\n\n**Kluczowe zasady:**\n- Partykuly modalne **nigdy** nie stoja na pierwszej pozycji zdania\n- Stoja zazwyczaj bezposrednio po orzeczeniu (i podmiocie w pytaniach)\n- Nie moga bycczescia zdania podrz. (Nebensatz)\n- Moga wystapic dwie naraz (np. *Komm doch mal rein!*)"
+    },
+    {
+      "kind": "table",
+      "title": "Najwazniejsze Modalpartikeln i ich funkcje",
+      "headers": [
+        "Partykula",
+        "Funkcja / Nastawienie",
+        "Przyklad"
+      ],
+      "rows": [
+        [
+          "doch",
+          "zaprzeczenie zalozenia rozmowcy lub lagodne zaproszenie/zacheta",
+          "Das stimmt doch nicht! / Komm doch rein!"
+        ],
+        [
+          "ja",
+          "apel do wspolnej wiedzy lub zaskoczenie",
+          "Das weisst du ja! / Das ist ja toll!"
+        ],
+        [
+          "mal",
+          "lagodzi prosbe lub rozkaz",
+          "Komm mal her. / Ruf mal an."
+        ],
+        [
+          "eben",
+          "cos nieuniknionego lub oczywistego (ton neutralny)",
+          "Das ist eben so."
+        ],
+        [
+          "halt",
+          "cos nieuniknionego (ton rezygnacyjny, poludniowy)",
+          "Das ist halt schwierig."
+        ],
+        [
+          "wohl",
+          "zaloenie, prawdopodobienstwo",
+          "Er ist wohl krank."
+        ],
+        [
+          "eigentlich",
+          "wlasciwie / w zasadzie / korekta oczekiwan",
+          "Was willst du eigentlich?"
+        ],
+        [
+          "schon",
+          "uspokojenie lub niecierpliwosc",
+          "Das wird schon klappen."
+        ],
+        [
+          "denn",
+          "zainteresowanie lub uprzejmosc w pytaniach",
+          "Wie heisst du denn?"
+        ]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "**Szczegolowe uzycia:**\n\n**doch** — trzy zastosowania:\n1. Zaprzeczenie zalozenia rozmowcy: *Das stimmt doch nicht!* (To przeciez nieprawda!)\n2. Lagodna zacheta lub rozkaz: *Komm doch rein!* (No wejdz juz!)\n3. Odpowiedz twierdzaca na pytanie zaprzeczone: *Kommst du nicht?* — *Doch!* (Owszem!)\n\n**ja** — oczywistosc lub zaskoczenie:\n- *Du weisst ja, dass ich keine Zeit habe.* (Wiesz przeciez, ze nie mam czasu.)\n- *Das ist ja unglaublich!* (To jest przeciez niesamowite!)\n\n**wohl** — zaloenie, nie pewnosc:\n- *Er ist wohl zu Hause.* (Pewnie jest w domu.) — ale nie wiem na pewno\n- Porownaj: *Er ist zu Hause.* (stwierdzenie faktu)"
+    },
+    {
+      "kind": "text",
+      "markdown": "**eigentlich** — wieloznaczne:\n1. W zasadzie / teoretycznie: *Eigentlich sollte ich lernen.* (W zasadzie powinienem sie uczyc.)\n2. Pytanie o wlasciwa intencje: *Was willst du eigentlich?* (Czego ty wlasciwie chcesz?)\n\n**schon** — uspokajanie lub niecierpliwosc:\n- *Das schaffst du schon!* (Poradzisz sobie! [zapewnienie])\n- *Ich komme ja schon!* (Juz ide! [niecierpliwosc])\n\n**denn** — w pytaniach, wyraża zainteresowanie lub subtelne zdziwienie:\n- *Wie heisst du denn?* (Jak masz na imie? [z zainteresowaniem])\n- *Was ist denn los?* (Co sie wlasciwie dzieje?)"
+    },
+    {
+      "kind": "examples",
+      "items": [
+        {
+          "source": "Komm doch mal vorbei!",
+          "translation": "Wpadnij kiedys! (zacheta, ciepla prosba)"
+        },
+        {
+          "source": "Das ist ja unglaublich!",
+          "translation": "To jest przeciez niesamowite! (zaskoczenie)"
+        },
+        {
+          "source": "Er ist wohl noch im Buro — das Licht brennt.",
+          "translation": "On pewnie jest jeszcze w biurze — swieci sie swiatlo. (zaloenie)"
+        },
+        {
+          "source": "Kannst du mir mal helfen?",
+          "translation": "Czy mozesz mi przez chwile pomoc? (lagodna prosba)"
+        },
+        {
+          "source": "Das ist eben so — daran kann man nichts andern.",
+          "translation": "No tak juz jest — nic sie z tym nie zrobi. (rezygnacja)"
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Komm ___ rein, es ist kalt draussen! (lagodne zaproszenie/zacheta)",
+      "answers": [
+        "doch",
+        "doch mal"
+      ],
+      "explanation": "'doch' w rozkazie lub zaproszeniu lagodzi ton i wyraża zachete. 'doch mal' tez jest poprawne i bardzo naturalne."
+    },
+    {
+      "type": "fill",
+      "prompt": "Er ist ___ krank — er sieht wirklich schlecht aus. (zaloenie, nie pewnosc)",
+      "answers": [
+        "wohl"
+      ],
+      "explanation": "'wohl' wyraża zaloenie lub prawdopodobienstwo — mowicy wnioskuje, ale nie jest pewien."
+    },
+    {
+      "type": "fill",
+      "prompt": "Das weisst du ___ schon! (apel do wspolnej wiedzy)",
+      "answers": [
+        "ja"
+      ],
+      "explanation": "'ja' odwoluje sie do wiedzy wspolnej mowiacego i sluchacza. Odpowiada polskiemu 'przeciez'."
+    },
+    {
+      "type": "fill",
+      "prompt": "Was ist ___ los mit dir? Du siehst so besorgt aus. (zainteresowanie w pytaniu)",
+      "answers": [
+        "denn"
+      ],
+      "explanation": "'denn' w pytaniach wyraża zainteresowanie lub subtelne zdziwienie. Bez 'denn' pytanie brzmi bardziej ostro."
+    },
+    {
+      "type": "fill",
+      "prompt": "Das schaffe ich ___ nicht — ich habe zu wenig Zeit. (rezygnacja, nieuniknione)",
+      "answers": [
+        "eben",
+        "halt"
+      ],
+      "explanation": "'eben' lub 'halt' wyrazaja rezygnacje wobec nieuniknionej sytuacji. 'halt' jest bardziej poludniowoniemieckie."
+    },
+    {
+      "type": "fill",
+      "prompt": "Keine Sorge, das wird ___ klappen! (uspokojenie, zapewnienie)",
+      "answers": [
+        "schon"
+      ],
+      "explanation": "'schon' w zdaniu zapewniajacym oznacza 'na pewno' lub 'z pewnoscią'. Odpowiada polskiemu 'na pewno sie uda'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Jaki niuans wnosi 'wohl' w zdaniu: 'Sie ist wohl schon nach Hause gegangen.'?",
+      "options": [
+        "Mowica jest zdenerwowana.",
+        "To jest rozkaz dla niej.",
+        "Mowica zaklada, ze ona juz poszla, ale nie jest pewna.",
+        "Mowica jest w stu procentach pewna, ze ona juz poszla."
+      ],
+      "answer": 2,
+      "explanation": "'wohl' zawsze wyraża zaloenie lub prawdopodobienstwo, nigdy pewnosc."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Ktore zdanie poprawnie uzywa partykuly modalnej?",
+      "options": [
+        "Ja du weisst das nicht.",
+        "Du weisst das ja nicht.",
+        "Du weisst das nicht ja.",
+        "Ja, das weisst du!"
+      ],
+      "answer": 1,
+      "explanation": "Partykuly modalne stoja po orzeczeniu (i podmiocie), nie na pierwszej pozycji zdania ani na koncu."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Ktora partykula najlepiej lagodzi prosbe: 'Kannst du ___ kurz das Fenster zumachen?'",
+      "options": [
+        "wohl",
+        "ja",
+        "mal",
+        "eben"
+      ],
+      "answer": 2,
+      "explanation": "'mal' jest klasyczna partykula lagodzaca prosbe i rozkaz. Czyni je brzmiacymi bardziej uprzejmie i nieformalnie."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Jaka jest roznica miedzy (A) 'Er kommt heute.' a (B) 'Er kommt wohl heute.'?",
+      "options": [
+        "Brak roznicy — oba znacza to samo.",
+        "(A) to pytanie, (B) to odpowiedz.",
+        "(A) to stwierdzenie faktu, (B) to zaloenie/prawdopodobienstwo.",
+        "(A) to pros'ba, (B) to polecenie."
+      ],
+      "answer": 2,
+      "explanation": "Bez partykuly: pewnosc. Z 'wohl': mowicy zaklada, ze tak jest, ale nie jest tego pewien."
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Komm doch rein, es ist kalt!",
+        "Komm doch herein, es ist kalt!"
+      ],
+      "explanation": "'doch' w rozkazie wyraża zachete lub lekka niecierpliwosc. rein/herein = do srodka.",
+      "from": "pl",
+      "to": "de",
+      "source": "Przetlumacz na jezyk niemiecki z odpowiednia partykula: 'No wejdz juz, jest zimno!' (lagodna zacheta)"
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Er ist wohl im Urlaub.",
+        "Er macht wohl Urlaub."
+      ],
+      "explanation": "'wohl' = pewnie/chyba (zaloenie). 'im Urlaub sein' / 'Urlaub machen' = byc na urlopie.",
+      "from": "pl",
+      "to": "de",
+      "source": "Przetlumacz na jezyk niemiecki z odpowiednia partykula: 'On pewnie jest na urlopie.'"
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Was willst du eigentlich?",
+        "Was wollen Sie eigentlich?"
+      ],
+      "explanation": "'eigentlich' w pytaniu wyraża, ze mowicy jest nieco zaskoczony lub pyta o prawdziwa intencje.",
+      "from": "pl",
+      "to": "de",
+      "source": "Przetlumacz na jezyk niemiecki z odpowiednia partykula: 'Czego ty wlasciwie chcesz?'"
+    },
+    {
+      "type": "errorFix",
+      "explanation": "Partykuly modalne nigdy nie stoja na pierwszej pozycji zdania. 'wohl' powinno stac po czasowniku i podmiocie.",
+      "sentence": "Wohl er ist heute nicht in der Schule.",
+      "answers": [
+        "Er ist wohl heute nicht in der Schule."
+      ]
+    },
+    {
+      "type": "match",
+      "prompt": "Dopasuj partykule do jej glownej funkcji:",
+      "pairs": [
+        {
+          "term": "wohl",
+          "definition": "Wyraża zaloenie lub prawdopodobienstwo"
+        },
+        {
+          "term": "mal",
+          "definition": "Lagodzi prosbe lub rozkaz"
+        },
+        {
+          "term": "ja",
+          "definition": "Odwoluje sie do wspolnej wiedzy lub wyraża zaskoczenie"
+        },
+        {
+          "term": "eben/halt",
+          "definition": "Wyraża nieuchronnosc lub rezygnacje z faktem"
+        },
+        {
+          "term": "denn",
+          "definition": "Wyraża zainteresowanie lub uprzejme zaangazowanie w pytaniu"
+        }
+      ],
+      "explanation": "Kazda partykula modalna ma swoj kluczowy niuans emocjonalny. Zrozumienie kontekstu pomaga wybrac wlasciwa."
+    }
+  ]
+}

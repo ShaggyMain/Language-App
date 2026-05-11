@@ -1,0 +1,307 @@
+{
+  "id": "de.tenses.perfekt",
+  "language": "de",
+  "category": "tenses",
+  "title": "Perfekt",
+  "summary": "Czas przeszly Perfekt — haben/sein + Partizip II. Najczesciej uzywany czas przeszly w mowie potocznej.",
+  "cefrLevel": "A2",
+  "prerequisites": [
+    "de.verbs.sein-haben",
+    "de.verbs.present-regular"
+  ],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Perfekt** to najczesciej uzywany czas przeszly w jezyku mówionym. Tworzymy go przy uzyciu czasownika posilkowego **haben** lub **sein** oraz **Partizip II** czasownika glównego.\n\nSchemat: **Podmiot + haben/sein (odmienione) + ... + Partizip II**\n\n*Ich habe gegessen.* (Jadlem/am.)\n*Sie ist gegangen.* (Ona poszla.)"
+    },
+    {
+      "kind": "table",
+      "title": "haben i sein w czasie terazniejszym (jako czasowniki posilkowe)",
+      "headers": [
+        "Osoba",
+        "haben",
+        "sein"
+      ],
+      "rows": [
+        [
+          "ich",
+          "habe",
+          "bin"
+        ],
+        [
+          "du",
+          "hast",
+          "bist"
+        ],
+        [
+          "er/sie/es",
+          "hat",
+          "ist"
+        ],
+        [
+          "wir",
+          "haben",
+          "sind"
+        ],
+        [
+          "ihr",
+          "habt",
+          "seid"
+        ],
+        [
+          "sie/Sie",
+          "haben",
+          "sind"
+        ]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "**Tworzenie Partizip II:**\n\n- Czasowniki regularne: **ge- + rdzen + -t** (machen -> ge**mach**t, spielen -> ge**spiel**t, lernen -> ge**lern**t)\n- Czasowniki nieregularne: trzeba zapamietac (essen -> ge**gess**en, schreiben -> ge**schrieb**en)\n- Czasowniki z nierozdzielnym przedrostkiem (be-, er-, ver-) nie dostaja **ge-**: bestellen -> bestellt, erzählen -> erzählt\n- Czasowniki na **-ieren** nie dostaja **ge-**: telefonieren -> telefoniert"
+    },
+    {
+      "kind": "table",
+      "title": "Wazne nieregularne formy Partizip II",
+      "headers": [
+        "Bezokolicznik",
+        "Partizip II",
+        "Tlumaczenie"
+      ],
+      "rows": [
+        [
+          "essen",
+          "gegessen",
+          "jesc"
+        ],
+        [
+          "trinken",
+          "getrunken",
+          "pic"
+        ],
+        [
+          "fahren",
+          "gefahren",
+          "jechac"
+        ],
+        [
+          "gehen",
+          "gegangen",
+          "isc"
+        ],
+        [
+          "kommen",
+          "gekommen",
+          "przychodzic"
+        ],
+        [
+          "schreiben",
+          "geschrieben",
+          "pisac"
+        ],
+        [
+          "lesen",
+          "gelesen",
+          "czytac"
+        ],
+        [
+          "sehen",
+          "gesehen",
+          "widziec"
+        ],
+        [
+          "schlafen",
+          "geschlafen",
+          "spac"
+        ],
+        [
+          "aufstehen",
+          "aufgestanden",
+          "wstawac"
+        ]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "**Kiedy uzyc SEIN?**\n\nCzasowniki posilkowego **sein** uzywamy z:\n1. Czasownikami ruchu i zmiany miejsca: gehen, kommen, fahren, fliegen, laufen, schwimmen, reisen\n2. Czasownikami zmiany stanu: aufstehen, einschlafen, werden, wachsen, sterben, fallen\n3. Czasownikami: bleiben, sein\n\nWszystkie pozostale czasowniki uzywaja **haben**."
+    },
+    {
+      "kind": "examples",
+      "items": [
+        {
+          "source": "Ich habe ein Buch gelesen.",
+          "translation": "Przeczytalam/em ksiazke."
+        },
+        {
+          "source": "Wir haben Pizza gegessen.",
+          "translation": "Zjedlismy pizze."
+        },
+        {
+          "source": "Er ist nach Berlin gefahren.",
+          "translation": "Pojachal do Berlina."
+        },
+        {
+          "source": "Sie ist um 7 Uhr aufgestanden.",
+          "translation": "Ona wstala o siódmej."
+        },
+        {
+          "source": "Das Kind ist schnell eingeschlafen.",
+          "translation": "Dziecko szybko zasnelo."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Ich ___ (haben/sein) heute viel gegessen.",
+      "answers": [
+        "habe"
+      ],
+      "explanation": "essen uzywa haben — to nie jest czasownik ruchu ani zmiany miejsca."
+    },
+    {
+      "type": "fill",
+      "prompt": "Sie ___ (haben/sein) gestern nach München gefahren.",
+      "answers": [
+        "ist"
+      ],
+      "explanation": "fahren (ruch/zmiana miejsca) uzywa sein."
+    },
+    {
+      "type": "fill",
+      "prompt": "Wir ___ (haben/sein) das Konzert gesehen.",
+      "answers": [
+        "haben"
+      ],
+      "explanation": "sehen uzywa haben — nie wyraża ruchu."
+    },
+    {
+      "type": "fill",
+      "prompt": "Er ___ (haben/sein) um Mitternacht eingeschlafen.",
+      "answers": [
+        "ist"
+      ],
+      "explanation": "einschlafen (zmiana stanu) uzywa sein."
+    },
+    {
+      "type": "fill",
+      "prompt": "Partizip II od 'spielen': ___",
+      "answers": [
+        "gespielt"
+      ],
+      "explanation": "Regularny czasownik: ge- + spiel + -t = gespielt."
+    },
+    {
+      "type": "fill",
+      "prompt": "Partizip II od 'trinken': ___",
+      "answers": [
+        "getrunken"
+      ],
+      "explanation": "Nieregularny: trinken -> getrunken."
+    },
+    {
+      "type": "fill",
+      "prompt": "Partizip II od 'kommen': ___",
+      "answers": [
+        "gekommen"
+      ],
+      "explanation": "Nieregularny: kommen -> gekommen."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Które zdanie jest poprawne?",
+      "options": [
+        "Ich habe nach Hause gegangen.",
+        "Ich bin nach Hause gegangen.",
+        "Ich bin nach Hause gegangt.",
+        "Ich habe nach Hause gegangt."
+      ],
+      "answer": 1,
+      "explanation": "gehen uzywa sein; Partizip II to gegangen (nieregularny)."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Jak powiemy 'Ona napisala list'?",
+      "options": [
+        "Sie ist einen Brief geschrieben.",
+        "Sie hat einen Brief geschrieben.",
+        "Sie hat einen Brief geschreibt.",
+        "Sie ist einen Brief schreibt."
+      ],
+      "answer": 1,
+      "explanation": "schreiben uzywa haben; Partizip II to geschrieben."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Które zdanie jest poprawne?",
+      "options": [
+        "Das Kind hat schnell geschlaft.",
+        "Das Kind ist schnell geschlaft.",
+        "Das Kind hat schnell geschlafen.",
+        "Das Kind ist schnell geschlafen."
+      ],
+      "answer": 3,
+      "explanation": "schlafen uzywa sein (zmiana stanu/spoczynku); Partizip II to geschlafen."
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Wir haben gestern die Zeitung gelesen.",
+        "Gestern haben wir die Zeitung gelesen."
+      ],
+      "explanation": "lesen uzywa haben; Partizip II to gelesen. 'die Zeitung' = gazeta (Akkusativ).",
+      "from": "pl",
+      "to": "de",
+      "source": "Wczoraj przeczytalismy gazete.' (Perfekt)"
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Bist du nach Berlin gefahren?"
+      ],
+      "explanation": "fahren uzywa sein; Partizip II to gefahren. W pytaniu sein stoi na poczatku.",
+      "from": "pl",
+      "to": "de",
+      "source": "Czy pojechales do Berlina?' (Perfekt, ty)"
+    },
+    {
+      "type": "errorFix",
+      "explanation": "trinken uzywa haben, nie sein — nie wyraża ruchu ani zmiany miejsca.",
+      "sentence": "Ich bin Kaffee getrunken.",
+      "answers": [
+        "Ich habe Kaffee getrunken."
+      ]
+    },
+    {
+      "type": "errorFix",
+      "explanation": "fliegen (ruch/zmiana miejsca) wymaga sein jako czasownika posilkowego.",
+      "sentence": "Er hat nach Berlin geflogen.",
+      "answers": [
+        "Er ist nach Berlin geflogen."
+      ]
+    },
+    {
+      "type": "order",
+      "prompt": "Ulozy zdanie w Perfekt z podanych slow:",
+      "answer": [
+        "Wir",
+        "sind",
+        "gestern",
+        "ins",
+        "Kino",
+        "gegangen."
+      ],
+      "alternatives": [
+        "Gestern sind wir ins Kino gegangen."
+      ],
+      "explanation": "gehen uzywa sein; Partizip II (gegangen) stoi na koncu zdania. Przy inwersji czasownik posilkowy pozostaje na miejscu 2.",
+      "tokens": [
+        "gestern",
+        "wir",
+        "ins Kino",
+        "sind",
+        "gegangen"
+      ]
+    }
+  ]
+}

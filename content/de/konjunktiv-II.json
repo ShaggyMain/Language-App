@@ -1,0 +1,141 @@
+{
+  "id": "de.verbs.konjunktiv-II",
+  "language": "de",
+  "category": "verbs",
+  "title": "Konjunktiv II",
+  "summary": "Tryb łączący II — warunki nierzeczywiste, uprzejme prośby i życzenia (hätte, wäre, würde...).",
+  "cefrLevel": "B1",
+  "prerequisites": ["de.tenses.praeteritum"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Konjunktiv II** wyraża sytuacje **hipotetyczne / nierzeczywiste**, **uprzejme prośby** i **życzenia**.\n\n**Najważniejsze formy:**\n- *sein* => **wäre** (byłby/byłabym)\n- *haben* => **hätte** (miałby/miałabym)\n- *werden* => **würde** (zostałby / tworzy konstrukcję z bezokolicznikiem)\n- Czasowniki modalne: *könnte* (mógłby), *müsste* (musiałby), *dürfte* (wolno by było), *sollte* (powinien by), *wollte* (chciałby)\n\n**würde + Infinitiv** — używamy dla większości zwykłych czasowników:\n*Ich würde gern reisen.* (Chętnie bym podróżował/a.)\n*Er würde helfen, wenn er könnte.* (Pomógłby, gdyby mógł.)\n\nNiektóre mocne czasowniki mają własne formy Konjunktivu II:\n*kommen* => *käme*, *gehen* => *ginge*, *wissen* => *wüsste*\n\n**Zdania warunkowe (Konditionalsätze):**\n*Wenn ich Zeit hätte, würde ich kommen.* (Gdybym miał/a czas, przyszedłbym/przyszłabym.)\n*Wenn ich du wäre, würde ich das nicht tun.* (Gdybym był/a tobą, nie robiłbym/robiłabym tego.)\n\n**Grzeczne prośby:**\n*Könnten Sie mir helfen?* (Czy mógłby mi Pan/Pani pomóc?)\n*Ich hätte gern ein Bier.* (Poproszę piwo.)\n*Würden Sie bitte warten?* (Czy byłby Pan/Pani łaskaw poczekać?)"
+    },
+    {
+      "kind": "table",
+      "title": "Kluczowe formy Konjunktivu II",
+      "headers": ["Czasownik", "Konjunktiv II", "Znaczenie"],
+      "rows": [
+        ["sein", "wäre", "byłby/byłabym"],
+        ["haben", "hätte", "miałby/miałabym"],
+        ["können", "könnte", "mógłby/mogłabym"],
+        ["müssen", "müsste", "musiałby/musiałabym"],
+        ["dürfen", "dürfte", "wolno by było"],
+        ["wollen", "wollte", "chciałby/chciałabym"],
+        ["werden (+ Inf.)", "würde", "tworzy Konjunktiv II"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Wenn ich reich wäre, würde ich eine Villa kaufen.", "translation": "Gdybym był/a bogaty/a, kupiłbym/kupiłabym willę." },
+        { "source": "Könnten Sie mir bitte helfen?", "translation": "Czy mógłby/mogłaby mi Pan/Pani pomóc?" },
+        { "source": "Ich hätte gern einen Kaffee.", "translation": "Poproszę kawę." },
+        { "source": "Er müsste eigentlich mehr schlafen.", "translation": "Właściwie powinien więcej spać." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Wenn ich mehr Zeit ___ (haben), würde ich mehr lesen.",
+      "answers": ["hätte"],
+      "hint": "Konjunktiv II od 'haben': hätte."
+    },
+    {
+      "type": "fill",
+      "prompt": "Wenn er nicht krank ___ (sein), käme er zur Party.",
+      "answers": ["wäre"],
+      "hint": "Konjunktiv II od 'sein': wäre."
+    },
+    {
+      "type": "fill",
+      "prompt": "___ (können, Sie) mir bitte sagen, wie ich zum Bahnhof komme?",
+      "answers": ["Könnten"],
+      "hint": "Konjunktiv II od 'können' dla Sie: könnten (z dużej litery na początku zdania)."
+    },
+    {
+      "type": "fill",
+      "prompt": "Ich ___ (werden) gern mit dir kommen, aber ich habe keine Zeit.",
+      "answers": ["würde"],
+      "hint": "würde + Infinitiv dla normalnych czasowników."
+    },
+    {
+      "type": "fill",
+      "prompt": "Du ___ (müssen) eigentlich mehr für die Prüfung lernen.",
+      "answers": ["müsstest"],
+      "hint": "Konjunktiv II od 'müssen' dla 'du': müsstest."
+    },
+    {
+      "type": "transform",
+      "instruction": "Przekształć zdanie realne na hipotetyczne (Konjunktiv II) z 'Wenn...'.",
+      "source": "Ich habe kein Geld. Ich kaufe das Auto nicht.",
+      "answers": ["Wenn ich Geld hätte, würde ich das Auto kaufen.", "Wenn ich Geld hätte, kaufte ich das Auto."]
+    },
+    {
+      "type": "transform",
+      "instruction": "Przekształć zdanie realne na hipotetyczne (Konjunktiv II) z 'Wenn...'.",
+      "source": "Er ist nicht hier. Er kann uns nicht helfen.",
+      "answers": ["Wenn er hier wäre, könnte er uns helfen.", "Wenn er hier wäre, würde er uns helfen."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "Grzeczna prośba: ___ Sie mir bitte die Tür aufhalten?",
+      "options": ["Können", "Könnten", "Konnten", "Könnt"],
+      "answer": 1,
+      "explanation": "Konjunktiv II od 'können' dla Sie: 'könnten'. Forma 'konnten' to Präteritum (czas przeszły), nie Konjunktiv."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Wenn ich du ___, würde ich das Angebot annehmen.",
+      "options": ["bin", "sei", "wäre", "werde"],
+      "answer": 2,
+      "explanation": "W nierzeczywistym warunku używamy Konjunktiv II od 'sein': wäre."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Które zdanie wyraża nierzeczywisty warunek?",
+      "options": [
+        "Wenn es regnet, bleibe ich zu Hause.",
+        "Wenn es regnen würde, bliebe ich zu Hause.",
+        "Wenn es geregnet hat, bleibe ich zu Hause.",
+        "Wenn es regnen muss, bleibe ich zu Hause."
+      ],
+      "answer": 1,
+      "explanation": "Konjunktiv II (würde + Infinitiv lub bliebe) wyraża sytuację nierzeczywistą/hipotetyczną. Zdanie pierwsze to realny warunek (Indikativ)."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Ich ___ gern in Paris wohnen.",
+      "options": ["wollte", "würde", "hätte", "wäre"],
+      "answer": 1,
+      "explanation": "Przy zwykłych czasownikach (wohnen) używamy 'würde + Infinitiv': würde wohnen."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Gdybym wiedział/wiedziała, powiedziałbym/powiedziałabym ci.",
+      "answers": ["Wenn ich es wüsste, würde ich es dir sagen.", "Wenn ich das wüsste, würde ich dir es sagen.", "Wenn ich wüsste, würde ich dir sagen."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Czy mogłabyś/mógłbyś mi pomóc?",
+      "answers": ["Könntest du mir helfen?", "Könnten Sie mir helfen?"]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Wenn ich mehr Geld habe, kaufe ich ein neues Fahrrad.",
+      "answers": ["Wenn ich mehr Geld hätte, würde ich ein neues Fahrrad kaufen.", "Wenn ich mehr Geld hätte, kaufte ich ein neues Fahrrad."],
+      "explanation": "Zdanie wyraża sytuację nierzeczywistą (nie mam tych pieniędzy). Należy użyć Konjunktivu II: 'hätte' w zdaniu podrzędnym i 'würde kaufen' lub 'kaufte' w zdaniu głównym."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Ich würde gern einen Tee haben bitte.",
+      "answers": ["Ich hätte gern einen Tee.", "Ich hätte gern einen Tee, bitte."],
+      "explanation": "Standardowe wyrażenie grzecznej prośby o coś w restauracji/kawiarni to 'ich hätte gern + Akkusativ', nie 'würde gern haben'."
+    }
+  ]
+}

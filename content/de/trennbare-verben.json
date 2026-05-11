@@ -1,0 +1,150 @@
+{
+  "id": "de.verbs.trennbare-verben",
+  "language": "de",
+  "category": "verbs",
+  "title": "Trennbare Verben",
+  "summary": "Czasowniki rozłączne — przedrostek odrywa się i przechodzi na koniec zdania.",
+  "cefrLevel": "A1",
+  "prerequisites": ["de.verbs.present-regular"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "Czasowniki rozłączne (trennbare Verben) składają się z **przedrostka** i **rdzenia czasownika**. W zdaniu głównym przedrostek **odrywa się** od rdzenia i przechodzi na **koniec zdania**.\n\n**Reguła:**\n- *aufmachen* → Ich **mache** das Fenster **auf**.\n- *anrufen* → Er **ruft** seine Mutter **an**.\n- *aufstehen* → Sie **steht** um 7 Uhr **auf**.\n\nAle po **czasowniku modalnym** lub w **bezokoliczniku** czasownik pozostaje w całości:\n- Ich muss das Fenster **aufmachen**.\n- Er will seine Mutter **anrufen**.\n\nNajczęstsze przedrostki rozłączne: **auf-, zu-, an-, ab-, aus-, ein-, mit-, vor-, nach-, zurück-, fern-**"
+    },
+    {
+      "kind": "table",
+      "title": "Przykładowe czasowniki rozłączne",
+      "headers": ["Bezokolicznik", "Znaczenie", "Przykład (zdanie główne)"],
+      "rows": [
+        ["aufmachen", "otwierać", "Ich mache das Fenster auf."],
+        ["zumachen", "zamykać", "Er macht die Tür zu."],
+        ["anrufen", "dzwonić (do kogoś)", "Sie ruft ihren Vater an."],
+        ["aufstehen", "wstawać", "Ich stehe um 6 Uhr auf."],
+        ["einkaufen", "robić zakupy", "Wir kaufen im Supermarkt ein."],
+        ["ankommen", "przyjeżdżać", "Der Zug kommt um 10 Uhr an."],
+        ["abfahren", "odjeżdżać", "Der Bus fährt um 8 Uhr ab."],
+        ["ausgehen", "wychodzić (na miasto)", "Sie geht heute Abend aus."],
+        ["fernsehen", "oglądać telewizję", "Wir sehen abends fern."],
+        ["aufräumen", "sprzątać", "Ich räume mein Zimmer auf."]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Ich mache das Fenster auf.", "translation": "Otwieram okno." },
+        { "source": "Er ruft seinen Freund an.", "translation": "On dzwoni do swojego przyjaciela." },
+        { "source": "Wir stehen um 7 Uhr auf.", "translation": "Wstajemy o 7 rano." },
+        { "source": "Ich muss früh aufstehen.", "translation": "Muszę wcześnie wstawać." },
+        { "source": "Kannst du das Fenster zumachen?", "translation": "Czy możesz zamknąć okno?" }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "Który szyk jest poprawny? (aufstehen, er)",
+      "options": [
+        "Er aufsteht um 6 Uhr.",
+        "Er steht um 6 Uhr auf.",
+        "Er steht auf um 6 Uhr.",
+        "Aufsteht er um 6 Uhr."
+      ],
+      "answer": 1,
+      "explanation": "W zdaniu głównym przedrostek 'auf' odchodzi na koniec zdania: Er steht um 6 Uhr auf."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Uzupełnij: Ich muss das Zimmer ___.",
+      "options": ["räume auf", "aufräume", "aufräumen", "räumt auf"],
+      "answer": 2,
+      "explanation": "Po czasowniku modalnym 'muss' czasownik stoi w bezokoliczniku w całości (nierozłącznie): aufräumen."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Która forma jest poprawna? (anrufen, sie — ona)",
+      "options": [
+        "Sie anruft ihre Mutter.",
+        "Sie ruft ihre Mutter an.",
+        "Sie ruft an ihre Mutter.",
+        "Sie anruf ihre Mutter."
+      ],
+      "answer": 1,
+      "explanation": "Przedrostek 'an' wędruje na koniec: Sie ruft ihre Mutter an."
+    },
+    {
+      "type": "fill",
+      "prompt": "Der Zug ___ um 9 Uhr in Berlin ___ . (ankommen)",
+      "answers": ["kommt", "an"],
+      "hint": "Rdzeń 'kommen' + przedrostek 'an' na końcu. Koniuguj dla 'der Zug' (3. os. l.poj.)."
+    },
+    {
+      "type": "fill",
+      "prompt": "Wir ___ heute im Supermarkt ___ . (einkaufen)",
+      "answers": ["kaufen", "ein"],
+      "hint": "Rdzeń 'kaufen' + przedrostek 'ein' na końcu. Koniuguj dla 'wir'."
+    },
+    {
+      "type": "fill",
+      "prompt": "Ich ___ das Fenster ___ . (zumachen)",
+      "answers": ["mache", "zu"],
+      "hint": "Rdzeń 'machen' + przedrostek 'zu' na końcu. Koniuguj dla 'ich'."
+    },
+    {
+      "type": "fill",
+      "prompt": "Sie will heute Abend ___ . (ausgehen)",
+      "answers": ["ausgehen"],
+      "hint": "Po 'will' (czasownik modalny) bezokolicznik zostaje w całości."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Oglądam telewizję każdego wieczoru.",
+      "answers": ["Ich sehe jeden Abend fern.", "Ich sehe abends fern."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Autobus odjeżdża o ósmej.",
+      "answers": ["Der Bus fährt um 8 Uhr ab.", "Der Bus fährt um acht Uhr ab."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Czy możesz zadzwonić do mamy? (du, anrufen)",
+      "answers": ["Kannst du die Mutter anrufen?", "Kannst du deine Mutter anrufen?"]
+    },
+    {
+      "type": "order",
+      "prompt": "Ułóż zdanie: Ona sprząta swój pokój.",
+      "tokens": ["auf", "ihr", "Zimmer", "Sie", "räumt"],
+      "answer": ["Sie", "räumt", "ihr", "Zimmer", "auf"]
+    },
+    {
+      "type": "order",
+      "prompt": "Ułóż zdanie: Czy wstajesz wcześnie?",
+      "tokens": ["früh", "du", "Stehst", "auf", "?"],
+      "answer": ["Stehst", "du", "früh", "auf", "?"]
+    },
+    {
+      "type": "transform",
+      "instruction": "Dodaj czasownik modalny 'müssen' i przekształć zdanie.",
+      "source": "Ich räume das Zimmer auf.",
+      "answers": ["Ich muss das Zimmer aufräumen."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Er aufmacht das Fenster.",
+      "answers": ["Er macht das Fenster auf."],
+      "explanation": "W zdaniu głównym przedrostek 'auf' musi stać na końcu zdania. Rdzeń 'macht' stoi na drugiej pozycji (po podmiocie). Poprawnie: Er macht das Fenster auf."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Ich muss auf stehen früh.",
+      "answers": ["Ich muss früh aufstehen."],
+      "explanation": "Po czasowniku modalnym bezokolicznik czasownika rozłącznego zostaje w całości i stoi na końcu zdania. Poprawnie: Ich muss früh aufstehen."
+    }
+  ]
+}

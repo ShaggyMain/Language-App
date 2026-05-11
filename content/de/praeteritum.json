@@ -1,0 +1,336 @@
+{
+  "id": "de.tenses.praeteritum",
+  "language": "de",
+  "category": "tenses",
+  "title": "Präteritum",
+  "summary": "Czas przeszly narracyjny Präteritum — uzywany w pismie i narracji oraz obowiazkowo z sein, haben i czasownikami modalnymi.",
+  "cefrLevel": "A2",
+  "prerequisites": [
+    "de.tenses.perfekt"
+  ],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Präteritum** to czas przeszly uzywany przede wszystkim w **jez. pisanym** (literatura, prasa, narracja). W mowie potocznej Niemcy preferuja Perfekt.\n\n**Wyjatki — Präteritum uzywamy zawsze (nawet w mowie!):**\n- **sein** (byc): war\n- **haben** (miec): hatte\n- Czasowniki modalne: konnte, musste, wollte, durfte, sollte\n\n*Ich war gestern müde.* (nie: *Ich bin gestern müde gewesen.* — brzmi nienaturalnie)\n*Er musste früh aufstehen.* (nie: *Er hat früh aufstehen müssen.* — rzadko w mowie)"
+    },
+    {
+      "kind": "table",
+      "title": "sein i haben — Präteritum",
+      "headers": [
+        "Osoba",
+        "sein (byc)",
+        "haben (miec)"
+      ],
+      "rows": [
+        [
+          "ich",
+          "war",
+          "hatte"
+        ],
+        [
+          "du",
+          "warst",
+          "hattest"
+        ],
+        [
+          "er/sie/es",
+          "war",
+          "hatte"
+        ],
+        [
+          "wir",
+          "waren",
+          "hatten"
+        ],
+        [
+          "ihr",
+          "wart",
+          "hattet"
+        ],
+        [
+          "sie/Sie",
+          "waren",
+          "hatten"
+        ]
+      ]
+    },
+    {
+      "kind": "table",
+      "title": "Czasowniki modalne — Präteritum",
+      "headers": [
+        "Bezokolicznik",
+        "Präteritum (ich/er)",
+        "Tlumaczenie"
+      ],
+      "rows": [
+        [
+          "können",
+          "konnte",
+          "móc, umiec"
+        ],
+        [
+          "müssen",
+          "musste",
+          "musiec"
+        ],
+        [
+          "wollen",
+          "wollte",
+          "chciec"
+        ],
+        [
+          "dürfen",
+          "durfte",
+          "wolno, miec pozwolenie"
+        ],
+        [
+          "sollen",
+          "sollte",
+          "miec cos zrobic"
+        ],
+        [
+          "mögen",
+          "mochte",
+          "lubic"
+        ]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "**Czasowniki regularne (slabe) — Präteritum**\n\nRdzen + koncocwki: **-te, -test, -te, -ten, -tet, -ten**\n\n- machen -> mach**te** (ich machte, du machtest, er machte, wir machten)\n- spielen -> spiel**te**\n- lernen -> lern**te**\n- arbeiten -> arbeit**ete** (rdzen konczy sie na -t/-d: dodajemy -ete)\n- warten -> wart**ete**"
+    },
+    {
+      "kind": "table",
+      "title": "Wazne czasowniki nieregularne (mocne) — Präteritum",
+      "headers": [
+        "Bezokolicznik",
+        "Präteritum (ich/er)",
+        "Tlumaczenie"
+      ],
+      "rows": [
+        [
+          "gehen",
+          "ging",
+          "isc"
+        ],
+        [
+          "kommen",
+          "kam",
+          "przychodzic"
+        ],
+        [
+          "fahren",
+          "fuhr",
+          "jechac"
+        ],
+        [
+          "schreiben",
+          "schrieb",
+          "pisac"
+        ],
+        [
+          "essen",
+          "aß",
+          "jesc"
+        ],
+        [
+          "trinken",
+          "trank",
+          "pic"
+        ],
+        [
+          "lesen",
+          "las",
+          "czytac"
+        ],
+        [
+          "sehen",
+          "sah",
+          "widziec"
+        ],
+        [
+          "nehmen",
+          "nahm",
+          "brac"
+        ],
+        [
+          "geben",
+          "gab",
+          "dawac"
+        ],
+        [
+          "sprechen",
+          "sprach",
+          "mówic"
+        ],
+        [
+          "stehen",
+          "stand",
+          "stac"
+        ],
+        [
+          "finden",
+          "fand",
+          "znajdowac"
+        ],
+        [
+          "bleiben",
+          "blieb",
+          "zostawac"
+        ],
+        [
+          "rufen",
+          "rief",
+          "wolac, dzwonic"
+        ]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "**Odmiana czasowników mocnych w Präteritum:**\n\nCzasowniki nieregularne nie dostaja koncocwki w 1. i 3. osobie liczby pojedynczej:\n\n| ich | kam | (bez koncocwki) |\n| du | kamst | |\n| er/sie/es | kam | (bez koncocwki) |\n| wir | kamen | |\n| ihr | kamt | |\n| sie/Sie | kamen | |"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Als ich Kind ___ (sein, Präteritum), wohnte ich in Krakau.",
+      "answers": [
+        "war"
+      ],
+      "explanation": "sein w Präteritum: ich war."
+    },
+    {
+      "type": "fill",
+      "prompt": "Wir ___ (haben, Präteritum) keine Zeit, das Museum zu besuchen.",
+      "answers": [
+        "hatten"
+      ],
+      "explanation": "haben w Präteritum: wir hatten."
+    },
+    {
+      "type": "fill",
+      "prompt": "Er ___ (können, Präteritum) nicht schlafen, weil es zu laut war.",
+      "answers": [
+        "konnte"
+      ],
+      "explanation": "können w Präteritum: er konnte. Brak przeglosu — nie: *könnte* (to byloby Konjunktiv II)."
+    },
+    {
+      "type": "fill",
+      "prompt": "Das Mädchen ___ (lesen, Präteritum) ein Buch im Garten.",
+      "answers": [
+        "las"
+      ],
+      "explanation": "lesen jest czasownikiem nieregularnym: lesen -> las."
+    },
+    {
+      "type": "fill",
+      "prompt": "Sie ___ (schreiben, Präteritum) einen langen Brief an ihre Freundin.",
+      "answers": [
+        "schrieb"
+      ],
+      "explanation": "schreiben jest nieregularny: schreiben -> schrieb."
+    },
+    {
+      "type": "fill",
+      "prompt": "Die Kinder ___ (spielen, Präteritum) den ganzen Nachmittag im Park.",
+      "answers": [
+        "spielten"
+      ],
+      "explanation": "spielen jest regularny: rdzen spiel + -ten (wir/sie) -> spielten."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Jak powiemy 'Musialem wczoraj duzo pracowac.' (müssen, Präteritum)?",
+      "options": [
+        "Ich musste gestern viel arbeiten.",
+        "Ich muss gestern viel gearbeitet haben.",
+        "Ich habe gestern viel arbeiten gemusst.",
+        "Ich müsste gestern viel arbeiten."
+      ],
+      "answer": 0,
+      "explanation": "müssen w Präteritum: ich musste. Czasowniki modalne uzywamy w Präteritum takze w mowie potocznej."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Które zdanie jest poprawne?",
+      "options": [
+        "Er ist gestern ins Kino gehen.",
+        "Er ging gestern ins Kino.",
+        "Er geht gestern ins Kino.",
+        "Er gegangen gestern ins Kino."
+      ],
+      "answer": 1,
+      "explanation": "gehen w Präteritum: ging. Czasowniki mocne: 1. i 3. os. l.poj. bez dodatkowej koncocwki."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Jaka jest forma Präteritum od 'kommen' dla 'wir'?",
+      "options": [
+        "kommen",
+        "kamten",
+        "kamen",
+        "gekommen"
+      ],
+      "answer": 2,
+      "explanation": "kommen -> kam (rdzen Präteritum). Liczba mnoga: kamen (rdzen + -en)."
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Gestern waren wir im Theater.",
+        "Wir waren gestern im Theater."
+      ],
+      "explanation": "sein w Präteritum: wir waren. im Theater = in + dem Theater (Dativ).",
+      "from": "pl",
+      "to": "de",
+      "source": "Wczoraj bylismy w teatrze.' (Präteritum, das Theater)"
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Das Kind wollte kein Gemüse essen.",
+        "Das Kind wollte das Gemüse nicht essen."
+      ],
+      "explanation": "wollen w Präteritum: wollte. kein Gemüse = negacja rzeczownika bez rodzajnika.",
+      "from": "pl",
+      "to": "de",
+      "source": "Dziecko nie chcialo jesc warzyw.' (Präteritum, wollen, das Gemüse, Negation)"
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Sie nahm ein Taxi und fuhr zum Flughafen."
+      ],
+      "explanation": "nehmen -> nahm, fahren -> fuhr. zum Flughafen = zu + dem (Dativ od: an den Flughafen tez mozliwe).",
+      "from": "pl",
+      "to": "de",
+      "source": "Ona wzięla taksówke i pojechala na lotnisko.' (nehmen, fahren, Präteritum, das Taxi, der Flughafen)"
+    },
+    {
+      "type": "errorFix",
+      "explanation": "warten jest regularny. Präteritum: wart + -ete = wartete (rdzen konczy sie na -t, wiec dodajemy -ete). Zdanie mieszane jest niespójne czasowo — oba czasowniki powinny byc w Präteritum.",
+      "sentence": "Ich warte lange auf den Bus, aber er kam nicht.",
+      "answers": [
+        "Ich wartete lange auf den Bus, aber er kam nicht."
+      ]
+    },
+    {
+      "type": "errorFix",
+      "explanation": "Präteritum od sein to war (nie wäre — to jest Konjunktiv II, forma warunkowa).",
+      "sentence": "Als ich jung wäre, spielte ich oft Fußball.",
+      "answers": [
+        "Als ich jung war, spielte ich oft Fußball."
+      ]
+    },
+    {
+      "type": "transform",
+      "explanation": "lesen -> Präteritum: las. W Präteritum nie ma czasownika posilkowego hat ani Partizip II.",
+      "instruction": "Zmien z Perfekt na Präteritum",
+      "source": "Er hat einen Roman gelesen.",
+      "answers": [
+        "Er las einen Roman."
+      ]
+    }
+  ]
+}

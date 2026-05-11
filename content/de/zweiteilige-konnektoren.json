@@ -1,0 +1,207 @@
+{
+  "id": "de.syntax.zweiteilige-konnektoren",
+  "language": "de",
+  "category": "syntax",
+  "title": "Zweiteilige Konnektoren",
+  "summary": "Spojniki dwuczlonowe: sowohl...als auch, entweder...oder, weder...noch, nicht nur...sondern auch, zwar...aber.",
+  "cefrLevel": "B2",
+  "prerequisites": [
+    "de.syntax.konjunktionen"
+  ],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Zweiteilige Konnektoren** (spojniki dwuczlonowe) lacza dwa elementy lub dwa zdania. Kazdy spojnik sklada sie z dwoch czesci, ktore razem tworza kompletna konstrukcje.\n\nNajwazniejsze spojniki dwuczlonowe:\n\n| Konektor | Znaczenie |\n|---|---|\n| sowohl ... als auch | zarowno ... jak i |\n| entweder ... oder | albo ... albo (jeden z dwoch) |\n| weder ... noch | ani ... ani |\n| nicht nur ... sondern auch | nie tylko ... ale takze |\n| zwar ... aber | co prawda ... ale |"
+    },
+    {
+      "kind": "text",
+      "markdown": "**sowohl ... als auch** (zarowno ... jak i)\n\nLaczy dwa rownorzedne elementy — oba sa prawdziwe/wazne:\n- *Ich spreche sowohl Deutsch als auch Englisch.* (Mowie zarowno po niemiecku, jak i po angielsku.)\n- *Sowohl der Vater als auch die Mutter arbeiten.* (Zarowno ojciec, jak i matka pracuja.) **[Uwaga: liczba mnoga!]**\n- *Das Essen war sowohl lecker als auch gunstig.* (Jedzenie bylo zarowno smaczne, jak i tanie.)"
+    },
+    {
+      "kind": "text",
+      "markdown": "**entweder ... oder** (albo ... albo)\n\nWyraża wybor miedzy dwiema mozliwosciami:\n- *Entweder kommst du mit, oder du bleibst zu Hause.* (Albo idziesz z nami, albo zostajesz w domu.)\n- *Wir konnen entweder Pizza oder Pasta bestellen.* (Mozemy zamowic albo pizze, albo paste.)\n\n**Uwaga na szyk!** Gdy *entweder* stoi na poczatku zdania, nastepuje **inwersja** (V2): *Entweder **kommst** du mit, ...*"
+    },
+    {
+      "kind": "text",
+      "markdown": "**weder ... noch** (ani ... ani)\n\nWyraża podwojace zaprzeczenie — zadna z opcji nie jest prawdziwa:\n- *Er trinkt weder Kaffee noch Tee.* (On nie pije ani kawy, ani herbaty.)\n- *Das war weder gunstig noch schnell.* (To nie bylo ani tanie, ani szybkie.)\n- *Weder sie noch er wollte nachgeben.* (Ani ona, ani on nie chcial ustapic.)\n\n**Wazne:** przy *weder...noch* **nie** dodajemy 'nicht' — zaprzeczenie jest juz wbudowane w konektor."
+    },
+    {
+      "kind": "text",
+      "markdown": "**nicht nur ... sondern auch** (nie tylko ... ale takze)\n\nPodkreslenie, ze cos przekracza oczekiwania — do pierwszego elementu dodaje sie cos jeszcze:\n- *Sie ist nicht nur intelligent, sondern auch fleissig.* (Jest nie tylko inteligentna, ale takze pracowita.)\n- *Er spricht nicht nur Spanisch, sondern auch Portugiesisch.* (Mowi nie tylko po hiszpansku, ale takze po portugalsku.)\n\n**zwar ... aber** (co prawda ... ale)\n\nPrzyznajemy cos, ale jednoczesnie wprowadzamy kontrast:\n- *Das Buch ist zwar lang, aber sehr interessant.* (Ksiazka jest co prawda dluga, ale bardzo interesujaca.)\n- *Ich komme zwar spat, aber ich komme.* (Przyjde co prawda pozno, ale przyjde.)"
+    },
+    {
+      "kind": "examples",
+      "items": [
+        {
+          "source": "Sowohl meine Schwester als auch ich lerne Deutsch.",
+          "translation": "Zarowno moja siostra, jak i ja ucze sie niemieckiego."
+        },
+        {
+          "source": "Entweder rufst du mich an, oder du schreibst eine Nachricht.",
+          "translation": "Albo do mnie zadzwonisz, albo napiszesz wiadomosc."
+        },
+        {
+          "source": "Das Restaurant ist weder gunstig noch besonders gut.",
+          "translation": "Ta restauracja nie jest ani tania, ani szczegolnie dobra."
+        },
+        {
+          "source": "Er ist nicht nur Arzt, sondern auch Schriftsteller.",
+          "translation": "Jest nie tylko lekarzem, ale takze pisarzem."
+        },
+        {
+          "source": "Das Angebot ist zwar verlockend, aber zu teuer.",
+          "translation": "Oferta jest co prawda kusaca, ale zbyt droga."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Ich esse gern ___ Fisch ___ Fleisch. (zarowno ... jak i)",
+      "answers": [
+        "sowohl ... als auch",
+        "sowohl/als auch"
+      ],
+      "explanation": "sowohl ... als auch = zarowno ... jak i. Laczy dwa rownorzedne dopelnienia."
+    },
+    {
+      "type": "fill",
+      "prompt": "Das Kind mochte ___ ins Kino ___ in den Zoo gehen. (albo ... albo)",
+      "answers": [
+        "entweder ... oder",
+        "entweder/oder"
+      ],
+      "explanation": "entweder ... oder = albo ... albo. Wyraża wybor miedzy dwiema mozliwosciami."
+    },
+    {
+      "type": "fill",
+      "prompt": "___ die Lehrerin ___ die Schulerinnen wussten die Antwort. (ani ... ani)",
+      "answers": [
+        "Weder ... noch",
+        "weder ... noch",
+        "Weder/noch"
+      ],
+      "explanation": "weder ... noch = ani ... ani. Oba elementy sa negowane bez dodatkowego 'nicht'."
+    },
+    {
+      "type": "fill",
+      "prompt": "Sie ist ___ hubsch, ___ sehr sympathisch. (nie tylko ... ale takze)",
+      "answers": [
+        "nicht nur ... sondern auch",
+        "nicht nur/sondern auch"
+      ],
+      "explanation": "nicht nur ... sondern auch = nie tylko ... ale takze. Podkreslamy drugi, dodatkowy element."
+    },
+    {
+      "type": "fill",
+      "prompt": "Das Wetter ist ___ warm, ___ ein bisschen bewolkt. (co prawda ... ale)",
+      "answers": [
+        "zwar ... aber",
+        "zwar/aber"
+      ],
+      "explanation": "zwar ... aber = co prawda ... ale. Przyznajemy cos i wprowadzamy kontrast."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Ktory konektor pasuje do zdania: '___ sie kein Geld hat, geht sie gern einkaufen.'?",
+      "options": [
+        "Sowohl ... als auch",
+        "Weder ... noch",
+        "Zwar ... aber",
+        "Entweder ... oder"
+      ],
+      "answer": 2,
+      "explanation": "Zdanie wyraza kontrast: co prawda (nie ma pieniedzy), ale (idzie na zakupy). Pasuje 'zwar ... aber'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Ktore zdanie jest gramatycznie poprawne?",
+      "options": [
+        "Entweder du kommst mit, oder du bleibst zu Hause.",
+        "Entweder kommst du mit, oder du bleibst zu Hause.",
+        "Entweder du mit kommst, oder du zu Hause bleibst.",
+        "Entweder kommt du mit, oder du bleibst zu Hause."
+      ],
+      "answer": 1,
+      "explanation": "Gdy 'entweder' stoi na poczatku zdania, nastepuje inwersja: czasownik na miejscu 2 (kommst), podmiot po nim (du)."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Wybierz poprawne zdanie z 'weder...noch':",
+      "options": [
+        "Er trinkt weder nicht Kaffee noch Tee.",
+        "Er trinkt weder Kaffee noch keinen Tee.",
+        "Er trinkt weder Kaffee noch Tee.",
+        "Er nicht trinkt weder Kaffee noch Tee."
+      ],
+      "answer": 2,
+      "explanation": "weder...noch ma wbudowane zaprzeczenie — nie dodajemy 'nicht' ani 'kein' osobno."
+    },
+    {
+      "type": "transform",
+      "explanation": "sowohl laczy dwa dopelnienia (Spanisch, Franzosisch). Szyk zdania pozostaje standardowy.",
+      "instruction": "Polacz dwa zdania uzywajac 'sowohl...als auch'",
+      "source": "Mein Bruder spricht Spanisch. Mein Bruder spricht Franzosisch.",
+      "answers": [
+        "Mein Bruder spricht sowohl Spanisch als auch Franzosisch."
+      ]
+    },
+    {
+      "type": "transform",
+      "explanation": "nicht nur stoi przed pierwszym elementem (komplex), sondern auch przed drugim (sehr zeitaufwendig).",
+      "instruction": "Polacz dwa zdania uzywajac 'nicht nur...sondern auch'",
+      "source": "Das Projekt ist komplex. Das Projekt ist sehr zeitaufwendig.",
+      "answers": [
+        "Das Projekt ist nicht nur komplex, sondern auch sehr zeitaufwendig."
+      ]
+    },
+    {
+      "type": "transform",
+      "explanation": "weder...noch zastepuje podwojne zaprzeczenie. Nie uzywamy 'nicht' — konektor sam neguje oba elementy.",
+      "instruction": "Polacz dwa zdania uzywajac 'weder...noch'",
+      "source": "Das Zimmer ist nicht sauber. Das Zimmer ist nicht gemutlich.",
+      "answers": [
+        "Das Zimmer ist weder sauber noch gemutlich."
+      ]
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Dieses Hotel ist zwar alt, aber sehr komfortabel.",
+        "Das Hotel ist zwar alt, aber sehr komfortabel."
+      ],
+      "explanation": "zwar ... aber = co prawda ... ale. 'komfortabel' = wygodny.",
+      "from": "pl",
+      "to": "de",
+      "source": "Przetlumacz na jezyk niemiecki: 'Ten hotel jest co prawda stary, ale bardzo wygodny.'"
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Entweder laufen wir zusammen, oder ich bleibe zu Hause.",
+        "Entweder joggen wir zusammen, oder ich bleibe zu Hause."
+      ],
+      "explanation": "Entweder na poczatku powoduje inwersje: laufen wir. Drugie zdanie (oder) ma normalny szyk: ich bleibe.",
+      "from": "pl",
+      "to": "de",
+      "source": "Przetlumacz na jezyk niemiecki: 'Albo biegamy razem, albo zostaje w domu.' (Entweder na poczatku)"
+    },
+    {
+      "type": "errorFix",
+      "explanation": "weder...noch ma wbudowane zaprzeczenie. Dodatkowe 'nicht' jest bledne i zbedne.",
+      "sentence": "Er kann weder nicht singen, noch tanzen.",
+      "answers": [
+        "Er kann weder singen noch tanzen."
+      ]
+    },
+    {
+      "type": "errorFix",
+      "explanation": "Gdy sowohl...als auch laczy dwa podmioty, orzeczenie stoi w liczbie mnogiej: kommen (nie kommt).",
+      "sentence": "Sowohl meine Mutter als auch mein Vater kommt morgen.",
+      "answers": [
+        "Sowohl meine Mutter als auch mein Vater kommen morgen."
+      ]
+    }
+  ]
+}

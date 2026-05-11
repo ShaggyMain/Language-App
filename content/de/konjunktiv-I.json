@@ -1,0 +1,261 @@
+{
+  "id": "de.verbs.konjunktiv-I",
+  "language": "de",
+  "category": "verbs",
+  "title": "Konjunktiv I -- Indirekte Rede",
+  "summary": "Tryb laczacy I — uzywany w mowie posredniej (zwlaszcza w jezyku pisanym i prasie).",
+  "cefrLevel": "B2",
+  "prerequisites": [
+    "de.syntax.nebensaetze-erweitert"
+  ],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Konjunktiv I** (tryb laczacy I) sluzy przede wszystkim do **mowy posredniej** (indirekte Rede) — relacjonowania tego, co ktos powiedzial, bez potwierdzania, czy to prawda. Jest typowy dla jezyka pisanego, prasy i mediow.\n\n**Tworzenie Konjunktiv I:**\n\nOd **rdzenia bezokolicznika** (bez -en) dodajemy koncocwki:\n\n| Osoba | Koncocwka | Przyklad: kommen | Przyklad: haben |\n|---|---|---|---|\n| ich | -e | komme | habe |\n| du | -est | kommest | habest |\n| er/sie/es | -e | komme | habe |\n| wir | -en | kommen | haben |\n| ihr | -et | kommet | habet |\n| sie/Sie | -en | kommen | haben |"
+    },
+    {
+      "kind": "text",
+      "markdown": "**Najwazniejsze formy Konjunktiv I:**\n\n**sein** (najczesciej uzywany!) — formy nieregularne:\n- ich sei, du seiest, er/sie/es **sei**, wir seien, ihr seiet, sie **seien**\n\n**haben:** er habe, sie habe, sie haben (uwaga: wiele form = Indikativ!)\n\n**Modalne:**\n- koennen: er koenne\n- muessen: er muesse\n- duerfen: er duerfe\n- sollen: er solle (czesto w mowie posredniej!)\n- wollen: er wolle\n\n**Kiedy uzywamy Konjunktiv II zamiast Konjunktiv I?**\n\nJesli forma Konjunktiv I jest **identyczna z Indikativem**, uzywamy zamiast niej **Konjunktiv II**:\n- *Sie sagten, sie kommen.* (kommen = Indikativ!) poprawnie: *Sie sagten, sie **kaemen**.* (KII)\n- *ich komme* (KI = Indikativ!) poprawnie: *ich **kaeme*** (KII)"
+    },
+    {
+      "kind": "text",
+      "markdown": "**Mowa posrednia — zasady:**\n\n1. Zdania oznajmujace: Er sagt, (dass) er muede **sei**.\n2. Pytania z zaimkiem: Sie fragte, wo er **wohne**.\n3. Pytania ogolne (tak/nie): Er fragte, ob sie kommen **wolle**.\n4. Rozkazy posrednie: Sie bat ihn, er solle leise **sein**.\n\n**Czasy w mowie posredniej:**\n\n- Prezent: Er sagt, er sei muede. (KI Prasens)\n- Przeszlosc: Er sagte, er habe gegessen. / Er sei gegangen. (KI Perfekt: habe/sei + Partizip II)\n- Przyszlosc: Er sagt, er werde kommen. (KI von werden: werde + Infinitiv)"
+    },
+    {
+      "kind": "table",
+      "title": "Konjunktiv I -- najwazniejsze formy (er/sie/es)",
+      "headers": [
+        "Infinitiv",
+        "Konjunktiv I",
+        "Konjunktiv II (zapasowy)"
+      ],
+      "rows": [
+        [
+          "sein",
+          "sei",
+          "waere"
+        ],
+        [
+          "haben",
+          "habe",
+          "haette"
+        ],
+        [
+          "werden",
+          "werde",
+          "wuerde"
+        ],
+        [
+          "koennen",
+          "koenne",
+          "koennte"
+        ],
+        [
+          "muessen",
+          "muesse",
+          "muesste"
+        ],
+        [
+          "kommen",
+          "komme",
+          "kaeme"
+        ],
+        [
+          "gehen",
+          "gehe",
+          "ginge"
+        ],
+        [
+          "wissen",
+          "wisse",
+          "wuesste"
+        ]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        {
+          "source": "Der Zeuge sagte, er sei an dem Abend zu Hause gewesen.",
+          "translation": "Swiadek powiedzial, ze tego wieczoru byl w domu."
+        },
+        {
+          "source": "Der Minister erklaerte, das Projekt sei erfolgreich.",
+          "translation": "Minister oswiadczyl, ze projekt jest udany."
+        },
+        {
+          "source": "Sie berichtete, sie habe keine Zeit gehabt.",
+          "translation": "Opowiadala, ze nie miala czasu."
+        },
+        {
+          "source": "Er fragte, ob sie ihm helfen koenne.",
+          "translation": "Zapytal, czy ona moze mu pomoc."
+        },
+        {
+          "source": "Die Agentur teilte mit, der Flug werde verspaetet ankommen.",
+          "translation": "Agencja poinformowala, ze lot przyleci z opoznieniem."
+        }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "Die Sprecherin erklaerte, die Lage ___ ernst. (sein, KI, 3. os. l. poj.)",
+      "answers": [
+        "sei"
+      ],
+      "explanation": "KI od 'sein': er/sie/es sei. To najczesciej uzywana forma KI — nieregularna i wyraznie rozna od Indikativu (ist)."
+    },
+    {
+      "type": "fill",
+      "prompt": "Er behauptete, er ___ die Wahrheit. (kennen, KI, 3. os. l. poj.)",
+      "answers": [
+        "kenne"
+      ],
+      "explanation": "KI od 'kennen': rdzen 'kenn-' + -e = kenne. Rozni sie od Indikativu (kennt), wiec KI jest tu poprawny."
+    },
+    {
+      "type": "fill",
+      "prompt": "Die Studentin sagte, sie ___ die Aufgabe schon gemacht. (haben, KI Perfekt)",
+      "answers": [
+        "habe"
+      ],
+      "explanation": "KI Perfekt = habe/sei + Partizip II. 'machen' uzywa 'haben': sie habe ... gemacht."
+    },
+    {
+      "type": "fill",
+      "prompt": "Der Chef teilte mit, alle Mitarbeiter ___ rechtzeitig erschienen. (sein, KI Perfekt, l. mn.)",
+      "answers": [
+        "seien"
+      ],
+      "explanation": "KI Perfekt z 'sein' (l. mn.): seien + Partizip II. 'erscheinen' (zmiana stanu) uzywa 'sein'. L. mn.: seien."
+    },
+    {
+      "type": "fill",
+      "prompt": "Der Arzt sagt, der Patient ___ mehr schlafen. (sollen, KI, 3. os. l. poj.)",
+      "answers": [
+        "solle"
+      ],
+      "explanation": "KI od 'sollen': er/sie/es solle. Czesto uzywane w mowie posredniej przy relacjonowaniu zaleceN."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Zamien na mowe posrednia: 'Ich bin muede', powiedzial Max. Ktore zdanie jest poprawne?",
+      "options": [
+        "Max sagte, ich bin muede.",
+        "Max sagte, er ist muede.",
+        "Max sagte, er sei muede.",
+        "Max sagte, er waere muede."
+      ],
+      "answer": 2,
+      "explanation": "Mowa posrednia: zaimek zmienia sie (ich na er). Orzeczenie w KI: sei (od sein). KII 'waere' nie jest tu konieczny, bo KI 'sei' rozni sie od Indikativu."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Kiedy w mowie posredniej uzywamy Konjunktiv II zamiast Konjunktiv I?",
+      "options": [
+        "Zawsze — KII jest bardziej poprawny.",
+        "Gdy forma KI jest identyczna z Indikativem.",
+        "W zdaniach pytajacych.",
+        "Tylko po spojniku 'dass'."
+      ],
+      "answer": 1,
+      "explanation": "Jezeli KI nie rozni sie od Indikativu (np. wir kommen), uzywamy KII (kaemen), zeby wyraznie zaznaczyc mowe posrednia."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Ktore zdanie poprawnie zmienia pytanie posrednie: 'Wo wohnst du?'",
+      "options": [
+        "Er fragte, wo du wohnst.",
+        "Er fragte, wo sie wohne.",
+        "Er fragte, wo wohne sie.",
+        "Er fragte, ob sie wohne."
+      ],
+      "answer": 1,
+      "explanation": "Pytanie z zaimkiem pytajnym (wo) w mowie posredniej: wo + podmiot + KI. Zaimek 'du' zamieniony na 'sie'. KI: wohne."
+    },
+    {
+      "type": "transform",
+      "explanation": "KI od 'haben': 3. os. l. poj. = habe. Zaimek 'ich' zamieniony na 'sie'. Forma KI 'habe' jest rozna od Indikativu 3. os. (hat) — poprawna.",
+      "instruction": "Zamien na mowe posrednia (KI)",
+      "source": "Ich habe keine Zeit",
+      "answers": [
+        "Sie sagte, sie habe keine Zeit."
+      ]
+    },
+    {
+      "type": "transform",
+      "explanation": "KI 'kommen' dla l. mn.: kommen — identyczne z Indikativem! Uzywamy KII: kaemen. Zaimek: wir zmienia sie na sie.",
+      "instruction": "Zamien na mowe posrednia (KI)",
+      "source": "Wir kommen morgen nicht",
+      "answers": [
+        "Die Gaeste sagten, sie kaemen morgen nicht."
+      ]
+    },
+    {
+      "type": "transform",
+      "explanation": "Pytanie ogolne (tak/nie) w mowie posredniej zaczyna sie od 'ob'. KI: komme (3. os. l. poj.). Zaimek: du zmienia sie na sie.",
+      "instruction": "Zamien na mowe posrednia — pytanie ogolne",
+      "source": "Kommst du heute?",
+      "answers": [
+        "Er fragte sie, ob sie heute komme."
+      ]
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Der Praesident erklaerte, die Lage sei unter Kontrolle.",
+        "Der Praesident sagte, die Situation sei unter Kontrolle."
+      ],
+      "explanation": "KI od 'sein': sei. 'die Lage/Situation' = sytuacja. 'unter Kontrolle' = pod kontrola.",
+      "from": "pl",
+      "to": "de",
+      "source": "Prezydent oswiadczyl, ze sytuacja jest pod kontrola.' (Konjunktiv I)"
+    },
+    {
+      "type": "translate",
+      "answers": [
+        "Sie teilte mit, sie koenne nicht am Meeting teilnehmen.",
+        "Sie teilte mit, sie koenne nicht an der Besprechung teilnehmen."
+      ],
+      "explanation": "KI od 'koennen': koenne (3. os. l. poj.). 'teilnehmen an + Dat.' = uczestniczyc w czymis.",
+      "from": "pl",
+      "to": "de",
+      "source": "Ona poinformowala, ze nie moze uczestniczyc w zebraniu.' (Konjunktiv I)"
+    },
+    {
+      "type": "errorFix",
+      "explanation": "W mowie posredniej uzywamy KI: 'luege' (od luegen: rdzen lueg- + -e). Forma Indikativu 'luegt' sugeruje, ze dziennikarz potwierdza twierdzenie.",
+      "sentence": "Der Journalist berichtete, dass der Politiker luegt.",
+      "answers": [
+        "Der Journalist berichtete, dass der Politiker luege."
+      ]
+    },
+    {
+      "type": "order",
+      "prompt": "Uloz zdanie z podanych slow (mowa posrednia):",
+      "answer": [
+        "Der",
+        "Chef",
+        "sagte",
+        "er",
+        "werde",
+        "das",
+        "Projekt",
+        "bald",
+        "abschliessen."
+      ],
+      "explanation": "Przyszlosc w mowie posredniej: KI od werden (werde) + bezokolicznik na koncu. Szyk w zdaniu (bez dass): V2.",
+      "tokens": [
+        "der Chef",
+        "er",
+        "sagte",
+        "werde",
+        "das Projekt",
+        "abschliessen",
+        "bald"
+      ]
+    }
+  ]
+}

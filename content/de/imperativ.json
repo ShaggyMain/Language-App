@@ -1,0 +1,138 @@
+{
+  "id": "de.syntax.imperativ",
+  "language": "de",
+  "category": "syntax",
+  "title": "Imperativ",
+  "summary": "Tryb rozkazujący — formy dla du, ihr i Sie.",
+  "cefrLevel": "A1",
+  "prerequisites": ["de.verbs.present-regular"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "Tryb rozkazujący (Imperativ) służy do wydawania poleceń lub próśb. W języku niemieckim mamy trzy formy:\n\n**1. du (ty)** — bierzemy temat czasownika (bezokolicznik bez -en) i pomijamy końcówkę -st:\n- *kommen* → komm!\n- *hören* → hör!\n- *arbeiten* → arbeite! (gdy temat kończy się na -t/-d, dodajemy -e)\n\n**2. ihr (wy)** — forma identyczna z koniugacją w czasie teraźniejszym dla ihr:\n- *ihr kommt* → Kommt!\n- *ihr hört* → Hört!\n\n**3. Sie (Pan/Pani/Państwo)** — bezokolicznik + Sie na początku:\n- *Kommen Sie!*\n- *Sprechen Sie langsamer!*\n\nCzasowniki nieregularne mają specjalne formy du-Imperativ:\n- *sein* → **sei!**\n- *haben* → **hab!** (lub **habe!**)\n- *lesen* → **lies!**\n- *fahren* → **fahr!**\n- *nehmen* → **nimm!**"
+    },
+    {
+      "kind": "table",
+      "title": "Formy Imperativu",
+      "headers": ["Czasownik", "du (ty)", "ihr (wy)", "Sie (Pan/Pani)"],
+      "rows": [
+        ["kommen", "Komm!", "Kommt!", "Kommen Sie!"],
+        ["hören", "Hör!", "Hört!", "Hören Sie!"],
+        ["sprechen", "Sprich!", "Sprecht!", "Sprechen Sie!"],
+        ["sein", "Sei!", "Seid!", "Seien Sie!"],
+        ["haben", "Hab!", "Habt!", "Haben Sie!"],
+        ["lesen", "Lies!", "Lest!", "Lesen Sie!"],
+        ["fahren", "Fahr!", "Fahrt!", "Fahren Sie!"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Komm bitte her!", "translation": "Chodź tu, proszę!" },
+        { "source": "Hört mir zu!", "translation": "Słuchajcie mnie!" },
+        { "source": "Sprechen Sie langsamer, bitte!", "translation": "Proszę mówić wolniej!" },
+        { "source": "Sei ruhig!", "translation": "Bądź cicho!" },
+        { "source": "Lesen Sie den Text!", "translation": "Proszę przeczytać tekst!" }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "Jak brzmi Imperativ (du) od 'kommen'?",
+      "options": ["Kommst!", "Komme!", "Komm!", "Kommen!"],
+      "answer": 2,
+      "explanation": "Dla formy 'du' bierzemy temat (komm-) i opuszczamy końcówkę -st. Wynik: Komm!"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Jak brzmi Imperativ (Sie) od 'sprechen'?",
+      "options": ["Sprich Sie!", "Sprechen Sie!", "Sprecht Sie!", "Sprichst Sie!"],
+      "answer": 1,
+      "explanation": "Forma Sie-Imperativ to bezokolicznik + Sie: Sprechen Sie!"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Nauczyciel mówi do klasy (ihr): ___ das Buch!",
+      "options": ["Lies", "Lesen Sie", "Lest", "Liest"],
+      "answer": 2,
+      "explanation": "Dla grupy (ihr) Imperativ = normalna koniugacja für ihr: ihr lest → Lest!"
+    },
+    {
+      "type": "mcq",
+      "prompt": "Nieregularna forma Imperativ (du) od 'sein' to:",
+      "options": ["Sei!", "Bist!", "Sein!", "Seid!"],
+      "answer": 0,
+      "explanation": "Czasownik 'sein' ma nieregularną formę: du → Sei! (ihr → Seid!, Sie → Seien Sie!)"
+    },
+    {
+      "type": "fill",
+      "prompt": "___ (fahren, du) langsam! Die Straße ist gefährlich.",
+      "answers": ["Fahr"],
+      "hint": "fahren ma nieregularny Imperativ: fahr (a nie fahre)."
+    },
+    {
+      "type": "fill",
+      "prompt": "___ (hören, ihr) bitte zu!",
+      "answers": ["Hört"],
+      "hint": "Dla ihr: koniugacja w czasie teraźniejszym — ihr hört → Hört!"
+    },
+    {
+      "type": "fill",
+      "prompt": "___ (sein, ihr) bitte ruhig!",
+      "answers": ["Seid"],
+      "hint": "Nieregularny Imperativ od 'sein' dla ihr: Seid!"
+    },
+    {
+      "type": "fill",
+      "prompt": "___ (lesen, Sie) den Text laut!",
+      "answers": ["Lesen Sie"],
+      "hint": "Forma Sie-Imperativ: bezokolicznik + Sie na początku."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Proszę mówić wolniej! (Sie)",
+      "answers": ["Sprechen Sie langsamer!", "Sprechen Sie bitte langsamer!"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Chodź tu! (du)",
+      "answers": ["Komm her!", "Komm bitte her!"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "de",
+      "source": "Słuchajcie! (ihr)",
+      "answers": ["Hört zu!", "Hört!", "Hört bitte zu!"]
+    },
+    {
+      "type": "order",
+      "prompt": "Ułóż polecenie (Sie): Proszę otworzyć okno.",
+      "tokens": ["Sie", "Fenster", "Öffnen", "das"],
+      "answer": ["Öffnen", "Sie", "das", "Fenster"]
+    },
+    {
+      "type": "transform",
+      "instruction": "Zamień polecenie z formy 'du' na formę 'Sie'.",
+      "source": "Komm bitte her!",
+      "answers": ["Kommen Sie bitte her!", "Kommen Sie her!"]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Sprecht du bitte langsamer!",
+      "answers": ["Sprich bitte langsamer!", "Sprechen Sie bitte langsamer!"],
+      "explanation": "Formy nie pasują: 'Sprecht' to forma dla 'ihr', a 'du' wymaga formy 'Sprich'. Poprawnie: Sprich bitte langsamer! (du) lub Sprechen Sie bitte langsamer! (Sie)."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Lesen du das Buch!",
+      "answers": ["Lies das Buch!"],
+      "explanation": "'lesen' ma nieregularną formę du-Imperativ: 'Lies', nie 'Lesen'. Zaimek 'du' w Imperativ się opuszcza."
+    }
+  ]
+}
