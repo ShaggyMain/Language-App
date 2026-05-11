@@ -1,0 +1,74 @@
+{
+  "id": "en.conditionals.second",
+  "language": "en",
+  "category": "moods",
+  "title": "Second Conditional",
+  "summary": "Use the second conditional for unreal or unlikely present/future situations.",
+  "cefrLevel": "B1",
+  "prerequisites": ["en.conditionals.first"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Second Conditional**: **if + Past Simple, would + base verb**\n\nUse it for situations that are:\n- **Unreal** in the present: *If I were rich, I would travel the world.* (I'm not rich)\n- **Unlikely** in the future: *If it snowed tomorrow, I would make a snowman.*\n\n**Compare with First Conditional:**\n- *If it **rains**, I **will** stay home.* (real possibility)\n- *If it **rained**, I **would** stay home.* (unreal / unlikely)\n\n⚠️ In formal writing, use **were** for all persons (not was):\n*If I **were** you, I would apologise.*\n\nThe if-clause can come first or second:\n*I would travel if I had more money.* = *If I had more money, I would travel.*"
+    },
+    {
+      "kind": "table",
+      "title": "Second Conditional — forms",
+      "headers": ["Part", "Form", "Example"],
+      "rows": [
+        ["if-clause", "if + Past Simple", "If I lived in Paris…"],
+        ["main clause", "would + base verb", "…I would speak French every day."],
+        ["negative", "wouldn't + base verb", "If I had a car, I wouldn't use the bus."],
+        ["question", "Would + subject + base verb?", "What would you do if you lost your job?"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "If I were the president, I would reduce taxes.", "translation": "Gdybym był/a prezydentem, obniżył/abym podatki." },
+        { "source": "What would you do if you won the lottery?", "translation": "Co byś zrobił/a, gdybyś wygrał/a na loterii?" },
+        { "source": "She wouldn't be so stressed if she slept more.", "translation": "Nie byłaby tak zestresowana, gdyby więcej spała." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "If I ___ (have) more time, I would learn to paint.",
+      "answers": ["had"],
+      "hint": "Second conditional if-clause → Past Simple."
+    },
+    {
+      "type": "mcq",
+      "prompt": "If she ___ the truth, she would be upset.",
+      "options": ["knows", "knew", "had known", "will know"],
+      "answer": 1,
+      "explanation": "Second conditional if-clause → Past Simple."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Gdybym był/a tobą, przeprosiłbym/abym.",
+      "answers": ["If I were you, I would apologise.", "If I was you, I would apologize."]
+    },
+    {
+      "type": "transform",
+      "instruction": "Change from First to Second Conditional.",
+      "source": "If it rains, I will stay home.",
+      "answers": ["If it rained, I would stay home.", "If it rained, I'd stay home."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "If I would have a car, I would drive to work.",
+      "answers": ["If I had a car, I would drive to work."],
+      "explanation": "Never use 'would' in the if-clause. Use Past Simple."
+    },
+    {
+      "type": "fill",
+      "prompt": "What ___ (you / do) if you found a wallet?",
+      "answers": ["would you do"],
+      "hint": "Main clause question form: would + subject + base verb."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "en.prepositions.movement",
+  "language": "en",
+  "category": "prepositions",
+  "title": "Prepositions of Movement",
+  "summary": "Use prepositions like to, into, through, and across to describe movement and direction.",
+  "cefrLevel": "A2",
+  "prerequisites": ["en.prepositions.place-time"],
+  "theory": [
+    {
+      "kind": "table",
+      "title": "Prepositions of movement",
+      "headers": ["Preposition", "Meaning", "Example"],
+      "rows": [
+        ["to", "direction toward a destination", "She walked to the station."],
+        ["from", "origin / starting point", "He came from Warsaw."],
+        ["into", "movement entering an enclosed space", "She walked into the room."],
+        ["out of", "movement leaving an enclosed space", "He got out of the car."],
+        ["through", "movement from one side to the other", "We drove through the tunnel."],
+        ["across", "movement from one side to the other (flat surface)", "She swam across the river."],
+        ["along", "movement in a line next to something", "We walked along the beach."],
+        ["past", "movement going beyond a point", "Go past the church, then turn left."],
+        ["up / down", "movement in vertical direction", "She ran up the stairs."],
+        ["towards", "in the direction of (not necessarily reaching)", "He walked towards me."]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "**Key distinctions:**\n- **to** = destination reached: *I'm going **to** school.*\n- **towards** = direction, not necessarily destination: *She looked **towards** the window.*\n- **into** = entering: *Walk **into** the building.*\n- **in** = location (static): *She is **in** the room.*"
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "The cat jumped off the sofa and ran out of the room.", "translation": "Kot zeskoczył z sofy i wybiegł z pokoju." },
+        { "source": "They hiked through the forest for three hours.", "translation": "Wędrowali przez las przez trzy godziny." },
+        { "source": "Walk along the river until you see the bridge.", "translation": "Idź wzdłuż rzeki, aż zobaczysz most." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "She walked ___ the room and sat down.",
+      "answers": ["into"],
+      "hint": "She entered the room — movement inside."
+    },
+    {
+      "type": "mcq",
+      "prompt": "He swam ___ the lake from one shore to the other.",
+      "options": ["through", "across", "along", "into"],
+      "answer": 1,
+      "explanation": "'Across' = movement from one side to the other of a flat surface."
+    },
+    {
+      "type": "fill",
+      "prompt": "They drove ___ a long tunnel before reaching the city.",
+      "answers": ["through"],
+      "hint": "Entering one side and exiting the other."
+    },
+    {
+      "type": "order",
+      "prompt": "Build a directions sentence.",
+      "tokens": ["the", "past", "then", "Go", "church", "right", "turn"],
+      "answer": ["Go", "past", "the", "church", "then", "turn", "right"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Wyszła z samochodu i poszła w stronę domu.",
+      "answers": ["She got out of the car and walked towards the house.", "She got out of the car and walked toward the house."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "He climbed into the stairs quickly.",
+      "answers": ["He climbed up the stairs quickly."],
+      "explanation": "For stairs use 'up' (going higher), not 'into'."
+    }
+  ]
+}

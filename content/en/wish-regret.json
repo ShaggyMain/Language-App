@@ -1,0 +1,73 @@
+{
+  "id": "en.syntax.wish",
+  "language": "en",
+  "category": "moods",
+  "title": "Wish & If Only",
+  "summary": "Use 'wish' and 'if only' to express regret, desire for change, or annoyance.",
+  "cefrLevel": "B2",
+  "prerequisites": ["en.conditionals.second"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Wish / If only** express that we want reality to be different.\n\n**1. Unreal present or future** → **wish + Past Simple**\n*I wish I had a bigger flat.* (I don't have one — I want it to be different)\n*If only she were here now.* (She isn't here)\n\n**2. Regret about the past** → **wish + Past Perfect**\n*I wish I hadn't said that.* (I said it and I regret it)\n*If only I had listened to her.*\n\n**3. Annoyance about present/future (other person's behaviour)** → **wish + would**\n*I wish he would stop making noise.* (annoyed at his current behaviour)\n*If only it would stop raining.*\n\n⚠️ Don't confuse:\n- *I wish I **were** rich.* (unreal present) ← 'were' not 'was' in formal use\n- *I wish I **had been** there.* (past regret)"
+    },
+    {
+      "kind": "table",
+      "title": "Wish / If only — three patterns",
+      "headers": ["Time frame", "Structure", "Example"],
+      "rows": [
+        ["Unreal present/future", "wish + Past Simple", "I wish I spoke French."],
+        ["Regret about the past", "wish + Past Perfect", "I wish I had studied harder."],
+        ["Annoyance (other person)", "wish + would + base", "I wish you would listen to me!"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "If only we had left earlier — we wouldn't be stuck in traffic.", "translation": "Gdybyśmy tylko wyszli wcześniej — nie utknęlibyśmy w korku." },
+        { "source": "I wish the weather would improve.", "translation": "Żałuję, że pogoda się nie poprawi / chciałbym, żeby pogoda się poprawiła." },
+        { "source": "She wishes she hadn't told him the secret.", "translation": "Żałuje, że zdradziła mu sekret." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "I wish I ___ (know) how to drive.",
+      "answers": ["knew"],
+      "hint": "Unreal present situation → wish + Past Simple."
+    },
+    {
+      "type": "mcq",
+      "prompt": "She wishes she ___ the job offer last year.",
+      "options": ["accepted", "had accepted", "would accept", "has accepted"],
+      "answer": 1,
+      "explanation": "Regret about past → wish + Past Perfect."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Żałuję, że nie wzięłam/wzięłem parasola.",
+      "answers": ["I wish I had taken an umbrella.", "I wish I had brought an umbrella."]
+    },
+    {
+      "type": "fill",
+      "prompt": "I wish you ___ (would / stop) interrupting me!",
+      "answers": ["would stop"],
+      "hint": "Annoyance about someone's repeated behaviour → wish + would."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "I wish I would have more free time.",
+      "answers": ["I wish I had more free time."],
+      "explanation": "Unreal present → wish + Past Simple (not 'would have')."
+    },
+    {
+      "type": "transform",
+      "instruction": "Rewrite using 'If only'.",
+      "source": "I wish I hadn't sent that email.",
+      "answers": ["If only I hadn't sent that email."]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "en.syntax.discourse-markers",
+  "language": "en",
+  "category": "syntax",
+  "title": "Discourse Markers",
+  "summary": "Discourse markers signal how ideas connect — adding, contrasting, explaining cause, or concluding.",
+  "cefrLevel": "C1",
+  "prerequisites": ["en.syntax.conjunctions-advanced"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Discourse markers** are words or phrases that organise speech and writing by showing how ideas relate to each other.\n\nMost discourse markers stand at the **start of a sentence** (or clause), followed by a comma."
+    },
+    {
+      "kind": "table",
+      "title": "Discourse markers by function",
+      "headers": ["Function", "Discourse markers"],
+      "rows": [
+        ["Addition", "Moreover, Furthermore, In addition, Besides, What is more"],
+        ["Contrast", "However, Nevertheless, On the other hand, In spite of this, Despite this, That said"],
+        ["Cause / Reason", "As a result, Therefore, Consequently, Hence, For this reason"],
+        ["Concession", "Admittedly, Even so, All the same, Granted"],
+        ["Illustration", "For example, For instance, Such as, In particular, Namely"],
+        ["Summary / Conclusion", "In conclusion, To sum up, In short, Overall, In other words"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "The hotel was expensive. Moreover, the service was poor.", "translation": "Hotel był drogi. Co więcej, obsługa była kiepska." },
+        { "source": "She studied hard. Nevertheless, she failed the exam.", "translation": "Ciężko się uczyła. Mimo to nie zdała egzaminu." },
+        { "source": "He missed several deadlines. As a result, he lost the contract.", "translation": "Przekroczył kilka terminów. W związku z tym stracił kontrakt." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "The project was late. ___, it was over budget. (addition)",
+      "answers": ["Moreover", "Furthermore", "In addition", "What is more"],
+      "hint": "Adding another negative point."
+    },
+    {
+      "type": "mcq",
+      "prompt": "He trained every day. ___, he didn't make the final team.",
+      "options": ["Therefore", "Moreover", "Nevertheless", "For instance"],
+      "answer": 2,
+      "explanation": "'Nevertheless' introduces a surprising contrast (he trained hard, yet didn't make the team)."
+    },
+    {
+      "type": "transform",
+      "instruction": "Rewrite using the discourse marker 'As a result'.",
+      "source": "It rained all day, so the picnic was cancelled.",
+      "answers": ["It rained all day. As a result, the picnic was cancelled.", "It rained all day. As a result the picnic was cancelled."]
+    },
+    {
+      "type": "match",
+      "pairs": [
+        { "left": "Moreover", "right": "addition" },
+        { "left": "However", "right": "contrast" },
+        { "left": "Consequently", "right": "result / cause" },
+        { "left": "In conclusion", "right": "summary" }
+      ]
+    },
+    {
+      "type": "fill",
+      "prompt": "___ (conclusion), renewable energy is both practical and essential for our future.",
+      "answers": ["In conclusion", "To sum up", "Overall", "In short"],
+      "hint": "Ending an essay or argument."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "The product was popular. For example, it sold well in every market.",
+      "answers": ["The product was popular. For instance, it sold well in Europe, Asia, and North America."],
+      "explanation": "'For example/instance' should introduce a specific example, not restate the same idea."
+    }
+  ]
+}

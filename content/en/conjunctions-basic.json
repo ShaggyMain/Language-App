@@ -1,0 +1,76 @@
+{
+  "id": "en.syntax.conjunctions-basic",
+  "language": "en",
+  "category": "syntax",
+  "title": "Conjunctions: and, but, or, so",
+  "summary": "Connect words and ideas using the conjunctions and, but, or, so, and because.",
+  "cefrLevel": "A1",
+  "prerequisites": [],
+  "theory": [
+    {
+      "kind": "table",
+      "title": "Basic conjunctions and their meanings",
+      "headers": ["Conjunction", "Use", "Example"],
+      "rows": [
+        ["and", "addition — joins two similar ideas", "I like tea and coffee."],
+        ["but", "contrast — shows a difference", "I like tea but not coffee."],
+        ["or", "alternative — gives a choice", "Do you want tea or coffee?"],
+        ["so", "result — shows a consequence", "It was cold, so I wore a jacket."],
+        ["because", "reason — explains why", "I stayed home because it rained."]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "Conjunctions **connect** two words, phrases, or clauses.\n\n- **and**: *She sings and dances beautifully.*\n- **but**: *He is rich but unhappy.*\n- **or**: *You can walk or take the bus.*\n- **so**: *I was tired, so I went to bed.*\n- **because**: *I'm late because the bus was slow.*\n\nTip: *So* and *because* are opposites — *because* gives the **reason**, *so* gives the **result**:\n*I was cold **because** it was snowing. → It was snowing, **so** I was cold.*"
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "I work hard, but I enjoy my job.", "translation": "Ciężko pracuję, ale lubię swoją pracę." },
+        { "source": "He was hungry, so he made a sandwich.", "translation": "Był głodny, więc zrobił kanapkę." },
+        { "source": "Do you prefer cats or dogs?", "translation": "Wolisz koty czy psy?" }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "I wanted to go outside ___ it was raining heavily.",
+      "answers": ["but"],
+      "hint": "Contrast — wanting to go out vs. the rain."
+    },
+    {
+      "type": "mcq",
+      "prompt": "We can take the train ___ the bus. Which do you prefer?",
+      "options": ["and", "but", "or", "so"],
+      "answer": 2,
+      "explanation": "'Or' offers two alternatives."
+    },
+    {
+      "type": "fill",
+      "prompt": "She was very tired, ___ she went to bed early.",
+      "answers": ["so"],
+      "hint": "Being tired is the reason; going to bed is the result."
+    },
+    {
+      "type": "mcq",
+      "prompt": "He missed the bus ___ he was late for work.",
+      "options": ["or", "but", "because", "and"],
+      "answer": 2,
+      "explanation": "Missing the bus is the reason he was late."
+    },
+    {
+      "type": "order",
+      "prompt": "Build a sentence using a conjunction.",
+      "tokens": ["I", "like", "but", "not", "cats", "dogs"],
+      "answer": ["I", "like", "cats", "but", "not", "dogs"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Nie lubię pływać, ale uwielbiam chodzić na siłownię.",
+      "answers": ["I don't like swimming, but I love going to the gym.", "I don't like swimming but I love going to the gym."]
+    }
+  ]
+}

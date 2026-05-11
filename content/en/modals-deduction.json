@@ -1,0 +1,77 @@
+{
+  "id": "en.verbs.modals-deduction",
+  "language": "en",
+  "category": "verbs",
+  "title": "Modals: Deduction & Probability",
+  "summary": "Use must, can't, might, and could to express how certain you are about something.",
+  "cefrLevel": "B2",
+  "prerequisites": ["en.verbs.modals-advanced"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "Use modal verbs to express **how certain** you are about a present or past situation:\n\n**Present deduction:**\n- **must be** → near-certain positive: *She must be tired — she's worked all day.*\n- **can't be** → near-certain negative: *He can't be at home — his car isn't here.*\n- **might / could / may be** → possible (50/50): *She might be in the kitchen.*\n\n**Past deduction:**\n- **must have + past participle**: *They must have left early — the house is empty.*\n- **can't have + past participle**: *She can't have missed the train — she left two hours ago.*\n- **might/could have + past participle**: *He might have forgotten about the meeting.*\n\n**Compare:**\n- *He **must** be ill.* (I'm very sure — near 100%)\n- *He **might** be ill.* (possible — about 50%)\n- *He **can't** be ill.* (I'm very sure it's not true — near 0%)"
+    },
+    {
+      "kind": "table",
+      "title": "Degrees of certainty",
+      "headers": ["Modal", "Certainty", "Present", "Past"],
+      "rows": [
+        ["must", "~95% sure (positive)", "must be/do", "must have done"],
+        ["can't / couldn't", "~95% sure (negative)", "can't be", "can't have done"],
+        ["should", "~75% expected", "should be", "should have done"],
+        ["might / could / may", "~50% possible", "might be", "might have done"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "He must have missed his flight — he still hasn't arrived.", "translation": "Musiał spóźnić się na lot — wciąż nie przyjechał." },
+        { "source": "She can't have eaten already — she only left five minutes ago.", "translation": "Nie mogła już zjeść — wyszła tylko pięć minut temu." },
+        { "source": "They might be stuck in traffic — let's wait a bit longer.", "translation": "Może utknęli w korku — poczekajmy jeszcze chwilę." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "Look at her — she ___ be exhausted after that race!",
+      "options": ["might", "must", "can't", "should"],
+      "answer": 1,
+      "explanation": "Near-certain positive deduction about the present → must."
+    },
+    {
+      "type": "fill",
+      "prompt": "He ___ have taken the money — he wasn't even here.",
+      "answers": ["can't"],
+      "hint": "Near-certain it's NOT true → can't have."
+    },
+    {
+      "type": "match",
+      "pairs": [
+        { "left": "She must be cold.", "right": "near-certain (positive)" },
+        { "left": "He can't have done it.", "right": "near-certain (negative)" },
+        { "left": "They might be lost.", "right": "possible / uncertain" },
+        { "left": "It should be ready.", "right": "expected / probable" }
+      ]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Ona musi być w domu — jej samochód stoi przed drzwiami.",
+      "answers": ["She must be at home — her car is outside.", "She must be home — her car is outside."]
+    },
+    {
+      "type": "fill",
+      "prompt": "He ___ have arrived by now — his flight landed three hours ago.",
+      "answers": ["must", "should"],
+      "hint": "Expected or near-certain positive → must / should."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "She must to be tired after that long journey.",
+      "answers": ["She must be tired after that long journey."],
+      "explanation": "Modal verbs are followed by the base verb — no 'to'."
+    }
+  ]
+}

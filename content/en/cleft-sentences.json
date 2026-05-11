@@ -1,0 +1,74 @@
+{
+  "id": "en.syntax.cleft",
+  "language": "en",
+  "category": "syntax",
+  "title": "Cleft Sentences",
+  "summary": "Cleft sentences (It was… that…) emphasise a specific part of the information.",
+  "cefrLevel": "C1",
+  "prerequisites": ["en.syntax.relative-clauses-basic"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Cleft sentences** split a sentence into two clauses to **emphasise** one element.\n\n**It-cleft**: *It was + emphasised element + that/who + rest of sentence*\n*Tom broke the window.* → *It was **Tom** who broke the window.* (not someone else)\n*It was **the window** that Tom broke.* (not the door)\n*It was **yesterday** that I saw her.*\n\n**Wh-cleft (pseudo-cleft)**: *What + clause + is/was + emphasised element*\n*I need a holiday.* → ***What I need** is a holiday.*\n*She loves French food.* → ***What she loves** is French food.*\n\n**Why use clefts?**\n- To focus on **new** or **contrasted** information\n- To correct a misunderstanding: *It was John who called — not Peter.*"
+    },
+    {
+      "kind": "table",
+      "title": "Types of cleft sentences",
+      "headers": ["Type", "Structure", "Example"],
+      "rows": [
+        ["it-cleft (subject)", "It was + N/pron + who + VP", "It was Anna who won."],
+        ["it-cleft (object)", "It was + N/pron + that + SV", "It was the car that she bought."],
+        ["it-cleft (time/place)", "It was + time/place + that + S + V", "It was in Paris that they met."],
+        ["wh-cleft", "What + S + V + is/was + NP", "What surprised me was his honesty."]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "It was the noise that kept me awake all night.", "translation": "To hałas nie pozwalał mi spać całą noc." },
+        { "source": "What I find most difficult is getting up early.", "translation": "To, co jest dla mnie najtrudniejsze, to wstawanie wcześnie." },
+        { "source": "It was my teacher who first encouraged me to write.", "translation": "To mój nauczyciel jako pierwszy zachęcił mnie do pisania." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "transform",
+      "instruction": "Emphasise the subject using an it-cleft.",
+      "source": "Mary solved the problem.",
+      "answers": ["It was Mary who solved the problem.", "It was Mary that solved the problem."]
+    },
+    {
+      "type": "fill",
+      "prompt": "___ I really want right now is a hot cup of coffee.",
+      "answers": ["What"],
+      "hint": "Wh-cleft starting with 'What'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "It was ___ Rome ___ they decided to get married.",
+      "options": ["in / that", "at / who", "in / which", "— / that"],
+      "answer": 0,
+      "explanation": "Place emphasis: It was in Rome that + rest of sentence."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "It was him who he broke the vase.",
+      "answers": ["It was him who broke the vase.", "It was he who broke the vase."],
+      "explanation": "In a cleft, the second clause starts directly: It was X who/that + verb (no repeated subject)."
+    },
+    {
+      "type": "order",
+      "prompt": "Build a wh-cleft sentence.",
+      "tokens": ["What", "is", "surprised", "me", "her", "confidence"],
+      "answer": ["What", "surprised", "me", "is", "her", "confidence"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "To on spowodował wypadek, nie ona.",
+      "answers": ["It was he who caused the accident, not her.", "It was him who caused the accident, not her."]
+    }
+  ]
+}

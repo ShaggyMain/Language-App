@@ -1,0 +1,74 @@
+{
+  "id": "en.tenses.past-continuous",
+  "language": "en",
+  "category": "tenses",
+  "title": "Past Continuous",
+  "summary": "The past continuous describes an action that was in progress at a specific moment in the past.",
+  "cefrLevel": "A2",
+  "prerequisites": ["en.tenses.past-simple", "en.tenses.present-continuous"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Past Continuous** = **was / were + verb-ing**\n\n**Uses:**\n1. An action **in progress at a specific past moment**: *At 8 pm, I was watching TV.*\n2. A **background action** interrupted by a shorter event: *I was cooking when the phone rang.*\n3. Two actions happening **at the same time** in the past: *She was reading while he was sleeping.*\n\n**Form:**\n- Affirmative: *He was working. / They were playing.*\n- Negative: *He wasn't working. / They weren't playing.*\n- Question: *Was he working? / Were they playing?*"
+    },
+    {
+      "kind": "table",
+      "title": "Conjugation: Past Continuous",
+      "headers": ["Person", "Affirmative", "Negative", "Question"],
+      "rows": [
+        ["I", "I was working", "I wasn't working", "Was I working?"],
+        ["you", "you were working", "you weren't working", "Were you working?"],
+        ["he / she / it", "he was working", "he wasn't working", "Was he working?"],
+        ["we / they", "we were working", "we weren't working", "Were we working?"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "It was raining when I left the house.", "translation": "Kiedy wychodziłem z domu, padał deszcz." },
+        { "source": "What were you doing at midnight?", "translation": "Co robiłeś o północy?" },
+        { "source": "She was studying while her brother was playing games.", "translation": "Ona uczyła się, podczas gdy jej brat grał w gry." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "At 9 pm I ___ (watch) a film.",
+      "answers": ["was watching"],
+      "hint": "was / were + -ing"
+    },
+    {
+      "type": "mcq",
+      "prompt": "I ___ my homework when mum called.",
+      "options": ["did", "was doing", "am doing", "had done"],
+      "answer": 1,
+      "explanation": "Background action (in progress) interrupted by a short event → Past Continuous."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Co robiłaś wczoraj wieczorem o ósmej?",
+      "answers": ["What were you doing yesterday evening at eight?", "What were you doing at eight yesterday evening?", "What were you doing at 8 pm yesterday?"]
+    },
+    {
+      "type": "transform",
+      "instruction": "Make the sentence negative.",
+      "source": "They were playing football.",
+      "answers": ["They weren't playing football.", "They were not playing football."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "She were cooking when I arrived.",
+      "answers": ["She was cooking when I arrived."],
+      "explanation": "She (3rd person singular) → was, not were."
+    },
+    {
+      "type": "fill",
+      "prompt": "While I ___ (sleep), someone stole my bag.",
+      "answers": ["was sleeping"],
+      "hint": "Longer background action → Past Continuous."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "en.verbs.used-to",
+  "language": "en",
+  "category": "verbs",
+  "title": "Used to",
+  "summary": "Use 'used to' to talk about past habits or states that are no longer true.",
+  "cefrLevel": "A2",
+  "prerequisites": ["en.tenses.past-simple"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Used to + base verb** describes:\n- A **past habit** that no longer happens: *I used to play tennis every week.* (but I don't now)\n- A **past state** that is no longer true: *She used to be very shy.*\n\n**Form:**\n- Affirmative: *I/you/he/she/we/they **used to** + base verb*\n- Negative: ***didn't use to** + base verb* (NOT ~~didn't used to~~)\n- Question: ***Did** you **use to** + base verb?*\n\n⚠️ 'Used to' is only for the **past**. There is no present form. For present habits, use the Present Simple:\n*I used to drink coffee.* (past habit) → *I don't drink coffee anymore.*"
+    },
+    {
+      "kind": "table",
+      "title": "Used to — forms",
+      "headers": ["Form", "Example"],
+      "rows": [
+        ["Affirmative", "He used to live in London."],
+        ["Negative", "She didn't use to like vegetables."],
+        ["Question", "Did you use to play an instrument?"],
+        ["Short answer", "Yes, I did. / No, I didn't."]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "I used to have long hair when I was a teenager.", "translation": "Miałem/am długie włosy, kiedy byłem/am nastolatkiem/ą." },
+        { "source": "We didn't use to have a car.", "translation": "Nie mieliśmy samochodu (kiedyś)." },
+        { "source": "Did you use to watch cartoons as a child?", "translation": "Czy oglądałeś/aś bajki jako dziecko?" }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "She ___ (used to / live) near the city centre, but she moved.",
+      "answers": ["used to live"],
+      "hint": "Past state that is no longer true."
+    },
+    {
+      "type": "mcq",
+      "prompt": "He ___ smoke, but he stopped five years ago.",
+      "options": ["use to", "used to", "is used to", "was used to"],
+      "answer": 1,
+      "explanation": "'Used to' for past habits no longer true."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Czy chodziłeś/aś do szkoły tu w pobliżu?",
+      "answers": ["Did you use to go to school near here?", "Did you use to go to a school near here?"]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "I didn't used to like broccoli.",
+      "answers": ["I didn't use to like broccoli."],
+      "explanation": "In the negative, use 'didn't use to' (not 'used to')."
+    },
+    {
+      "type": "transform",
+      "instruction": "Make the sentence negative.",
+      "source": "They used to go on holiday every summer.",
+      "answers": ["They didn't use to go on holiday every summer.", "They did not use to go on holiday every summer."]
+    },
+    {
+      "type": "mcq",
+      "prompt": "My grandmother ___ cook amazing meals every Sunday.",
+      "options": ["was used to", "used to", "use to", "is used to"],
+      "answer": 1,
+      "explanation": "'Used to' for a past habit (no longer happening)."
+    }
+  ]
+}

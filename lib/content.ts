@@ -1,6 +1,6 @@
 import { Lexicon, Topic, TopicTemplate, type Language } from "./types";
 
-// EN topics
+// EN topics — original 15
 import enPresentSimple from "../content/en/present-simple.json";
 import enArticles from "../content/en/articles.json";
 import enPresentContinuous from "../content/en/present-continuous.json";
@@ -16,6 +16,50 @@ import enFutureGoingTo from "../content/en/future-going-to.json";
 import enConditionalsFirst from "../content/en/conditionals-first.json";
 import enPassiveVoice from "../content/en/passive-voice.json";
 import enModalsAdvanced from "../content/en/modals-advanced.json";
+// EN topics — A1 additions
+import enDefiniteArticle from "../content/en/definite-article.json";
+import enObjectPronouns from "../content/en/object-pronouns.json";
+import enImperatives from "../content/en/imperatives.json";
+import enAdjectivesBasic from "../content/en/adjectives-basic.json";
+import enThereIsAre from "../content/en/there-is-are.json";
+import enAdverbsFrequency from "../content/en/adverbs-frequency.json";
+import enConjunctionsBasic from "../content/en/conjunctions-basic.json";
+import enQuestionsBasic from "../content/en/questions-basic.json";
+// EN topics — A2 additions
+import enSuperlatives from "../content/en/superlatives.json";
+import enAdverbsManner from "../content/en/adverbs-manner.json";
+import enPastContinuous from "../content/en/past-continuous.json";
+import enFutureWill from "../content/en/future-will.json";
+import enUsedTo from "../content/en/used-to.json";
+import enPresentPerfectVsPast from "../content/en/present-perfect-vs-past.json";
+import enConjunctionsAdvanced from "../content/en/conjunctions-advanced.json";
+import enPrepositionsMovement from "../content/en/prepositions-movement.json";
+import enRelativeClausesBasic from "../content/en/relative-clauses-basic.json";
+import enQuestionTags from "../content/en/question-tags.json";
+// EN topics — B1 additions
+import enPastPerfect from "../content/en/past-perfect.json";
+import enPresentPerfectContinuous from "../content/en/present-perfect-continuous.json";
+import enSecondConditional from "../content/en/second-conditional.json";
+import enGerundsInfinitives from "../content/en/gerunds-infinitives.json";
+import enReportedSpeech from "../content/en/reported-speech.json";
+import enDefiningRelativeClauses from "../content/en/defining-relative-clauses.json";
+import enPhrasalVerbsBasic from "../content/en/phrasal-verbs-basic.json";
+import enFutureContinuous from "../content/en/future-continuous.json";
+// EN topics — B2 additions
+import enThirdConditional from "../content/en/third-conditional.json";
+import enMixedConditionals from "../content/en/mixed-conditionals.json";
+import enReportedSpeechQuestions from "../content/en/reported-speech-questions.json";
+import enWishRegret from "../content/en/wish-regret.json";
+import enNonDefiningRelativeClauses from "../content/en/non-defining-relative-clauses.json";
+import enModalsDeduction from "../content/en/modals-deduction.json";
+import enCausative from "../content/en/causative.json";
+import enFuturePerfect from "../content/en/future-perfect.json";
+// EN topics — C1 additions
+import enInversion from "../content/en/inversion.json";
+import enCleftSentences from "../content/en/cleft-sentences.json";
+import enSubjunctive from "../content/en/subjunctive.json";
+import enModalsPerfect from "../content/en/modals-perfect.json";
+import enDiscourseMarkers from "../content/en/discourse-markers.json";
 
 // EN lexicons
 import enPersons from "../content/lexicons/en/persons.json";
@@ -94,21 +138,65 @@ import esTplPreguntas from "../content/templates/es/preguntas.json";
 import { buildLexiconBundle, type LexiconBundle } from "./generator";
 
 const RAW_TOPICS: unknown[] = [
+  // English — A1
   enPresentSimple,
   enArticles,
-  enPresentContinuous,
-  enPastSimple,
+  enDefiniteArticle,
   enPlurals,
-  enComparatives,
-  enModals,
-  enPrepositions,
   enPossessives,
+  enObjectPronouns,
   enDemonstratives,
-  enPresentPerfect,
+  enPrepositions,
+  enImperatives,
+  enAdjectivesBasic,
+  enThereIsAre,
+  enAdverbsFrequency,
+  enConjunctionsBasic,
+  enQuestionsBasic,
+  enPresentContinuous,
+  // English — A2
+  enPastSimple,
+  enComparatives,
+  enSuperlatives,
+  enAdverbsManner,
+  enPastContinuous,
   enFutureGoingTo,
-  enConditionalsFirst,
-  enPassiveVoice,
+  enFutureWill,
+  enUsedTo,
+  enPresentPerfect,
+  enPresentPerfectVsPast,
+  enModals,
   enModalsAdvanced,
+  enConjunctionsAdvanced,
+  enPrepositionsMovement,
+  enRelativeClausesBasic,
+  enQuestionTags,
+  // English — B1
+  enPastPerfect,
+  enPresentPerfectContinuous,
+  enConditionalsFirst,
+  enSecondConditional,
+  enGerundsInfinitives,
+  enReportedSpeech,
+  enDefiningRelativeClauses,
+  enPhrasalVerbsBasic,
+  enFutureContinuous,
+  enPassiveVoice,
+  // English — B2
+  enThirdConditional,
+  enMixedConditionals,
+  enReportedSpeechQuestions,
+  enWishRegret,
+  enNonDefiningRelativeClauses,
+  enModalsDeduction,
+  enCausative,
+  enFuturePerfect,
+  // English — C1
+  enInversion,
+  enCleftSentences,
+  enSubjunctive,
+  enModalsPerfect,
+  enDiscourseMarkers,
   deArticlesNominativ,
   deArticlesAkkusativ,
   deSeinHaben,

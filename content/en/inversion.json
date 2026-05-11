@@ -1,0 +1,75 @@
+{
+  "id": "en.syntax.inversion",
+  "language": "en",
+  "category": "syntax",
+  "title": "Inversion",
+  "summary": "Place a negative or restrictive adverb at the start of a sentence and invert subject and auxiliary.",
+  "cefrLevel": "C1",
+  "prerequisites": ["en.verbs.modals-advanced", "en.tenses.present-perfect"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Inversion** means placing the auxiliary verb **before** the subject, as in a question. It is used for emphasis in formal or literary English.\n\n**When to use inversion:**\nAfter negative or restrictive adverbial expressions at the start of a sentence:\n\n- **Never, rarely, seldom, hardly, scarcely**: *Never have I seen such a mess.*\n- **Not only … but also**: *Not only did she win, but she also broke the record.*\n- **Only then / Only when / Only after**: *Only then did I understand.*\n- **No sooner … than**: *No sooner had I sat down than the phone rang.*\n- **Hardly/Scarcely … when**: *Hardly had I left when it started to rain.*\n- **Under no circumstances / On no account**: *Under no circumstances should you sign that document.*\n- **So + adj**: *So tired was she that she fell asleep immediately.*"
+    },
+    {
+      "kind": "table",
+      "title": "Inversion triggers and patterns",
+      "headers": ["Trigger", "Normal word order", "Inverted"],
+      "rows": [
+        ["Never", "I have never seen this.", "Never have I seen this."],
+        ["Rarely", "She rarely goes out.", "Rarely does she go out."],
+        ["Not only", "It not only looks bad…", "Not only does it look bad…"],
+        ["Only then", "I understood only then.", "Only then did I understand."],
+        ["Hardly … when", "I had hardly sat down when…", "Hardly had I sat down when…"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Rarely do we get such perfect weather.", "translation": "Rzadko zdarzają nam się takie idealne warunki pogodowe." },
+        { "source": "Not only did he forget my birthday, but he also forgot our anniversary.", "translation": "Nie tylko zapomniał o moich urodzinach, ale też o naszej rocznicy." },
+        { "source": "Under no circumstances should you give them your password.", "translation": "W żadnym wypadku nie powinieneś/powinnaś dawać im hasła." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "transform",
+      "instruction": "Rewrite using inversion. Start with 'Never'.",
+      "source": "I have never heard such beautiful music.",
+      "answers": ["Never have I heard such beautiful music."]
+    },
+    {
+      "type": "fill",
+      "prompt": "Not only ___ (did/does) she speak French, but she also speaks Japanese.",
+      "answers": ["does"],
+      "hint": "Present fact → does; inversion needed after 'Not only'."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Hardly ___ I got home when the storm started.",
+      "options": ["had", "did", "was", "have"],
+      "answer": 0,
+      "explanation": "'Hardly … when' → Past Perfect inversion: Hardly had + subject + past participle."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Only then I realised my mistake.",
+      "answers": ["Only then did I realise my mistake."],
+      "explanation": "'Only then' triggers inversion: only then + auxiliary (did) + subject."
+    },
+    {
+      "type": "order",
+      "prompt": "Build the inverted sentence.",
+      "tokens": ["had", "I", "Seldom", "felt", "so", "embarrassed"],
+      "answer": ["Seldom", "had", "I", "felt", "so", "embarrassed"]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "W żadnym wypadku nie powinieneś o tym mówić.",
+      "answers": ["Under no circumstances should you talk about this.", "On no account should you talk about this."]
+    }
+  ]
+}

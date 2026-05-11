@@ -1,0 +1,75 @@
+{
+  "id": "en.articles.definite",
+  "language": "en",
+  "category": "articles",
+  "title": "The — Definite Article",
+  "summary": "Use 'the' when both speaker and listener know which specific thing is meant.",
+  "cefrLevel": "A1",
+  "prerequisites": ["en.articles.indefinite"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "Use **the** before a noun when:\n- It is **already known** or was mentioned before: *I saw a dog. The dog was big.*\n- There is **only one** of it: *the Sun, the Moon, the Internet*\n- With **superlatives**: *She is the best student.*\n- With **ordinal numbers**: *the first time, the second floor*\n\nDo **not** use *the* with:\n- Uncountable nouns used in general: *Water is important.* (not ~~The water~~)\n- Plural nouns in general: *I like cats.* (not ~~The cats~~)\n- Most names of people, cities, and countries: *Paris, Poland, Anna*"
+    },
+    {
+      "kind": "table",
+      "title": "a / an vs the — when to use each",
+      "headers": ["Article", "Use", "Example"],
+      "rows": [
+        ["a / an", "first mention, any one of many", "I bought a book."],
+        ["the", "second mention or specific/known", "The book was great."],
+        ["the", "only one exists", "The Earth orbits the Sun."],
+        ["— (none)", "general plural or uncountable", "I love music. Cats are cute."]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Can you close the door?", "translation": "Czy możesz zamknąć drzwi?" },
+        { "source": "I am the tallest in my class.", "translation": "Jestem najwyższy/a w mojej klasie." },
+        { "source": "She plays the piano every evening.", "translation": "Ona gra na pianinie każdego wieczoru." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "I have a cat. ___ cat is very playful.",
+      "options": ["A", "An", "The", "—"],
+      "answer": 2,
+      "explanation": "Second mention — we already know which cat is being talked about."
+    },
+    {
+      "type": "fill",
+      "prompt": "___ Sun rises in the east.",
+      "answers": ["The"],
+      "hint": "There is only one Sun — unique noun."
+    },
+    {
+      "type": "mcq",
+      "prompt": "She is ___ best player on the team.",
+      "options": ["a", "an", "the", "—"],
+      "answer": 2,
+      "explanation": "Use 'the' with superlatives."
+    },
+    {
+      "type": "mcq",
+      "prompt": "In general, I love ___ music.",
+      "options": ["a", "an", "the", "— (no article)"],
+      "answer": 3,
+      "explanation": "General meaning with an uncountable noun — no article needed."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Can you pass me a salt, please?",
+      "answers": ["Can you pass me the salt, please?"],
+      "explanation": "The salt on the table is specific — use 'the'."
+    },
+    {
+      "type": "fill",
+      "prompt": "He opened ___ window because it was hot.",
+      "answers": ["the"],
+      "hint": "A specific, known window in context."
+    }
+  ]
+}

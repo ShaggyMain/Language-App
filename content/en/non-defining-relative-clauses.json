@@ -1,0 +1,74 @@
+{
+  "id": "en.syntax.non-defining-relative-clauses",
+  "language": "en",
+  "category": "syntax",
+  "title": "Non-Defining Relative Clauses",
+  "summary": "Non-defining relative clauses add extra information about a noun — separated by commas.",
+  "cefrLevel": "B2",
+  "prerequisites": ["en.syntax.defining-relative-clauses"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "A **non-defining relative clause** gives **extra information** about a noun that is already identified. Without it, the sentence is still complete and clear.\n\n**Key features:**\n- Always separated by **commas**\n- Cannot use **'that'** — only who, which, whose, where, when\n- Cannot **omit** the relative pronoun\n\n**Compare:**\n- *The man **who lives next door** is a doctor.* — defining (which man?)\n- *My neighbour, **who lives next door**, is a doctor.* — non-defining (extra info — we already know who)\n\n**Common uses:**\n- About a specific, unique person: *My mother, who is 65, still works.*\n- About a place or thing already named: *London, where I was born, is very expensive.*\n- Adding a comment on the whole sentence: *He passed the exam, which surprised everyone.*"
+    },
+    {
+      "kind": "table",
+      "title": "Defining vs Non-defining",
+      "headers": ["Defining", "Non-defining"],
+      "rows": [
+        ["No commas", "Commas required"],
+        ["'that' can be used", "'that' not allowed"],
+        ["Pronoun can be omitted (object)", "Pronoun cannot be omitted"],
+        ["Identifies which one", "Gives extra information"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "My sister, who lives in Paris, is coming to visit.", "translation": "Moja siostra, która mieszka w Paryżu, przyjeżdża z wizytą." },
+        { "source": "The Eiffel Tower, which was built in 1889, is very tall.", "translation": "Wieża Eiffla, która została zbudowana w 1889 roku, jest bardzo wysoka." },
+        { "source": "He got the promotion, which made his wife very happy.", "translation": "Dostał awans, co bardzo ucieszyło jego żonę." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "errorFix",
+      "sentence": "My father who is a doctor works in Warsaw.",
+      "answers": ["My father, who is a doctor, works in Warsaw."],
+      "explanation": "Non-defining clause about a specific, identified person → add commas."
+    },
+    {
+      "type": "fill",
+      "prompt": "Oxford, ___ I studied for three years, is a beautiful city.",
+      "answers": ["where"],
+      "hint": "Referring to a place → where."
+    },
+    {
+      "type": "mcq",
+      "prompt": "His first novel, ___ won the Booker Prize, was published in 2005.",
+      "options": ["that", "which", "who", "whose"],
+      "answer": 1,
+      "explanation": "Non-defining clause → cannot use 'that'; use 'which' for things."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "She passed the exam, that made her parents proud.",
+      "answers": ["She passed the exam, which made her parents proud."],
+      "explanation": "Non-defining clauses cannot use 'that' — use 'which' for things."
+    },
+    {
+      "type": "transform",
+      "instruction": "Combine using a non-defining relative clause.",
+      "source": "My best friend is a teacher. She has just got married.",
+      "answers": ["My best friend, who has just got married, is a teacher.", "My best friend, who is a teacher, has just got married."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Mój szef, który mówi czterema językami, jest niesamowity.",
+      "answers": ["My boss, who speaks four languages, is amazing.", "My boss, who speaks four languages, is incredible."]
+    }
+  ]
+}

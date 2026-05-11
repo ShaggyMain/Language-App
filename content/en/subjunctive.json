@@ -1,0 +1,73 @@
+{
+  "id": "en.syntax.subjunctive",
+  "language": "en",
+  "category": "moods",
+  "title": "The Subjunctive",
+  "summary": "The subjunctive uses the base form of the verb to express recommendations, demands, and formal wishes.",
+  "cefrLevel": "C1",
+  "prerequisites": ["en.syntax.reported-speech-questions"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "The **subjunctive** is a formal structure used after certain verbs and expressions.\n\n**1. Mandative subjunctive** — after verbs/adjectives of demand, suggestion, recommendation:\n*suggest, recommend, insist, demand, require, request, propose, ask, vital, essential, important, necessary, imperative*\n\nStructure: **verb/adjective + that + subject + base verb** (no -s, no auxiliaries)\n*The doctor suggested that he **eat** less sugar.* (not: ~~eats~~)\n*It is essential that every student **submit** the form.* (not: ~~submits~~)\n*She insisted that the contract **be** signed today.*\n\n**2. Were-subjunctive** — in formal conditional and wish sentences:\n*If I **were** you, I would accept.* / *I wish she **were** here.*\n\n**Note**: In informal American English, 'should + base verb' or indicative is also used instead of subjunctive:\n*The doctor suggested that he should eat less.* / *The doctor suggested that he eats less.*"
+    },
+    {
+      "kind": "table",
+      "title": "Mandative subjunctive triggers",
+      "headers": ["Verbs", "Adjectives/Nouns"],
+      "rows": [
+        ["suggest, recommend, propose", "vital, essential, important"],
+        ["insist, demand, require", "necessary, imperative"],
+        ["request, ask, order", "advisable, crucial"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "The committee recommended that the report be revised.", "translation": "Komisja zaleciła, aby raport został poprawiony." },
+        { "source": "It is vital that all passengers fasten their seatbelts.", "translation": "Konieczne jest, aby wszyscy pasażerowie zapięli pasy bezpieczeństwa." },
+        { "source": "The judge insisted that the witness tell the truth.", "translation": "Sędzia nalegał, aby świadek mówił prawdę." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "The doctor recommended that she ___ (rest) for a week.",
+      "answers": ["rest"],
+      "hint": "Mandative subjunctive → base verb (no -s)."
+    },
+    {
+      "type": "mcq",
+      "prompt": "It is essential that every employee ___ the training.",
+      "options": ["completes", "complete", "will complete", "has completed"],
+      "answer": 1,
+      "explanation": "'Essential that' → mandative subjunctive → base verb."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "The manager insisted that he works on the weekend.",
+      "answers": ["The manager insisted that he work on the weekend."],
+      "explanation": "After 'insist that', use the subjunctive: base verb without -s."
+    },
+    {
+      "type": "fill",
+      "prompt": "The committee proposed that the meeting ___ (be) postponed.",
+      "answers": ["be"],
+      "hint": "After 'propose that', use base verb subjunctive."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Jest konieczne, żeby każdy uczeń zdał egzamin.",
+      "answers": ["It is necessary that every student pass the exam.", "It is necessary that every student passes the exam."]
+    },
+    {
+      "type": "transform",
+      "instruction": "Rewrite using a mandative subjunctive.",
+      "source": "I suggest: You should apologise.",
+      "answers": ["I suggest that you apologise.", "I suggest that he apologise."]
+    }
+  ]
+}

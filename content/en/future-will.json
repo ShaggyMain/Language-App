@@ -1,0 +1,74 @@
+{
+  "id": "en.tenses.future-will",
+  "language": "en",
+  "category": "tenses",
+  "title": "Future: will / won't",
+  "summary": "Use 'will' for predictions, spontaneous decisions, promises, and offers about the future.",
+  "cefrLevel": "A2",
+  "prerequisites": ["en.tenses.present-simple"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Will** + base verb is used for:\n1. **Predictions** (often with *think, believe, probably*): *I think it will rain tomorrow.*\n2. **Spontaneous decisions** (decided at the moment of speaking): *I'll have the soup, please.*\n3. **Promises**: *I'll call you tonight, I promise.*\n4. **Offers and requests**: *I'll help you. / Will you open the window?*\n\n**Form:**\n- Affirmative: *I/you/he/she/we/they **will** go* (contraction: **'ll**)\n- Negative: *will **not** go* (contraction: **won't**)\n- Question: ***Will** you go?*\n\n**Compare with 'going to'**: Use *going to* for plans already decided, *will* for spontaneous decisions and predictions."
+    },
+    {
+      "kind": "table",
+      "title": "Will — forms",
+      "headers": ["Form", "Example"],
+      "rows": [
+        ["Affirmative", "She will come. / She'll come."],
+        ["Negative", "He will not help. / He won't help."],
+        ["Question", "Will they arrive on time?"],
+        ["Short answer", "Yes, I will. / No, I won't."]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "I think it will be sunny tomorrow.", "translation": "Myślę, że jutro będzie słonecznie." },
+        { "source": "Don't worry, I'll help you with that.", "translation": "Nie martw się, pomogę ci z tym." },
+        { "source": "Will you come to the party on Saturday?", "translation": "Czy przyjdziesz na imprezę w sobotę?" }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "I'm cold. I think I ___ (close) the window.",
+      "answers": ["will close", "'ll close"],
+      "hint": "Spontaneous decision → will."
+    },
+    {
+      "type": "mcq",
+      "prompt": "She probably ___ late — she always is!",
+      "options": ["is going to be", "will be", "is be", "was"],
+      "answer": 1,
+      "explanation": "Prediction with 'probably' → will."
+    },
+    {
+      "type": "transform",
+      "instruction": "Make the sentence negative.",
+      "source": "They will come to the meeting.",
+      "answers": ["They won't come to the meeting.", "They will not come to the meeting."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Obiecuję, że zadzwonię do ciebie jutro.",
+      "answers": ["I promise I will call you tomorrow.", "I promise I'll call you tomorrow."]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Will she comes to the party?",
+      "answers": ["Will she come to the party?"],
+      "explanation": "After 'will', always use the base verb (no -s)."
+    },
+    {
+      "type": "order",
+      "prompt": "Build a question with 'will'.",
+      "tokens": ["you", "Will", "me", "help", "?"],
+      "answer": ["Will", "you", "help", "me", "?"]
+    }
+  ]
+}

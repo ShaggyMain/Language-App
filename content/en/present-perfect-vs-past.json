@@ -1,0 +1,76 @@
+{
+  "id": "en.tenses.present-perfect-vs-past",
+  "language": "en",
+  "category": "tenses",
+  "title": "Present Perfect vs Past Simple",
+  "summary": "Learn when to use 'have done' (result still relevant) vs 'did' (finished past action).",
+  "cefrLevel": "A2",
+  "prerequisites": ["en.tenses.present-perfect", "en.tenses.past-simple"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "Both tenses describe past actions, but they are used differently:\n\n**Present Perfect** (*have/has + past participle*):\n- The **time is not specified** or not important\n- The result is **relevant now**\n- Used with: *just, already, yet, ever, never, recently, for, since*\n\n**Past Simple** (*base verb + -ed / irregular*):\n- The action is **completely finished**\n- The **time is specified** or implied\n- Used with: *yesterday, last week, in 2010, ago, at 6 pm, when I was a child*"
+    },
+    {
+      "kind": "table",
+      "title": "Present Perfect vs Past Simple — key signals",
+      "headers": ["Present Perfect", "Past Simple"],
+      "rows": [
+        ["just / already / yet", "yesterday / last week / last year"],
+        ["ever / never", "ago (two days ago)"],
+        ["recently / lately", "at + specific time (at 8 pm)"],
+        ["for / since", "in + year (in 2020)"],
+        ["I've seen it. (no time)", "I saw it on Monday. (time given)"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "I have already eaten. (result: I'm not hungry now)", "translation": "Już jadłem/am. (skutek: nie jestem teraz głodny/a)" },
+        { "source": "I ate at 7 pm. (specific time)", "translation": "Jadłem/am o 19:00. (konkretny czas)" },
+        { "source": "Have you ever been to Japan?", "translation": "Czy byłeś/aś kiedykolwiek w Japonii?" }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "I ___ the film last night. It was great!",
+      "options": ["have seen", "saw", "have saw", "seen"],
+      "answer": 1,
+      "explanation": "'Last night' is a finished time → Past Simple."
+    },
+    {
+      "type": "fill",
+      "prompt": "She ___ (just / finish) her homework.",
+      "answers": ["has just finished"],
+      "hint": "'Just' signals Present Perfect."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Did you ever visit Paris?",
+      "answers": ["Have you ever visited Paris?"],
+      "explanation": "'Ever' without a specific time → Present Perfect."
+    },
+    {
+      "type": "mcq",
+      "prompt": "They ___ in Berlin for ten years now.",
+      "options": ["lived", "have lived", "were living", "are living"],
+      "answer": 1,
+      "explanation": "'For ten years' with a state continuing to now → Present Perfect."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Właśnie skończyłem/am tę książkę.",
+      "answers": ["I have just finished this book.", "I've just finished this book."]
+    },
+    {
+      "type": "fill",
+      "prompt": "When ___ (you / be) born? — I ___ (be) born in 1998.",
+      "answers": ["were you born, was born"],
+      "hint": "Specific year in the past → Past Simple."
+    }
+  ]
+}

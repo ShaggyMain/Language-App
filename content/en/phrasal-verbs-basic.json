@@ -1,0 +1,83 @@
+{
+  "id": "en.verbs.phrasal-basic",
+  "language": "en",
+  "category": "verbs",
+  "title": "Phrasal Verbs — Basic",
+  "summary": "Phrasal verbs are verbs combined with particles (up, off, on, out…) to create new meanings.",
+  "cefrLevel": "B1",
+  "prerequisites": ["en.tenses.present-simple"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "A **phrasal verb** = verb + particle (preposition or adverb). The meaning is often different from the individual words.\n\n**Separable** phrasal verbs: the object can go between verb and particle.\n*Turn the TV off.* = *Turn off the TV.* ✓\n*Turn it off.* ✓ (pronoun must go between)\n\n**Inseparable** phrasal verbs: the object must stay after the particle.\n*Look after the children.* ✓ / ~~Look the children after.~~ ✗\n\n**Note**: When the object is a pronoun, it always goes **between** verb and particle for separable verbs:\n*Pick it up.* ✓ / ~~Pick up it.~~ ✗"
+    },
+    {
+      "kind": "table",
+      "title": "Common phrasal verbs",
+      "headers": ["Phrasal verb", "Meaning", "Example"],
+      "rows": [
+        ["get up", "rise from bed", "I get up at 7 every day."],
+        ["put on", "wear / place on", "Put on your coat — it's cold."],
+        ["take off", "remove / (plane) depart", "Take off your shoes at the door."],
+        ["turn on / off", "start / stop a device", "Turn on the lights, please."],
+        ["pick up", "lift / collect", "Can you pick me up at 8?"],
+        ["give back", "return something", "Give back the book you borrowed."],
+        ["look up", "search for information", "Look up the word in the dictionary."],
+        ["look after", "take care of", "She looked after her nephew."],
+        ["find out", "discover / learn", "I need to find out what happened."],
+        ["come back", "return", "When does he come back?"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Can you look up this word for me?", "translation": "Czy możesz sprawdzić to słowo?" },
+        { "source": "She picked up the kids from school.", "translation": "Odebrała dzieci ze szkoły." },
+        { "source": "I found out about the trip by accident.", "translation": "Dowiedziałem/am się o wycieczce przez przypadek." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "match",
+      "pairs": [
+        { "left": "get up", "right": "rise from bed" },
+        { "left": "find out", "right": "discover / learn information" },
+        { "left": "look after", "right": "take care of somebody" },
+        { "left": "give back", "right": "return something" }
+      ]
+    },
+    {
+      "type": "fill",
+      "prompt": "It's cold — ___ your jacket ___ (put on).",
+      "answers": ["Put on your jacket", "Put your jacket on"],
+      "hint": "Separable phrasal verb — both orders are correct."
+    },
+    {
+      "type": "mcq",
+      "prompt": "Can you look ___ my dog while I'm on holiday?",
+      "options": ["up", "for", "after", "into"],
+      "answer": 2,
+      "explanation": "'Look after' = take care of. Inseparable."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Turn off it when you leave.",
+      "answers": ["Turn it off when you leave."],
+      "explanation": "When the object is a pronoun, it goes between verb and particle."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Dowiedziałem/am się, że spotkanie zostało odwołane.",
+      "answers": ["I found out that the meeting had been cancelled.", "I found out the meeting was cancelled."]
+    },
+    {
+      "type": "fill",
+      "prompt": "Could you ___ (give back) the money you borrowed?",
+      "answers": ["give back"],
+      "hint": "Return something → phrasal verb with 'give'."
+    }
+  ]
+}

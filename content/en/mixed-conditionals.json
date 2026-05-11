@@ -1,0 +1,75 @@
+{
+  "id": "en.conditionals.mixed",
+  "language": "en",
+  "category": "moods",
+  "title": "Mixed Conditionals",
+  "summary": "Mixed conditionals combine different time frames — a past condition with a present result, or vice versa.",
+  "cefrLevel": "B2",
+  "prerequisites": ["en.conditionals.third"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Mixed conditionals** combine elements from different conditional types when the time frames differ.\n\n**Type 1 — Past condition, present result:**\n**if + Past Perfect → would + base verb**\n*If I had taken that job, I would be rich now.* (I didn't take it → so I'm not rich now)\n\n**Type 2 — Present condition, past result:**\n**if + Past Simple → would have + past participle**\n*If she were more careful, she wouldn't have made that mistake.* (She isn't careful → so she made a mistake in the past)\n\n**Key tip**: Look at the time reference:\n- *If I had worked harder* (past) *I would have a better job now* (present) → Type 1\n- *If he weren't so stubborn* (present) *he would have agreed* (past) → Type 2"
+    },
+    {
+      "kind": "table",
+      "title": "Mixed conditional types",
+      "headers": ["Type", "If-clause", "Main clause", "Meaning"],
+      "rows": [
+        ["Past → Present", "if + Past Perfect", "would + base verb", "Past cause, present effect"],
+        ["Present → Past", "if + Past Simple", "would have + past participle", "Present cause, past effect"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "If I had moved to London, I would speak better English now.", "translation": "Gdybym przeprowadził/a się do Londynu, mówiłbym/mówiłabym teraz lepiej po angielsku." },
+        { "source": "If she weren't so shy, she would have spoken at the meeting.", "translation": "Gdyby nie była taka nieśmiała, zabrałaby głos na spotkaniu." },
+        { "source": "If he had listened to his doctor, he would feel better now.", "translation": "Gdyby słuchał swojego lekarza, czułby się teraz lepiej." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "If I ___ (Past Perfect: study) medicine, I would be a doctor now.",
+      "options": ["studied", "had studied", "would study", "was studying"],
+      "answer": 1,
+      "explanation": "Past condition → present result. If-clause uses Past Perfect."
+    },
+    {
+      "type": "fill",
+      "prompt": "If she ___ (be) more organised, she wouldn't have missed the deadline.",
+      "answers": ["were", "was"],
+      "hint": "Present condition affecting past result → Past Simple in if-clause."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Gdybym nauczył/a się wcześniej prowadzić, miałbym/miałabym teraz prawo jazdy.",
+      "answers": [
+        "If I had learnt to drive earlier, I would have a driving licence now.",
+        "If I had learned to drive earlier, I would have a driving licence now."
+      ]
+    },
+    {
+      "type": "fill",
+      "prompt": "If they ___ (not / invest) in that company, they wouldn't be so wealthy today.",
+      "answers": ["hadn't invested", "had not invested"],
+      "hint": "Past condition → present result. Negative if-clause."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "If I would have known her earlier, we would be friends now.",
+      "answers": ["If I had known her earlier, we would be friends now."],
+      "explanation": "Never use 'would have' in the if-clause. Use Past Perfect."
+    },
+    {
+      "type": "transform",
+      "instruction": "What type is this? Complete the main clause.",
+      "source": "If he weren't so arrogant, he ___ (get) that promotion last year.",
+      "answers": ["If he weren't so arrogant, he would have got that promotion last year.", "If he weren't so arrogant, he would have gotten that promotion last year."]
+    }
+  ]
+}

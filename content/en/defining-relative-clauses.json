@@ -1,0 +1,74 @@
+{
+  "id": "en.syntax.defining-relative-clauses",
+  "language": "en",
+  "category": "syntax",
+  "title": "Defining Relative Clauses",
+  "summary": "Defining relative clauses identify which person or thing is meant — without them the sentence is incomplete.",
+  "cefrLevel": "B1",
+  "prerequisites": ["en.syntax.relative-clauses-basic"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "A **defining relative clause** tells us exactly **which** person or thing the speaker means. Without it, the sentence would be incomplete or unclear.\n\n*The man **who called you** is outside.* (Without 'who called you', we don't know which man.)\n\n**Relative pronouns in defining clauses:**\n- **who / that** → subject (person): *The student **who passed** was excited.*\n- **that / which** → object (thing): *The book **that I read** was brilliant.*\n- **whose** → possession: *The woman **whose car** was stolen called the police.*\n- **where** → place: *The restaurant **where we met** closed down.*\n- **when** → time: *The day **when I graduated** was unforgettable.*\n\n**Omitting the pronoun**: when the relative pronoun is the **object**, it can be left out:\n*The book (that) I read was brilliant.* ✓\n*The man (who/that) you met is my cousin.* ✓\n\n⚠️ **No commas** in defining relative clauses."
+    },
+    {
+      "kind": "table",
+      "title": "Subject vs Object relative clauses",
+      "headers": ["Role", "Pronoun", "Example", "Can omit?"],
+      "rows": [
+        ["Subject", "who/that (people)", "The woman who helped me is kind.", "No"],
+        ["Subject", "which/that (things)", "The book which changed my life.", "No"],
+        ["Object", "who/that (people)", "The man (that) I met was nice.", "Yes"],
+        ["Object", "which/that (things)", "The film (that) I watched was funny.", "Yes"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Is this the house where you grew up?", "translation": "Czy to jest dom, w którym dorastałeś/aś?" },
+        { "source": "The person whose wallet I found was very grateful.", "translation": "Osoba, której portfel znalazłem/am, była bardzo wdzięczna." },
+        { "source": "I remember the day when we first met.", "translation": "Pamiętam dzień, gdy po raz pierwszy się spotkaliśmy." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "The café ___ we met last year has closed down.",
+      "answers": ["where", "that"],
+      "hint": "Referring to a place."
+    },
+    {
+      "type": "mcq",
+      "prompt": "The student ___ exam result was the best got a prize.",
+      "options": ["who", "which", "whose", "that"],
+      "answer": 2,
+      "explanation": "'Whose' shows possession (the student's exam result)."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "The film, that I watched, was amazing.",
+      "answers": ["The film that I watched was amazing."],
+      "explanation": "No commas in defining relative clauses."
+    },
+    {
+      "type": "transform",
+      "instruction": "Combine into one sentence using a relative clause.",
+      "source": "I have a colleague. She speaks five languages.",
+      "answers": ["I have a colleague who speaks five languages.", "I have a colleague that speaks five languages."]
+    },
+    {
+      "type": "fill",
+      "prompt": "The year ___ we moved to London was 2018.",
+      "answers": ["when", "that"],
+      "hint": "Referring to a time."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "To jest lekarz, który mnie operował.",
+      "answers": ["This is the doctor who operated on me.", "That is the doctor who operated on me."]
+    }
+  ]
+}

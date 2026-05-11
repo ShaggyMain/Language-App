@@ -1,0 +1,76 @@
+{
+  "id": "en.syntax.reported-speech-questions",
+  "language": "en",
+  "category": "syntax",
+  "title": "Reported Speech: Questions & Commands",
+  "summary": "Report questions using 'if/whether' or a question word, and commands using 'told sb to'.",
+  "cefrLevel": "B2",
+  "prerequisites": ["en.syntax.reported-speech"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Reported questions** use **statement word order** (not question order).\nDo NOT use 'do/does/did' in reported questions.\n\n**Yes/No questions** → **asked if/whether**:\n*'Are you cold?' → He asked if I was cold.*\n*'Do you like coffee?' → She asked whether I liked coffee.*\n\n**Wh- questions** → **asked + question word**:\n*'Where do you live?' → He asked where I lived.*\n*'What time did you arrive?' → She asked what time I had arrived.*\n\n**Commands and requests**:\n- Positive command: **told/asked + person + to + base verb**\n  *'Sit down.' → She told me to sit down.*\n- Negative command: **told/asked + person + not to + base verb**\n  *'Don't be late.' → He told us not to be late.*"
+    },
+    {
+      "kind": "table",
+      "title": "Reported questions — structure",
+      "headers": ["Direct question", "Reported question"],
+      "rows": [
+        ["'Are you tired?'", "She asked if I was tired."],
+        ["'Do you know him?'", "He asked whether I knew him."],
+        ["'Where do you live?'", "She asked where I lived."],
+        ["'What are you doing?'", "He asked what I was doing."],
+        ["'Come here.'", "She told me to come there."],
+        ["'Don't touch it.'", "He told me not to touch it."]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "She asked me if I had ever been to Australia.", "translation": "Zapytała mnie, czy byłem/am kiedyś w Australii." },
+        { "source": "He asked where she had put the keys.", "translation": "Zapytał, gdzie położyła klucze." },
+        { "source": "The teacher told the students not to use their phones.", "translation": "Nauczyciel powiedział uczniom, żeby nie używali telefonów." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "transform",
+      "instruction": "Report the question. She asked: 'Do you speak German?'",
+      "source": "She asked: 'Do you speak German?'",
+      "answers": ["She asked if I spoke German.", "She asked whether I spoke German."]
+    },
+    {
+      "type": "fill",
+      "prompt": "He asked ___ I lived. (where / reported)",
+      "answers": ["where"],
+      "hint": "Wh- question → use question word directly."
+    },
+    {
+      "type": "mcq",
+      "prompt": "'Don't open the window.' → She told me ___ the window.",
+      "options": ["not open", "not to open", "don't open", "to not open"],
+      "answer": 1,
+      "explanation": "Negative command → told + person + not to + base verb."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "She asked me what did I want.",
+      "answers": ["She asked me what I wanted."],
+      "explanation": "In reported questions, use statement word order (subject + verb), not question order."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Zapytał mnie, czy skończyłem/am raport.",
+      "answers": ["He asked me if I had finished the report.", "He asked me whether I had finished the report."]
+    },
+    {
+      "type": "transform",
+      "instruction": "Report the command. The doctor said: 'Take this medicine twice a day.'",
+      "source": "The doctor said: 'Take this medicine twice a day.'",
+      "answers": ["The doctor told me to take that medicine twice a day.", "The doctor told me to take the medicine twice a day."]
+    }
+  ]
+}

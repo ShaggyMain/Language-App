@@ -1,0 +1,74 @@
+{
+  "id": "en.tenses.future-continuous",
+  "language": "en",
+  "category": "tenses",
+  "title": "Future Continuous",
+  "summary": "Use 'will be doing' to describe an action in progress at a specific future moment.",
+  "cefrLevel": "B1",
+  "prerequisites": ["en.tenses.future-will", "en.tenses.present-continuous"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Future Continuous** = **will be + verb-ing**\n\nUse it for:\n1. An action **in progress at a specific future time**: *At 8 pm tomorrow, I'll be watching the match.*\n2. An action that will be **happening over a period** in the future: *This time next week, we'll be lying on a beach.*\n3. Polite questions about someone's plans (less direct): *Will you be using the car tonight?*\n\n**Compare:**\n- *I will call you at 6.* (a single action)\n- *I will be calling you at 6.* (in the middle of a call — less likely)\n- *I'll be working at 6, so call me later.* (an action in progress at 6)"
+    },
+    {
+      "kind": "table",
+      "title": "Future Continuous — forms",
+      "headers": ["Form", "Example"],
+      "rows": [
+        ["Affirmative", "She will be sleeping at midnight."],
+        ["Contraction", "She'll be sleeping."],
+        ["Negative", "He won't be working tomorrow morning."],
+        ["Question", "Will they be travelling this time next week?"]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "At this time tomorrow, I'll be flying to Paris.", "translation": "O tej porze jutro będę leciał/a do Paryża." },
+        { "source": "Don't call at noon — I'll be having lunch.", "translation": "Nie dzwoń w południe — będę jadł/a obiad." },
+        { "source": "Will you be using the printer later?", "translation": "Czy będziesz korzystać z drukarki później?" }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "At 9 pm I ___ (watch) the football match.",
+      "answers": ["will be watching", "'ll be watching"],
+      "hint": "Action in progress at a specific future moment."
+    },
+    {
+      "type": "mcq",
+      "prompt": "This time next year, she ___ her degree.",
+      "options": ["finishes", "is finishing", "will be finishing", "will finish"],
+      "answer": 2,
+      "explanation": "'This time next year' signals an action in progress at a future point → Future Continuous."
+    },
+    {
+      "type": "transform",
+      "instruction": "Make the sentence negative.",
+      "source": "They will be working on Sunday.",
+      "answers": ["They won't be working on Sunday.", "They will not be working on Sunday."]
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Jutro o tej porze będziemy podróżować przez Europę.",
+      "answers": ["This time tomorrow we'll be travelling through Europe.", "This time tomorrow we will be travelling through Europe."]
+    },
+    {
+      "type": "fill",
+      "prompt": "___ (Will / you / use) the car this evening? I need a lift.",
+      "answers": ["Will you be using"],
+      "hint": "Polite question about future plans → Future Continuous."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "I will working from home all week.",
+      "answers": ["I will be working from home all week."],
+      "explanation": "Future Continuous = will + be + -ing."
+    }
+  ]
+}

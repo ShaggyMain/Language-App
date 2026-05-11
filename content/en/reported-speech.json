@@ -1,0 +1,76 @@
+{
+  "id": "en.syntax.reported-speech",
+  "language": "en",
+  "category": "syntax",
+  "title": "Reported Speech",
+  "summary": "Report what someone said using backshifted tenses and changed pronouns.",
+  "cefrLevel": "B1",
+  "prerequisites": ["en.tenses.past-simple"],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "Reported speech (indirect speech) is used to report what someone said.\n\nWhen the reporting verb is in the past (said, told, asked), the tense shifts back:\n\nsay vs tell:\n- She said she was tired. (no personal object after 'say')\n- She told me she was tired. ('tell' needs a person after it)\n\nPronoun changes: I to he/she, we to they, my to his/her, you to I/he/she."
+    },
+    {
+      "kind": "table",
+      "title": "Tense backshift in reported speech",
+      "headers": ["Direct speech", "Reported speech"],
+      "rows": [
+        ["present simple: I work here.", "past simple: She said she worked there."],
+        ["present continuous: I am leaving.", "past continuous: He said he was leaving."],
+        ["past simple: I went there.", "past perfect: She said she had gone there."],
+        ["present perfect: I have seen it.", "past perfect: He said he had seen it."],
+        ["will: I will help.", "would: She said she would help."],
+        ["can: I can swim.", "could: He said he could swim."]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "She said she was tired.", "translation": "Powiedziala, ze jest zmeczona." },
+        { "source": "They said they would call me.", "translation": "Powiedzieli, ze do mnie zadzwonia." },
+        { "source": "He told me he had never been to London.", "translation": "Powiedzial mi, ze nigdy nie byl w Londynie." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "transform",
+      "instruction": "Report what she said. She said: I am tired.",
+      "source": "She said: I am tired.",
+      "answers": ["She said she was tired.", "She said that she was tired."]
+    },
+    {
+      "type": "fill",
+      "prompt": "He said he ___ (will) call me later.",
+      "answers": ["would"],
+      "hint": "will becomes would in reported speech."
+    },
+    {
+      "type": "mcq",
+      "prompt": "She said she ___ come to the party. (direct: I can't come)",
+      "options": ["can't", "couldn't", "won't", "wouldn't"],
+      "answer": 1,
+      "explanation": "can becomes could in reported speech."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "She said me that she was happy.",
+      "answers": ["She told me that she was happy.", "She said that she was happy."],
+      "explanation": "Say does not take a personal object. Use tell me or say (that)."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Powiedzial, ze nie zna odpowiedzi.",
+      "answers": ["He said he didn't know the answer.", "He said that he didn't know the answer."]
+    },
+    {
+      "type": "transform",
+      "instruction": "Change to reported speech. They said: We have finished the project.",
+      "source": "They said: We have finished the project.",
+      "answers": ["They said they had finished the project.", "They said that they had finished the project."]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "en.syntax.imperatives",
+  "language": "en",
+  "category": "syntax",
+  "title": "Imperatives",
+  "summary": "Give commands, instructions, and requests using the base form of the verb.",
+  "cefrLevel": "A1",
+  "prerequisites": [],
+  "theory": [
+    {
+      "kind": "text",
+      "markdown": "**Imperatives** are used to give instructions, commands, requests, or advice.\n\n**Affirmative**: Use the **base form** of the verb. No subject is needed.\n*Open the window. Sit down. Be quiet.*\n\n**Negative**: Use **Don't + base form**.\n*Don't run. Don't be late. Don't touch that.*\n\n**Polite form**: Add *please* at the start or end.\n*Please come in.* / *Come in, please.*\n\n**Suggestions**: Use *Let's + base form*.\n*Let's go! Let's have lunch together.*"
+    },
+    {
+      "kind": "table",
+      "title": "Imperative forms",
+      "headers": ["Type", "Structure", "Example"],
+      "rows": [
+        ["Affirmative", "base verb", "Listen carefully."],
+        ["Negative", "Don't + base verb", "Don't forget your keys."],
+        ["Polite", "Please + base verb", "Please wait here."],
+        ["Suggestion", "Let's + base verb", "Let's go to the cinema."]
+      ]
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Turn left at the traffic lights.", "translation": "Skręć w lewo przy sygnalizacji świetlnej." },
+        { "source": "Don't eat in the classroom.", "translation": "Nie jedz w klasie." },
+        { "source": "Please call me tomorrow.", "translation": "Proszę, zadzwoń do mnie jutro." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "mcq",
+      "prompt": "___ the door — it's cold outside!",
+      "options": ["Closes", "Closing", "Close", "Closed"],
+      "answer": 2,
+      "explanation": "Imperatives use the base form of the verb."
+    },
+    {
+      "type": "transform",
+      "instruction": "Make the imperative negative.",
+      "source": "Run in the corridor.",
+      "answers": ["Don't run in the corridor."]
+    },
+    {
+      "type": "fill",
+      "prompt": "___ (not / be) late for class.",
+      "answers": ["Don't be"],
+      "hint": "Negative imperative of 'to be'"
+    },
+    {
+      "type": "order",
+      "prompt": "Build a polite imperative sentence.",
+      "tokens": ["your", "Please", "hands", "wash"],
+      "answer": ["Please", "wash", "your", "hands"]
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Don't to run in the corridor.",
+      "answers": ["Don't run in the corridor."],
+      "explanation": "After 'Don't', use the base verb without 'to'."
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Nie dotykaj tego.",
+      "answers": ["Don't touch that.", "Don't touch it."]
+    }
+  ]
+}

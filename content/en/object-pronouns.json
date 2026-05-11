@@ -1,0 +1,78 @@
+{
+  "id": "en.pronouns.object",
+  "language": "en",
+  "category": "pronouns",
+  "title": "Object Pronouns",
+  "summary": "Use object pronouns (me, him, her, us, them) after verbs and prepositions.",
+  "cefrLevel": "A1",
+  "prerequisites": ["en.pronouns.possessives"],
+  "theory": [
+    {
+      "kind": "table",
+      "title": "Subject vs Object Pronouns",
+      "headers": ["Subject pronoun", "Object pronoun", "Example"],
+      "rows": [
+        ["I", "me", "She called me."],
+        ["you", "you", "I'll help you."],
+        ["he", "him", "I saw him yesterday."],
+        ["she", "her", "Tell her the news."],
+        ["it", "it", "I like it a lot."],
+        ["we", "us", "Join us for dinner!"],
+        ["they", "them", "I know them well."]
+      ]
+    },
+    {
+      "kind": "text",
+      "markdown": "Use **object pronouns** after:\n- **Verbs**: *She loves him.* / *I can see them.*\n- **Prepositions**: *Give it to me.* / *He is talking about her.*\n\n⚠️ Common mistake:\n~~Me and Tom went.~~ → correct: **Tom and I went.** (subject position)"
+    },
+    {
+      "kind": "examples",
+      "items": [
+        { "source": "Can you help me?", "translation": "Czy możesz mi pomóc?" },
+        { "source": "I don't know him.", "translation": "Nie znam go." },
+        { "source": "She told us the whole story.", "translation": "Opowiedziała nam całą historię." }
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "type": "fill",
+      "prompt": "The teacher told ___ (us/we) to study harder.",
+      "answers": ["us"],
+      "hint": "After the verb 'told' — use the object pronoun."
+    },
+    {
+      "type": "mcq",
+      "prompt": "This gift is for ___. I bought it yesterday.",
+      "options": ["she", "he", "them", "they"],
+      "answer": 2,
+      "explanation": "After the preposition 'for' — use the object pronoun 'them'."
+    },
+    {
+      "type": "errorFix",
+      "sentence": "Me and my brother love football.",
+      "answers": ["My brother and I love football."],
+      "explanation": "'I' is the subject pronoun, not 'me'. Put 'I' after the other person."
+    },
+    {
+      "type": "fill",
+      "prompt": "I saw Tom at the park. Do you know ___?",
+      "answers": ["him"],
+      "hint": "Tom = he → object pronoun = him"
+    },
+    {
+      "type": "translate",
+      "from": "pl",
+      "to": "en",
+      "source": "Czy możesz nam pomóc?",
+      "answers": ["Can you help us?"]
+    },
+    {
+      "type": "mcq",
+      "prompt": "I called Anna but ___ didn't answer.",
+      "options": ["her", "she", "hers", "him"],
+      "answer": 1,
+      "explanation": "Subject of the clause — use subject pronoun 'she', not object 'her'."
+    }
+  ]
+}
