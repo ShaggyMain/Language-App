@@ -248,24 +248,24 @@
       "prompt": "Dopasuj partykule do jej glownej funkcji:",
       "pairs": [
         {
-          "term": "wohl",
-          "definition": "Wyraża zaloenie lub prawdopodobienstwo"
+          "left": "wohl",
+          "right": "Wyraża założenie lub prawdopodobieństwo"
         },
         {
-          "term": "mal",
-          "definition": "Lagodzi prosbe lub rozkaz"
+          "left": "mal",
+          "right": "Łagodzi prośbę lub rozkaz"
         },
         {
-          "term": "ja",
-          "definition": "Odwoluje sie do wspolnej wiedzy lub wyraża zaskoczenie"
+          "left": "ja",
+          "right": "Odwołuje się do wspólnej wiedzy lub wyraża zaskoczenie"
         },
         {
-          "term": "eben/halt",
-          "definition": "Wyraża nieuchronnosc lub rezygnacje z faktem"
+          "left": "eben/halt",
+          "right": "Wyraża nieuchronność lub rezygnację z faktem"
         },
         {
-          "term": "denn",
-          "definition": "Wyraża zainteresowanie lub uprzejme zaangazowanie w pytaniu"
+          "left": "denn",
+          "right": "Wyraża zainteresowanie lub uprzejmość w pytaniu"
         }
       ],
       "explanation": "Kazda partykula modalna ma swoj kluczowy niuans emocjonalny. Zrozumienie kontekstu pomaga wybrac wlasciwa."
